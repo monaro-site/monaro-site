@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monaro.co.uk</title>
+<meta name="description" content="The 2026 Repco Supercars Championship: race calendar, results and commentary for every round, season statistics, track guides, and the build diary of my own Holden Monaro.">
+<meta property="og:title" content="Monaro.co.uk: the 2026 Supercars season">
+<meta property="og:description" content="Results, commentary and stats for every round of the 2026 Supercars Championship.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.monaro.co.uk/">
+<meta name="theme-color" content="#1d2024">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231d2024'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='18' text-anchor='middle' fill='%23e5483d'%3EM%3C/text%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a pit-wall timing screen. Sticky nav strip, one column of sections, data set in mono like a timing sheet. */
+:root {
+  --bg: #f4f4f1;
+  --surface: #fcfcfb;
+  --ink: #15171a;
+  --ink-2: #4c5058;
+  --muted: #858a92;
+  --line: #dfe0dc;
+  --axis: #c3c4bf;
+  --accent: #b3261e;      /* Monaro red */
+  --accent-ink: #ffffff;
+  --tarmac: #1d2024;
+  --tarmac-ink: #f2f2ee;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+  --ford: #2a78d6; --chev: #e8a400; --toyota: #e34948;
+  --good: #006300;
+  --font-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1113; --surface: #181a1d; --ink: #f1f1ec; --ink-2: #c3c4bc; --muted: #8b9098;
+    --line: #2b2e32; --axis: #3b3f44; --accent: #e5483d; --accent-ink: #ffffff;
+    --tarmac: #090a0b; --tarmac-ink: #f2f2ee;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+    --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1113; --surface: #181a1d; --ink: #f1f1ec; --ink-2: #c3c4bc; --muted: #8b9098;
+  --line: #2b2e32; --axis: #3b3f44; --accent: #e5483d; --accent-ink: #ffffff;
+  --tarmac: #090a0b; --tarmac-ink: #f2f2ee;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--font-body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.02; letter-spacing: .01em; }
+h2 { font-size: clamp(34px, 5vw, 52px); font-weight: 800; text-transform: uppercase; }
+h3 { font-size: 24px; font-weight: 800; text-transform: uppercase; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 600 12px/1 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.mono { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+
+/* Nav */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--tarmac); color: var(--tarmac-ink); }
+.nav .wrap { display: flex; align-items: center; gap: 20px; min-height: 54px; }
+.brand { font: 900 26px/1 var(--font-display); letter-spacing: .04em; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+.brand span { color: var(--accent); }
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+.nav ul::-webkit-scrollbar { display: none; }
+.nav li a { display: block; padding: 8px 10px; font: 500 13px/1 var(--font-data); text-transform: uppercase; letter-spacing: .08em; text-decoration: none; white-space: nowrap; border-radius: 3px; opacity: .85; }
+.nav li a:hover { background: rgba(255,255,255,.08); opacity: 1; }
+.nav .shop-link { background: var(--accent); color: var(--accent-ink); opacity: 1; }
+
+/* Chequer strip */
+.chequer { height: 12px; background:
+  conic-gradient(var(--tarmac-ink) 25%, var(--tarmac) 0 50%, var(--tarmac-ink) 0 75%, var(--tarmac) 0) 0 0 / 12px 12px; opacity: .9; }
+
+/* Hero */
+.hero { background: var(--tarmac); color: var(--tarmac-ink); padding-block: 40px 36px; }
+.hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: end; }
+.hero h1 { margin-top: 12px; font-size: clamp(52px, 9vw, 112px); font-weight: 900; text-transform: uppercase; line-height: .9; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p { color: #c9cbc6; margin-top: 16px; font-size: 16px; }
+.next { border: 1px solid rgba(255,255,255,.16); border-radius: 4px; padding: 18px; display: grid; gap: 10px; }
+.next .eyebrow { color: #ff8a80; }
+.next .race { font: 800 34px/1 var(--font-display); text-transform: uppercase; }
+.countdown { display: flex; gap: 14px; font-family: var(--font-data); }
+.countdown div { display: grid; }
+.countdown b { font-size: 30px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.countdown span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; }
+.leaderboard { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(255,255,255,.12); margin-top: 28px; border-radius: 4px; overflow: hidden; }
+.leaderboard div { background: var(--tarmac); padding: 12px 14px; display: grid; gap: 2px; min-width: 0; }
+.leaderboard .p { font: 500 12px/1 var(--font-data); color: #9a9d98; }
+.leaderboard .n { font: 800 22px/1.1 var(--font-display); text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.leaderboard .pts { font: 500 14px/1 var(--font-data); font-variant-numeric: tabular-nums; }
+
+section { padding-block: 56px; border-bottom: 1px solid var(--line); }
+.section-head { display: grid; gap: 10px; margin-bottom: 28px; }
+.section-head p { color: var(--ink-2); }
+
+/* Season phase bar */
+.phases { display: grid; grid-template-columns: 9fr 2fr 3fr; gap: 4px; margin-bottom: 28px; }
+.phase { padding: 10px 12px; border-radius: 3px; background: var(--surface); border: 1px solid var(--line); min-width: 0; }
+.phase b { display: block; font: 800 18px/1 var(--font-display); text-transform: uppercase; }
+.phase span { font: 400 12px/1.3 var(--font-data); color: var(--muted); }
+.phase.now { border-color: var(--accent); }
+
+/* Calendar */
+.cal { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.round { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.round .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.round .rn { font: 600 12px/1 var(--font-data); color: var(--muted); letter-spacing: .1em; }
+.round .name { font: 800 22px/1.05 var(--font-display); text-transform: uppercase; }
+.round .meta { font-size: 13px; color: var(--ink-2); }
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 500 11px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; padding: 5px 7px; border-radius: 3px; white-space: nowrap; }
+.pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.pill.done { color: var(--muted); background: var(--bg); }
+.pill.next { color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.pill.up { color: var(--ink-2); background: var(--bg); }
+.round .winners { font: 400 13px/1.5 var(--font-data); color: var(--ink-2); }
+.round a.more { font: 500 12px/1 var(--font-data); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); text-decoration: none; }
+.round.is-next { border-color: var(--accent); box-shadow: inset 0 3px 0 var(--accent); }
+
+/* Results */
+.picker { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+.picker button { font: 500 12px/1 var(--font-data); text-transform: uppercase; letter-spacing: .06em; padding: 9px 11px; border-radius: 3px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); cursor: pointer; }
+.picker button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.picker button:disabled { opacity: .45; cursor: default; }
+.event { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 32px; }
+.event .commentary { display: grid; gap: 14px; align-content: start; }
+.event .commentary h3 { font-size: 36px; }
+.event .commentary .meta { font: 400 13px/1.4 var(--font-data); color: var(--muted); }
+.races { display: grid; gap: 14px; }
+.race-card { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.race-card header { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 14px; background: var(--tarmac); color: var(--tarmac-ink); font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; }
+.podium { display: grid; grid-template-columns: repeat(3, 1fr); }
+.podium div { padding: 12px 14px; border-right: 1px solid var(--line); min-width: 0; }
+.podium div:last-child { border-right: 0; }
+.podium .pos { font: 600 12px/1 var(--font-data); color: var(--muted); }
+.podium .who { font: 800 20px/1.1 var(--font-display); text-transform: uppercase; overflow-wrap: anywhere; }
+.podium .team { font-size: 12px; color: var(--ink-2); }
+.podium div:first-child .pos { color: var(--accent); }
+.race-card .extra { padding: 10px 14px; border-top: 1px solid var(--line); font: 400 12.5px/1.6 var(--font-data); color: var(--ink-2); }
+details.full { border-top: 1px solid var(--line); }
+details.full summary { padding: 10px 14px; cursor: pointer; font: 500 12px/1 var(--font-data); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+.tbl-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font: 400 13px/1.3 var(--font-data); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-weight: 500; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+td.num, th.num { text-align: right; }
+.make { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; vertical-align: 1px; }
+.make.Ford { background: var(--ford); } .make.Chevrolet { background: var(--chev); } .make.Toyota { background: var(--toyota); }
+
+/* Stats */
+.stats-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 18px; min-width: 0; display: grid; gap: 14px; align-content: start; }
+.panel.w12 { grid-column: span 12; } .panel.w7 { grid-column: span 7; } .panel.w5 { grid-column: span 5; } .panel.w6 { grid-column: span 6; }
+.panel h3 { font-size: 22px; }
+.panel .sub { font-size: 13px; color: var(--ink-2); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 12px/1 var(--font-data); padding: 7px 9px 7px 8px; border-radius: 3px; border: 1px solid var(--line); background: var(--bg); color: var(--ink-2); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip i { width: 10px; height: 3px; border-radius: 2px; background: var(--axis); }
+.chip[aria-pressed="true"] { color: var(--ink); border-color: var(--ink-2); background: var(--surface); }
+.chart-box { position: relative; overflow-x: auto; }
+.chart-box svg { display: block; width: 100%; min-width: 640px; height: auto; }
+.chart-box svg text { fill: var(--muted); font: 400 11px var(--font-data); }
+.tooltip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 400 12px/1.4 var(--font-data); padding: 7px 9px; border-radius: 3px; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); }
+.bars { display: grid; gap: 6px; }
+.bar-row { display: grid; grid-template-columns: 116px 1fr 54px; gap: 10px; align-items: center; font: 400 13px/1 var(--font-data); font-variant-numeric: tabular-nums; }
+.bar-row .lab { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-row .track { height: 14px; position: relative; }
+.bar-row .fill { position: absolute; inset: 0 auto 0 0; background: var(--s1); border-radius: 0 4px 4px 0; }
+.bar-row.cut .fill { background: var(--axis); }
+.bar-row .val { text-align: right; color: var(--ink-2); }
+.cutline { font: 500 11px/1 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); border-top: 1px dashed var(--accent); padding-top: 6px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 14px; display: grid; gap: 4px; min-width: 0; }
+.tile b { font: 800 34px/1 var(--font-display); }
+.tile span { font-size: 13px; color: var(--ink-2); }
+.dots { display: flex; gap: 3px; flex-wrap: wrap; }
+.dots i { width: 12px; height: 12px; border-radius: 2px; background: var(--s1); }
+.dots i.pole { background: transparent; border: 2px solid var(--s1); }
+
+/* Tracks */
+.tracks { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.track-card { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 18px; display: grid; gap: 10px; align-content: start; }
+.track-card .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; font: 400 12px/1.4 var(--font-data); color: var(--muted); }
+.track-card .facts b { color: var(--ink); font-weight: 500; }
+.track-card p { font-size: 14px; color: var(--ink-2); }
+
+/* Blog */
+.blog { display: grid; grid-template-columns: 1fr 2fr; gap: 32px; }
+.build-card { background: var(--tarmac); color: var(--tarmac-ink); border-radius: 4px; padding: 20px; display: grid; gap: 12px; align-content: start; }
+.build-card .k { font: 500 11px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; }
+.build-card .v { font: 800 22px/1.1 var(--font-display); text-transform: uppercase; }
+.progress { display: grid; gap: 8px; }
+.progress div { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font: 400 13px/1 var(--font-data); }
+.progress div::after { content: ""; grid-column: 1 / -1; height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--accent) var(--p), rgba(255,255,255,.12) var(--p)); }
+.posts { display: grid; gap: 14px; }
+.post { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 18px; display: grid; gap: 8px; }
+.post .date { font: 400 12px/1 var(--font-data); color: var(--muted); }
+.post h3 { font-size: 26px; }
+.sources { font: 400 12px/1.6 var(--font-data); color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
+.sources a { color: var(--ink-2); }
+.draft-note { font: 400 12px/1.5 var(--font-data); color: var(--muted); border-left: 2px solid var(--accent); padding-left: 10px; }
+
+/* Shop */
+.shop { background: var(--accent); color: var(--accent-ink); }
+.shop .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+.shop h2 { font-size: clamp(36px, 6vw, 64px); }
+.shop p { opacity: .9; margin-top: 8px; }
+.btn { display: inline-block; font: 600 14px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 16px 20px; border-radius: 3px; background: var(--tarmac); color: var(--tarmac-ink); }
+footer { padding-block: 32px 48px; font: 400 12px/1.6 var(--font-data); color: var(--muted); }
+footer .wrap { display: grid; gap: 8px; }
+
+@media (max-width: 860px) {
+  .hero-grid, .event, .blog { grid-template-columns: 1fr; }
+  .panel.w7, .panel.w5, .panel.w6 { grid-column: span 12; }
+  .leaderboard { grid-template-columns: repeat(2, 1fr); }
+  .leaderboard div:last-child { grid-column: span 2; }
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+  .phases { grid-template-columns: 1fr; }
+  .brand { font-size: 22px; }
+}
+@media (max-width: 420px) { .tracks, .cal { grid-template-columns: 1fr; } .bar-row { grid-template-columns: 96px 1fr 46px; } }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Monaro<span>.</span>co.uk</a>
+    <ul>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#stats">Season stats</a></li>
+      <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#garage">My Monaro</a></li>
+      <li><a class="shop-link" href="https://www.mattdoesmathgood.com" target="_blank" rel="noopener">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow" style="color:#ff8a80">2026 Repco Supercars Championship · after round 10 of 14</div>
+        <h1>Payne leads<br>into <em>the Mountain</em></h1>
+        <p id="hero-lede">Matt Payne carries a 120-point lead over Broc Feeney into the Bathurst 1000. Twenty-nine races down, eight to go, and the top ten after Bathurst go into the Finals.</p>
+      </div>
+      <div class="next" aria-live="polite">
+        <div class="eyebrow">Next up · Round 11</div>
+        <div class="race">Repco Bathurst 1000</div>
+        <div class="mono small" style="color:#c9cbc6">Mount Panorama · 8–11 October · 161 laps</div>
+        <div class="countdown" id="countdown"></div>
+      </div>
+    </div>
+    <div class="leaderboard" id="leaderboard"></div>
+  </div>
+</header>
+<div class="chequer" aria-hidden="true"></div>
+
+<main>
+<section id="calendar">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Race calendar</div>
+      <h2>14 rounds, 37 races</h2>
+      <p>The season runs in three phases. Nine Sprint Cup rounds, two endurance races where drivers share a car, then three Finals rounds where the top ten after Bathurst are cut to seven, then four, and points reset every round.</p>
+    </div>
+    <div class="phases">
+      <div class="phase"><b>Sprint Cup</b><span>Rounds 1–9 · Feb–Aug · won by Broc Feeney</span></div>
+      <div class="phase now"><b>Enduro Cup</b><span>Rounds 10–11 · The Bend, Bathurst</span></div>
+      <div class="phase"><b>Finals</b><span>Rounds 12–14 · Gold Coast, Sandown, Adelaide</span></div>
+    </div>
+    <div class="cal" id="cal"></div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Results &amp; commentary</div>
+      <h2>Race by race</h2>
+      <p>Pick a round for the podiums, full classifications where we have them, and the story of the weekend.</p>
+    </div>
+    <div class="picker" id="picker" role="group" aria-label="Choose a round"></div>
+    <div class="event" id="event"></div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Season to date</div>
+      <h2>Who's rising, who's falling</h2>
+      <p>Championship position after every round, the points table heading to Bathurst, and who has been winning.</p>
+    </div>
+    <div class="tiles" id="tiles" style="margin-bottom:16px"></div>
+    <div class="stats-grid">
+      <div class="panel w12">
+        <div style="display:grid;gap:6px">
+          <h3>Championship position, round by round</h3>
+          <p class="sub">Pick up to four drivers to trace. Lines climb when a driver gains places in the standings. Round 1 isn't shown because the official after-Sydney table wasn't published in full; Feeney and Payne left Sydney tied on points.</p>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Highlight drivers"></div>
+        <div class="chart-box" id="bump"></div>
+        <details>
+          <summary class="mono small" style="cursor:pointer;color:var(--accent)">Show as a table</summary>
+          <div class="tbl-wrap" id="bump-table"></div>
+        </details>
+      </div>
+      <div class="panel w7">
+        <h3>Points heading to Bathurst</h3>
+        <p class="sub">Official totals after The Bend for the top 14. Top ten after Bathurst make the Finals. Eight are locked in already.</p>
+        <div class="bars" id="points-bars"></div>
+      </div>
+      <div class="panel w5">
+        <h3>Wins and poles</h3>
+        <p class="sub">Filled squares are race wins, outlined squares are pole positions, across all 29 races so far.</p>
+        <div id="wins"></div>
+      </div>
+      <div class="panel w6">
+        <h3>Team performance</h3>
+        <p class="sub">The official teams' championship after The Bend, with race wins. Each team runs two cars. Jackson Walls and Macauley Jones are single-car entries, so they score as teams of their own.</p>
+        <div class="tbl-wrap" id="teams"></div>
+      </div>
+      <div class="panel w6">
+        <h3>Manufacturers</h3>
+        <p class="sub">Ford wrapped up the 2026 manufacturers' title at Perth. Wins by make:</p>
+        <div class="bars" id="makes"></div>
+      </div>
+      <div class="panel w12">
+        <h3>Full standings</h3>
+        <div class="tbl-wrap" id="standings"></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tracks">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Venues</div>
+      <h2>The tracks</h2>
+      <p>Thirteen venues across Australia and New Zealand, from a 2.4 km bullring in Tasmania to the 6.2 km Mountain.</p>
+    </div>
+    <div class="tracks" id="track-list"></div>
+  </div>
+</section>
+
+<section id="garage">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">From the garage</div>
+      <h2>My Monaro</h2>
+      <p>The build diary: getting my own Monaro car-show ready, one job at a time.</p>
+    </div>
+    <div class="blog">
+      <aside class="build-card">
+        <div><div class="k">The car</div><div class="v">Holden Monaro</div></div>
+        <div><div class="k">Goal</div><div class="v">Show ready</div></div>
+        <div class="progress">
+          <div style="--p:0%">Bodywork &amp; paint<span>—</span></div>
+          <div style="--p:0%">Engine bay<span>—</span></div>
+          <div style="--p:0%">Interior<span>—</span></div>
+          <div style="--p:0%">Wheels &amp; stance<span>—</span></div>
+        </div>
+        <p class="draft-note" style="color:#9a9d98">Progress bars are placeholders until Matt fills in the build details.</p>
+      </aside>
+      <div class="posts">
+        <article class="post">
+          <div class="date">Draft · post 1</div>
+          <h3>Meet the Monaro</h3>
+          <p>Where it came from, what year and spec it is, and what state it was in on day one. The starting photos go here.</p>
+          <p class="draft-note">Template post. Replace with your own words and photos.</p>
+        </article>
+        <article class="post">
+          <div class="date">Draft · post 2</div>
+          <h3>The plan to car-show ready</h3>
+          <p>The job list, the budget, and which show you're aiming for.</p>
+          <p class="draft-note">Template post. Replace with your own words and photos.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:#ffd9d4">The shop</div>
+      <h2>V8 merch</h2>
+      <p>Shirts and gear for people who like their engines with eight cylinders.</p>
+    </div>
+    <a class="btn" href="https://www.mattdoesmathgood.com" target="_blank" rel="noopener">Visit mattdoesmathgood.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</div>
+    <div>Results, standings and team points from <a href="https://www.supercars.com/results/2026/supercars" target="_blank" rel="noopener">supercars.com</a>. Each round lists the reports its commentary draws on. All commentary is written for this site. Updated 7 October 2026, after round 10.</div>
+  </div>
+</footer>
+
+<script>
+const D = {
+  Feeney:{n:"Broc Feeney",no:88,team:"Triple Eight",make:"Ford"},
+  Brown:{n:"Will Brown",no:888,team:"Triple Eight",make:"Ford"},
+  Walls:{n:"Jackson Walls",no:11,team:"SCT Motorsport",make:"Ford"},
+  Payne:{n:"Matt Payne",no:19,team:"Grove Racing",make:"Ford"},
+  Allen:{n:"Kai Allen",no:26,team:"Grove Racing",make:"Ford"},
+  Kostecki:{n:"Brodie Kostecki",no:17,team:"Dick Johnson Racing",make:"Ford"},
+  Gray:{n:"Rylan Gray",no:38,team:"Dick Johnson Racing",make:"Ford"},
+  Waters:{n:"Cam Waters",no:6,team:"Tickford Racing",make:"Ford"},
+  Randle:{n:"Thomas Randle",no:55,team:"Tickford Racing",make:"Ford"},
+  Golding:{n:"James Golding",no:7,team:"Blanchard Racing Team",make:"Ford"},
+  Cameron:{n:"Aaron Cameron",no:3,team:"Blanchard Racing Team",make:"Ford"},
+  Mostert:{n:"Chaz Mostert",no:1,team:"Walkinshaw TWG Racing",make:"Toyota"},
+  Wood:{n:"Ryan Wood",no:2,team:"Walkinshaw TWG Racing",make:"Toyota"},
+  Heimgartner:{n:"Andre Heimgartner",no:8,team:"Brad Jones Racing",make:"Toyota"},
+  Hill:{n:"Cameron Hill",no:14,team:"Brad Jones Racing",make:"Toyota"},
+  Jones:{n:"Macauley Jones",no:96,team:"Brad Jones Racing (96)",make:"Toyota"},
+  DePasquale:{n:"Anton De Pasquale",no:18,team:"Team 18",make:"Chevrolet"},
+  Reynolds:{n:"David Reynolds",no:20,team:"Team 18",make:"Chevrolet"},
+  Stewart:{n:"Jobe Stewart",no:9,team:"Erebus Motorsport",make:"Chevrolet"},
+  Murray:{n:"Cooper Murray",no:99,team:"Erebus Motorsport",make:"Chevrolet"},
+  LeBrocq:{n:"Jack Le Brocq",no:4,team:"Matt Stone Racing",make:"Chevrolet"},
+  Bates:{n:"Zach Bates",no:10,team:"Matt Stone Racing",make:"Chevrolet"},
+  Ojeda:{n:"Jayden Ojeda",no:31,team:"PremiAir Racing",make:"Chevrolet"},
+  Fraser:{n:"Declan Fraser",no:777,team:"PremiAir Racing",make:"Chevrolet"},
+};
+const ln = k => D[k] ? D[k].n.split(" ").slice(1).join(" ") : k;
+
+// Each race: n, w (winner), p (pole), pod (podium), full (classification), top (partial top-N), note
+const R = [
+ {r:1,name:"Sydney 500",short:"Sydney",circuit:"Sydney Motorsport Park",loc:"Eastern Creek, NSW",dates:"20–22 Feb",done:true,
+  races:[
+   {n:1,p:"Golding",full:["Feeney","Cameron","Golding","Payne","Waters","DePasquale","Brown","Heimgartner","Randle","Kostecki","Allen","Reynolds","Ojeda","Bates","Mostert","Hill","LeBrocq","Walls","Fraser","Gray","Wood","Jones","Stewart"],dnf:["Murray"]},
+   {n:2,p:"DePasquale",full:["DePasquale","Kostecki","Payne","Waters","Reynolds","Feeney","Wood","Allen","LeBrocq","Golding","Hill","Fraser","Randle","Brown","Cameron","Stewart","Bates","Murray","Walls","Gray","Ojeda","Jones"],dnf:["Mostert (DSQ)","Heimgartner"]},
+   {n:3,p:"Feeney",full:["Feeney","Payne","Waters","Mostert","Wood","LeBrocq","Hill","Randle","Heimgartner","Jones","Gray","Kostecki","Bates","Walls","DePasquale","Reynolds","Cameron","Brown","Ojeda","Murray","Fraser","Stewart","Allen","Golding"],note:"Kai Allen's late heartbreak dropped him to 23rd."}],
+  c:["Broc Feeney opened the year the way he finished 2025, with two wins from three. He did it despite equipment dramas, and only Matt Payne's run of steady finishes kept the Grove driver level on points with him by Sunday night.",
+     "Anton De Pasquale gave Team 18 a race win in Saturday's sprint. The surprise of the weekend was Blanchard Racing Team's first double podium, Aaron Cameron 2nd and James Golding 3rd in the opener. Toyota had five Supras in the top ten in its first full season, while Will Brown's switch to Ford started with 7th, 14th and 18th. Mostert was disqualified from race 2 and Kai Allen lost a likely podium late in race 3."]},
+ {r:2,name:"Melbourne SuperSprint",short:"Melbourne",circuit:"Albert Park",loc:"Melbourne, VIC",dates:"5–8 Mar",done:true,
+  races:[
+   {n:4,p:"Kostecki",full:["Kostecki","Payne","Feeney","Golding","Mostert","Waters","Wood","Brown","DePasquale","Murray","Allen","Randle","LeBrocq","Heimgartner","Reynolds","Ojeda","Gray","Hill","Bates","Stewart","Jones","Fraser","Cameron","Walls"]},
+   {n:5,p:"Payne",full:["Kostecki","Payne","Wood","Waters","Allen","LeBrocq","Feeney","Randle","Heimgartner","DePasquale","Hill","Fraser","Golding","Mostert","Gray","Walls","Bates","Ojeda","Reynolds","Jones","Brown","Stewart","Murray","Cameron"]},
+   {n:6,p:"Feeney",full:["Feeney","Kostecki","Waters","Allen","Mostert","DePasquale","Reynolds","Hill","Heimgartner","LeBrocq","Jones","Walls","Ojeda","Bates","Fraser","Stewart","Gray","Wood","Golding","Cameron","Brown","Murray"],dnf:["Payne","Randle"]},{n:7,p:"Brown",w:"Kostecki"}],
+  c:["Four short races on the Formula 1 support bill and Brodie Kostecki won three of them, and the Larry Perkins Trophy with them. It sent the 2023 champion to the top of the table.",
+     "Feeney won race 6 from pole while Payne and Thomas Randle both retired from it. Waters' run of top-six finishes kept him second in the standings, and Erebus was still searching for a setup window, with both cars near the bottom of the points."]},
+ {r:3,name:"Taupō Super 440",short:"Taupō",circuit:"Taupō International Motorsport Park",loc:"Taupō, NZ",dates:"10–11 Apr",done:true,
+  races:[
+   {n:8,p:"Kostecki",w:"Kostecki"},
+   {n:9,p:"Wood",w:"Wood"}],
+  note:"The Sunday race was cancelled as Cyclone Vaianu approached and was moved to Christchurch.",
+  c:["Only two of the three races ran before the weather closed in. Kostecki won from pole on Saturday to stretch his lead, and Kiwi Ryan Wood won from pole for Walkinshaw TWG and Toyota at home, the Supra's first win.",
+     "Wood and Mostert both climbed the table while Tickford stumbled. Wood's result set up his lead in the Jason Richards Trophy across the two New Zealand rounds."]},
+ {r:4,name:"Christchurch Super 440",short:"Christchurch",circuit:"Euromarque Motorsport Park",loc:"Christchurch, NZ",dates:"17–19 Apr",done:true,
+  races:[{n:10,p:"Payne",w:"Allen"},{n:11,p:"Kostecki",w:"Kostecki"},{n:12,p:"Wood",w:"Payne"},{n:13,p:"Payne",w:"Payne"}],
+  c:["Supercars' first visit to Christchurch picked up the race lost at Taupō, so the field ran four times. Grove Racing won three of them. Kai Allen took his first win of the year in the opener and Payne won the last two, the finale from pole.",
+     "Wood led the Jason Richards Trophy until his Toyota failed seven laps from the end of the final race, and Feeney took the trophy on countback. Mostert dropped out of the top ten after a 30-second penalty for contact with Kostecki in the final race."]},
+ {r:5,name:"Tasmania Super 440",short:"Tasmania",circuit:"Symmons Plains Raceway",loc:"Launceston, TAS",dates:"22–24 May",done:true,
+  races:[{n:14,p:"Mostert",w:"Mostert"},{n:15,p:"Heimgartner",w:"Heimgartner",note:"The 100th championship race at Symmons Plains."},{n:16,p:"Feeney",w:"Feeney"}],
+  c:["Three races, three different winners and all from pole. Mostert got the defending champion's season moving in race 14, Heimgartner won the 100th championship race held at Symmons Plains for Brad Jones Racing, and Feeney won Sunday to stretch his lead.",
+     "Heimgartner and Feeney were the big movers, and Toyota won two of the three races."]},
+ {r:6,name:"Darwin Triple Crown",short:"Darwin",circuit:"Hidden Valley Raceway",loc:"Darwin, NT",dates:"19–21 Jun",done:true,
+  races:[{n:17,p:"Kostecki",w:"Waters"},{n:18,p:"Waters",w:"Allen"},{n:19,p:"Waters",w:"DePasquale"}],
+  c:["Cam Waters finally broke through for Tickford in race 17 and then took two poles. Allen won again on Saturday and De Pasquale took Team 18's second win on Sunday.",
+     "Three different winners again, and nobody managed the Triple Crown. Feeney left Darwin with a 15-point lead over Payne, 1,390 to 1,375, with Waters up to third."]},
+ {r:7,name:"Townsville 500",short:"Townsville",circuit:"Reid Park Street Circuit",loc:"Townsville, QLD",dates:"10–12 Jul",done:true,
+  races:[
+   {n:20,p:"Kostecki",top:["Waters","Kostecki","Payne","Allen","Mostert","Randle","Brown","Wood","Ojeda","Feeney"],note:"Waters won by 0.2 s after Kostecki ran a long first stint."},
+   {n:21,p:"Payne",top:["Payne","DePasquale","Kostecki","Waters","Randle","Brown","Mostert","Feeney","LeBrocq","Reynolds"],note:"Allen and Wood clashed at turn 11 on lap 41. Allen got a puncture, Wood broken steering."},
+   {n:22,top:["Kostecki","Payne","Waters","Mostert","Wood","Feeney","Allen","Brown","LeBrocq","Ojeda"],note:"Heimgartner's Toyota lost a cylinder after first-lap contact."}],
+  c:["Waters won his fourth Townsville race on Friday on tyre life alone, holding Kostecki off by two tenths. Payne then won Saturday by 15 seconds, his first win since Christchurch, and turned an 8-point deficit into a 61-point lead.",
+     "Kostecki was the class of Sunday, winning by almost ten seconds for his sixth win of the year. Payne's second place stretched the gap to Feeney to 92 points. James Golding fell out of the top ten, and Heimgartner's weekend ended with a broken engine."]},
+ {r:8,name:"Perth Super 440",short:"Perth",circuit:"Wanneroo Raceway",loc:"Neerabup, WA",dates:"31 Jul–2 Aug",done:true,
+  races:[{n:23,w:"Payne",note:"De Pasquale charged from 9th to 3rd and set the fastest lap."},{n:24,w:"Feeney",note:"Feeney passed Payne after a pit-stop adjustment left the Grove car with understeer."},{n:25,w:"Payne",note:"Payne won despite a damaged rear wheel from contact with Feeney."}],
+  c:["A Payne versus Feeney weekend. Payne won twice, Feeney once, and they touched in the finale with Payne nursing a vibrating wheel to the flag.",
+     "Ford won all three races and that clinched the manufacturers' title with five rounds to spare. Waters moved up to third in the standings and Mostert back into the top eight."]},
+ {r:9,name:"Ipswich Super 440",short:"Ipswich",circuit:"Queensland Raceway",loc:"Ipswich, QLD",dates:"21–23 Aug",done:true,
+  races:[
+   {n:26,w:"Kostecki"},
+   {n:27,p:"Payne",pod:["Brown","Kostecki","Feeney"],note:"Brown's first win in over a year, at the same track. Pole-sitter Payne faded to 6th."},
+   {n:28,p:"Brown",top:["Feeney","Kostecki","Brown","Allen","Golding","DePasquale","Waters","Gray","Reynolds","Cameron"],note:"Payne retired with an engine that dropped a cylinder, handing Feeney the Sprint Cup."}],
+  c:["Payne arrived as Sprint Cup favourite and left with nothing. Kostecki won Saturday's first race, then Will Brown finally won again in the second, his first win since this same weekend a year earlier.",
+     "On Sunday Payne's engine dropped a cylinder and he was out by lap 38. Feeney won and took the Sprint Cup and its guaranteed Finals spot, and went back to the top of the table by 30 points."]},
+ {r:10,name:"The Bend 500",short:"The Bend",circuit:"The Bend Motorsport Park (West)",loc:"Tailem Bend, SA",dates:"11–13 Sep",done:true,
+  races:[{n:29,p:"Kostecki",
+   full:["Mostert","Allen","Wood","Brown","Ojeda","Payne","DePasquale","Heimgartner","Gray","LeBrocq","Randle","Bates","Hall/Lowndes","Waters","Stewart","Kostecki","Hill","Murray","Walls","Jones","Gomersall/Logan","Reynolds","Feeney"],dnf:["Fraser (NC)","Golding (DSQ)","Cameron (DSQ)"],
+   co:{Mostert:"Coulthard",Allen:"Slade",Wood:"Evans",Brown:"Pye",Ojeda:"Russell",Payne:"Davison",DePasquale:"Holdsworth",Heimgartner:"Fullwood",Gray:"D'Alberto",LeBrocq:"Jones"},
+   note:"Fastest lap: Will Brown. 141 laps, 500 km, in heavy rain."}],
+  c:["The first enduro of the year was a wet, wild one on the West Circuit. Chaz Mostert and Fabian Coulthard came from 11th on the grid to win by 18 seconds, with Ryan Wood and Jaxon Evans 3rd. A 1–3 for Walkinshaw TWG in Toyota's first Supercars enduro.",
+     "Kostecki started from pole but finished 16th, a lap down. Feeney came home 23rd. Payne was 6th even after a five-second penalty for contact with Jayden Ojeda, which put him back in front of the championship by 120 points. Blanchard had both cars disqualified, a big blow to Golding's Finals hopes."]},
+ {r:11,name:"Bathurst 1000",short:"Bathurst",circuit:"Mount Panorama",loc:"Bathurst, NSW",dates:"8–11 Oct",next:true,races:[{n:30}],
+  c:["The Great Race decides the Enduro Cup and the final Finals places. Eight drivers are already in. Ryan Wood is all but certain of ninth. Tenth is between Jack Le Brocq on 1,313 and a pack 60 to 90 points behind: Heimgartner, Randle, Ojeda and Golding.",
+     "Payne and Feeney are both in the Finals whatever happens, so for them it's about the 1000 itself and the Enduro Cup bonus points that carry into the Gold Coast."]},
+ {r:12,name:"Gold Coast 500",short:"Gold Coast",circuit:"Surfers Paradise Street Circuit",loc:"Surfers Paradise, QLD",dates:"23–25 Oct",races:[{n:31},{n:32}],c:["Finals round one. Points reset, the top ten race twice over 250 km, and the bottom three are eliminated."]},
+ {r:13,name:"Sandown 500",short:"Sandown",circuit:"Sandown Raceway",loc:"Springvale, VIC",dates:"6–8 Nov",races:[{n:33},{n:34}],c:["Finals round two. Seven drivers, two 250 km races, three more eliminated."]},
+ {r:14,name:"Adelaide Grand Final",short:"Adelaide",circuit:"Adelaide Street Circuit",loc:"Adelaide, SA",dates:"26–29 Nov",races:[{n:35},{n:36},{n:37}],c:["The Grand Final. Four drivers, three races, and the champion is crowned on the streets of Adelaide."]},
+];
+const SRC = {"1": [["Supercars.com: Sydney winners and losers", "https://www.supercars.com/news/supercars-news-2026-winners-and-losers-2026-dunlop-sydney-500-broc-feeney-will-brown-kostecki"], ["Pit Debrief: Sydney 500 round-up", "https://www.pitdebrief.com/?p=97860"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "2": [["Supercars.com: Melbourne finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-brodie-kostecki-soars-luckless-cameron-bates-sink"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "3": [["Supercars.com: Taupō finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-taupo-walkinshaw-twg-will-brown-surge-tickford-stumble"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "4": [["Supercars.com: Christchurch finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-christchurch-broc-feeney-chaz-mostert-kai-allen"], ["Supercars.com: Wood's Christchurch failure", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-christchurch-heartbreaking-failure-toyota-jason-richards-trophy-finale"]], "5": [["Supercars.com: Tasmania finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-tasmania-broc-feeney-andre-heimgartner-chaz-mostert"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "6": [["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "7": [["Speedcafe: Race 20 report", "https://speedcafe.com/supercars-news-2026-townsville-500-race-1-results-friday-cameron-waters-win-video-highlights-comments-reaction/"], ["Supercars.com: Race 21 report", "https://www.supercars.com/news/supercars-news-2026-race-21-report-matt-payne-win-dominant-results-ryan-wood-kai-allen-clash-video-sprint-cup"], ["Supercars.com: Race 22 report", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-report-brodie-kostecki-win-comeback-results-ford-dick-johnson-racing"], ["Supercars.com: Townsville finals standings", "https://www.supercars.com/news/supercars-news-2026-townsville-finals-winners-and-losers-james-golding-andre-heimgartner-chaz-mostert"]], "8": [["Ford Authority: Perth sweep", "https://fordauthority.com/2026/08/ford-racing-dominates-perth-with-triple-header-sweep/"], ["Team 18: Perth report", "https://team18.com.au/portfolio/de-pasquale-leads-perth-podium-breakthrough/"], ["Supercars.com: Perth finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-perth-chaz-mostert-brodie-kostecki"]], "9": [["Supercars.com: Race 27 report", "https://www.supercars.com/news/supercars-news-2026-race-27-report-ipswich-will-brown-win-drought-broken-triple-eight-red-bull-results-ford"], ["Talk Motorsport: Saturday at Ipswich", "https://talkmotorsport.co.nz/v8/browns-year-long-drought-ends-at-wild-saturday-ipswich-sprint/"], ["Velocity News: Race 28 and the Sprint Cup", "https://www.velocitynews.co.nz/payne-suffers-sprint-cup-heartbreak-as-feeney-claims-title-in-ipswich-finale/"], ["Supercars.com: Ipswich finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-winners-and-losers-ipswich-broc-feeney-matt-payne-qualified"]], "10": [["Supercars.com: Bend 500 report", "https://www.supercars.com/news/supercars-news-2026-bend-500-race-report-chaz-mostert-fabian-coulthard-win-toyota-fairytale-results-video"], ["Wikipedia: 2026 The Bend 500", "https://en.wikipedia.org/wiki/2026_The_Bend_500"], ["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"]], "11": [["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"], ["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "12": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "13": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "14": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]]};
+// fill winners from classifications
+R.forEach(ev => ev.races.forEach(x => { const o = x.full || x.top || x.pod; if (o && !x.w) x.w = o[0]; }));
+
+// Championship order after each round (R2..R10). R10 is official top 14 only.
+const ORDER = {
+ 2:["Kostecki","Waters","Feeney","Payne","DePasquale","LeBrocq","Wood","Allen","Golding","Mostert","Randle","Reynolds","Brown","Hill","Heimgartner","Ojeda","Jones","Fraser","Cameron","Gray","Walls","Bates","Stewart","Murray"],
+ 3:["Kostecki","Feeney","Payne","Waters","Wood","DePasquale","Mostert","LeBrocq","Brown","Golding","Allen","Randle","Reynolds","Hill","Heimgartner","Ojeda","Jones","Cameron","Fraser","Gray","Bates","Walls","Murray","Stewart"],
+ 4:["Feeney","Kostecki","Payne","Waters","Allen","Wood","DePasquale","Golding","Brown","LeBrocq","Mostert","Randle","Heimgartner","Ojeda","Hill","Reynolds","Bates","Fraser","Jones","Cameron","Gray","Murray","Walls","Stewart"],
+ 5:["Feeney","Payne","Kostecki","Waters","Allen","DePasquale","Wood","Brown","Golding","Mostert","LeBrocq","Heimgartner","Randle","Ojeda","Reynolds","Hill","Bates","Fraser","Jones","Cameron","Gray","Murray","Walls","Stewart"],
+ 6:["Feeney","Payne","Waters","Kostecki","Allen","DePasquale","Brown","Wood","Golding","Mostert","LeBrocq","Heimgartner","Ojeda","Randle","Hill","Reynolds","Bates","Jones","Fraser","Cameron","Gray","Murray","Walls","Stewart"],
+ 7:["Payne","Feeney","Kostecki","Waters","Allen","DePasquale","Brown","Wood","Mostert","LeBrocq","Golding","Ojeda","Randle","Heimgartner","Reynolds","Hill","Bates","Fraser","Gray","Jones","Cameron","Murray","Walls","Stewart"],
+ 8:["Payne","Feeney","Waters","Kostecki","Allen","DePasquale","Brown","Mostert","Wood","LeBrocq","Golding","Randle","Heimgartner","Ojeda","Reynolds","Hill","Bates","Fraser","Cameron","Gray","Murray","Jones","Walls","Stewart"],
+ 9:["Feeney","Payne","Kostecki","Waters","Allen","DePasquale","Brown","Mostert","Wood","Golding","LeBrocq","Randle","Heimgartner","Ojeda","Reynolds","Hill","Cameron","Gray","Bates","Fraser","Murray","Jones","Walls","Stewart"],
+ 10:["Payne","Feeney","Allen","Kostecki","Waters","DePasquale","Brown","Mostert","Wood","LeBrocq","Heimgartner","Randle","Ojeda","Golding","Reynolds","Hill","Gray","Bates","Cameron","Murray","Fraser","Jones","Walls","Stewart"],
+};
+const PTS10 = {Payne:2275,Feeney:2155,Allen:2069,Kostecki:1971,Waters:1962,DePasquale:1879,Brown:1870,Mostert:1713,Wood:1594,LeBrocq:1313,Heimgartner:1251,Randle:1250,Ojeda:1243,Golding:1226,Reynolds:1035,Hill:944,Gray:941,Bates:815,Cameron:807,Murray:774,Fraser:715,Jones:710,Walls:663,Stewart:639};
+// Official teams' championship after round 10 (supercars.com). Single-car entries score as their own team.
+const TEAMPTS = {"Grove Racing":4284,"Triple Eight":4025,"Walkinshaw TWG Racing":3277,"Tickford Racing":3233,"Dick Johnson Racing":2930,"Team 18":2914,"Brad Jones Racing":2195,"Matt Stone Racing":2098,"Blanchard Racing Team":1959,"PremiAir Racing":1928,"Erebus Motorsport":1383,"Brad Jones Racing (96)":710,"SCT Motorsport":663};
+const PTS9 = {Feeney:2107,Payne:2077,Kostecki:1878,Waters:1852,Allen:1793,DePasquale:1697,Brown:1636,Mostert:1413,Wood:1340,Golding:1226,LeBrocq:1171,Randle:1120,Heimgartner:1084,Ojeda:1028,Reynolds:983,Hill:865,Cameron:763,Gray:762,Bates:729,Fraser:715,Murray:701,Jones:648,Walls:596,Stewart:538};
+const POLES = {Payne:7,Kostecki:6,Feeney:4,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1};
+
+const $ = s => document.querySelector(s);
+const el = (t, a = {}, h = "") => { const e = document.createElement(t); for (const k in a) e.setAttribute(k, a[k]); e.innerHTML = h; return e; };
+
+// Wins
+const WINS = {};
+R.forEach(ev => ev.races.forEach(x => { if (x.w && ev.done) WINS[x.w] = (WINS[x.w] || 0) + 1; }));
+
+// Hero leaderboard
+const lb = $("#leaderboard");
+ORDER[10].slice(0, 5).forEach((k, i) => {
+  const gap = i ? `−${PTS10[ORDER[10][0]] - PTS10[k]}` : "Leader";
+  lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${PTS10[k].toLocaleString()} pts · ${gap}</span>`));
+});
+
+// Countdown to Bathurst 1000 start (Sun 11 Oct 2026, 11:00 AEDT = 00:00 UTC)
+const start = Date.UTC(2026, 9, 11, 0, 0, 0);
+function tick() {
+  const ms = start - Date.now(), cd = $("#countdown");
+  if (ms <= 0) { cd.innerHTML = `<div><b>Race week</b><span>Check results below</span></div>`; return; }
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to lights out</b><span>Sun 11:00 AEDT</span></div>`;
+}
+tick(); setInterval(tick, 30000);
+
+// Calendar
+const cal = $("#cal");
+R.forEach(ev => {
+  const status = ev.done ? `<span class="pill done">Complete</span>` : ev.next ? `<span class="pill next">Next</span>` : `<span class="pill up">Upcoming</span>`;
+  const winners = ev.done ? ev.races.map(x => `R${x.n} ${x.w ? ln(x.w) : "—"}`).join(" · ") : `${ev.races.length} race${ev.races.length > 1 ? "s" : ""}`;
+  const c = el("article", {class: "round" + (ev.next ? " is-next" : "")}, `
+    <div class="top"><span class="rn">ROUND ${String(ev.r).padStart(2, "0")} · ${ev.dates.toUpperCase()}</span>${status}</div>
+    <div class="name">${ev.name}</div>
+    <div class="meta">${ev.circuit}, ${ev.loc}</div>
+    <div class="winners">${winners}</div>
+    <a class="more" href="#results" data-round="${ev.r}">${ev.done ? "Results & commentary" : "Preview"} →</a>`);
+  cal.append(c);
+});
+cal.addEventListener("click", e => { const a = e.target.closest("a[data-round]"); if (a) showRound(+a.dataset.round); });
+
+// Results picker
+const picker = $("#picker");
+R.forEach(ev => {
+  const b = el("button", {type: "button", "data-r": ev.r, "aria-pressed": "false"}, `R${ev.r} ${ev.short}`);
+  b.addEventListener("click", () => showRound(ev.r));
+  picker.append(b);
+});
+const who = k => D[k] ? D[k].n : k;
+function podiumHTML(arr, co) {
+  return `<div class="podium">${arr.slice(0, 3).map((k, i) => `<div><div class="pos">P${i + 1}</div><div class="who">${ln(k) || k}${co && co[k] ? " / " + co[k] : ""}</div><div class="team">${D[k] ? D[k].team : ""}</div></div>`).join("")}</div>`;
+}
+function raceCard(x, ev) {
+  let body = "";
+  const order = x.full || x.top || x.pod;
+  if (order) body += podiumHTML(order, x.co);
+  else if (x.w) body += `<div class="podium"><div><div class="pos">Winner</div><div class="who">${ln(x.w)}</div><div class="team">${D[x.w].team}</div></div><div></div><div></div></div>`;
+  const extras = [];
+  if (x.p) extras.push(`Pole: ${who(x.p)}`);
+  if (x.note) extras.push(x.note);
+  if (extras.length) body += `<div class="extra">${extras.join("<br>")}</div>`;
+  if (x.full || x.top) {
+    const list = (x.full || x.top);
+    const rows = list.map((k, i) => `<tr><td class="num">${i + 1}</td><td>${D[k] ? "#" + D[k].no : ""}</td><td><span class="make ${D[k] ? D[k].make : ""}"></span>${who(k)}${x.co && x.co[k] ? " / " + x.co[k] : ""}</td><td>${D[k] ? D[k].team : ""}</td></tr>`).join("")
+      + (x.dnf || []).map(k => `<tr><td class="num">—</td><td></td><td>${who(k.split(" ")[0]) + (k.includes("(") ? " " + k.slice(k.indexOf("(")) : " (Ret)")}</td><td></td></tr>`).join("");
+    body += `<details class="full"><summary>${x.full ? "Full classification" : "Top 10"}</summary><div class="tbl-wrap"><table><thead><tr><th class="num">Pos</th><th>Car</th><th>Driver</th><th>Team</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
+  }
+  return `<article class="race-card"><header><span>Race ${x.n}</span><span>${ev.short}</span></header>${body}</article>`;
+}
+function showRound(r) {
+  const ev = R.find(e => e.r === r);
+  picker.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.r === r)));
+  const races = ev.done ? ev.races.map(x => raceCard(x, ev)).join("") : `<article class="race-card"><header><span>${ev.races.length} race${ev.races.length > 1 ? "s" : ""}</span><span>${ev.dates}</span></header><div class="extra">Results will appear here after the weekend.</div></article>`;
+  $("#event").innerHTML = `
+    <div class="commentary">
+      <div class="eyebrow">Round ${ev.r} · ${ev.dates}</div>
+      <h3>${ev.name}</h3>
+      <div class="meta">${ev.circuit} · ${ev.loc}</div>
+      ${ev.note ? `<p class="draft-note">${ev.note}</p>` : ""}
+      ${ev.c.map(p => `<p>${p}</p>`).join("")}
+      <p class="sources">Sources: ${(SRC[ev.r] || []).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(" · ")}. Results and points: <a href="https://www.supercars.com/results/2026/supercars" target="_blank" rel="noopener">supercars.com</a>.</p>
+    </div>
+    <div class="races">${races}</div>`;
+  try { localStorage.setItem("monaro-round", r); } catch (e) {}
+}
+let initial = 10; try { initial = +localStorage.getItem("monaro-round") || 10; } catch (e) {}
+showRound(initial);
+
+// Tiles
+const races = R.flatMap(e => e.done ? e.races : []);
+const winners = Object.keys(WINS).length;
+$("#tiles").innerHTML = [
+  [`${races.length}/37`, "races completed"],
+  [winners, "different race winners"],
+  ["120", "points between Payne and Feeney"],
+  ["7", "wins for Kostecki, the most of anyone"],
+].map(([b, s]) => `<div class="tile"><b class="mono" style="font-family:var(--font-display)">${b}</b><span>${s}</span></div>`).join("");
+
+// Bump chart
+const ROUNDS = [2,3,4,5,6,7,8,9,10];
+const ALL = ORDER[9];
+let sel = ["Payne","Feeney","Kostecki","Allen"];
+const SLOTS = ["--s1","--s2","--s3","--s4"];
+const chips = $("#chips");
+function drawChips() {
+  chips.innerHTML = "";
+  ALL.forEach(k => {
+    const i = sel.indexOf(k);
+    const b = el("button", {type: "button", class: "chip", "aria-pressed": String(i >= 0)}, `<i style="${i >= 0 ? `background:var(${SLOTS[i]})` : ""}"></i>${ln(k)}`);
+    b.addEventListener("click", () => {
+      if (i >= 0) sel.splice(i, 1); else { if (sel.length >= 4) sel.shift(); sel.push(k); }
+      drawChips(); drawBump();
+    });
+    chips.append(b);
+  });
+}
+function drawBump() {
+  const W = 900, H = 520, L = 40, Rt = 130, T = 26, B = 30;
+  const x = r => L + (r - 2) * (W - L - Rt) / 8;
+  const y = p => T + (p - 1) * (H - T - B) / 23;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Championship position after each round from round 2 to round 10">`;
+  [1,5,10,15,20,24].forEach(p => s += `<line x1="${L}" x2="${W - Rt}" y1="${y(p)}" y2="${y(p)}" stroke="var(--line)" stroke-width="1"/><text x="${L - 10}" y="${y(p) + 4}" text-anchor="end">P${p}</text>`);
+  s += `<line x1="${L}" x2="${W - Rt}" y1="${(y(10) + y(11)) / 2}" y2="${(y(10) + y(11)) / 2}" stroke="var(--accent)" stroke-dasharray="4 4" stroke-width="1"/><text x="${L + 4}" y="${(y(10) + y(11)) / 2 - 4}" style="fill:var(--accent)">Finals cut</text>`;
+  ROUNDS.forEach(r => { const ev = R[r - 1]; s += `<text x="${x(r)}" y="${H - 8}" text-anchor="middle">R${r} ${ev.short.replace("The ", "").slice(0, 4).toUpperCase()}</text>`; });
+  const seriesFor = k => ROUNDS.map(r => { const p = ORDER[r].indexOf(k); return p >= 0 ? [r, p + 1] : null; }).filter(Boolean);
+  const order = ALL.filter(k => !sel.includes(k)).concat(sel);
+  order.forEach(k => {
+    const i = sel.indexOf(k), pts = seriesFor(k), on = i >= 0;
+    const col = on ? `var(${SLOTS[i]})` : "var(--axis)";
+    s += `<polyline fill="none" stroke="${col}" stroke-width="${on ? 2.5 : 1.25}" stroke-linejoin="round" stroke-linecap="round" points="${pts.map(([r, p]) => `${x(r)},${y(p)}`).join(" ")}"/>`;
+    pts.forEach(([r, p]) => s += `<circle cx="${x(r)}" cy="${y(p)}" r="${on ? 4.5 : 2.5}" fill="${col}" stroke="var(--surface)" stroke-width="2"/><circle class="hit" data-k="${k}" data-r="${r}" data-p="${p}" cx="${x(r)}" cy="${y(p)}" r="9" fill="transparent"/>`);
+    const last = pts[pts.length - 1];
+    s += `<text x="${x(last[0]) + 9}" y="${y(last[1]) + 4}" style="fill:${on ? "var(--ink)" : "var(--muted)"};font-weight:${on ? 600 : 400}">${ln(k)}</text>`;
+  });
+  s += `</svg><div class="tooltip" hidden></div>`;
+  const box = $("#bump"); box.innerHTML = s;
+  const tip = box.querySelector(".tooltip");
+  box.querySelectorAll(".hit").forEach(c => {
+    c.addEventListener("mouseenter", () => {
+      const r = +c.dataset.r, k = c.dataset.k, p = +c.dataset.p;
+      const prev = ORDER[r - 1] ? ORDER[r - 1].indexOf(k) + 1 : 0, d = prev ? prev - p : 0;
+      tip.innerHTML = `<b>${D[k].n}</b><br>After R${r} ${R[r - 1].short}: P${p}${d ? ` (${d > 0 ? "▲" : "▼"}${Math.abs(d)})` : ""}`;
+      const bb = c.getBoundingClientRect(), pb = box.getBoundingClientRect();
+      tip.style.left = (bb.left - pb.left + box.scrollLeft + bb.width / 2) + "px";
+      tip.style.top = (bb.top - pb.top) + "px"; tip.hidden = false;
+    });
+    c.addEventListener("mouseleave", () => tip.hidden = true);
+    c.addEventListener("click", () => { const k = c.dataset.k; if (!sel.includes(k)) { if (sel.length >= 4) sel.shift(); sel.push(k); drawChips(); drawBump(); } });
+  });
+}
+drawChips(); drawBump();
+$("#bump-table").innerHTML = `<table><thead><tr><th>Driver</th>${ROUNDS.map(r => `<th class="num">R${r}</th>`).join("")}</tr></thead><tbody>${ALL.map(k => `<tr><td>${D[k].n}</td>${ROUNDS.map(r => { const p = ORDER[r].indexOf(k); return `<td class="num">${p >= 0 ? p + 1 : "—"}</td>`; }).join("")}</tr>`).join("")}</tbody></table>`;
+
+// Points bars
+const max = PTS10.Payne;
+$("#points-bars").innerHTML = ORDER[10].slice(0, 14).map((k, i) => (i === 10 ? `<div class="cutline">Finals cut · top 10 after Bathurst</div>` : "") +
+  `<div class="bar-row${i >= 10 ? " cut" : ""}"><span class="lab">${i + 1}. ${ln(k)}</span><span class="track"><span class="fill" style="width:${PTS10[k] / max * 100}%"></span></span><span class="val">${PTS10[k].toLocaleString()}</span></div>`).join("");
+
+// Wins & poles
+const wp = Object.keys(D).filter(k => WINS[k] || POLES[k]).sort((a, b) => (WINS[b] || 0) - (WINS[a] || 0) || (POLES[b] || 0) - (POLES[a] || 0));
+$("#wins").innerHTML = `<table><thead><tr><th>Driver</th><th>Wins</th><th class="num">W</th><th class="num">P</th></tr></thead><tbody>${wp.map(k => `<tr><td>${ln(k)}</td><td><div class="dots">${"<i></i>".repeat(WINS[k] || 0)}${'<i class="pole"></i>'.repeat(POLES[k] || 0)}</div></td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td></tr>`).join("")}</tbody></table>`;
+
+// Teams
+const T = {};
+Object.entries(D).forEach(([k, d]) => { T[d.team] = T[d.team] || {make: d.make, pts: TEAMPTS[d.team], wins: 0, drivers: []}; T[d.team].wins += WINS[k] || 0; T[d.team].drivers.push(ln(k)); });
+const tlist = Object.entries(T).sort((a, b) => b[1].pts - a[1].pts);
+$("#teams").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Team</th><th class="num">Wins</th><th class="num">Points</th></tr></thead><tbody>${tlist.map(([n, t], i) => `<tr><td class="num">${i + 1}</td><td><span class="make ${t.make}"></span>${n}<br><span class="muted small">${t.drivers.join(", ")}</span></td><td class="num">${t.wins}</td><td class="num">${t.pts.toLocaleString()}</td></tr>`).join("")}</tbody></table>`;
+
+// Makes
+const M = {Ford: 0, Toyota: 0, Chevrolet: 0};
+Object.entries(WINS).forEach(([k, w]) => M[D[k].make] += w);
+$("#makes").innerHTML = Object.entries(M).map(([m, w]) => `<div class="bar-row"><span class="lab"><span class="make ${m}"></span>${m}</span><span class="track"><span class="fill" style="width:${w / 29 * 100}%;background:var(--${m === "Chevrolet" ? "chev" : m.toLowerCase()})"></span></span><span class="val">${w}</span></div>`).join("") +
+  `<p class="small muted">Ford Mustang, Toyota GR Supra and Chevrolet Camaro. ${M.Ford} of 29 wins have gone to a Mustang.</p>`;
+
+// Standings
+const rest = ORDER[9].filter(k => !ORDER[10].includes(k));
+const st = ORDER[10].concat(rest);
+$("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</th><th>Driver</th><th>Team</th><th class="num">Points</th><th class="num">Wins</th><th class="num">Poles</th><th class="num">Move R9→R10</th></tr></thead><tbody>${st.map((k, i) => {
+  const p10 = PTS10[k], p9 = ORDER[9].indexOf(k) + 1;
+  const mv = p10 ? p9 - (i + 1) : null;
+  const mvTxt = mv == null ? "—" : mv === 0 ? "–" : mv > 0 ? `<span style="color:var(--good)">▲ ${mv}</span>` : `<span style="color:var(--accent)">▼ ${-mv}</span>`;
+  return `<tr${i === 9 ? ' style="border-bottom:2px dashed var(--accent)"' : ""}><td class="num">${p10 ? i + 1 : "(" + p9 + ")"}</td><td>#${D[k].no}</td><td><span class="make ${D[k].make}"></span>${D[k].n}</td><td>${D[k].team}</td><td class="num">${p10 ? p10.toLocaleString() : PTS9[k].toLocaleString() + "†"}</td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${mvTxt}</td></tr>`;
+}).join("")}</tbody></table>`;
+
+// Tracks
+const TR = [
+ ["Sydney Motorsport Park","Eastern Creek, NSW","3.93 km (Gardner GP)","Opened 1990","Built as Eastern Creek Raceway, it hosted the Australian motorcycle Grand Prix in the early 1990s. Its long front straight and fast turn 1 make it one of the quickest tracks on the calendar, and it opened the 2026 season."],
+ ["Albert Park","Melbourne, VIC","5.28 km","Supercars support since 1996","A temporary park circuit around Albert Park Lake, home of the Formula 1 Australian Grand Prix. Supercars run four short sprint races as the main support category, with little room for error between the walls."],
+ ["Taupō International Motorsport Park","Taupō, NZ","approx. 3.3 km","Supercars since 2024","Took over as Supercars' North Island venue after Pukekohe closed. Its 2026 visit was cut to two races when Cyclone Vaianu forced the cancellation of Sunday's race."],
+ ["Euromarque Motorsport Park","Christchurch, NZ","approx. 3.3 km","Supercars debut 2026","Better known to Kiwi fans as Ruapuna. Supercars raced here for the first time in 2026 and ran four races after picking up the one lost at Taupō."],
+ ["Symmons Plains Raceway","Launceston, TAS","2.41 km","Opened 1960","One of the oldest tracks on the calendar and a championship fixture since the 1960s. Race 15 in 2026 was the 100th championship race held here. Short and fast, with heavy braking into the hairpin."],
+ ["Hidden Valley Raceway","Darwin, NT","2.87 km","Supercars since 1998","Tropical heat, a long back straight and one of the most tyre-hungry surfaces of the year. The Triple Crown is a bonus for any driver who takes pole and wins all three races."],
+ ["Reid Park Street Circuit","Townsville, QLD","2.86 km","Supercars since 2009","A tight street circuit around Townsville's sports precinct. Walls are close, the run-off is small, and tyre management often decides the race, as it did for Cam Waters in 2026."],
+ ["Wanneroo Raceway","Neerabup, WA","2.41 km","A championship venue since the 1970s","Perth's short, fast circuit, also known as Barbagallo. Laps last under a minute, so qualifying position and pit timing count for a lot."],
+ ["Queensland Raceway","Ipswich, QLD","3.12 km","Opened 1999","Nicknamed the paperclip for its long straights and tight corners. It is hard on brakes and rewards a car that is stable under braking."],
+ ["The Bend Motorsport Park","Tailem Bend, SA","West Circuit layout","Opened 2018","South Australia's purpose-built venue. The 2026 enduro moved to the shorter West Circuit, and heavy rain turned the first running into a lottery won by Mostert and Coulthard."],
+ ["Mount Panorama","Bathurst, NSW","6.213 km","Great Race held here since 1963","A public road for most of the year, with 174 m of elevation change between Conrod Straight and the top of the mountain. The 161-lap Bathurst 1000 is the most famous race in Australian motorsport."],
+ ["Surfers Paradise Street Circuit","Gold Coast, QLD","2.96 km","Supercars headline event since 2002","A beachside street circuit with high-speed chicanes over kerbs. In 2026 it opens the Finals series."],
+ ["Sandown Raceway","Springvale, VIC","3.1 km","Opened 1962","Melbourne's long-time home of endurance racing, with two long straights. It returns as Finals round two in 2026."],
+ ["Adelaide Street Circuit","Adelaide, SA","3.22 km","F1 1985–95, Supercars since 1999","The former Formula 1 street circuit through the East Parklands, now host of the season's Grand Final."],
+];
+$("#track-list").innerHTML = TR.map(([n, l, len, hist, p]) => `<article class="track-card"><h3>${n}</h3><div class="facts"><span>${l}</span><span>Lap <b>${len}</b></span><span><b>${hist}</b></span></div><p>${p}</p></article>`).join("");
+</script>
+
+</body>
+</html>
