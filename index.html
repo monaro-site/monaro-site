@@ -220,6 +220,30 @@ td.num, th.num { text-align: right; }
 .shop h2 { font-size: clamp(36px, 6vw, 64px); }
 .shop p { opacity: .9; margin-top: 8px; }
 .btn { display: inline-block; font: 600 14px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 16px 20px; border-radius: 3px; background: var(--tarmac); color: var(--tarmac-ink); }
+/* Newsletter signup */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.signup-form { display: flex; flex-wrap: wrap; gap: 8px; max-width: 520px; }
+.signup-form input { flex: 1 1 220px; min-width: 0; font: 400 15px/1.2 var(--font-body); padding: 13px 14px; border-radius: 3px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.signup-form input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.signup-form button { flex: 0 0 auto; font: 600 13px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; padding: 14px 18px; border: 0; border-radius: 3px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+.signup-form button:disabled { opacity: .6; cursor: progress; }
+.signup-form .msg { flex: 1 0 100%; font: 400 12.5px/1.5 var(--font-data); color: var(--muted); min-height: 1.5em; }
+.signup-form .msg.ok { color: var(--s3); }
+.signup-form .msg.err { color: var(--accent); }
+.updates { background: var(--tarmac); color: var(--tarmac-ink); border-bottom: 0; }
+.updates .wrap { display: grid; grid-template-columns: 1fr minmax(0, 520px); gap: 24px 40px; align-items: center; }
+.updates h2 { font-size: clamp(32px, 5vw, 52px); }
+.updates p { color: #b9bbb4; margin-top: 8px; max-width: 46ch; }
+.updates .signup-form input { background: #2a2e33; border-color: #3a3f45; color: #f2f2ee; }
+.updates .signup-form input::placeholder { color: #9a9d98; }
+.updates .signup-form .msg { color: #9a9d98; }
+.updates .signup-form .msg.ok { color: #4fd3a2; }
+.updates .signup-form .msg.err { color: #ff8a80; }
+.inline-signup { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 3px; padding: 14px; display: grid; gap: 10px; background: var(--bg); }
+.inline-signup b { font: 700 20px/1.1 var(--font-display); text-transform: uppercase; letter-spacing: .02em; }
+.nav .updates-link { border: 1px solid rgba(255,255,255,.35); opacity: 1; }
+.follow-build { font-size: 14px; color: var(--ink-2); }
+.follow-build a { color: var(--accent); font-weight: 500; }
 footer { padding-block: 32px 48px; font: 400 12px/1.6 var(--font-data); color: var(--muted); }
 footer .wrap { display: grid; gap: 8px; }
 
@@ -231,6 +255,7 @@ footer .wrap { display: grid; gap: 8px; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
   .phases { grid-template-columns: 1fr; }
   .brand { font-size: 22px; }
+  .updates .wrap { grid-template-columns: 1fr; }
 }
 @media (max-width: 420px) { .tracks, .cal { grid-template-columns: 1fr; } .bar-row { grid-template-columns: 96px 1fr 46px; } }
 </style>
@@ -246,6 +271,7 @@ footer .wrap { display: grid; gap: 8px; }
       <li><a href="#stats">Season stats</a></li>
       <li><a href="#tracks">Tracks</a></li>
       <li><a href="#garage">My Monaro</a></li>
+      <li><a class="updates-link" href="#updates">Get updates</a></li>
       <li><a class="shop-link" href="https://www.mattdoesmathgood.com" target="_blank" rel="noopener">Shop</a></li>
     </ul>
   </div>
@@ -378,6 +404,7 @@ footer .wrap { display: grid; gap: 8px; }
           <div style="--p:0%">Interior<span>—</span></div>
           <div style="--p:0%">Wheels &amp; stance<span>—</span></div>
         </div>
+        <p class="follow-build">Follow the build by email. <a href="#updates">Get updates</a></p>
         <p class="draft-note" style="color:#9a9d98">Progress bars are placeholders until Matt fills in the build details.</p>
       </aside>
       <div class="posts">
@@ -399,6 +426,22 @@ footer .wrap { display: grid; gap: 8px; }
 </section>
 </main>
 
+<section class="updates" id="updates">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Straight to your inbox</div>
+      <h2>Get the race reports</h2>
+      <p>A short email after every round with the results, my take on the racing and the stats worth knowing, plus the latest from the Monaro build.</p>
+    </div>
+    <form class="signup-form" action="https://app.kit.com/forms/10013960/subscriptions" method="post" target="_blank" data-kit>
+        <label for="email-strip" class="sr-only">Email address</label>
+        <input id="email-strip" name="email_address" type="email" placeholder="Your email address" autocomplete="email" required>
+        <button type="submit">Sign me up</button>
+        <p class="msg" role="status">Race reports and build updates. No spam, unsubscribe any time.</p>
+      </form>
+  </div>
+</section>
+
 <section class="shop" id="shop">
   <div class="wrap">
     <div>
@@ -418,6 +461,31 @@ footer .wrap { display: grid; gap: 8px; }
 </footer>
 
 <script>
+// Newsletter signup (Kit form 10013960). Posts in the background; if that fails,
+// the form falls back to a normal submit, which opens Kit's confirmation page in a new tab.
+const SIGNUP = id => `<form class="signup-form" action="https://app.kit.com/forms/10013960/subscriptions" method="post" target="_blank" data-kit>
+  <label for="${id}" class="sr-only">Email address</label>
+  <input id="${id}" name="email_address" type="email" placeholder="Your email address" autocomplete="email" required>
+  <button type="submit">Sign me up</button>
+  <p class="msg" role="status">One email per round. No spam, unsubscribe any time.</p>
+</form>`;
+document.addEventListener("submit", async e => {
+  const f = e.target.closest("form[data-kit]");
+  if (!f || f.dataset.fallback) return;
+  e.preventDefault();
+  const btn = f.querySelector("button"), msg = f.querySelector(".msg");
+  btn.disabled = true; msg.className = "msg"; msg.textContent = "Signing you up…";
+  try {
+    const res = await fetch(f.action, { method: "POST", body: new FormData(f), headers: { Accept: "application/json" } });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || data.status === "failed") throw new Error("kit");
+    msg.className = "msg ok"; msg.textContent = "Nearly there. Check your inbox and click the link to confirm.";
+    f.reset();
+  } catch (err) {
+    f.dataset.fallback = "1"; f.submit(); delete f.dataset.fallback;
+    msg.className = "msg"; msg.textContent = "Finish signing up in the tab that just opened.";
+  } finally { btn.disabled = false; }
+});
 const D = {
   Feeney:{n:"Broc Feeney",no:88,team:"Triple Eight",make:"Ford"},
   Brown:{n:"Will Brown",no:888,team:"Triple Eight",make:"Ford"},
@@ -614,6 +682,10 @@ function showRound(r) {
       ${ev.note ? `<p class="draft-note">${ev.note}</p>` : ""}
       ${ev.c.map(p => `<p>${p}</p>`).join("")}
       <p class="sources">Sources: ${(SRC[ev.r] || []).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(" · ")}. Results and points: <a href="https://www.supercars.com/results/2026/supercars" target="_blank" rel="noopener">supercars.com</a>.</p>
+      <div class="inline-signup">
+        <b>Get the next race report by email</b>
+        ${SIGNUP("email-round")}
+      </div>
     </div>
     <div class="races">${races}</div>`;
   try { localStorage.setItem("monaro-round", r); } catch (e) {}
