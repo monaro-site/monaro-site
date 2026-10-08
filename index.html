@@ -197,6 +197,8 @@ td.num, th.num { text-align: right; }
 .track-card .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; font: 400 12px/1.4 var(--font-data); color: var(--muted); }
 .track-card .facts b { color: var(--ink); font-weight: 500; }
 .track-card p { font-size: 14px; color: var(--ink-2); }
+.track-card .w25 { font-size: 13px; color: var(--ink); border-top: 1px solid var(--line); padding-top: 8px; }
+.track-card .w25 span { display: block; font: 500 11px/1.4 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 
 /* Blog */
 .blog { display: grid; grid-template-columns: 1fr 2fr; gap: 32px; }
@@ -388,9 +390,10 @@ footer .wrap { display: grid; gap: 8px; }
     <div class="section-head">
       <div class="eyebrow">Venues</div>
       <h2>The tracks</h2>
-      <p>Thirteen venues across Australia and New Zealand, from a 2.4 km bullring in Tasmania to the 6.2 km Mountain.</p>
+      <p>Fourteen venues across Australia and New Zealand, from a 2.4 km bullring in Tasmania to the 6.2 km Mountain.</p>
     </div>
     <div class="tracks" id="track-list"></div>
+    <p class="sources" style="margin-top:16px">Lap lengths and turn counts are for the layout Supercars uses, from each circuit's <a href="https://en.wikipedia.org/wiki/Mount_Panorama_Circuit" target="_blank" rel="noopener">Wikipedia</a> page. 2025 winners from <a href="https://www.supercars.com/results/2025/supercars" target="_blank" rel="noopener">supercars.com</a>.</p>
   </div>
 </section>
 
@@ -821,22 +824,22 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 
 // Tracks
 const TR = [
- ["Sydney Motorsport Park","Eastern Creek, NSW","3.93 km (Gardner GP)","Opened 1990","Built as Eastern Creek Raceway, it hosted the Australian motorcycle Grand Prix in the early 1990s. Its long front straight and fast turn 1 make it one of the quickest tracks on the calendar, and it opened the 2026 season."],
- ["Albert Park","Melbourne, VIC","5.28 km","Supercars support since 1996","A temporary park circuit around Albert Park Lake, home of the Formula 1 Australian Grand Prix. Supercars run four short sprint races as the main support category, with little room for error between the walls."],
- ["Taupō International Motorsport Park","Taupō, NZ","approx. 3.3 km","Supercars since 2024","Took over as Supercars' North Island venue after Pukekohe closed. Its 2026 visit was cut to two races when Cyclone Vaianu forced the cancellation of Sunday's race."],
- ["Euromarque Motorsport Park","Christchurch, NZ","approx. 3.3 km","Supercars debut 2026","Better known to Kiwi fans as Ruapuna. Supercars raced here for the first time in 2026 and ran four races after picking up the one lost at Taupō."],
- ["Symmons Plains Raceway","Launceston, TAS","2.41 km","Opened 1960","One of the oldest tracks on the calendar and a championship fixture since the 1960s. Race 15 in 2026 was the 100th championship race held here. Short and fast, with heavy braking into the hairpin."],
- ["Hidden Valley Raceway","Darwin, NT","2.87 km","Supercars since 1998","Tropical heat, a long back straight and one of the most tyre-hungry surfaces of the year. The Triple Crown is a bonus for any driver who takes pole and wins all three races."],
- ["Reid Park Street Circuit","Townsville, QLD","2.86 km","Supercars since 2009","A tight street circuit around Townsville's sports precinct. Walls are close, the run-off is small, and tyre management often decides the race, as it did for Cam Waters in 2026."],
- ["Wanneroo Raceway","Neerabup, WA","2.41 km","A championship venue since the 1970s","Perth's short, fast circuit, also known as Barbagallo. Laps last under a minute, so qualifying position and pit timing count for a lot."],
- ["Queensland Raceway","Ipswich, QLD","3.12 km","Opened 1999","Nicknamed the paperclip for its long straights and tight corners. It is hard on brakes and rewards a car that is stable under braking."],
- ["The Bend Motorsport Park","Tailem Bend, SA","West Circuit layout","Opened 2018","South Australia's purpose-built venue. The 2026 enduro moved to the shorter West Circuit, and heavy rain turned the first running into a lottery won by Mostert and Coulthard."],
- ["Mount Panorama","Bathurst, NSW","6.213 km","Great Race held here since 1963","A public road for most of the year, with 174 m of elevation change between Conrod Straight and the top of the mountain. The 161-lap Bathurst 1000 is the most famous race in Australian motorsport."],
- ["Surfers Paradise Street Circuit","Gold Coast, QLD","2.96 km","Supercars headline event since 2002","A beachside street circuit with high-speed chicanes over kerbs. In 2026 it opens the Finals series."],
- ["Sandown Raceway","Springvale, VIC","3.1 km","Opened 1962","Melbourne's long-time home of endurance racing, with two long straights. It returns as Finals round two in 2026."],
- ["Adelaide Street Circuit","Adelaide, SA","3.22 km","F1 1985–95, Supercars since 1999","The former Formula 1 street circuit through the East Parklands, now host of the season's Grand Final."],
+ ["Sydney Motorsport Park","Eastern Creek, NSW","3.91 km (Gardner GP)","Opened 1990","Built as Eastern Creek Raceway, it hosted the Australian motorcycle Grand Prix in the early 1990s. Its long front straight and fast turn 1 make it one of the quickest tracks on the calendar, and it opened the 2026 season.",11,"Cam Waters won all three races"],
+ ["Albert Park","Melbourne, VIC","5.278 km","Supercars support since 1996","A temporary park circuit around Albert Park Lake, home of the Formula 1 Australian Grand Prix. Supercars run four short sprint races as the main support category, with little room for error between the walls.",14,"Feeney, Hill and Brown; the fourth race was abandoned"],
+ ["Taupō International Motorsport Park","Taupō, NZ","3.32 km","Supercars since 2024","Took over as Supercars' North Island venue after Pukekohe closed. Its 2026 visit was cut to two races when Cyclone Vaianu forced the cancellation of Sunday's race.",14,"Payne won two, Mostert one"],
+ ["Euromarque Motorsport Park","Christchurch, NZ","3.33 km","Supercars debut 2026","Better known to Kiwi fans as Ruapuna. Supercars raced here for the first time in 2026 and ran four races after picking up the one lost at Taupō.",11,"New to Supercars in 2026"],
+ ["Symmons Plains Raceway","Launceston, TAS","2.41 km","Opened 1960","One of the oldest tracks on the calendar and a championship fixture since the 1960s. Race 15 in 2026 was the 100th championship race held here. Short and fast, with heavy braking into the hairpin.",7,"Feeney won two, Payne one"],
+ ["Hidden Valley Raceway","Darwin, NT","2.87 km","Supercars since 1998","Tropical heat, a long back straight and one of the most tyre-hungry surfaces of the year. The Triple Crown is a bonus for any driver who takes pole and wins all three races.",14,"Feeney won all three"],
+ ["Reid Park Street Circuit","Townsville, QLD","2.86 km","Supercars since 2009","A tight street circuit around Townsville's sports precinct. Walls are close, the run-off is small, and tyre management often decides the race, as it did for Cam Waters in 2026.",13,"Kostecki won one, Feeney two"],
+ ["Wanneroo Raceway","Neerabup, WA","2.41 km","A championship venue since the 1970s","Perth's short, fast circuit, also known as Barbagallo. Laps last under a minute, so qualifying position and pit timing count for a lot.",7,"Wood won one, Feeney two"],
+ ["Queensland Raceway","Ipswich, QLD","3.13 km","Opened 1999","Nicknamed the paperclip for its long straights and tight corners. It is hard on brakes and rewards a car that is stable under braking.",6,"Feeney won two, Brown one"],
+ ["The Bend Motorsport Park","Tailem Bend, SA","3.41 km (West Circuit)","Opened 2018","South Australia's purpose-built venue. The 2026 enduro moved to the shorter West Circuit, and heavy rain turned the first running into a lottery won by Mostert and Coulthard.",12,"Kostecki and Hazelwood, on the longer International Circuit"],
+ ["Mount Panorama","Bathurst, NSW","6.213 km","Great Race held here since 1963","A public road for most of the year, with 174 m of elevation change between Conrod Straight and the top of the mountain. The 161-lap Bathurst 1000 is the most famous race in Australian motorsport.",23,"Payne and Tander"],
+ ["Surfers Paradise Street Circuit","Gold Coast, QLD","2.96 km","Supercars headline event since 2002","A beachside street circuit with high-speed chicanes over kerbs. In 2026 it opens the Finals series.",15,"Mostert won both races"],
+ ["Sandown Raceway","Springvale, VIC","3.10 km","Opened 1962","Melbourne's long-time home of endurance racing, with two long straights. It returns as Finals round two in 2026.",13,"Mostert won one, Feeney one"],
+ ["Adelaide Street Circuit","Adelaide, SA","3.22 km","F1 1985–95, Supercars since 1999","The former Formula 1 street circuit through the East Parklands, now host of the season's Grand Final.",14,"Kostecki, Feeney and Payne won a race each"],
 ];
-$("#track-list").innerHTML = TR.map(([n, l, len, hist, p]) => `<article class="track-card"><h3>${n}</h3><div class="facts"><span>${l}</span><span>Lap <b>${len}</b></span><span><b>${hist}</b></span></div><p>${p}</p></article>`).join("");
+$("#track-list").innerHTML = TR.map(([n, l, len, hist, p, turns, w25]) => `<article class="track-card"><h3>${n}</h3><div class="facts"><span>${l}</span><span>Lap <b>${len}</b></span><span><b>${turns}</b> turns</span><span><b>${hist}</b></span></div><p>${p}</p><div class="w25"><span>2025 winners</span>${w25}</div></article>`).join("");
 </script>
 
 </body>
