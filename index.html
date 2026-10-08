@@ -203,10 +203,17 @@ td.num, th.num { text-align: right; }
 .build-card { background: var(--tarmac); color: var(--tarmac-ink); border-radius: 4px; padding: 20px; display: grid; gap: 12px; align-content: start; }
 .build-card .k { font: 500 11px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; }
 .build-card .v { font: 800 22px/1.1 var(--font-display); text-transform: uppercase; }
+.build-card .kv { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.build-card .v.sm { font-size: 18px; }
+.build-card ul { margin: 4px 0 0; padding-left: 18px; font-size: 14px; color: #d6d7d1; }
+.build-card details { border-top: 1px solid #3a3f45; padding-top: 10px; }
+.build-card summary { cursor: pointer; font: 500 12px/1 var(--font-data); text-transform: uppercase; letter-spacing: .08em; color: #ff8a80; }
+.spec { display: grid; gap: 10px; margin-top: 12px; font: 400 12.5px/1.5 var(--font-data); color: #d6d7d1; }
+.spec b { display: block; font-weight: 600; color: #f2f2ee; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; }
 .progress { display: grid; gap: 8px; }
 .progress div { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font: 400 13px/1 var(--font-data); }
 .progress div::after { content: ""; grid-column: 1 / -1; height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--accent) var(--p), rgba(255,255,255,.12) var(--p)); }
-.posts { display: grid; gap: 14px; }
+.posts { display: grid; gap: 14px; align-content: start; }
 .post { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 18px; display: grid; gap: 8px; }
 .post .date { font: 400 12px/1 var(--font-data); color: var(--muted); }
 .post h3 { font-size: 26px; }
@@ -242,8 +249,8 @@ td.num, th.num { text-align: right; }
 .inline-signup { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 3px; padding: 14px; display: grid; gap: 10px; background: var(--bg); }
 .inline-signup b { font: 700 20px/1.1 var(--font-display); text-transform: uppercase; letter-spacing: .02em; }
 .nav .updates-link { border: 1px solid rgba(255,255,255,.35); opacity: 1; }
-.follow-build { font-size: 14px; color: var(--ink-2); }
-.follow-build a { color: var(--accent); font-weight: 500; }
+.follow-build { font-size: 14px; color: #b9bbb4; }
+.follow-build a { color: #ff8a80; font-weight: 500; }
 footer { padding-block: 32px 48px; font: 400 12px/1.6 var(--font-data); color: var(--muted); }
 footer .wrap { display: grid; gap: 8px; }
 
@@ -396,8 +403,30 @@ footer .wrap { display: grid; gap: 8px; }
     </div>
     <div class="blog">
       <aside class="build-card">
-        <div><div class="k">The car</div><div class="v">Holden Monaro</div></div>
+        <div><div class="k">The car</div><div class="v">2005 Monaro VXR8</div></div>
+        <div class="kv">
+          <div><div class="k">Engine</div><div class="v sm">6.0 V8 (LS2)</div></div>
+          <div><div class="k">Output</div><div class="v sm">398bhp · 530Nm</div></div>
+          <div><div class="k">Colour</div><div class="v sm">Quicksilver</div></div>
+          <div><div class="k">Gearbox</div><div class="v sm">T-56 6-speed</div></div>
+        </div>
+        <div><div class="k">Changes from stock</div>
+          <ul><li>AP Racing big brake kit</li><li>Full aluminium radiator</li></ul>
+        </div>
         <div><div class="k">Goal</div><div class="v">Show ready</div></div>
+        <details>
+          <summary>Full factory spec</summary>
+          <div class="spec">
+            <div><b>Engine</b>6.0-litre V8 (LS2), 90° OHV, 16 valves. 5,967cc, bore × stroke 101.6 × 92.0mm, compression 10.9:1, redline 6,500rpm (est.)</div>
+            <div><b>Output</b>398bhp at 6,000rpm, 530Nm at 4,400rpm</div>
+            <div><b>Transmission</b>T-56 6-speed manual, final drive 3.46:1 (TBC), rear-wheel drive</div>
+            <div><b>Performance</b>0–62mph 5.2s, 0–100mph 11.4s, quarter-mile 13.4s at 108mph (all est.). Top speed 155mph limited, 170mph de-restricted (est.)</div>
+            <div><b>Weight</b>1,680kg kerb, 237bhp per tonne</div>
+            <div><b>Chassis</b>Power-assisted rack and pinion steering. MacPherson strut front, semi-trailing arm rear, coil springs</div>
+            <div><b>Brakes (factory)</b>330mm ventilated front discs, twin-piston calipers; 315mm ventilated rear discs, single-piston calipers</div>
+            <div><b>Tyres</b>235/40 ZR18 front, 245/40 ZR18 rear</div>
+          </div>
+        </details>
         <div class="progress">
           <div style="--p:0%">Bodywork &amp; paint<span>—</span></div>
           <div style="--p:0%">Engine bay<span>—</span></div>
@@ -410,8 +439,8 @@ footer .wrap { display: grid; gap: 8px; }
       <div class="posts">
         <article class="post">
           <div class="date">Draft · post 1</div>
-          <h3>Meet the Monaro</h3>
-          <p>Where it came from, what year and spec it is, and what state it was in on day one. The starting photos go here.</p>
+          <h3>How we got here</h3>
+          <p>A 2005 Monaro VXR8 in Quicksilver, still close to stock apart from AP Racing brakes and an aluminium radiator. This post covers everything spent so far just to keep it on the road, before the show prep starts.</p>
           <p class="draft-note">Template post. Replace with your own words and photos.</p>
         </article>
         <article class="post">
