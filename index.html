@@ -87,15 +87,19 @@ p { margin: 0; max-width: 68ch; }
 
 /* Hero */
 .hero { background: var(--tarmac); color: var(--tarmac-ink); padding-block: 40px 36px; }
-.hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+.hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: end; }
 .hero h1 { margin-top: 12px; font-size: clamp(52px, 9vw, 112px); font-weight: 900; text-transform: uppercase; line-height: .9; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero p { color: #c9cbc6; margin-top: 16px; font-size: 16px; }
 .next { border: 1px solid rgba(255,255,255,.16); border-radius: 4px; padding: 18px; display: grid; gap: 10px; }
 .next .eyebrow { color: #ff8a80; }
 .next .race { font: 800 34px/1 var(--font-display); text-transform: uppercase; }
-.hero-side { display: grid; gap: 14px; align-content: end; }
-.wknd { border: 1px solid rgba(255,255,255,.16); border-left: 3px solid var(--accent); border-radius: 4px; padding: 16px 18px; display: grid; gap: 10px; background: rgba(255,255,255,.03); }
+.wknd { margin-top: 28px; padding: 0; border: 1px solid rgba(255,255,255,.16); border-top: 3px solid var(--accent); border-radius: 4px; background: rgba(255,255,255,.03); }
+.wknd > .eyebrow { padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.wknd .cols { display: grid; grid-template-columns: 1fr 1fr; }
+.wknd .cols > div { padding: 16px 20px 18px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.wknd .cols > div + div { border-left: 1px solid rgba(255,255,255,.12); }
+.wknd .k { font: 500 11px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; }
 .wknd .eyebrow { color: #ff8a80; display: flex; justify-content: space-between; gap: 10px; }
 .wknd .eyebrow time { color: #9a9d98; letter-spacing: .06em; }
 .wknd h3 { font: 800 24px/1.05 var(--font-display); text-transform: uppercase; }
@@ -107,9 +111,13 @@ p { margin: 0; max-width: 68ch; }
 .wknd li:first-child b, .wknd li:first-child span { color: #ff8a80; }
 .wknd details summary { cursor: pointer; font: 500 11px/1 var(--font-data); text-transform: uppercase; letter-spacing: .1em; color: #ff8a80; }
 .wknd details ol { margin-top: 6px; }
-.wknd .earlier { border-top: 1px solid rgba(255,255,255,.12); padding-top: 8px; display: grid; gap: 4px; font-size: 12.5px; color: #b9bbb4; }
+.wknd .earlier { display: grid; gap: 6px; font-size: 13px; color: #b9bbb4; }
 .wknd .earlier div b { color: #f2f2ee; font-weight: 500; }
-.wknd .upnext { font: 500 12px/1.4 var(--font-data); color: #f2f2ee; }
+.wknd .upnext { display: grid; gap: 6px; }
+.wknd .upnext div { display: grid; grid-template-columns: 1fr auto; gap: 12px; font: 400 13px/1.35 var(--font-data); color: #f2f2ee; }
+.wknd .upnext div span:last-child { color: #c9cbc6; text-align: right; }
+.wknd .src { font: 400 11px/1.5 var(--font-data); color: #9a9d98; }
+.wknd .src a { color: #c9cbc6; }
 .countdown { display: flex; gap: 14px; font-family: var(--font-data); }
 .countdown div { display: grid; }
 .countdown b { font-size: 30px; font-weight: 500; font-variant-numeric: tabular-nums; }
@@ -277,7 +285,8 @@ footer { padding-block: 32px 48px; font: 400 12px/1.6 var(--font-data); color: v
 footer .wrap { display: grid; gap: 8px; }
 
 @media (max-width: 860px) {
-  .hero-grid, .event, .blog { grid-template-columns: 1fr; }
+  .hero-grid, .event, .blog, .wknd .cols { grid-template-columns: 1fr; }
+  .wknd .cols > div + div { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); }
   .panel.w7, .panel.w5, .panel.w6 { grid-column: span 12; }
   .leaderboard { grid-template-columns: repeat(2, 1fr); }
   .leaderboard div:last-child { grid-column: span 2; }
@@ -314,16 +323,14 @@ footer .wrap { display: grid; gap: 8px; }
         <h1>Payne leads<br>into <em>the Mountain</em></h1>
         <p id="hero-lede">Matt Payne carries a 120-point lead over Broc Feeney into the Bathurst 1000. Twenty-nine races down, eight to go, and the top ten after Bathurst go into the Finals.</p>
       </div>
-      <div class="hero-side">
-      <section class="wknd" id="wknd" aria-live="polite" hidden></section>
       <div class="next" aria-live="polite">
         <div class="eyebrow">Next up · Round 11</div>
         <div class="race">Repco Bathurst 1000</div>
         <div class="mono small" style="color:#c9cbc6">Mount Panorama · 8–11 October · 161 laps</div>
         <div class="countdown" id="countdown"></div>
       </div>
-      </div>
     </div>
+    <section class="wknd" id="wknd" aria-live="polite" hidden></section>
     <div class="leaderboard" id="leaderboard"></div>
   </div>
 </header>
@@ -673,13 +680,13 @@ ORDER[10].slice(0, 5).forEach((k, i) => {
   lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${PTS10[k].toLocaleString()} pts · ${gap}</span>`));
 });
 
-// Countdown to Bathurst 1000 start (Sun 11 Oct 2026, 11:00 AEDT = 00:00 UTC)
+// Countdown to Bathurst 1000 start (Sun 11 Oct 2026, 01:00 BST / 11:00 AEDT = 00:00 UTC)
 const start = Date.UTC(2026, 9, 11, 0, 0, 0);
 function tick() {
   const ms = start - Date.now(), cd = $("#countdown");
   if (ms <= 0) { cd.innerHTML = `<div><b>Race week</b><span>Check results below</span></div>`; return; }
   const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
-  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to lights out</b><span>Sun 11:00 AEDT</span></div>`;
+  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to lights out</b><span>Sun 01:00 BST (11:00 AEDT)</span></div>`;
 }
 tick(); setInterval(tick, 30000);
 
@@ -847,10 +854,16 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 
 
 // Race weekend box: Supercars sessions only, latest first. Updated after each session; set WKND = null between events.
+// Times: UK first, AEDT in brackets. BST = AEDT - 10h until UK clocks go back on 25 Oct; then GMT = AEDT - 11h.
 const WKND = {
   event: "Bathurst 1000",
-  updated: "Fri 9 Oct, evening AEDT",
-  upnext: "Saturday: Practice 5 (co-drivers) from 10:05am, Practice 6, then the Top 10 Shootout at 5:05pm AEDT",
+  updated: "Fri 9 Oct, 15:50 BST (Sat 01:50 AEDT)",
+  upnext: [
+    ["Practice 5 (co-drivers)", "Sat 00:05 BST (10:05 AEDT)"],
+    ["Practice 6", "Sat, time to be confirmed"],
+    ["Top 10 Shootout", "Sat 07:05 BST (17:05 AEDT)"],
+    ["Race: 161 laps", "Sun 01:00 BST (11:00 AEDT)"],
+  ],
   sessions: [
     { name: "Qualifying", day: "Fri", lead: "Zach Bates took provisional pole with a 2:03.9376, the first Gen3 lap of Mount Panorama in the 2:03s. Ryan Wood and Rylan Gray missed the session after crashing in Practice 3.",
       top: [["Zach Bates","Matt Stone Racing","2:03.9376"],["Anton De Pasquale","Team 18","+0.1162"],["Cooper Murray","Erebus","+0.2344"],["Will Brown","Triple Eight","+0.3423"],["Brodie Kostecki","DJR","+0.4005"],["David Reynolds","Team 18","+0.4010"],["Jack Le Brocq","Matt Stone Racing","+0.4067"],["Jayden Ojeda","PremiAir","+0.4188"],["Matt Payne","Grove","+0.4449"],["James Golding","Blanchard","+0.5615"]],
@@ -868,13 +881,22 @@ function renderWknd() {
   const row = ([d, t, x], i) => `<li><b>${i + 1}</b><span>${d} <i>${t}</i></span><span>${x}</span></li>`;
   box.innerHTML = `
     <div class="eyebrow"><span>Race weekend · ${WKND.event}</span><time>Updated ${WKND.updated}</time></div>
-    <h3>${latest.name}</h3>
-    ${latest.lead ? `<p class="lead">${latest.lead}</p>` : ""}
-    <ol>${latest.top.slice(0, 5).map(row).join("")}</ol>
-    ${latest.top.length > 5 ? `<details><summary>Show top ${latest.top.length}</summary><ol start="6">${latest.top.slice(5).map((r, i) => row(r, i + 5)).join("")}</ol></details>` : ""}
-    <div class="earlier">${rest.map(x => `<div><b>${x.name}</b> (${x.day}): ${x.short}</div>`).join("")}</div>
-    <div class="upnext">Up next: ${WKND.upnext}</div>
-    ${latest.src ? `<p class="mono" style="font-size:11px;color:#9a9d98">Source: <a href="${latest.src[1]}" target="_blank" rel="noopener" style="color:#c9cbc6">${latest.src[0]}</a>, <a href="https://www.supercars.com/news/2026-bathurst-1000-supercars-live-coverage-blog-tickets-dates-race-times-results-updates-timing-news" target="_blank" rel="noopener" style="color:#c9cbc6">supercars.com</a></p>` : ""}`;
+    <div class="cols">
+      <div>
+        <div class="k">Latest session</div>
+        <h3>${latest.name}</h3>
+        ${latest.lead ? `<p class="lead">${latest.lead}</p>` : ""}
+        <ol>${latest.top.slice(0, 5).map(row).join("")}</ol>
+        ${latest.top.length > 5 ? `<details><summary>Show top ${latest.top.length}</summary><ol start="6">${latest.top.slice(5).map((r, i) => row(r, i + 5)).join("")}</ol></details>` : ""}
+      </div>
+      <div>
+        <div class="k">Earlier sessions</div>
+        <div class="earlier">${rest.map(x => `<div><b>${x.name}</b> (${x.day}): ${x.short}</div>`).join("")}</div>
+        <div class="k" style="margin-top:6px">Still to come · UK time (AEDT)</div>
+        <div class="upnext">${WKND.upnext.map(([n, t]) => `<div><span>${n}</span><span>${t}</span></div>`).join("")}</div>
+        ${latest.src ? `<p class="src">Sources: <a href="${latest.src[1]}" target="_blank" rel="noopener">${latest.src[0]}</a>, <a href="https://www.supercars.com/news/2026-bathurst-1000-supercars-live-coverage-blog-tickets-dates-race-times-results-updates-timing-news" target="_blank" rel="noopener">supercars.com</a></p>` : ""}
+      </div>
+    </div>`;
   box.hidden = false;
 }
 
