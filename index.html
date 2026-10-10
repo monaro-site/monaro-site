@@ -857,17 +857,17 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 // Times: UK first, AEDT in brackets. BST = AEDT - 10h until UK clocks go back on 25 Oct; then GMT = AEDT - 11h.
 const WKND = {
   event: "Bathurst 1000",
-  updated: "Fri 9 Oct, 15:50 BST (Sat 01:50 AEDT)",
+  updated: "Sat 10 Oct, 04:50 BST (14:50 AEDT)",
   upnext: [
-    ["Practice 5 (co-drivers)", "Sat 00:05 BST (10:05 AEDT)"],
-    ["Practice 6", "Sat, time to be confirmed"],
     ["Top 10 Shootout", "Sat 07:05 BST (17:05 AEDT)"],
     ["Race: 161 laps", "Sun 01:00 BST (11:00 AEDT)"],
   ],
   sessions: [
-    { name: "Qualifying", day: "Fri", lead: "Zach Bates took provisional pole with a 2:03.9376, the first Gen3 lap of Mount Panorama in the 2:03s. Ryan Wood and Rylan Gray missed the session after crashing in Practice 3.",
-      top: [["Zach Bates","Matt Stone Racing","2:03.9376"],["Anton De Pasquale","Team 18","+0.1162"],["Cooper Murray","Erebus","+0.2344"],["Will Brown","Triple Eight","+0.3423"],["Brodie Kostecki","DJR","+0.4005"],["David Reynolds","Team 18","+0.4010"],["Jack Le Brocq","Matt Stone Racing","+0.4067"],["Jayden Ojeda","PremiAir","+0.4188"],["Matt Payne","Grove","+0.4449"],["James Golding","Blanchard","+0.5615"]],
-      src: ["Speedcafe", "https://speedcafe.com/supercars-news-2026-bathurst-1000-saturday-qualifying-results-report-zach-bates-provisional-pole-position-comments-reaction/"] },
+    { name: "Practice 6", day: "Sat", lead: "James Golding topped the last practice with a 2:05.2093 on a late run, almost three tenths clear of four Chevrolets. Anton De Pasquale's 2:05.2880 was the quickest of the Shootout rehearsals, and a family of ducks on Conrod Straight brought out a red flag.",
+      top: [["James Golding","Blanchard","2:05.2093"]],
+      src: ["supercars.com", "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-practice-6-report-james-golding-fastest-shootout-rehearsal-ford-results"] },
+    { name: "Practice 5", day: "Sat", short: "Co-drivers: Jarrod Hughes (Erebus) 2:05.5864, six tenths clear of Zak Best" },
+    { name: "Qualifying", day: "Fri", short: "Zach Bates provisional pole, 2:03.9376, from De Pasquale, Murray, Brown and Kostecki. Shootout runners: Bates, De Pasquale, Murray, Brown, Kostecki, Reynolds, Le Brocq, Ojeda, Payne, Golding" },
     { name: "Practice 4", day: "Fri", short: "James Golding fastest, Jack Le Brocq about a tenth behind, Anton De Pasquale third" },
     { name: "Practice 3", day: "Fri", short: "Cooper Murray fastest; stopped early after Tony D'Alberto crashed at The Dipper" },
     { name: "Practice 2", day: "Thu", short: "Co-drivers: Lochie Dalton fastest" },
@@ -886,7 +886,7 @@ function renderWknd() {
         <div class="k">Latest session</div>
         <h3>${latest.name}</h3>
         ${latest.lead ? `<p class="lead">${latest.lead}</p>` : ""}
-        <ol>${latest.top.slice(0, 5).map(row).join("")}</ol>
+        <ol>${latest.top.slice(0, 5).map(row).join("")}</ol>${latest.top.length === 1 ? `<p class="src">The report gave only the fastest time.</p>` : ""}
         ${latest.top.length > 5 ? `<details><summary>Show top ${latest.top.length}</summary><ol start="6">${latest.top.slice(5).map((r, i) => row(r, i + 5)).join("")}</ol></details>` : ""}
       </div>
       <div>
@@ -894,7 +894,7 @@ function renderWknd() {
         <div class="earlier">${rest.map(x => `<div><b>${x.name}</b> (${x.day}): ${x.short}</div>`).join("")}</div>
         <div class="k" style="margin-top:6px">Still to come · UK time (AEDT)</div>
         <div class="upnext">${WKND.upnext.map(([n, t]) => `<div><span>${n}</span><span>${t}</span></div>`).join("")}</div>
-        ${latest.src ? `<p class="src">Sources: <a href="${latest.src[1]}" target="_blank" rel="noopener">${latest.src[0]}</a>, <a href="https://www.supercars.com/news/2026-bathurst-1000-supercars-live-coverage-blog-tickets-dates-race-times-results-updates-timing-news" target="_blank" rel="noopener">supercars.com</a></p>` : ""}
+        ${latest.src ? `<p class="src">Sources: <a href="${latest.src[1]}" target="_blank" rel="noopener">${latest.src[0]}</a>, <a href="https://speedcafe.com/supercars-news-2026-bathurst-1000-practice-5-results-jarrod-hughes-fastest/" target="_blank" rel="noopener">Speedcafe</a></p>` : ""}
       </div>
     </div>`;
   box.hidden = false;
