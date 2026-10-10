@@ -131,6 +131,9 @@ p { margin: 0; max-width: 68ch; }
 .pitboard .line { font-size: 15px; color: #f2f2ee; margin: 0; }
 .pitboard details summary { cursor: pointer; font: 500 11px/1 var(--font-data); text-transform: uppercase; letter-spacing: .1em; color: #ffd400; }
 .pitboard details[open] summary { margin-bottom: 8px; }
+.pitboard summary .less, .pitboard details[open] summary .more { display: none; }
+.pitboard details[open] summary .less { display: inline; }
+.pitboard .less-btn { justify-self: start; background: none; border: 0; padding: 0; cursor: pointer; font: 500 11px/1 var(--font-data); text-transform: uppercase; letter-spacing: .1em; color: #ffd400; }
 .pitboard .note { display: grid; gap: 8px; font-size: 13.5px; color: #c9cbc6; max-width: 70ch; }
 .pitboard .note p { margin: 0; }
 .pitboard .note b { color: #f2f2ee; font-weight: 600; }
@@ -929,7 +932,7 @@ function renderWknd() {
 // Visitors can close it; that is remembered per board id. Set PITBOARD = null for none.
 const PITBOARD = {
   id: "bathurst-2026-finals-maths",
-  until: "2026-10-11T00:00:00Z", // lights out, Sun 01:00 BST (11:00 AEDT)
+  until: "2026-10-11T08:00:00Z", // after the race: Sun 09:00 BST (19:00 AEDT)
   sign: [["Pit board", "sm"], ["Bathurst", "y"], ["Win = 300 pts", ""]],
   label: "Pit board · the Finals maths",
   line: "Only the top ten after Bathurst go to the Finals. Jack Le Brocq holds tenth by 62 points, and a win here is worth 300.",
@@ -953,9 +956,11 @@ function renderPitboard() {
     <div class="body">
       <div class="k">${pb.label}</div>
       <p class="line">${pb.line}</p>
-      <details><summary>Read more</summary><div class="note">${pb.note.map(x => `<p>${x}</p>`).join("")}<p class="src">${pb.src}</p></div></details>
+      <details><summary><span class="more">Read more</span><span class="less">Read less</span></summary><div class="note">${pb.note.map(x => `<p>${x}</p>`).join("")}<p class="src">${pb.src}</p><button class="less-btn" type="button">Read less</button></div></details>
     </div>
     <button class="x" type="button" aria-label="Close the pit board">×</button>`;
+  const det = box.querySelector("details");
+  box.querySelector(".less-btn").addEventListener("click", () => { det.open = false; box.scrollIntoView({ block: "nearest" }); });
   box.querySelector(".x").addEventListener("click", () => {
     box.hidden = true;
     try { localStorage.setItem("pitboard-closed", pb.id); } catch (e) {}
