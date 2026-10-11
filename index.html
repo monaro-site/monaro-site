@@ -18,6 +18,18 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Monaro">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function (OneSignal) {
+    await OneSignal.init({
+      appId: "1482d042-29bc-44e7-a8ca-d68a3e80ef75",
+      serviceWorkerPath: "push/onesignal/OneSignalSDKWorker.js",
+      serviceWorkerParam: { scope: "/push/onesignal/" },
+      promptOptions: { slidedown: { prompts: [{ type: "push", autoPrompt: false }] } },
+    });
+  });
+</script>
 <script>if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -303,6 +315,13 @@ td.num, th.num { text-align: right; }
 .signup-form .msg { flex: 1 0 100%; font: 400 12.5px/1.5 var(--font-data); color: var(--muted); min-height: 1.5em; }
 .signup-form .msg.ok { color: var(--s3); }
 .signup-form .msg.err { color: var(--accent); }
+.alerts { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; max-width: 520px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.14); font-size: 13.5px; color: #c9cbc6; }
+.alerts > div { flex: 1 1 240px; }
+.alerts b { color: #f2f2ee; font-weight: 600; }
+.alerts button { flex: 0 0 auto; font: 600 13px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; padding: 13px 16px; border-radius: 3px; border: 1px solid #ffd400; background: transparent; color: #ffd400; cursor: pointer; }
+.alerts button.on { border-color: rgba(255,255,255,.3); color: #c9cbc6; }
+.alerts-msg { display: block; margin-top: 4px; font: 400 12px/1.5 var(--font-data); color: #9a9d98; }
+@media (max-width: 860px) { .alerts { grid-column: 1; } }
 .updates { background: var(--tarmac); color: var(--tarmac-ink); border-bottom: 0; }
 .updates .wrap { display: grid; grid-template-columns: 1fr minmax(0, 520px); gap: 24px 40px; align-items: center; }
 .updates h2 { font-size: clamp(32px, 5vw, 52px); }
@@ -537,6 +556,10 @@ footer .wrap { display: grid; gap: 8px; }
         <button type="submit">Sign me up</button>
         <p class="msg" role="status">Race reports and build updates. No spam, unsubscribe any time.</p>
       </form>
+    <div class="alerts" id="alerts" hidden>
+      <div><b>Race alerts on your phone.</b> A notification when results, pole or the race report go up. <span class="alerts-msg" id="alerts-msg" role="status"></span></div>
+      <button type="button" id="alerts-btn">Get race alerts</button>
+    </div>
   </div>
 </section>
 
@@ -976,6 +999,37 @@ function renderPitboard() {
   });
   box.hidden = false;
 }
+
+// Race alerts (web push via OneSignal). The SDK is only loaded on the live site
+// (see build_repo_page.py), so the button stays hidden in previews.
+(function () {
+  const box = $("#alerts"), btn = $("#alerts-btn"), msg = $("#alerts-msg");
+  if (!box || !window.OneSignalDeferred) return;
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent);
+  const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  if (ios && !standalone) {
+    box.hidden = false; btn.hidden = true;
+    msg.textContent = "On iPhone, add this site to your Home Screen first (Share, then Add to Home Screen), open it from there and tap Get race alerts.";
+    return;
+  }
+  OneSignalDeferred.push(async function (OneSignal) {
+    if (!OneSignal.Notifications.isPushSupported()) return;
+    const sub = OneSignal.User.PushSubscription;
+    const show = () => {
+      const on = sub.optedIn;
+      btn.textContent = on ? "Turn off alerts" : "Get race alerts";
+      btn.classList.toggle("on", on);
+      msg.textContent = on ? "Alerts are on for this device." : (Notification.permission === "denied" ? "Notifications are blocked for this site in your browser settings." : "");
+    };
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      try { if (sub.optedIn) await sub.optOut(); else await sub.optIn(); } catch (e) {}
+      btn.disabled = false; show();
+    });
+    sub.addEventListener("change", show);
+    box.hidden = false; show();
+  });
+})();
 
 // Tracks
 const TR = [
