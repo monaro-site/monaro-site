@@ -10,6 +10,13 @@
 <meta property="og:description" content="Results, commentary and stats for every round of the 2026 Supercars Championship.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.monaro.co.uk/">
+<meta property="og:image" content="https://www.monaro.co.uk/og/monaro-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monaro.co.uk: Supercars for UK fans">
+<meta property="og:site_name" content="Monaro.co.uk">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1d2024">
 <link rel="icon" href="/icons/monaro-favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
@@ -163,6 +170,8 @@ p { margin: 0; max-width: 68ch; }
 .pitboard .src { font: 400 11px/1.5 var(--font-data); color: #9a9d98; }
 .pitboard .x { align-self: start; background: none; border: 0; color: #9a9d98; font: 400 22px/1 var(--font-data); cursor: pointer; padding: 2px 6px; }
 .pitboard .x:hover { color: #f2f2ee; }
+.pb-archive { margin-top: 4px; grid-template-columns: auto 1fr; background: var(--tarmac); color: #f2f2ee; border-color: transparent; position: relative; padding-top: 30px; }
+.pb-archive .pb-was { position: absolute; top: 10px; left: 12px; font: 500 10px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; }
 @media (max-width: 560px) {
   .pitboard { grid-template-columns: 1fr auto; }
   .pitboard .sign { grid-column: 1; justify-self: start; }
@@ -298,6 +307,12 @@ td.num, th.num { text-align: right; }
 .post { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 18px; display: grid; gap: 8px; }
 .post .date { font: 400 12px/1 var(--font-data); color: var(--muted); }
 .post h3 { font-size: 26px; }
+.post-full summary { cursor: pointer; font: 500 12px/1 var(--font-data); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+.post-full[open] summary { margin-bottom: 10px; }
+.post-full p { margin: 0 0 10px; }
+.post-full figure { margin: 0 0 12px; }
+.post-full figcaption { font: 400 12px/1.5 var(--font-data); color: var(--muted); margin-top: 4px; }
+.post-link { font: 400 12px/1 var(--font-data); }
 .sources { font: 400 12px/1.6 var(--font-data); color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
 .sources a { color: var(--ink-2); }
 .draft-note { font: 400 12px/1.5 var(--font-data); color: var(--muted); border-left: 2px solid var(--accent); padding-left: 10px; }
@@ -528,20 +543,7 @@ footer .wrap { display: grid; gap: 8px; }
         </div>
         <p class="follow-build">Follow the build by email. <a href="#updates">Get updates</a></p>
       </aside>
-      <div class="posts">
-        <article class="post">
-          <div class="date">Post 1</div>
-          <h3>How we got here</h3>
-          <p>Marilyn is a 2005 Monaro VXR in Quicksilver, still close to stock apart from AP Racing brakes and an aluminium radiator. This post covers everything spent so far just to keep it on the road, before the show prep starts.</p>
-          <p class="draft-note">Coming soon</p>
-        </article>
-        <article class="post">
-          <div class="date">Post 2</div>
-          <h3>The plan to car-show ready</h3>
-          <p>The job list, the budget, and which show I'm aiming for.</p>
-          <p class="draft-note">Coming soon</p>
-        </article>
-      </div>
+      <div class="posts" id="posts"></div>
     </div>
   </div>
 </section>
@@ -582,6 +584,7 @@ footer .wrap { display: grid; gap: 8px; }
   <div class="wrap">
     <div>Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</div>
     <div>Get in touch: <a href="mailto:matt@monaro.co.uk">matt@monaro.co.uk</a></div>
+    <div>Privacy: <a href="/privacy/">what this site collects and why</a>. No ads, no selling your details.</div>
     <div>Follow on Instagram: <a href="https://www.instagram.com/monarocouk/" target="_blank" rel="noopener">@monarocouk</a></div>
     <div>Get the app: on your phone, open this site and choose <b>Add to Home Screen</b> (iPhone: the Share button; Android: the ⋮ menu, then Install).</div>
     <div>Results, standings and team points from <a href="https://www.supercars.com/results/2026/supercars" target="_blank" rel="noopener">supercars.com</a>. Each round lists the reports its commentary draws on. All commentary is written for this site. Updated 11 October 2026, after round 11.</div>
@@ -681,16 +684,16 @@ const R = [
   races:[
    {n:20,p:"Kostecki",top:["Waters","Kostecki","Payne","Allen","Mostert","Randle","Brown","Wood","Ojeda","Feeney"],note:"Waters won by 0.2 s after Kostecki ran a long first stint."},
    {n:21,p:"Payne",top:["Payne","DePasquale","Kostecki","Waters","Randle","Brown","Mostert","Feeney","LeBrocq","Reynolds"],note:"Allen and Wood clashed at turn 11 on lap 41. Allen got a puncture, Wood broken steering."},
-   {n:22,top:["Kostecki","Payne","Waters","Mostert","Wood","Feeney","Allen","Brown","LeBrocq","Ojeda"],note:"Heimgartner's Toyota lost a cylinder after first-lap contact."}],
+   {n:22,p:"Waters",top:["Kostecki","Payne","Waters","Mostert","Wood","Feeney","Allen","Brown","LeBrocq","Ojeda"],note:"Heimgartner's Toyota lost a cylinder after first-lap contact."}],
   c:["Waters won his fourth Townsville race on Friday on tyre life alone, holding Kostecki off by two tenths. Payne then won Saturday by 15 seconds, his first win since Christchurch, and turned an 8-point deficit into a 61-point lead.",
      "Kostecki was the class of Sunday, winning by almost ten seconds for his sixth win of the year. Payne's second place stretched the gap to Feeney to 92 points. James Golding fell out of the top ten, and Heimgartner's weekend ended with a broken engine."]},
  {r:8,name:"Perth Super 440",short:"Perth",circuit:"Wanneroo Raceway",loc:"Neerabup, WA",dates:"31 Jul–2 Aug",done:true,
-  races:[{n:23,w:"Payne",note:"De Pasquale charged from 9th to 3rd and set the fastest lap."},{n:24,w:"Feeney",note:"Feeney passed Payne after a pit-stop adjustment left the Grove car with understeer."},{n:25,w:"Payne",note:"Payne won despite a damaged rear wheel from contact with Feeney."}],
+  races:[{n:23,p:"Payne",w:"Payne",note:"De Pasquale charged from 9th to 3rd and set the fastest lap."},{n:24,p:"Payne",w:"Feeney",note:"Feeney passed Payne after a pit-stop adjustment left the Grove car with understeer."},{n:25,p:"Feeney",w:"Payne",note:"Payne won despite a damaged rear wheel from contact with Feeney."}],
   c:["A Payne versus Feeney weekend. Payne won twice, Feeney once, and they touched in the finale with Payne nursing a vibrating wheel to the flag.",
      "Ford won all three races and that clinched the manufacturers' title with five rounds to spare. Waters moved up to third in the standings and Mostert back into the top eight."]},
  {r:9,name:"Ipswich Super 440",short:"Ipswich",circuit:"Queensland Raceway",loc:"Ipswich, QLD",dates:"21–23 Aug",done:true,
   races:[
-   {n:26,w:"Kostecki"},
+   {n:26,p:"Payne",w:"Kostecki"},
    {n:27,p:"Payne",pod:["Brown","Kostecki","Feeney"],note:"Brown's first win in over a year, at the same track. Pole-sitter Payne faded to 6th."},
    {n:28,p:"Brown",top:["Feeney","Kostecki","Brown","Allen","Golding","DePasquale","Waters","Gray","Reynolds","Cameron"],note:"Payne retired with an engine that dropped a cylinder, handing Feeney the Sprint Cup."}],
   c:["Payne arrived as Sprint Cup favourite and left with nothing. Kostecki won Saturday's first race, then Will Brown finally won again in the second, his first win since this same weekend a year earlier.",
@@ -715,7 +718,7 @@ const R = [
  {r:13,name:"Sandown 500",short:"Sandown",circuit:"Sandown Raceway",loc:"Springvale, VIC",dates:"6–8 Nov",races:[{n:33},{n:34}],c:["Finals round two. Seven drivers, two 250 km races, three more eliminated."]},
  {r:14,name:"Adelaide Grand Final",short:"Adelaide",circuit:"Adelaide Street Circuit",loc:"Adelaide, SA",dates:"26–29 Nov",races:[{n:35},{n:36},{n:37}],c:["The Grand Final. Four drivers, three races, and the champion is crowned on the streets of Adelaide."]},
 ];
-const SRC = {"1": [["Supercars.com: Sydney winners and losers", "https://www.supercars.com/news/supercars-news-2026-winners-and-losers-2026-dunlop-sydney-500-broc-feeney-will-brown-kostecki"], ["Pit Debrief: Sydney 500 round-up", "https://www.pitdebrief.com/?p=97860"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "2": [["Supercars.com: Melbourne finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-brodie-kostecki-soars-luckless-cameron-bates-sink"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "3": [["Supercars.com: Taupō finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-taupo-walkinshaw-twg-will-brown-surge-tickford-stumble"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "4": [["Supercars.com: Christchurch finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-christchurch-broc-feeney-chaz-mostert-kai-allen"], ["Supercars.com: Wood's Christchurch failure", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-christchurch-heartbreaking-failure-toyota-jason-richards-trophy-finale"]], "5": [["Supercars.com: Tasmania finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-tasmania-broc-feeney-andre-heimgartner-chaz-mostert"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "6": [["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "7": [["Speedcafe: Race 20 report", "https://speedcafe.com/supercars-news-2026-townsville-500-race-1-results-friday-cameron-waters-win-video-highlights-comments-reaction/"], ["Supercars.com: Race 21 report", "https://www.supercars.com/news/supercars-news-2026-race-21-report-matt-payne-win-dominant-results-ryan-wood-kai-allen-clash-video-sprint-cup"], ["Supercars.com: Race 22 report", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-report-brodie-kostecki-win-comeback-results-ford-dick-johnson-racing"], ["Supercars.com: Townsville finals standings", "https://www.supercars.com/news/supercars-news-2026-townsville-finals-winners-and-losers-james-golding-andre-heimgartner-chaz-mostert"]], "8": [["Ford Authority: Perth sweep", "https://fordauthority.com/2026/08/ford-racing-dominates-perth-with-triple-header-sweep/"], ["Team 18: Perth report", "https://team18.com.au/portfolio/de-pasquale-leads-perth-podium-breakthrough/"], ["Supercars.com: Perth finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-perth-chaz-mostert-brodie-kostecki"]], "9": [["Supercars.com: Race 27 report", "https://www.supercars.com/news/supercars-news-2026-race-27-report-ipswich-will-brown-win-drought-broken-triple-eight-red-bull-results-ford"], ["Talk Motorsport: Saturday at Ipswich", "https://talkmotorsport.co.nz/v8/browns-year-long-drought-ends-at-wild-saturday-ipswich-sprint/"], ["Velocity News: Race 28 and the Sprint Cup", "https://www.velocitynews.co.nz/payne-suffers-sprint-cup-heartbreak-as-feeney-claims-title-in-ipswich-finale/"], ["Supercars.com: Ipswich finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-winners-and-losers-ipswich-broc-feeney-matt-payne-qualified"]], "10": [["Supercars.com: Bend 500 report", "https://www.supercars.com/news/supercars-news-2026-bend-500-race-report-chaz-mostert-fabian-coulthard-win-toyota-fairytale-results-video"], ["Wikipedia: 2026 The Bend 500", "https://en.wikipedia.org/wiki/2026_The_Bend_500"], ["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"]], "11": [["Supercars.com: Bathurst 1000 race report", "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-race-report-brodie-kostecki-todd-hazelwood-last-lap-victory-drama-djr-ford"], ["Supercars.com: Finals field locked in", "https://www.supercars.com/news/supercars-news-2026-finals-drivers-field-bathurst-1000-qualified-set-payne-feeney-kostecki-brown"], ["Speedcafe: Bathurst 1000 report", "https://speedcafe.com/supercars-news-2026-bathurst-1000-results-report-brodie-kostecki-todd-hazelwood-win-dick-johnson-racing-comments-reaction/"], ["Auto Action: Bathurst 1000 results", "https://autoaction.com.au/2026/10/11/bathurst-1000-2026-results-kostecki-hazelwood"], ["Supercars.com: official Race 30 classification", "https://www.supercars.com/results/2026/2026-bathurst-1000/R17"], ["V8 Sleuth: Enduro Cup standings", "https://www.v8sleuth.com.au/enduro-cup-standings-brown-scoops-up-bonus-points/"]], "12": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "13": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "14": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]]};
+const SRC = {"1": [["Supercars.com: Sydney winners and losers", "https://www.supercars.com/news/supercars-news-2026-winners-and-losers-2026-dunlop-sydney-500-broc-feeney-will-brown-kostecki"], ["Pit Debrief: Sydney 500 round-up", "https://www.pitdebrief.com/?p=97860"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "2": [["Supercars.com: Melbourne finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-brodie-kostecki-soars-luckless-cameron-bates-sink"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "3": [["Supercars.com: Taupō finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-taupo-walkinshaw-twg-will-brown-surge-tickford-stumble"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "4": [["Supercars.com: Christchurch finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-christchurch-broc-feeney-chaz-mostert-kai-allen"], ["Supercars.com: Wood's Christchurch failure", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-christchurch-heartbreaking-failure-toyota-jason-richards-trophy-finale"]], "5": [["Supercars.com: Tasmania finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-tasmania-broc-feeney-andre-heimgartner-chaz-mostert"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "6": [["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "7": [["Speedcafe: Race 20 report", "https://speedcafe.com/supercars-news-2026-townsville-500-race-1-results-friday-cameron-waters-win-video-highlights-comments-reaction/"], ["Supercars.com: Race 21 report", "https://www.supercars.com/news/supercars-news-2026-race-21-report-matt-payne-win-dominant-results-ryan-wood-kai-allen-clash-video-sprint-cup"], ["Supercars.com: Race 22 report", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-report-brodie-kostecki-win-comeback-results-ford-dick-johnson-racing"], ["Supercars.com: Townsville finals standings", "https://www.supercars.com/news/supercars-news-2026-townsville-finals-winners-and-losers-james-golding-andre-heimgartner-chaz-mostert"], ["Supercars.com: Race 22 qualifying (Waters pole)", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-qualifying-report-cam-waters-pole-shootout-will-brown-furious-results"]], "8": [["Ford Authority: Perth sweep", "https://fordauthority.com/2026/08/ford-racing-dominates-perth-with-triple-header-sweep/"], ["Team 18: Perth report", "https://team18.com.au/portfolio/de-pasquale-leads-perth-podium-breakthrough/"], ["Supercars.com: Perth finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-perth-chaz-mostert-brodie-kostecki"], ["Pit Debrief: Race 23 (Payne pole)", "https://www.pitdebrief.com/post/supercars-2026-perth-race-23-results-and-report/"], ["TalkMotorsport: Feeney pole for the Perth finale", "https://talkmotorsport.co.nz/tag/bosch-power-tools-perth-super-440"]], "9": [["Supercars.com: Race 27 report", "https://www.supercars.com/news/supercars-news-2026-race-27-report-ipswich-will-brown-win-drought-broken-triple-eight-red-bull-results-ford"], ["Talk Motorsport: Saturday at Ipswich", "https://talkmotorsport.co.nz/v8/browns-year-long-drought-ends-at-wild-saturday-ipswich-sprint/"], ["Velocity News: Race 28 and the Sprint Cup", "https://www.velocitynews.co.nz/payne-suffers-sprint-cup-heartbreak-as-feeney-claims-title-in-ipswich-finale/"], ["Supercars.com: Ipswich finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-winners-and-losers-ipswich-broc-feeney-matt-payne-qualified"], ["TalkMotorsport: Payne's Ipswich double pole", "https://talkmotorsport.co.nz/v8/payne-pulls-off-ipswich-double-pole-in-ipswich-brown-back-in-the-mix/"]], "10": [["Supercars.com: Bend 500 report", "https://www.supercars.com/news/supercars-news-2026-bend-500-race-report-chaz-mostert-fabian-coulthard-win-toyota-fairytale-results-video"], ["Wikipedia: 2026 The Bend 500", "https://en.wikipedia.org/wiki/2026_The_Bend_500"], ["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"]], "11": [["Supercars.com: Bathurst 1000 race report", "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-race-report-brodie-kostecki-todd-hazelwood-last-lap-victory-drama-djr-ford"], ["Supercars.com: Finals field locked in", "https://www.supercars.com/news/supercars-news-2026-finals-drivers-field-bathurst-1000-qualified-set-payne-feeney-kostecki-brown"], ["Speedcafe: Bathurst 1000 report", "https://speedcafe.com/supercars-news-2026-bathurst-1000-results-report-brodie-kostecki-todd-hazelwood-win-dick-johnson-racing-comments-reaction/"], ["Auto Action: Bathurst 1000 results", "https://autoaction.com.au/2026/10/11/bathurst-1000-2026-results-kostecki-hazelwood"], ["Supercars.com: official Race 30 classification", "https://www.supercars.com/results/2026/2026-bathurst-1000/R17"], ["V8 Sleuth: Enduro Cup standings", "https://www.v8sleuth.com.au/enduro-cup-standings-brown-scoops-up-bonus-points/"]], "12": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "13": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "14": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]]};
 // fill winners from classifications
 R.forEach(ev => ev.races.forEach(x => { const o = x.full || x.top || x.pod; if (o && !x.w) x.w = o[0]; }));
 
@@ -738,7 +741,7 @@ const PTS11 = {Payne:2490,Feeney:2285,Kostecki:2271,Brown:2146,Allen:2131,Waters
 // Teams' championship: official table after round 10 (supercars.com) plus each car's Bathurst points. Single-car entries score as their own team.
 const TEAMPTS = {"Grove Racing":4561,"Triple Eight":4431,"Tickford Racing":3480,"Walkinshaw TWG Racing":3321,"Dick Johnson Racing":3282,"Team 18":2993,"Matt Stone Racing":2586,"Brad Jones Racing":2468,"Blanchard Racing Team":2236,"PremiAir Racing":2121,"Erebus Motorsport":1667,"Brad Jones Racing (96)":767,"SCT Motorsport":711};
 const PTS9 = {Feeney:2107,Payne:2077,Kostecki:1878,Waters:1852,Allen:1793,DePasquale:1697,Brown:1636,Mostert:1413,Wood:1340,Golding:1226,LeBrocq:1171,Randle:1120,Heimgartner:1084,Ojeda:1028,Reynolds:983,Hill:865,Cameron:763,Gray:762,Bates:729,Fraser:715,Murray:701,Jones:648,Walls:596,Stewart:538};
-const POLES = {Payne:7,Kostecki:6,Feeney:4,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
+const POLES = {Payne:8,Kostecki:6,Feeney:4,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
 
 const $ = s => document.querySelector(s);
 const el = (t, a = {}, h = "") => { const e = document.createElement(t); for (const k in a) e.setAttribute(k, a[k]); e.innerHTML = h; return e; };
@@ -790,6 +793,49 @@ const who = k => D[k] ? D[k].n : k;
 function podiumHTML(arr, co) {
   return `<div class="podium">${arr.slice(0, 3).map((k, i) => `<div><div class="pos">P${i + 1}</div><div class="who">${ln(k) || k}${co && co[k] ? " / " + co[k] : ""}</div><div class="team">${D[k] ? D[k].team : ""}</div></div>`).join("")}</div>`;
 }
+// Pit boards, one per round. The live one shows in the hero until its `until` (UTC), then hides itself;
+// visitors can close it, remembered per board id. After the weekend each board stays at the bottom of
+// its round's report (Matt, 12 Oct 2026).
+const PITBOARDS = {
+ 11: {
+  id: "bathurst-2026-finals-maths-2",
+  until: "2026-10-11T08:00:00Z", // after the race: Sun 09:00 BST (19:00 AEDT)
+  sign: [["Pit board", "sm"], ["Bathurst", "y"], ["Win = 300 pts", ""]],
+  label: "Pit board · the Finals maths",
+  line: "Only the top ten after Bathurst go to the Finals. Jack Le Brocq holds tenth by 62 points, and a win here is worth 300.",
+  note: [
+    "<b>The points.</b> Bathurst pays the endurance scale: 300 for a win, 276 for second, 254 for third. The gaps shrink down the order, from 24 points between 1st and 2nd to 4 between 23rd and 24th, so a good day gains far more than a bad day costs.",
+    "<b>Who's safe.</b> Payne, Feeney, Allen, Kostecki, Waters, De Pasquale, Brown and Mostert are in whatever happens. Ryan Wood is in as well, barring a freak result: only Le Brocq can pass him, and even then Wood stays ahead of everyone else.",
+    "<b>The fight for tenth.</b> Heimgartner (62 behind), Randle (63), Ojeda (70) and Golding (87) each need to finish roughly five to eight places ahead of Le Brocq inside the top ten, or keep going if Le Brocq doesn't finish. Heimgartner winning with Le Brocq third keeps Le Brocq in by 16 points; Le Brocq fourth and Heimgartner is in. Reynolds, 278 back, needs a win and Le Brocq out of the race.",
+    "<b>The back door.</b> The Enduro Cup (The Bend plus Bathurst) carries a guaranteed Finals place. It only changes the field if the winner is outside the top ten, say Rylan Gray winning while Mostert, Allen and Wood all have a poor day.",
+    "<b>Top seed.</b> Order sets the Gold Coast starting bonus, 150 for first and 120 for second. Feeney takes top seed only by outscoring Payne by 121 or more: a Feeney win with Payne eighth does it, a Feeney win with Payne fourth doesn't.",
+  ],
+  src: "Sources: supercars.com (Enduro Cup and Finals points explained), V8 Sleuth (Finals situation heading into Bathurst), Speedcafe (standings after The Bend). The worked numbers are my own.",
+},
+ 12: {
+  id: "gold-coast-2026-elimination",
+  until: "2026-10-25T03:00:00Z", // Sunday's race, about 13:00 AEST; race times TBC, update once the timetable is out
+  sign: [["Pit board", "sm"], ["Gold Coast", "y"], ["10 in · 3 out", ""]],
+  label: "Pit board · Finals round one",
+  line: "Ten drivers, two races, and by Sunday night three of them are out. Mostert, Wood and Le Brocq start the weekend in the drop zone.",
+  note: [
+    "<b>The reset.</b> The regular-season points are gone. Each finalist starts with a bonus for where they finished it: Payne 150, Feeney 145, Brown 103, Kostecki 96, Allen 66, Waters 57, De Pasquale 48, Mostert 39, Wood 30 and Le Brocq 21. The weekend's two 250 km races are worth 300 points between them.",
+    "<b>The drop zone.</b> Only the top seven go to Sandown. Mostert starts 9 points behind De Pasquale in seventh, Wood 18 behind and Le Brocq 27. Across two races that is a couple of places, so one strong result can turn it round.",
+    "<b>The cushion.</b> Payne starts 111 points clear of eighth and Feeney 106. That's a big head start but not a free pass: two bad races could still put either of them out.",
+    "<b>Form guide.</b> Mostert won both Gold Coast races in 2025, and nobody needs a repeat more than he does.",
+  ],
+  src: "Sources: supercars.com (2026 Finals format and race formats). Starting points from this site's round 11 report; the gaps are my own sums.",
+ },
+};
+const PITBOARD = Object.values(PITBOARDS).find(pb => Date.now() < Date.parse(pb.until)) || null;
+const pitboardInner = pb => `
+    <div class="sign" aria-hidden="true"><div class="slots">${pb.sign.map(([t, c]) => `<span class="${c}">${t}</span>`).join("")}</div></div>
+    <div class="body">
+      <div class="k">${pb.label}</div>
+      <p class="line">${pb.line}</p>
+      <details><summary><span class="more">Read more</span><span class="less">Read less</span></summary><div class="note">${pb.note.map(x => `<p>${x}</p>`).join("")}<p class="src">${pb.src}</p></div></details>
+    </div>`;
+
 function raceCard(x, ev) {
   let body = "";
   const order = x.full || x.top || x.pod;
@@ -819,6 +865,7 @@ function showRound(r) {
       ${ev.note ? `<p class="draft-note">${ev.note}</p>` : ""}
       ${ev.c.map(p => `<p>${p}</p>`).join("")}
       <p class="sources">Sources: ${(SRC[ev.r] || []).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(" · ")}. Results and points: <a href="https://www.supercars.com/results/2026/supercars" target="_blank" rel="noopener">supercars.com</a>.</p>
+      ${ev.done && PITBOARDS[ev.r] ? `<aside class="pitboard pb-archive" aria-label="The pit board from before the race"><div class="pb-was">Before the race</div>${pitboardInner(PITBOARDS[ev.r])}</aside>` : ""}
       <div class="inline-signup">
         <b>Get the next race report by email</b>
         ${SIGNUP("email-round")}
@@ -828,6 +875,36 @@ function showRound(r) {
   if (showRound.ready) history.replaceState(null, "", "#" + slug(ev));
   showRound.ready = true;
 }
+// Blog posts ("From the garage"). Each post has its own link, e.g. monaro.co.uk/#how-we-got-here.
+// A post with no `body` shows as Coming soon. `body` is a list of paragraphs; photos go in as
+// {img, alt, cap} entries (files under /blog/<slug>/ in the repo).
+const POSTS = [
+  {slug: "how-we-got-here", n: 1, title: "How we got here", date: null,
+   intro: "Marilyn is a 2005 Monaro VXR in Quicksilver, still close to stock apart from AP Racing brakes and an aluminium radiator. This post covers everything spent so far just to keep it on the road, before the show prep starts.",
+   body: null},
+  {slug: "the-plan", n: 2, title: "The plan to car-show ready", date: null,
+   intro: "The job list, the budget, and which show I'm aiming for.",
+   body: null},
+];
+function renderPosts() {
+  $("#posts").innerHTML = POSTS.map(p => `<article class="post" id="${p.slug}">
+    <div class="date">Post ${p.n}${p.date ? " · " + p.date : ""}</div>
+    <h3>${p.title}</h3>
+    <p>${p.intro}</p>
+    ${p.body ? `<details class="post-full"><summary>Read the full post</summary>${p.body.map(x => typeof x === "string" ? `<p>${x}</p>` : `<figure><img src="${x.img}" alt="${x.alt || ""}" loading="lazy">${x.cap ? `<figcaption>${x.cap}</figcaption>` : ""}</figure>`).join("")}<p class="post-link"><a href="#${p.slug}">Link to this post</a></p></details>` : `<p class="draft-note">Coming soon</p>`}
+  </article>`).join("");
+}
+function openPostFromHash() {
+  const p = POSTS.find(p => "#" + p.slug === location.hash.toLowerCase());
+  if (!p) return;
+  const art = document.getElementById(p.slug), det = art.querySelector("details");
+  if (det) det.open = true;
+  requestAnimationFrame(() => art.scrollIntoView());
+}
+renderPosts();
+openPostFromHash();
+addEventListener("hashchange", openPostFromHash);
+
 // Each round has its own link, e.g. monaro.co.uk/#bathurst
 const slug = ev => ev.short.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^the /, "").replace(/\s+/g, "-");
 const fromHash = () => R.find(ev => "#" + slug(ev) === location.hash.toLowerCase());
@@ -963,37 +1040,14 @@ function renderWknd() {
   box.hidden = false;
 }
 
-// Pit board: a pre-race thought. Shows until `until` (UTC), then hides itself.
-// Visitors can close it; that is remembered per board id. Set PITBOARD = null for none.
-const PITBOARD = {
-  id: "bathurst-2026-finals-maths-2",
-  until: "2026-10-11T08:00:00Z", // after the race: Sun 09:00 BST (19:00 AEDT)
-  sign: [["Pit board", "sm"], ["Bathurst", "y"], ["Win = 300 pts", ""]],
-  label: "Pit board · the Finals maths",
-  line: "Only the top ten after Bathurst go to the Finals. Jack Le Brocq holds tenth by 62 points, and a win here is worth 300.",
-  note: [
-    "<b>The points.</b> Bathurst pays the endurance scale: 300 for a win, 276 for second, 254 for third. The gaps shrink down the order, from 24 points between 1st and 2nd to 4 between 23rd and 24th, so a good day gains far more than a bad day costs.",
-    "<b>Who's safe.</b> Payne, Feeney, Allen, Kostecki, Waters, De Pasquale, Brown and Mostert are in whatever happens. Ryan Wood is in as well, barring a freak result: only Le Brocq can pass him, and even then Wood stays ahead of everyone else.",
-    "<b>The fight for tenth.</b> Heimgartner (62 behind), Randle (63), Ojeda (70) and Golding (87) each need to finish roughly five to eight places ahead of Le Brocq inside the top ten, or keep going if Le Brocq doesn't finish. Heimgartner winning with Le Brocq third keeps Le Brocq in by 16 points; Le Brocq fourth and Heimgartner is in. Reynolds, 278 back, needs a win and Le Brocq out of the race.",
-    "<b>The back door.</b> The Enduro Cup (The Bend plus Bathurst) carries a guaranteed Finals place. It only changes the field if the winner is outside the top ten, say Rylan Gray winning while Mostert, Allen and Wood all have a poor day.",
-    "<b>Top seed.</b> Order sets the Gold Coast starting bonus, 150 for first and 120 for second. Feeney takes top seed only by outscoring Payne by 121 or more: a Feeney win with Payne eighth does it, a Feeney win with Payne fourth doesn't.",
-  ],
-  src: "Sources: supercars.com (Enduro Cup and Finals points explained), V8 Sleuth (Finals situation heading into Bathurst), Speedcafe (standings after The Bend). The worked numbers are my own.",
-};
 function renderPitboard() {
   const box = $("#pitboard");
   const pb = PITBOARD;
   let closed = false;
   try { closed = pb && localStorage.getItem("pitboard-closed") === pb.id; } catch (e) {}
   if (!pb || closed || Date.now() >= Date.parse(pb.until)) { box.hidden = true; return; }
-  box.innerHTML = `
-    <div class="sign" aria-hidden="true"><div class="slots">${pb.sign.map(([t, c]) => `<span class="${c}">${t}</span>`).join("")}</div></div>
-    <div class="body">
-      <div class="k">${pb.label}</div>
-      <p class="line">${pb.line}</p>
-      <details><summary><span class="more">Read more</span><span class="less">Read less</span></summary><div class="note">${pb.note.map(x => `<p>${x}</p>`).join("")}<p class="src">${pb.src}</p><button class="less-btn" type="button">Read less</button></div></details>
-    </div>
-    <button class="x" type="button" aria-label="Close the pit board">×</button>`;
+  box.innerHTML = pitboardInner(pb) + `<button class="x" type="button" aria-label="Close the pit board">×</button>`;
+  box.querySelector(".note").insertAdjacentHTML("beforeend", `<button class="less-btn" type="button">Read less</button>`);
   const det = box.querySelector("details");
   box.querySelector(".less-btn").addEventListener("click", () => { det.open = false; box.scrollIntoView({ block: "nearest" }); });
   box.querySelector(".x").addEventListener("click", () => {

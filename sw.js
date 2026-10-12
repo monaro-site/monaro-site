@@ -1,6 +1,6 @@
 // Monaro.co.uk service worker. Network first, so the app always shows the latest
 // results when online; the last copy it saw is kept for when there's no signal.
-const CACHE = "monaro-v1";
+const CACHE = "monaro-v2";
 const CORE = ["/", "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", e => {
@@ -16,10 +16,12 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   const req = e.request;
   if (req.method !== "GET" || new URL(req.url).origin !== self.location.origin) return;
+  // The home page is stored under "/" whatever its #link; other pages (e.g. /privacy/) under their own address.
+  const key = req.mode === "navigate" && new URL(req.url).pathname === "/" ? "/" : req;
   e.respondWith(
     fetch(req).then(res => {
-      if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req.mode === "navigate" ? "/" : req, copy)); }
+      if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(key, copy)); }
       return res;
-    }).catch(() => caches.match(req.mode === "navigate" ? "/" : req))
+    }).catch(() => caches.match(key))
   );
 });
