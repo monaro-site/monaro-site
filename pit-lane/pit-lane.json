@@ -1,0 +1,151 @@
+{
+ "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
+ "days": [
+  {
+   "date": "2026-10-13",
+   "updated": "2026-10-13T15:00:00Z",
+   "stories": [
+    {
+     "h": "GM shuffles three drivers before the Finals",
+     "t": "PremiAir has dropped Declan Fraser for the last three rounds. Cooper Murray moves across from Erebus, and 21-year-old Jarrod Hughes takes Murray's #99 Camaro for his solo debut at the Gold Coast.",
+     "pub": "2026-10-13T01:52:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-premiair-racing-drops-declan-fraser-signs-cooper-murray-exclusive/",
+       "label": "Speedcafe (broke it first)"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-declan-fraser-cooper-murray-jarrod-hughes-premiair-erebus-driver-market-silly-season"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-general-motors-chevrolet-cooper-murray-jarrod-hughes-declan-fraser-explained",
+       "label": "Why GM did it"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/hughes-reacts-to-sudden-solo-supercars-shot/",
+       "label": "V8 Sleuth: Hughes reacts"
+      }
+     ]
+    },
+    {
+     "h": "Software, not a person, ran De Pasquale dry",
+     "t": "Team 18 says a fault in its fuel strategy software under-filled the #18 Camaro at the final stop. Nobody loses their job, and De Pasquale starts the Finals as seventh seed.",
+     "pub": "2026-10-13T00:30:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-team-18-reveals-cause-bathurst-1000-fuel-shortage-statement-anton-de-pasquale"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-team-18-statement-charlie-schwerkolt-comments-fuel-issue-explained-update/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/team-18-identifies-root-cause-of-bathurst-downfall/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert gets a spare Supra for the Gold Coast",
+     "t": "The champion's Bathurst car goes on the jig after his lap 156 hit at Forrest's Elbow. He races chassis WR 029, a former Ford converted to Toyota spec.",
+     "pub": "2026-10-12T23:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-walkinshaw-twg-racing-chaz-mostert-chassis-decision-spare-gold-coast-500-bathurst-crash"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-bathurst-1000-chaz-mostert-crash-chassis-switch-spare/"
+      }
+     ]
+    },
+    {
+     "h": "Brown and Pye bank the Enduro Cup",
+     "t": "Second at Bathurst after fourth at The Bend sealed the Enduro Cup, and the bonus points lift Will Brown to third seed for the Finals opener.",
+     "pub": "2026-10-13T08:30:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-enduro-cup-redemption-will-brown-scott-pye-bathurst-1000-triple-eight"
+      }
+     ]
+    },
+    {
+     "h": "Grove regroups after Payne's penalty-hit Bathurst",
+     "t": "Two penalties left Payne fifth and the sister car limped home with brake failure. Payne still starts the Finals as top seed.",
+     "pub": "2026-10-12T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-penrite-racing-bathurst-1000-slips-away-matt-payne-kai-allen-brakes-stephen-grove"
+      }
+     ]
+    },
+    {
+     "h": "Dick Johnson in tears as the #17 steals it",
+     "t": "The 81-year-old's reaction summed up DJR's last-lap win, and the team's CEO admits they were as stunned as anyone.",
+     "pub": "2026-10-13T02:30:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-dick-johnson-bathurst-1000-victory-reaction-interview-megan-foster-ceo-cool-down-lap"
+      }
+     ]
+    },
+    {
+     "h": "Lowndes: you can't script Bathurst",
+     "t": "The seven-time winner's column on why the Great Race is so easy to lose, and the fire it leaves in drivers like Zach Bates.",
+     "pub": "2026-10-12T19:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-craig-lowndes-column-bathurst-1000-brodie-kostecki-anton-de-pasquale-fuel-opinion"
+      }
+     ]
+    },
+    {
+     "h": "Making sense of 5:26pm",
+     "t": "An opinion piece on the human errors on both sides, DJR's slow stop and Team 18's fuel call, that shaped the finish.",
+     "pub": "2026-10-12T09:30:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-opinion-brodie-kostecki-anton-de-pasquale-fuel-djr-team-18"
+      }
+     ]
+    },
+    {
+     "h": "Feeney admits the #88 was just slow",
+     "t": "Eleventh at Bathurst, and Feeney won't pin it all on the brakes while his team-mate Brown finished second.",
+     "pub": "2026-10-12T07:00:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-broc-feeney-nick-percat-bathurst-1000-reaction-brakes-engine-cool-down-lap"
+      }
+     ]
+    },
+    {
+     "h": "Bates proud of his first podium",
+     "t": "The MSR rookie and Aaron Seton took third after a weekend that also brought a qualifying record and Shootout pole.",
+     "pub": "2026-10-12T05:00:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-zach-bates-bathurst-1000-podium-regrets-battle-brodie-kostecki-cool-down-lap-podcast"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

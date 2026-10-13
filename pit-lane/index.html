@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pit Lane archive · Monaro.co.uk</title>
+<meta name="description" content="Every day's top 10 Supercars stories from Pit Lane on monaro.co.uk, with links to the original reports.">
+<link rel="icon" href="/icons/monaro-favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f4f1;--surface:#fcfcfb;--ink:#15171a;--ink-2:#4c5058;--muted:#858a92;--line:#dcdcd6;--accent:#b3261e}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1113;--surface:#181a1d;--ink:#f1f1ec;--ink-2:#c3c4bc;--muted:#8b9098;--line:#2a2d31;--accent:#e5483d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 "IBM Plex Sans",sans-serif}
+header{background:#1d2024;color:#f2f2ee;padding:18px 16px}
+header a{color:#f2f2ee;text-decoration:none;font:900 26px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.02em}
+header a span{color:#e5483d}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}
+h1{font:900 48px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;margin:0 0 8px}
+h1 span{color:var(--accent)}
+h2{font:800 26px/1.1 "Big Shoulders Display",sans-serif;text-transform:uppercase;margin:36px 0 10px}
+.lede{color:var(--ink-2);max-width:65ch;margin:0 0 20px}
+.mono{font:500 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+#q{width:100%;max-width:420px;font:400 15px "IBM Plex Sans",sans-serif;padding:10px 12px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink)}
+#count{margin-top:8px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:4px;margin-top:8px}
+summary{cursor:pointer;padding:12px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+summary b{font:800 20px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase}
+ol{list-style:none;margin:0;padding:0 16px 8px}
+li{display:grid;grid-template-columns:40px 1fr;gap:4px 12px;padding:12px 0;border-top:1px solid var(--line)}
+li .p{font:800 22px/1 "Big Shoulders Display",sans-serif;color:var(--muted)}
+li:first-child .p{color:var(--accent)}
+li h3{font:800 19px/1.1 "Big Shoulders Display",sans-serif;text-transform:uppercase;margin:0 0 4px}
+li h3 a{color:inherit;text-decoration:none}
+li h3 a:hover{text-decoration:underline}
+li p{margin:0 0 6px;color:var(--ink-2);font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:4px 12px;font:400 12px/1.4 "IBM Plex Mono",monospace;color:var(--muted)}
+.links a{color:var(--accent);text-decoration:none}
+.links a:hover{text-decoration:underline}
+.links s{color:var(--muted)}
+.empty{color:var(--ink-2)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;font:400 13px/1.6 "IBM Plex Mono",monospace;color:var(--ink-2)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header><a href="/">Monaro<span>.</span>co.uk</a></header>
+<main>
+<h1>Pit <span>Lane</span> archive</h1>
+<p class="lede">Every day's top 10 Supercars stories, newest first. The headlines and summaries are written for this site; each one links to the original reports. If a source later moves or removes a story, the link points to a saved copy or is marked as no longer available.</p>
+<label class="mono" for="q">Search the archive</label><br>
+<input id="q" type="search" placeholder="Driver, team or topic, e.g. Mostert" autocomplete="off">
+<div class="mono" id="count" role="status"></div>
+<div id="days"><p class="empty">Loading the archive…</p></div>
+<footer><a href="/#pitlane">Back to today's Pit Lane</a> · Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</footer>
+</main>
+<script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const ukDay = iso => new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", weekday: "long", day: "numeric", month: "long", year: "numeric" }).format(new Date(iso + "T12:00:00Z"));
+const month = iso => new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric" }).format(new Date(iso + "T12:00:00Z"));
+const link = l => l.gone && !l.archived
+  ? `<s>${esc(l.label || l.src)}</s> (source no longer available)`
+  : `<a href="${esc(l.archived || l.url)}" target="_blank" rel="noopener">${esc(l.label || l.src)}${l.archived ? " (saved copy)" : ""} ↗</a>`;
+let DAYS = [];
+function render(q) {
+  q = q.trim().toLowerCase();
+  let html = "", shown = 0, lastMonth = "";
+  DAYS.forEach((d, di) => {
+    const st = d.stories.map((s, i) => ({ s, i })).filter(({ s }) => !q || (s.h + " " + s.t).toLowerCase().includes(q));
+    if (!st.length) return;
+    shown += st.length;
+    const m = month(d.date);
+    if (m !== lastMonth) { html += `<h2>${m}</h2>`; lastMonth = m; }
+    html += `<details${di === 0 || q ? " open" : ""}><summary><b>${ukDay(d.date)}</b><span class="mono">${st.length} ${st.length === 1 ? "story" : "stories"}</span></summary><ol>${st.map(({ s, i }) => `
+      <li><span class="p">P${i + 1}</span><div><h3>${s.links[0] ? `<a href="${esc(s.links[0].archived || s.links[0].url)}" target="_blank" rel="noopener">${esc(s.h)}</a>` : esc(s.h)}</h3><p>${esc(s.t)}</p><div class="links">${s.links.map(link).join("")}</div></div></li>`).join("")}</ol></details>`;
+  });
+  document.getElementById("days").innerHTML = html || `<p class="empty">No stories match “${esc(q)}”.</p>`;
+  document.getElementById("count").textContent = q ? `${shown} ${shown === 1 ? "story" : "stories"} found` : `${DAYS.length} ${DAYS.length === 1 ? "day" : "days"} in the archive`;
+}
+fetch("/pit-lane/pit-lane.json", { cache: "no-cache" })
+  .then(r => r.json())
+  .then(d => { DAYS = d.days || []; render(""); })
+  .catch(() => { document.getElementById("days").innerHTML = `<p class="empty">The archive couldn't load. Check your connection and refresh the page.</p>`; });
+document.getElementById("q").addEventListener("input", e => render(e.target.value));
+</script>
+</body>
+</html>
