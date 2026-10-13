@@ -352,6 +352,13 @@ td.num, th.num { text-align: right; }
 .inline-signup { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 3px; padding: 14px; display: grid; gap: 10px; background: var(--bg); }
 .inline-signup b { font: 700 20px/1.1 var(--font-display); text-transform: uppercase; letter-spacing: .02em; }
 .nav .updates-link { border: 1px solid rgba(255,255,255,.35); opacity: 1; }
+.build-card { min-width: 0; }
+.stock-now { width: 100%; table-layout: fixed; overflow-wrap: anywhere; border-collapse: collapse; font: 400 13px/1.4 var(--font-data); color: #d6d7d1; }
+.stock-now th { white-space: normal; font: 500 11px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: #9a9d98; text-align: left; padding: 0 6px 6px 0; }
+.stock-now td { white-space: normal; padding: 6px 6px 6px 0; border-top: 1px solid #3a3f45; vertical-align: top; }
+.stock-now td:first-child { color: #f2f2ee; font-weight: 600; }
+.stock-now td.mod { color: #ff8a80; font-weight: 500; }
+.build-card .quote { font-size: 13px; font-style: italic; color: #b9bbb4; margin: 0; }
 .follow-build { font-size: 14px; color: #b9bbb4; }
 .follow-build a { color: #ff8a80; font-weight: 500; }
 footer { padding-block: 32px 48px; font: 400 12px/1.6 var(--font-data); color: var(--muted); }
@@ -514,26 +521,41 @@ footer .wrap { display: grid; gap: 8px; }
         <div><div class="k">The car</div><div class="v">Marilyn</div><div class="small" style="color:#b9bbb4;margin-top:4px">2005 Monaro VXR</div></div>
         <div class="kv">
           <div><div class="k">Engine</div><div class="v sm">6.0 V8 (LS2)</div></div>
-          <div><div class="k">Output</div><div class="v sm">398bhp · 530Nm</div></div>
+          <div><div class="k">Output</div><div class="v sm">403PS · 530Nm</div></div>
           <div><div class="k">Colour</div><div class="v sm">Quicksilver</div></div>
           <div><div class="k">Gearbox</div><div class="v sm">T-56 6-speed</div></div>
         </div>
-        <div><div class="k">Changes from stock</div>
-          <ul><li>AP Racing big brake kit</li><li>Full aluminium radiator</li></ul>
-        </div>
         <div><div class="k">Goal</div><div class="v">Show ready</div></div>
+        <div><div class="k">Stock vs now</div>
+          <table class="stock-now">
+            <thead><tr><th></th><th>Factory, 2005</th><th>Marilyn now</th></tr></thead>
+            <tbody>
+              <tr><td>Front brakes</td><td>330mm grooved vented discs, red calipers</td><td class="mod">AP Racing big brake kit</td></tr>
+              <tr><td>Cooling</td><td>Standard radiator</td><td class="mod">Full aluminium radiator</td></tr>
+              <tr><td>Engine</td><td>6.0 LS2, 403PS</td><td>As factory</td></tr>
+              <tr><td>Wheels</td><td>19in ten-spoke alloys</td><td>As factory</td></tr>
+              <tr><td>Exhaust</td><td>Quad-exit sports exhaust</td><td>As factory</td></tr>
+            </tbody>
+          </table>
+        </div>
         <details>
-          <summary>Full factory spec</summary>
+          <summary>What she launched with (factory spec)</summary>
           <div class="spec">
-            <div><b>Engine</b>6.0-litre V8 (LS2), 90° OHV, 16 valves. 5,967cc, bore × stroke 101.6 × 92.0mm, compression 10.9:1, redline 6,500rpm (est.)</div>
-            <div><b>Output</b>398bhp at 6,000rpm, 530Nm at 4,400rpm</div>
-            <div><b>Transmission</b>T-56 6-speed manual, final drive 3.46:1 (TBC), rear-wheel drive</div>
-            <div><b>Performance</b>0–62mph 5.2s, 0–100mph 11.4s, quarter-mile 13.4s at 108mph (all est.). Top speed 155mph limited, 170mph de-restricted (est.)</div>
-            <div><b>Weight</b>1,680kg kerb, 237bhp per tonne</div>
-            <div><b>Chassis</b>Power-assisted rack and pinion steering. MacPherson strut front, semi-trailing arm rear, coil springs</div>
-            <div><b>Brakes (factory)</b>330mm ventilated front discs, twin-piston calipers; 315mm ventilated rear discs, single-piston calipers</div>
-            <div><b>Tyres</b>235/40 ZR18 front, 245/40 ZR18 rear</div>
+            <div><b>Engine</b>6.0 GEN4 LS2 V8 petrol, 5,967cc. Bore × stroke 101.6 × 92.0mm, compression 10.9:1. Aluminium block and heads, sequential fuel injection, coil-per-cylinder ignition, cross-bolted six-bolt main bearing caps</div>
+            <div><b>Output</b>403PS (297kW, 398bhp) at 6,000rpm. 530Nm (390 lb ft) at 4,400rpm</div>
+            <div><b>Transmission</b>T-56 six-speed manual, rear-wheel drive</div>
+            <div><b>Performance</b>0–62mph 5.2s, top speed 170mph plus (manufacturer's figures)</div>
+            <div><b>Economy</b>17.6mpg combined (11.6 urban, 24.9 extra-urban). CO₂ 384g/km</div>
+            <div><b>Chassis</b>Lowered sports suspension: linear-rate front springs with sports dampers, fully independent multi-link rear. High-ratio power steering, front strut brace</div>
+            <div><b>Brakes</b>Grooved ventilated discs, 330mm front with red calipers, 315mm rear</div>
+            <div><b>Wheels &amp; tyres</b>19-inch ten-spoke alloys on 245/35 R19 Pirelli P Zero</div>
+            <div><b>Exhaust</b>Tuned stainless system, 63mm twin pipes, quad-exit tailpipes</div>
+            <div><b>Inside</b>VXR sports instruments with oil pressure and voltage gauges, electrically adjustable leather sports seats</div>
+            <div><b>Outside</b>Sports grille, bonnet scoops, side sills with "shark gills", three-piece rear spoiler, dark tail lights</div>
+            <div><b>Colours</b>Quicksilver (like Marilyn), Redhot, Phantom Black</div>
           </div>
+          <p class="quote" style="margin-top:12px">"On UK roads it makes people stop and stare." Top Gear, March 2005</p>
+          <p class="sources" style="margin-top:8px;color:#9a9d98">Source: Vauxhall Monaro VXR UK brochure, 2005.</p>
         </details>
         <div class="progress">
           <div style="--p:0%">Bodywork &amp; paint<span>—</span></div>
@@ -879,10 +901,21 @@ function showRound(r) {
 // A post with no `body` shows as Coming soon. `body` is a list of paragraphs; photos go in as
 // {img, alt, cap} entries (files under /blog/<slug>/ in the repo).
 const POSTS = [
-  {slug: "how-we-got-here", n: 1, title: "How we got here", date: null,
+  {slug: "how-it-started", n: 1, title: "How I came to own a Monaro", date: "13 Oct 2026",
+   intro: "From learning to drive in Dad's HQ Kingswood to spotting Marilyn in a car park in April 2024: how an Aussie kid who just wanted one ended up owning a Monaro in the UK.",
+   body: [
+    {img: "/blog/how-it-started/marilyn-listing.jpg", alt: "Silver 2005 Monaro VXR parked in front of a grey wall", cap: "Marilyn as she was listed for sale, April 2024"},
+    "My road to owning a Monaro started when I was a small child. Dad owned an HQ Kingswood, a brown old lump of a car, and it was the car I learned to drive in. Looking back, that was probably the start of my love affair with Holdens, and with cars more broadly.",
+    "Growing up in Australia, V8s were part of the furniture. Bathurst, Peter Brock, Dick Johnson, Holden versus Ford, red versus blue: it was all part of my youth. It's a very different world from the UK, but it's never been lost on me.",
+    "I remember the original Monaros from the '70s, and what people were doing with them through the '90s and 2000s: doing them up and dropping in big V8s. Then, in the early 2000s, word came out that Holden was going to relaunch the Monaro as a modern car. When it arrived, I knew I had to have one some day. Holden's old slogan said it best: “I just want one”. I did. I just wanted one. It was absolutely amazing, and at the time I couldn't afford it.",
+    "Not long after that, in 2007, I moved to the UK. I never thought I'd become a Monaro owner here, yet here I am.",
+    "I found this one in April 2024. I wasn't even looking for one. I was shopping for an estate car. But I saw her in a car park and thought, no, I've just got to have it. She clearly had work to be done and was nowhere near the finished article, but I loved her, and I bought her.",
+    "I've spent some money on her since, which is where the next post picks up. For now she sits proudly on the driveway, and that's the story of how I came to own a Monaro in the UK."
+    ]},
+  {slug: "how-we-got-here", n: 2, title: "How we got here", date: null,
    intro: "Marilyn is a 2005 Monaro VXR in Quicksilver, still close to stock apart from AP Racing brakes and an aluminium radiator. This post covers everything spent so far just to keep it on the road, before the show prep starts.",
    body: null},
-  {slug: "the-plan", n: 2, title: "The plan to car-show ready", date: null,
+  {slug: "the-plan", n: 3, title: "The plan to car-show ready", date: null,
    intro: "The job list, the budget, and which show I'm aiming for.",
    body: null},
 ];
