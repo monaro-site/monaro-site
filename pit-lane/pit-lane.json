@@ -2,6 +2,157 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-14",
+   "updated": "2026-10-14T05:56:03Z",
+   "stories": [
+    {
+     "h": "Murray signs with PremiAir to the end of 2028",
+     "t": "Cooper Murray's move from Erebus is a long one: the #777 Camaro for the last three rounds of 2026, then two full seasons alongside Jayden Ojeda. He joins the team on the Gold Coast this week.",
+     "pub": "2026-10-13T20:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-premiair-racing-cooper-murray-contract-length-details-driver-market-declan-fraser"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-premiair-racing-confirms-cooper-murray-contract-deal-declan-fraser-replacement/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/premiair-reveals-length-of-murray-supercars-contract/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/rehomed-murrays-approach-to-gold-coast-rest-of-2026/",
+       "label": "V8 Sleuth: Murray on his first week"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Fraser says the PremiAir exit wasn't his call",
+     "t": "Dropped after one season, Declan Fraser says he is deeply disappointed by how it unfolded but has no plans to give up on a Supercars future.",
+     "pub": "2026-10-13T20:25:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-declan-fraser-axed-premiair-racing-response-comments-reaction-statement/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-declan-fraser-breaks-silence-statement-premiair-racing-exit-cooper-murray-driver-market"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/fraser-extremely-disappointed-by-premiair-exit/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Supercars driver tipped for a NASCAR Cup outing",
+     "t": "Word in the NASCAR paddock is that an Australian Supercars driver is in line for RFK Racing's #6 car in 2027, most likely for two road-course races. Cam Waters and Broc Feeney are the obvious names.",
+     "pub": "2026-10-14T00:28:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-talent-linked-to-nascar-opportunity/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Tickford left hunting for Bathurst speed",
+     "t": "A mistake-free race brought only ninth and 15th. Rod Nash admits the Mustangs simply lacked pace, and Cam Waters heads to the Gold Coast as sixth seed.",
+     "pub": "2026-10-14T05:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-tickford-racing-no-speed-cam-waters-bathurst-1000-rod-nash-explained"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Where Team 18's fuel sums went wrong",
+     "t": "Race engineer Scott Sinclair's analysis picks out the #18's fifth stop, short-filled by about 12 litres, as a likely turning point, and shows how close DJR's slow brake change came to costing them too.",
+     "pub": "2026-10-13T19:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-expert-analysis-bathurst-1000-brodie-kostecki-anton-de-pasquale-fuel-djr-pit-stop"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Kostecki nearly crashed after taking the lead",
+     "t": "Overcome with emotion after passing the stranded #18, Kostecki almost went off at The Cutting on the final lap, he told his podcast. He hadn't even been sure it was the last lap.",
+     "pub": "2026-10-14T01:15:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-brodie-kostecki-dick-johnson-racing-anton-de-pasquale-team-18-comments-lucky-dogs/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Johnson feels for old rival Schwerkolt",
+     "t": "Despite their bitter 2010 split, Dick Johnson says losing Bathurst the way Team 18 did is never nice, and ranks DJR's fifth win alongside his famous 1981 victory.",
+     "pub": "2026-10-13T18:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-dick-johnson-charlie-schwerkolt-team-18-feud-finish-comments-exclusive/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Brothers on opposite sides of the finish",
+     "t": "Team 18 manager Mitch Croke and his brother Shane, part of DJR's pit crew, shared a tearful hug in pit lane as one garage celebrated and the other was left heartbroken.",
+     "pub": "2026-10-14T03:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-shane-mitch-croke-djr-team-18-bathurst-1000-brothers-anton-de-pasquale-fuel"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-team-18-dick-johnson-racing-brothers-croke-video-interview/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "BRT looks to the Gold Coast after Finals miss",
+     "t": "Eighth at Bathurst wasn't enough to get James Golding into the Finals, but Blanchard Racing brought both cars home undamaged and heads north with confidence.",
+     "pub": "2026-10-13T23:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-blanchard-racing-team-james-golding-bathurst-1000-eliminated-gold-coast-500"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "MSR engineer pays up on his Bathurst bet",
+     "t": "Data engineer Blake Holden promised to shave his head if Matt Stone Racing took pole or a podium. Zach Bates delivered both, and the team held him to it.",
+     "pub": "2026-10-14T04:31:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/msr-engineer-comes-good-on-bathurst-bet/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
    "date": "2026-10-13",
    "updated": "2026-10-13T15:00:00Z",
    "stories": [
