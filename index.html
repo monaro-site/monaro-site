@@ -366,6 +366,19 @@ td.num, th.num { text-align: right; }
 .post-link { font: 400 12px/1 var(--font-data); }
 .sources { font: 400 12px/1.6 var(--font-data); color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
 .sources a { color: var(--ink-2); }
+.post .era { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.timeline { list-style: none; margin: 4px 0 14px; padding: 0; border-left: 2px solid var(--line); }
+.timeline .yr { display: flex; justify-content: space-between; align-items: baseline; margin: 14px 0 6px -2px; padding: 0 0 4px 14px; border-left: 2px solid var(--accent); font: 800 22px/1 var(--font-display); text-transform: uppercase; }
+.timeline .yr span { font: 500 12px/1 var(--font-data); color: var(--muted); text-transform: none; }
+.timeline .job { position: relative; padding: 8px 0 10px 16px; display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; }
+.timeline .job::before { content: ""; position: absolute; left: -6px; top: 13px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.timeline .when { grid-column: 1 / -1; font: 400 12px/1.4 var(--font-data); color: var(--muted); }
+.timeline .what { font-weight: 600; }
+.timeline .cost { font: 600 14px/1.4 var(--font-data); white-space: nowrap; text-align: right; }
+.timeline .detail { grid-column: 1 / -1; font-size: 14px; color: var(--muted); margin: 0; }
+.spend-total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-top: 2px solid var(--ink, currentColor); padding-top: 10px; margin: 0 0 14px; }
+.spend-total b { font: 800 28px/1 var(--font-display); }
+.spend-total span { font: 400 12px/1.4 var(--font-data); color: var(--muted); }
 .draft-note { font: 400 12px/1.5 var(--font-data); color: var(--muted); border-left: 2px solid var(--accent); padding-left: 10px; }
 
 /* Shop */
@@ -578,7 +591,10 @@ footer .wrap { display: grid; gap: 8px; }
           <div><div class="k">Colour</div><div class="v sm">Quicksilver</div></div>
           <div><div class="k">Gearbox</div><div class="v sm">T-56 6-speed</div></div>
         </div>
-        <div><div class="k">Goal</div><div class="v">Show ready</div></div>
+        <div class="kv">
+          <div><div class="k">Spent so far</div><div class="v sm"><a href="#how-we-got-here" style="color:inherit">£15,706</a></div></div>
+          <div><div class="k">Goal</div><div class="v sm">Show ready</div></div>
+        </div>
         <div><div class="k">Stock vs now</div>
           <table class="stock-now">
             <thead><tr><th></th><th>Factory, 2005</th><th>Marilyn now</th></tr></thead>
@@ -587,7 +603,8 @@ footer .wrap { display: grid; gap: 8px; }
               <tr><td>Cooling</td><td>Standard radiator</td><td class="mod">Full aluminium radiator</td></tr>
               <tr><td>Engine</td><td>6.0 LS2, 403PS</td><td>As factory</td></tr>
               <tr><td>Wheels</td><td>19in ten-spoke alloys</td><td>As factory</td></tr>
-              <tr><td>Exhaust</td><td>Quad-exit sports exhaust</td><td>As factory</td></tr>
+              <tr><td>Exhaust</td><td>Quad-exit sports exhaust</td><td class="mod">200-cell sports cats</td></tr>
+              <tr><td>Suspension</td><td>Lowered sports suspension</td><td class="mod">Uprated rear shocks, new bushes</td></tr>
             </tbody>
           </table>
         </div>
@@ -954,7 +971,7 @@ function showRound(r) {
 // A post with no `body` shows as Coming soon. `body` is a list of paragraphs; photos go in as
 // {img, alt, cap} entries (files under /blog/<slug>/ in the repo).
 const POSTS = [
-  {slug: "how-it-started", n: 1, title: "How I came to own a Monaro", date: "13 Oct 2026",
+  {slug: "how-it-started", n: 1, era: "Past", title: "How I came to own a Monaro", date: "13 Oct 2026",
    intro: "From learning to drive in Dad's HQ Kingswood to spotting Marilyn in a car park in April 2024: how an Aussie kid who just wanted one ended up owning a Monaro in the UK.",
    body: [
     {img: "/blog/how-it-started/marilyn-listing.jpg", alt: "Silver 2005 Monaro VXR parked in front of a grey wall", cap: "Marilyn as she was listed for sale, April 2024"},
@@ -965,19 +982,19 @@ const POSTS = [
     "I found this one in April 2024. I wasn't even looking for one. I was shopping for an estate car. But I saw her in a car park and thought, no, I've just got to have it. She clearly had work to be done and was nowhere near the finished article, but I loved her, and I bought her.",
     "I've spent some money on her since, which is where the next post picks up. For now she sits proudly on the driveway, and that's the story of how I came to own a Monaro in the UK."
     ]},
-  {slug: "how-we-got-here", n: 2, title: "How we got here", date: null,
-   intro: "Marilyn is a 2005 Monaro VXR in Quicksilver, still close to stock apart from AP Racing brakes and an aluminium radiator. This post covers everything spent so far just to keep it on the road, before the show prep starts.",
-   body: null},
-  {slug: "the-plan", n: 3, title: "The plan to car-show ready", date: null,
+  {slug: "how-we-got-here", n: 2, era: "Present", title: "How we got here", date: "14 Oct 2026",
+   intro: "£15,706 and around 9,000 miles: every job done on Marilyn since I bought her in April 2024, from a new clutch and gearbox to sorting the air con.",
+   body: ["When I bought Marilyn she needed a lot more than a polish. This is every job she's had since April 2024, taken straight from the invoices: £15,705.53 in all, including VAT. They don't include what I paid for her, or the parts I bought myself (the AP Racing brake kit and a second-hand air con compressor).", {"html": "<ol class=\"timeline\"><li class=\"yr\">2024</li><li class=\"job\"><span class=\"when\">Apr 2024</span><span class=\"what\">Fresh tyres and an oil change</span><p class=\"detail\">Four new Goodyear Eagle F1s (245/35 R19), oil and filter, oil and fuel treatment.</p></li><li class=\"job\"><span class=\"when\">Apr 2024</span><span class=\"what\">Front brakes</span><p class=\"detail\">Fitting new front discs and pads.</p></li><li class=\"job\"><span class=\"when\">Jun 2024 · 110,781 miles</span><span class=\"what\">111,000-mile service and a full check-over</span><p class=\"detail\">Oil, air filter, eight spark plugs, A/C belt with new tensioner and pulleys, radiator cap, brake fluid, and chrome wheel nut covers.</p></li><li class=\"job\"><span class=\"when\">Dec 2024 · 111,295 miles</span><span class=\"what\">The big one</span><p class=\"detail\"><b>Drivetrain:</b> LS7 clutch kit, rebuilt Tremec six-speed gearbox, gearbox mount, propshaft bearing and flex joint, rear main and tail shaft seals. <b>Engine and cooling:</b> new engine mounts, aluminium radiator, silicone hose kit, starter motor. <b>Exhaust:</b> 200-cell sports cats, post-cat O2 sensors, manifold gaskets, broken studs replaced. <b>Suspension:</b> front control arms, strut bar bushes, uprated rear shocks, front top mounts and bearings, rear drop link bushes, geometry reset. <b>Odds and ends:</b> fog lights repaired, gear lever boot, glovebox hinges, wipers.</p></li><li class=\"yr\">2025</li><li class=\"job\"><span class=\"when\">Apr 2025 · 114,890 miles</span><span class=\"what\">Air con regas</span><p class=\"detail\">With UV dye added to trace any leaks.</p></li><li class=\"job\"><span class=\"when\">Jun 2025</span><span class=\"what\">HT leads and spark plugs</span><p class=\"detail\">A fresh set of leads and eight plugs.</p></li><li class=\"job\"><span class=\"when\">Jul 2025 · 117,033 miles</span><span class=\"what\">The diva strikes</span><p class=\"detail\">Poor running traced to the A/C compressor blowing a fuse. Second-hand compressor fitted, leaking condenser o-ring replaced, system regassed. Front bumper off to remove old mesh and adhesive.</p></li><li class=\"job\"><span class=\"when\">Oct 2025 · 119,749 miles</span><span class=\"what\">Annual service</span><p class=\"detail\">Oil and filters, gearbox oil, diff oil, auxiliary belt, A/C check and regas, engine light codes checked.</p></li><li class=\"job\"><span class=\"when\">Dec 2025 · 120,286 miles</span><span class=\"what\">Clutch master cylinder</span><p class=\"detail\">New clutch master cylinder and fresh brake fluid.</p></li></ol><div class=\"spend-total\"><b>£15,705.53</b><span>Total since April 2024, including VAT</span></div>"}, "2024 was the heavy year. She covered only about 500 miles while the work was done, but most of the big jobs are now behind her. In 2025 she did around 9,000 miles.", "That's the present. Next comes the future: the plan to get her show ready."]},
+  {slug: "the-plan", n: 3, era: "Future", title: "The plan to car-show ready", date: null,
    intro: "The job list, the budget, and which show I'm aiming for.",
    body: null},
 ];
 function renderPosts() {
   $("#posts").innerHTML = POSTS.map(p => `<article class="post" id="${p.slug}">
-    <div class="date">Post ${p.n}${p.date ? " · " + p.date : ""}</div>
+    <div class="date">Part ${p.n}${p.era ? ` · <span class="era">${p.era}</span>` : ""}${p.date ? " · " + p.date : ""}</div>
     <h3>${p.title}</h3>
     <p>${p.intro}</p>
-    ${p.body ? `<details class="post-full"><summary>Read the full post</summary>${p.body.map(x => typeof x === "string" ? `<p>${x}</p>` : `<figure><img src="${x.img}" alt="${x.alt || ""}" loading="lazy">${x.cap ? `<figcaption>${x.cap}</figcaption>` : ""}</figure>`).join("")}<p class="post-link"><a href="#${p.slug}">Link to this post</a></p></details>` : `<p class="draft-note">Coming soon</p>`}
+    ${p.body ? `<details class="post-full"><summary>Read the full post</summary>${p.body.map(x => typeof x === "string" ? `<p>${x}</p>` : x.html ? x.html : `<figure><img src="${x.img}" alt="${x.alt || ""}" loading="lazy">${x.cap ? `<figcaption>${x.cap}</figcaption>` : ""}</figure>`).join("")}<p class="post-link"><a href="#${p.slug}">Link to this post</a></p></details>` : `<p class="draft-note">Coming soon</p>`}
   </article>`).join("");
 }
 function openPostFromHash() {
