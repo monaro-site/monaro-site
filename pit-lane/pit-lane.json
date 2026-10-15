@@ -2,6 +2,156 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-15",
+   "updated": "2026-10-15T05:54:55Z",
+   "stories": [
+    {
+     "h": "Cameron stays at Blanchard on a multi-year deal",
+     "t": "Aaron Cameron has been rewarded for a breakthrough year, including a first podium in Sydney, with a new multi-year contract. It completes Blanchard Racing's 2027 line-up alongside James Golding.",
+     "pub": "2026-10-14T20:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-aaron-cameron-blanchard-racing-team-contract-deal-extension-details"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-blanchard-racing-team-aaron-cameron-contract-extension-details/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/multi-year-deal-seals-blanchard-racing-teams-line-up/"
+      }
+     ]
+    },
+    {
+     "h": "Murray brings his family #36 to PremiAir",
+     "t": "Cooper Murray will race the #36 from the Gold Coast onwards, the number his father used and he carried through karts and Carrera Cup. It last ran full-time in Supercars in 2014.",
+     "pub": "2026-10-14T20:00:00Z",
+     "move": "Down 1",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cooper-murray-premiair-racing-number-change-explained"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-cooper-murray-new-race-number-premiair-racing-confirmed/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/number-change-confirmed-for-premiair-camaro/"
+      }
+     ]
+    },
+    {
+     "h": "Where the 2027 grid stands after the GM shuffle",
+     "t": "Seventeen drivers are now signed for 2027 and six teams have full line-ups. Open seats remain at DJR, Brad Jones Racing, Team 18 and Matt Stone Racing, with David Reynolds' future unclear.",
+     "pub": "2026-10-15T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-where-2027-grid-stands-cooper-murray-premiair-erebus-chevrolet-contract-length-details"
+      }
+     ]
+    },
+    {
+     "h": "Walkinshaw counts the cost of Bathurst",
+     "t": "Mostert's 25G hit damaged his Supra's chassis badly enough to need around 40 hours of fabrication, hence the spare. Ryan Wood's car, hit twice over the weekend, is being repaired for the Gold Coast.",
+     "pub": "2026-10-14T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-walkinshaw-twg-racing-chaz-mostert-ryan-wood-bathurst-1000-damage-crashes-update"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-walkinshaw-twg-damage-update-video-crashed-cars-chaz-mostert-ryan-wood/"
+      }
+     ]
+    },
+    {
+     "h": "Skaife: Team 18's fuel error was unforgivable",
+     "t": "Six-time Bathurst winner Mark Skaife says Team 18 should have checked the final fill by hand rather than trusting its software, while feeling for De Pasquale and Holdsworth.",
+     "pub": "2026-10-14T09:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-mark-skaife-analysis-team-18-fuel-blunder-explained-comments-reaction/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-mark-skaife-lee-holdsworth-anton-de-pasquale-team-18-bathurst-1000-fuel-heartbreak"
+      }
+     ]
+    },
+    {
+     "h": "Randle's Finals miss stings Tickford",
+     "t": "For the first time, Tickford starts the Finals with a car out of contention. The team says Thomas Randle will still chase wins on the Gold Coast, where both drivers have strong records.",
+     "pub": "2026-10-15T03:02:00Z",
+     "move": "Down 2",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/burnt-by-bathurst-tickford-reacts-to-finals-miss/"
+      }
+     ]
+    },
+    {
+     "h": "Seton in no hurry after his Bathurst podium",
+     "t": "Third with Zach Bates made Aaron Seton the third generation of his family on the Bathurst podium. Asked about a full-time return, he said his focus has been on being a dependable co-driver.",
+     "pub": "2026-10-15T04:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-aaron-seton-bathurst-1000-podium-reaction-matt-stone-racing-zach-bates-driver-market"
+      }
+     ]
+    },
+    {
+     "h": "How Bates announced himself at Bathurst",
+     "t": "V8 Sleuth looks back at Zach Bates' weekend: 18th in points beforehand, then the two fastest Gen3 laps of Mount Panorama, Shootout pole and a podium.",
+     "pub": "2026-10-15T05:36:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/a-star-is-born-bates-brilliant-bathurst-breakout/"
+      }
+     ]
+    },
+    {
+     "h": "DJR keeps its Bathurst-winning Mustang",
+     "t": "Dick Johnson Racing owns none of its earlier Bathurst winners, so this one isn't for sale. Kostecki races it again on the Gold Coast, and the finishing panels have been kept aside.",
+     "pub": "2026-10-15T03:20:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-dick-johnson-racing-ford-mustang-winning-car-future-sale-brodie-kostecki/"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight and Grove raise $200,000 for charity",
+     "t": "A side bet on which team beat the other across the Bathurst weekend, topped up by both owners, has raised $200,000 for domestic violence charity RizeUp.",
+     "pub": "2026-10-14T09:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-triple-eight-grove-racing-rizeup-charity-donation-total/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-14",
    "updated": "2026-10-14T05:56:03Z",
    "stories": [
