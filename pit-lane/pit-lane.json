@@ -2,6 +2,126 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-17",
+   "updated": "2026-10-17T05:54:38Z",
+   "stories": [
+    {
+     "h": "Bathurst reshuffles the Gold Coast pit lane",
+     "t": "Walkinshaw's 44-point Bathurst lets Tickford take third in the teams' standings and the better garages, while MSR moves Jack Le Brocq up to the middle of pit lane. Triple Eight cut Penrite's lead to 190.",
+     "pub": "2026-10-16T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-teams-championship-pit-lane-order-gold-coast-500-finals"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/how-the-bathurst-1000-affected-supercars-pitlane-order/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Triple Eight plays the long game in the Finals",
+     "t": "Team manager Mark Dutton says the plan is consistency rather than all-or-nothing, with Feeney and Brown starting the Gold Coast second and third and a buffer to the cut-line.",
+     "pub": "2026-10-16T19:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-triple-eight-outlines-finals-approach-consistency-mark-dutton-broc-feeney-will-brown"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Brown surprised by his quick warning flag",
+     "t": "Will Brown says he was defending for a podium, not the win, when Kostecki caught him late on, and was taken aback by how fast race control showed him the bad sportsmanship flag.",
+     "pub": "2026-10-17T02:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-brodie-kostecki-vs-will-brown-battle-explained-comments-reaction/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "New commentary team earns its stripes",
+     "t": "Speedcafe reckons Richard Craill, Garth Tander and Greg Murphy delivered when it mattered most at Bathurst, after a rocky start to the year without Neil Crompton and Mark Skaife.",
+     "pub": "2026-10-16T18:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-tv-commentary-line-up-richard-craill-garth-tander-greg-murphy-crompton-skaife/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Pye's unwanted Bathurst record",
+     "t": "Second with Will Brown was Scott Pye's third Bathurst runner-up finish, equalling the record for a driver yet to win it. He says it has made him hungrier still.",
+     "pub": "2026-10-16T19:02:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/pyes-share-of-bittersweet-bathurst-record/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Seven things Bathurst taught us",
+     "t": "V8 Sleuth's verdict covers the late parity fix, Kostecki's relentless drive back to the front and the new commentary team rising to the occasion.",
+     "pub": "2026-10-16T19:57:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/our-seven-biggest-bathurst-1000-takeaways/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Murray's rare two-team season, again",
+     "t": "Only three drivers in 20 years have raced for two teams in one season, and Cooper Murray is already one of them after 2024. He does it again at PremiAir.",
+     "pub": "2026-10-17T05:27:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-double-agents-in-the-past-20-years/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Murray meets his new PremiAir crew",
+     "t": "Days after sixth at Bathurst, Cooper Murray had his seat fitting on the Gold Coast. Simon Hodge will engineer him, and sim work with Jayden Ojeda comes before only two practice sessions.",
+     "pub": "2026-10-15T19:00:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cooper-murray-erebus-premiair-driver-swap-explained-reaction-contract-gold-coast-500"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Davison's Bathurst pace beat Le Brocq's",
+     "t": "Lap data shared on The Undercut ranked Will Davison 14th for pace, ahead of fourth-placed Jack Le Brocq, suggesting he and Payne could have been on the podium without their penalties.",
+     "pub": "2026-10-16T03:51:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/davisons-bathurst-1000-contribution-highlighted/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
    "date": "2026-10-16",
    "updated": "2026-10-16T05:55:52Z",
    "stories": [
