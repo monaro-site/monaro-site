@@ -2,6 +2,329 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-18",
+   "updated": "2026-10-18T05:54:27Z",
+   "stories": [
+    {
+     "h": "Courtney on the moment Team 18's win slipped away",
+     "t": "Sitting beside Lee Holdsworth in the garage, James Courtney had already told him he'd be a two-time winner. Neither knew about the fuel problem until the car stopped.",
+     "pub": "2026-10-17T23:26:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/courtney-sheds-light-on-horrific-bathurst-shock/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Why six drivers just missed the Finals",
+     "t": "Supercars.com looks at how Heimgartner, Randle, Golding, Ojeda and Reynolds fell short as Jack Le Brocq took the last place. Golding's slip from a 107-point buffer after The Bend hurt most.",
+     "pub": "2026-10-17T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-finals-drivers-eliminated-why-heimgartner-randle-reynolds-golding-bathurst-1000"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Davison tops the Bathurst co-driver rankings",
+     "t": "On lap time analysis, Will Davison was the quickest co-driver, ahead of Todd Hazelwood, Aaron Seton and Lee Holdsworth. Seton set the fastest co-driver lap of the race.",
+     "pub": "2026-10-17T18:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-co-driver-analysis-ranking-performance-davison-hazelwood-seton-holdsworth-pye-herne/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Phillip Island's championship winners",
+     "t": "With the Island back from 2027, V8 Sleuth lists every winner of its 62 championship races since 1976, a list once dominated by Glenn Seton.",
+     "pub": "2026-10-17T20:45:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/honour-roll-phillip-island-atcc-supercars-winners/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-17",
+   "updated": "2026-10-17T05:54:38Z",
+   "stories": [
+    {
+     "h": "Bathurst reshuffles the Gold Coast pit lane",
+     "t": "Walkinshaw's 44-point Bathurst lets Tickford take third in the teams' standings and the better garages, while MSR moves Jack Le Brocq up to the middle of pit lane. Triple Eight cut Penrite's lead to 190.",
+     "pub": "2026-10-16T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-teams-championship-pit-lane-order-gold-coast-500-finals"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/how-the-bathurst-1000-affected-supercars-pitlane-order/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Triple Eight plays the long game in the Finals",
+     "t": "Team manager Mark Dutton says the plan is consistency rather than all-or-nothing, with Feeney and Brown starting the Gold Coast second and third and a buffer to the cut-line.",
+     "pub": "2026-10-16T19:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-triple-eight-outlines-finals-approach-consistency-mark-dutton-broc-feeney-will-brown"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Brown surprised by his quick warning flag",
+     "t": "Will Brown says he was defending for a podium, not the win, when Kostecki caught him late on, and was taken aback by how fast race control showed him the bad sportsmanship flag.",
+     "pub": "2026-10-17T02:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-brodie-kostecki-vs-will-brown-battle-explained-comments-reaction/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "New commentary team earns its stripes",
+     "t": "Speedcafe reckons Richard Craill, Garth Tander and Greg Murphy delivered when it mattered most at Bathurst, after a rocky start to the year without Neil Crompton and Mark Skaife.",
+     "pub": "2026-10-16T18:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-tv-commentary-line-up-richard-craill-garth-tander-greg-murphy-crompton-skaife/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Pye's unwanted Bathurst record",
+     "t": "Second with Will Brown was Scott Pye's third Bathurst runner-up finish, equalling the record for a driver yet to win it. He says it has made him hungrier still.",
+     "pub": "2026-10-16T19:02:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/pyes-share-of-bittersweet-bathurst-record/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Seven things Bathurst taught us",
+     "t": "V8 Sleuth's verdict covers the late parity fix, Kostecki's relentless drive back to the front and the new commentary team rising to the occasion.",
+     "pub": "2026-10-16T19:57:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/our-seven-biggest-bathurst-1000-takeaways/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Murray's rare two-team season, again",
+     "t": "Only three drivers in 20 years have raced for two teams in one season, and Cooper Murray is already one of them after 2024. He does it again at PremiAir.",
+     "pub": "2026-10-17T05:27:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-double-agents-in-the-past-20-years/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Murray meets his new PremiAir crew",
+     "t": "Days after sixth at Bathurst, Cooper Murray had his seat fitting on the Gold Coast. Simon Hodge will engineer him, and sim work with Jayden Ojeda comes before only two practice sessions.",
+     "pub": "2026-10-15T19:00:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cooper-murray-erebus-premiair-driver-swap-explained-reaction-contract-gold-coast-500"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Davison's Bathurst pace beat Le Brocq's",
+     "t": "Lap data shared on The Undercut ranked Will Davison 14th for pace, ahead of fourth-placed Jack Le Brocq, suggesting he and Payne could have been on the podium without their penalties.",
+     "pub": "2026-10-16T03:51:00Z",
+     "old": true,
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/davisons-bathurst-1000-contribution-highlighted/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "updated": "2026-10-16T05:55:52Z",
+   "stories": [
+    {
+     "h": "Phillip Island returns as a Finals round from 2027",
+     "t": "Supercars goes back to the Island for the first time since 2019 on a five-year deal, with the new Phillip Island 500 forming part of the Finals series from 2027 to 2031.",
+     "pub": "2026-10-15T21:29:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-phillip-island-deal-confirmed-finals-round-contract-length-victorian-government"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-phillip-island-australian-grand-prix-corporation-finals-series/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/five-year-deal-brings-supercars-back-to-phillip-island/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-five-key-phillip-island-supercars-return-takeaways-2027-calendar-finals-series-grand-prix",
+       "label": "Five takeaways"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Older brake pad compound back for the Gold Coast",
+     "t": "After three rounds of complaints about pads wearing and fading, Brad Jones says the category will revert to a previously used compound for the Finals opener.",
+     "pub": "2026-10-16T04:19:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-brake-pads-explained-video-brad-jones-racing-video/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/brake-pad-compound-change-for-gold-coast-500/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Tyre bundles return to the Beach Chicane",
+     "t": "To meet the circuit's safety licence, bundles go back at Turns 8 and 9, but set a car's width from the kerb so drivers can still attack it. Last year's flying cars reportedly worried the FIA.",
+     "pub": "2026-10-16T01:50:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-tyre-beach-chicane-bundles-gold-coast-500-explained-kerbs-changes-revised-safety"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-set-to-reel-in-gold-coast-kerb-launching/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "The sum behind Team 18's empty tank",
+     "t": "Speedcafe understands the #18's last-stint calculator assumed the car had been filled at its penultimate stop. It had been short-filled on lap 123, leaving it about three seconds of fuel short.",
+     "pub": "2026-10-15T07:39:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-anton-de-pasquale-team-18-adrian-burgess-charlie-schwerkolt-explained-analysis/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Harri Jones makes his case for a 2027 seat",
+     "t": "A late call-up as Jack Le Brocq's co-driver brought fourth at Bathurst and a Finals spot for MSR. Jones is thought to be under consideration at Team 18.",
+     "pub": "2026-10-15T23:00:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/jones-nails-unexpected-chance-to-push-for-2027-seat/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-harri-jones-2027-driver-market-ambitions-chevrolet-enduro-standout-cool-down-lap-podcast"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-harri-jones-top-5-finish-reaction-jack-le-brocq-finals-comments-reaction/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Hughes ready for a Surfers Paradise baptism",
+     "t": "Jarrod Hughes has never raced on the Gold Coast but says he loves street circuits. His three-round stint is expected to lead to a full-time Erebus seat in 2027, though nothing is confirmed.",
+     "pub": "2026-10-16T04:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-jarrod-hughes-erebus-motorsport-driver-swap-gold-coast-driver-market-future-debut-chevrolet"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "DJR hopes to have Commins back for the Gold Coast",
+     "t": "Kostecki's race engineer missed Bathurst after a mountain bike crash, with team manager Tom Moore stepping in. DJR says he will return when he is ready.",
+     "pub": "2026-10-15T06:28:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/djr-hopeful-of-gold-coast-comeback-for-commins/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Ford camp says parity didn't decide Bathurst",
+     "t": "Jamie Whincup believes both makes had an equal shot, and Cam Waters won't blame the Camaro's straight-line speed for Tickford's off weekend, expecting the Mustang to suit the Finals tracks better.",
+     "pub": "2026-10-15T18:42:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/whincup-believes-bathurst-was-a-fair-fight/",
+       "label": "V8 Sleuth: Whincup"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-cam-waters-reaction-tickford-racing-struggles-ford-mustang-gold-coast-500/",
+       "label": "Speedcafe: Waters"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Red Bull Ampol promo Mustang ends up in a ditch",
+     "t": "A road car in the team's colours left the M1 near Yatala. The team confirmed nobody was hurt but said nothing more.",
+     "pub": "2026-10-16T03:42:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-red-bull-ampol-racing-showcar-crash-m1-triple-eight/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
    "date": "2026-10-15",
    "updated": "2026-10-15T05:54:55Z",
    "stories": [
