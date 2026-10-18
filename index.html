@@ -184,6 +184,8 @@ p { margin: 0; max-width: 68ch; }
 .pl-head time { font: 400 12px/1 var(--font-data); color: #9a9d98; }
 .pl-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; }
 .pl-top > .story + .story { border-left: 1px solid rgba(255,255,255,.12); }
+.pl-top.n2 { grid-template-columns: 1fr 1fr; }
+.pl-top.n1 { grid-template-columns: 1fr; }
 .pitlane .story { display: grid; grid-template-columns: 52px 1fr; gap: 4px 14px; padding: 16px 20px 18px; min-width: 0; }
 .pitlane .pos { display: grid; gap: 6px; align-content: start; justify-items: start; }
 .pitlane .pos b { font: 800 26px/1 var(--font-display); color: #9a9d98; font-variant-numeric: tabular-nums; }
@@ -214,7 +216,7 @@ p { margin: 0; max-width: 68ch; }
 .pl-foot .arch { font: 600 12px/1 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: #f2f2ee; }
 .pl-foot small { font: 400 11.5px/1.5 var(--font-data); color: #9a9d98; max-width: 60ch; }
 @media (max-width: 820px) {
-  .pl-top { grid-template-columns: 1fr; }
+  .pl-top, .pl-top.n2 { grid-template-columns: 1fr; }
   .pl-top > .story + .story { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); }
 }
 @media (max-width: 480px) {
@@ -1201,7 +1203,7 @@ async function renderPitLane() {
       <div class="pl-title"><h2 id="pl-h">Pit <span>Lane</span></h2><span class="sub">Top ${st.length} · last 24 hours</span></div>
       <time datetime="${day.updated}">Updated ${plTime(day.updated, true)}</time>
     </div>
-    <div class="pl-top">${st.slice(0, 3).map(plStory).join("")}</div>
+    <div class="pl-top${st.length < 3 ? " n" + st.length : ""}">${st.slice(0, 3).map(plStory).join("")}</div>
     ${st.length > 3 ? `<div class="pl-rest" id="pl-rest" hidden><ol>${st.slice(3).map((s, i) => `<li>${plStory(s, i + 3)}</li>`).join("")}</ol></div>` : ""}
     <div class="pl-foot">
       <div class="btns">${st.length > 3 ? `<button class="pl-more" type="button" aria-expanded="false" aria-controls="pl-rest">Show all ${st.length}</button>` : ""}<a class="arch" href="/pit-lane/">Pit Lane archive</a></div>
