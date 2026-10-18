@@ -2,6 +2,60 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-18",
+   "updated": "2026-10-18T05:54:27Z",
+   "stories": [
+    {
+     "h": "Courtney on the moment Team 18's win slipped away",
+     "t": "Sitting beside Lee Holdsworth in the garage, James Courtney had already told him he'd be a two-time winner. Neither knew about the fuel problem until the car stopped.",
+     "pub": "2026-10-17T23:26:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/courtney-sheds-light-on-horrific-bathurst-shock/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Why six drivers just missed the Finals",
+     "t": "Supercars.com looks at how Heimgartner, Randle, Golding, Ojeda and Reynolds fell short as Jack Le Brocq took the last place. Golding's slip from a 107-point buffer after The Bend hurt most.",
+     "pub": "2026-10-17T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-finals-drivers-eliminated-why-heimgartner-randle-reynolds-golding-bathurst-1000"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Davison tops the Bathurst co-driver rankings",
+     "t": "On lap time analysis, Will Davison was the quickest co-driver, ahead of Todd Hazelwood, Aaron Seton and Lee Holdsworth. Seton set the fastest co-driver lap of the race.",
+     "pub": "2026-10-17T18:55:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-co-driver-analysis-ranking-performance-davison-hazelwood-seton-holdsworth-pye-herne/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Phillip Island's championship winners",
+     "t": "With the Island back from 2027, V8 Sleuth lists every winner of its 62 championship races since 1976, a list once dominated by Glenn Seton.",
+     "pub": "2026-10-17T20:45:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/honour-roll-phillip-island-atcc-supercars-winners/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
    "date": "2026-10-17",
    "updated": "2026-10-17T05:54:38Z",
    "stories": [
