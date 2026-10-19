@@ -2,6 +2,149 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-19",
+   "updated": "2026-10-19T05:55:26Z",
+   "stories": [
+    {
+     "h": "Moore stays on Kostecki's radio for the Gold Coast",
+     "t": "DJR is keeping its Bathurst-winning set-up, with Tom Moore engineering the #17. George Commins may return trackside in a support role as he recovers from his mountain bike crash.",
+     "pub": "2026-10-18T23:13:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-dick-johnson-racing-brodie-kostecki-engineer-george-commins-tom-moore/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-djr-brodie-kostecki-engineer-decision-gold-coast-500-george-commins-injury"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/moore-to-engineer-kostecki-at-gold-coast/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Rain forecast for the Finals opener",
+     "t": "Up to 30mm is forecast for Friday's practice and qualifying at Surfers Paradise. The last wet Gold Coast race, in 2018, was abandoned.",
+     "pub": "2026-10-18T18:55:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-weather-rain-forecast-drivers-reaction-matt-payne-chaz-mostert"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-weather-forecast-prediction-rain-practice-qualifying-shootout-race/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/weather-forecast-2026-supercars-gold-coast-500/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "De Pasquale: Bathurst will hurt for a long time",
+     "t": "The Team 18 driver admits morale is low but says the Finals are a separate fight. He starts the Gold Coast seventh, just nine points above the cut for Sandown.",
+     "pub": "2026-10-19T02:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-anton-de-pasquale-fuel-bathurst-1000-fallout-championship-finals-gold-coast-500"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-anton-de-pasquale-team-18-bathurst-1000-fallout-lee-holdsworth/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/de-pasquales-candour-on-bathurst-defeat-title-fight/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Walkinshaw's Carl Faux heads to NASCAR",
+     "t": "The Briton who led Walkinshaw's technical revival has finished up after Bathurst and joins Jimmie Johnson's Legacy Motor Club, which expands to three Toyotas in the Cup Series next year.",
+     "pub": "2026-10-18T18:55:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/nascar-bound-faux-details-his-next-challenge/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Late nights get Walkinshaw's Supras ready",
+     "t": "Chaz Mostert says the crew worked until 10 or 11pm all week to fix Wood's car and build his spare. The champion starts eighth, nine points behind De Pasquale.",
+     "pub": "2026-10-19T05:24:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-chaz-mostert-ryan-wood-walkinshaw-twg-racing-bathurst-1000-crash/"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Gold Coast qualifying moves to Friday",
+     "t": "Saturday's grid will be set by a 30-minute session on Friday afternoon, so every day of the Finals opener carries something at stake.",
+     "pub": "2026-10-18T21:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-track-schedule-race-start-times-tickets-tv-enduro-cup-sessions"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Gold Coast moved off Seven's main channel",
+     "t": "With horse racing, rugby league and AFLW also on, Saturday's race airs on 7two and Sunday's on 7mate in Australia.",
+     "pub": "2026-10-18T22:47:00Z",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-finals-event-bumped-from-sevens-main-channel/"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/when-and-how-to-watch-2026-gold-coast-500-supercars-finals-tv-channels-streaming-times",
+       "label": "How to watch"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "MSR not in the Finals just to make up numbers",
+     "t": "Jack Le Brocq is the team's first Finals entrant, and Matt Stone wants to carry the momentum from MSR's double top-four Bathurst into the Gold Coast.",
+     "pub": "2026-10-18T22:00:00Z",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-jack-le-brocq-finals-series-qualification-matt-stone-racing-bathurst-best-result-chevrolet"
+      }
+     ],
+     "move": "New"
+    },
+    {
+     "h": "Grove goes pink for breast cancer charity",
+     "t": "Grove's Mustangs and drivers' kit get pink touches for the Gold Coast, with the gloves to be auctioned as part of a $350,000 drive for the McGrath Foundation.",
+     "pub": "2026-10-18T23:38:00Z",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-grove-racing-new-race-suits-gloves-auction-snap-on-tools-mcgrath-foundation-socket-to-cancer-fundraiser-details/"
+      }
+     ],
+     "move": "New"
+    }
+   ]
+  },
+  {
    "date": "2026-10-18",
    "updated": "2026-10-18T05:54:27Z",
    "stories": [
