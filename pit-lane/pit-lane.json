@@ -2,6 +2,134 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-20",
+   "updated": "2026-10-20T05:54:34Z",
+   "stories": [
+    {
+     "h": "No NASCAR wildcards at the Adelaide Grand Final",
+     "t": "Chevrolet's plan for Connor Zilisch and a Toyota bid linked to Ty Gibbs have both been shelved, V8 Sleuth understands, so no Cup Series driver will join the field in November.",
+     "pub": "2026-10-19T22:51:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/no-nascar-wildcards-for-supercars-adelaide-grand-final/"
+      }
+     ]
+    },
+    {
+     "h": "Gold Coast forecast turns wetter",
+     "t": "Up to 40mm is now forecast for Friday. Thomas Randle says the first dry laps could come in Saturday's Shootout or even the race, and Broc Feeney fears sessions being lost.",
+     "pub": "2026-10-19T23:00:00Z",
+     "move": "Same",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-drivers-gold-coast-500-rain-chicane-shootout-race-reaction-thomas-randle-tyre-bundles"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-broc-feeney-on-weather-forecast-beach-chicane-tyre-bundles-reaction/",
+       "label": "Speedcafe: Feeney"
+      },
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/2026-boost-mobile-gold-coast-500-weather-forecast-race-start-time",
+       "label": "Forecast"
+      }
+     ]
+    },
+    {
+     "h": "Erebus boss sees a future star in Hughes",
+     "t": "Barry Ryan says Jarrod Hughes, who debuts solo this weekend, has the appeal of a Lowndes or Mostert, pointing to his cool head leading in heavy rain at The Bend.",
+     "pub": "2026-10-20T02:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-erebus-motorsport-jarrod-hughes-barry-ryan-potential-2027-driver-market-lowndes"
+      }
+     ]
+    },
+    {
+     "h": "Feeney split on the new Beach Chicane bundles",
+     "t": "Feeney is happy with the bundle on the right but not those on the left, which could catch a driver who gets the entry wrong. He was caught in the 2022 pile-up there.",
+     "pub": "2026-10-20T03:57:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-broc-feeney-on-weather-forecast-beach-chicane-tyre-bundles-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/fifty-fifty-feeneys-take-on-gold-coast-chicane-solution/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert back in the chassis he gave up last year",
+     "t": "The spare Mostert races this weekend is WR 029, the car he left mid-2025 before his title run. He blames the set-up direction at the time, not the car.",
+     "pub": "2026-10-19T20:26:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/mosterts-unfinished-business-with-former-ford-chassis/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney still chasing a home win",
+     "t": "The Gold Coast local has four straight podiums at Surfers Paradise but no win, and last year's defeat to Mostert on fuel economy still stings.",
+     "pub": "2026-10-20T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-broc-feeney-stinging-gold-coast-500-defeat-chaz-mostert-battle-2025-home-hero-finals"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki wary of another Gold Coast mistake",
+     "t": "His Turn 1 qualifying crash here last year ended his title hopes. Now arguably the favourite, he says one error in the wet could cost the whole weekend.",
+     "pub": "2026-10-19T21:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars.com",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-gold-coast-crash-incident-finals-djr-ford-video"
+      }
+     ]
+    },
+    {
+     "h": "Straight-line work behind MSR's Bathurst speed",
+     "t": "Head of engineering Jack Bellotti says years of focusing on straight-line speed finally paid off, ending a 17-month podium drought.",
+     "pub": "2026-10-19T06:11:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/intense-straight-line-speed-chase-reaps-rewards-for-msr/"
+      }
+     ]
+    },
+    {
+     "h": "Heimgartner the Finals nearly man again",
+     "t": "Seventh at Bathurst with Bryce Fullwood was the best Toyota finish and, he says, BJR's best-run race in years, but it left him 11th, just outside the Finals.",
+     "pub": "2026-10-20T02:50:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/bathurst-the-best-executed-bjr-race-in-a-long-time/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-19",
    "updated": "2026-10-19T05:55:26Z",
    "stories": [
