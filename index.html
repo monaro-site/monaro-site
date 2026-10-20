@@ -916,13 +916,13 @@ ORDER[11].slice(0, 5).forEach((k, i) => {
   lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${PTS11[k].toLocaleString()} pts · ${gap}</span>`));
 });
 
-// Countdown to Gold Coast race day (Sat 24 Oct 2026, local midnight AEST = 14:00 UTC on the 23rd). Race times TBC.
-const start = Date.UTC(2026, 9, 23, 14, 0, 0);
+// Countdown to Race 31 at the Gold Coast: Sat 24 Oct 2026, 3:15pm AEST = 05:15 UTC (6:15am BST).
+const start = Date.UTC(2026, 9, 24, 5, 15, 0);
 function tick() {
   const ms = start - Date.now(), cd = $("#countdown");
   if (ms <= 0) { cd.innerHTML = `<div><b>Race weekend</b><span>Check results below</span></div>`; return; }
   const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
-  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 31 · Sat 24 Oct · time TBC</span></div>`;
+  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 31 · Sat 24 Oct · 6:15am BST (3:15pm AEST)</span></div>`;
 }
 tick(); setInterval(tick, 30000);
 
@@ -973,7 +973,7 @@ const PITBOARDS = {
 },
  12: {
   id: "gold-coast-2026-elimination",
-  until: "2026-10-25T03:00:00Z", // Sunday's race, about 13:00 AEST; race times TBC, update once the timetable is out
+  until: "2026-10-25T04:45:00Z", // Race 32 start: Sun 25 Oct, 4:45am GMT (2:45pm AEST)
   sign: [["Pit board", "sm"], ["Gold Coast", "y"], ["10 in · 3 out", ""]],
   label: "Pit board · Finals round one",
   line: "Ten drivers, two races, and by Sunday night three of them are out. Mostert, Wood and Le Brocq start the weekend in the drop zone.",
@@ -1183,7 +1183,7 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 
 
 // Race weekend box: Supercars sessions only, latest first. Updated after each session; set WKND = null between events.
-// Times: UK first, AEDT in brackets. BST = AEDT - 10h until UK clocks go back on 25 Oct; then GMT = AEDT - 11h.
+// Times: UK first, local in brackets. Gold Coast is AEST (no daylight saving): Fri/Sat BST = AEST - 9h; Sun 25 Oct (UK clocks back) GMT = AEST - 10h.
 const WKND = null;
 function renderWknd() {
   const box = $("#wknd");
