@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Finals predictor · Monaro.co.uk</title>
+<meta name="description" content="Who wins the 2026 Supercars title? 60,000 simulated Finals using this year's form, last year's results, street-circuit form, weather and grid changes.">
+<meta property="og:title" content="Who wins the 2026 Supercars title?">
+<meta property="og:description" content="Our Finals predictor: 60,000 simulated runs of the Gold Coast, Sandown and Adelaide.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.monaro.co.uk/predictor/">
+<meta property="og:image" content="https://www.monaro.co.uk/og/monaro-share.png">
+<meta property="og:site_name" content="Monaro.co.uk">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" href="/icons/monaro-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+.site{background:#1D2024;padding-block:18px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.site a{color:#F2F2EE;text-decoration:none;font:900 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.site a span{color:#E5483D}
+/* Layout: one narrow reading column in the site's tarmac-and-red style; charts are inline bar rows so they work on a phone */
+:root{
+  --bg:#F2F2EE; --panel:#FFFFFF; --ink:#1D2024; --ink2:#4A4F57; --muted:#767C85; --rule:#D9D9D2;
+  --red:#B3261E; --red2:#E3A39E; --red3:#F3D6D3; --track:#E6E6E0; --yellow:#FFD400;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1D2024; --panel:#25292E; --ink:#F2F2EE; --ink2:#C4C7CC; --muted:#959AA2; --rule:#3A3F46;
+  --red:#E5483D; --red2:#9E3A33; --red3:#4A2A28; --track:#33383F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1D2024; --panel:#25292E; --ink:#F2F2EE; --ink2:#C4C7CC; --muted:#959AA2; --rule:#3A3F46;
+  --red:#E5483D; --red2:#9E3A33; --red3:#4A2A28; --track:#33383F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px;display:flex;flex-direction:column;gap:40px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+h1{font:900 clamp(40px,9vw,72px)/.92 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+h2{font:800 30px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+h3{font:600 15px/1.3 var(--body);margin:0}
+p{margin:0;max-width:65ch}
+.lede{font-size:17px;color:var(--ink2)}
+.draft{align-self:flex-start;font:600 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--yellow);color:#1D2024;padding:6px 9px;border-radius:3px}
+section{display:flex;flex-direction:column;gap:14px}
+.note{color:var(--muted);font-size:13px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* hero numbers */
+.top3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.top3 div{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.top3 .pct{font:900 44px/1 var(--display);color:var(--red)}
+.top3 .who{font-weight:600}
+.top3 .sub{font-size:12px;color:var(--muted)}
+@media (max-width:520px){.top3{grid-template-columns:1fr}.top3 div{flex-direction:row;align-items:baseline;gap:12px;flex-wrap:wrap}}
+/* funnel table */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th{font:600 11px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:middle}
+td.n{white-space:nowrap}
+.no{display:inline-block;min-width:34px;font:600 12px/1 var(--mono);color:var(--muted)}
+.bar{position:relative;height:16px;background:var(--track);border-radius:2px;min-width:70px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--red);border-radius:0 4px 4px 0}
+.bar.l2 i{background:var(--red2)} .bar.l3 i{background:var(--red3)}
+.cell{display:flex;align-items:center;gap:8px}
+.cell .bar{flex:1}
+.cell b{font:600 13px/1 var(--mono);min-width:44px;text-align:right}
+tr:hover td{background:color-mix(in srgb,var(--red) 6%,transparent)}
+/* factor grid */
+.fx td.v{text-align:center;font:600 13px/1 var(--mono);color:var(--ink)}
+.fx td.v span{display:inline-block;min-width:38px;padding:6px 4px;border-radius:3px}
+.key{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);align-items:center}
+.key i{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-2px;margin-right:5px}
+/* lists */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.card p{font-size:14px;color:var(--ink2)}
+.tag{font:600 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 6px;border-radius:2px;align-self:flex-start}
+.tag.in{background:var(--red);color:#fff}
+.tag.part{background:var(--track);color:var(--ink)}
+.tag.out{border:1px solid var(--muted);color:var(--muted)}
+ol.steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;max-width:65ch}
+.weights{display:flex;flex-direction:column;gap:6px;max-width:560px}
+.weights .cell b{min-width:40px}
+.weights span.lab{min-width:180px;font-size:14px}
+@media (max-width:520px){.weights span.lab{min-width:120px}}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font:500 12px/1.4 var(--mono);padding:7px 9px;border-radius:3px;max-width:240px;z-index:20;opacity:0;transition:opacity .1s}
+@media (prefers-reduced-motion:reduce){#tip{transition:none}}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--ink2)}
+</style>
+</head>
+<body>
+<header class="site"><a href="/">Monaro<span>.</span>co.uk</a></header>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">2026 Finals · prediction · 21 Oct</span>
+  <h1>Who wins the 2026 title?</h1>
+  <p class="lede">We ran the rest of the season 60,000 times: Gold Coast, Sandown and the Adelaide Grand Final, with all 24 cars in every race. Each run uses this year's results, last year's Finals, the type of track, the chance of rain and the grid changes. Matt Payne wins about half of them.</p>
+</header>
+
+<section aria-labelledby="h-odds">
+  <div class="top3" id="top3"></div>
+  <p class="note">Percentages are the share of simulated seasons each driver won. They are chances, not a forecast of what will happen.</p>
+</section>
+
+<section aria-labelledby="h-funnel">
+  <h2 id="h-funnel">The road to Adelaide</h2>
+  <p>Ten start on the Gold Coast. The bottom three go out after each Finals round, so seven reach Sandown and four reach Adelaide. Each bar is the chance of getting that far.</p>
+  <div class="scroll"><table id="funnel" aria-describedby="funnel-note">
+    <thead><tr><th>Driver</th><th>GC bonus</th><th>Reach Sandown</th><th>Reach Adelaide</th><th>Champion</th></tr></thead><tbody></tbody></table></div>
+  <p class="note" id="funnel-note">Gold Coast bonus points are the real starting totals from the Bathurst standings, including +25 for the Sprint Cup (Feeney) and the Enduro Cup (Brown).</p>
+</section>
+
+<section aria-labelledby="h-final">
+  <h2 id="h-final">Predicted final top ten</h2>
+  <p>The most likely championship order once Adelaide is done. Drivers knocked out drop back to their Bathurst total plus whatever they score after it, so a non-finalist can still finish as high as 8th, 9th or 10th.</p>
+  <div class="scroll"><table id="final"><thead><tr><th>Pos</th><th>Driver</th><th>Team</th><th>Average finish</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-gc">
+  <h2 id="h-gc">Gold Coast: who wins a race?</h2>
+  <p>Chance of winning either of the two 250 km races this weekend (23 to 25 October). Every car scores, so drivers outside the Finals, like Randle and Heimgartner, can take points off the title contenders.</p>
+  <div class="scroll"><table id="gc"><thead><tr><th>Driver</th><th>Race win</th><th>Podium</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-fx">
+  <h2 id="h-fx">The form guide behind it</h2>
+  <p>Every factor is scored the same way: an average result where 100 is a win every time, using the endurance points scale so a 2nd is worth 92, a 10th 47 and a 20th 21. Only classified finishes count here, because retirements are handled separately as DNF risk.</p>
+  <div class="key"><span><i style="background:var(--red)"></i>80+</span><span><i style="background:var(--red2)"></i>65 to 79</span><span><i style="background:var(--red3)"></i>50 to 64</span><span><i style="background:var(--track)"></i>under 50</span></div>
+  <div class="scroll"><table class="fx" id="fx"><thead><tr><th>Driver</th><th>2026 season</th><th>Since Perth</th><th>Trend</th><th>Street tracks</th><th>Enduros</th><th>2025 at these tracks</th><th>Wet</th><th>Poles</th><th>DNF risk</th></tr></thead><tbody></tbody></table></div>
+  <p class="note">Trend is form since Perth minus form in the first five rounds. Wet is The Bend 500, the year's only wet race, blended half and half with season form because one race is a small sample. Enduros are The Bend and Bathurst, which were shared with co-drivers.</p>
+</section>
+
+<section aria-labelledby="h-how">
+  <h2 id="h-how">How the model works</h2>
+  <div class="weights" id="weights"></div>
+  <ol class="steps">
+    <li>Each driver gets a rating from the factors above, weighted as shown. Each pole adds half a point, and drivers in a team that changed manufacturer this year (Triple Eight to Ford, Walkinshaw and Brad Jones to Toyota) have last year's results counted at half weight, because they were in a different car.</li>
+    <li>Every race, each car's result is its rating plus a random swing. The size of the swing comes from how much results really varied this year. On top of that, each driver gets one swing for the whole weekend, because a car that is off the pace on Saturday usually still is on Sunday.</li>
+    <li>Each car can also retire. The chance comes from its own record this year, pulled towards the field average so one bad weekend doesn't dominate. Mostert (4 DNFs) and Wood (3) carry the most risk of the ten.</li>
+    <li>Each race has a chance of rain based on the local climate: Gold Coast 20%, Sandown 25%, Adelaide 10%. In a wet race the order leans 40% towards wet-weather form, with bigger swings and more retirements.</li>
+    <li>Points use the 2025 Finals scales: 150 for a 250 km win and 138 for 2nd, then 50 and 125 for the Adelaide races. Bonuses of 150, 120, 96 and 78 go to the leaders into each round, and the cuts happen at 7 and 4.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-factors">
+  <h2 id="h-factors">Your factors, and what we did with each</h2>
+  <div class="cards" id="factors"></div>
+</section>
+
+<section aria-labelledby="h-data">
+  <h2 id="h-data">Data we looked for</h2>
+  <p>We searched for the deeper data too. Some of it exists but isn't public in a form we can use, so here is what's in the model and what's ruled out for now.</p>
+  <div class="cards" id="data"></div>
+</section>
+
+<section aria-labelledby="h-limits">
+  <h2 id="h-limits">What it can't see</h2>
+  <ul class="steps" style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;max-width:65ch">
+    <li>Team-mates racing each other. Grove (Payne and Allen), Triple Eight (Feeney and Brown) and Walkinshaw TWG (Mostert and Wood) each have two cars in the Finals, and team tactics could help one of them.</li>
+    <li>2025 results at these tracks are mostly known. The Gold Coast top ten from both races and most of race 1 are in. Kostecki, De Pasquale and Le Brocq finished outside the top ten on the Sunday, so those places are estimated at 17th, and Kostecki's Saturday at 21st. Sandown and Adelaide are still partial.</li>
+    <li>Penalties, safety cars and strategy calls. They show up only as random swings.</li>
+    <li>The 2026 points scale for the Finals races hasn't been published in full. We used the 2025 scale. If 2026 differs, the odds will move a little but the order shouldn't change much.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><a href="/#stats">Back to season stats</a> · Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</p>
+  <p>Sources: 2026 race classifications as published on monaro.co.uk (from Supercars, Speedcafe and Autosport results). Finals format and bonus points: Supercars, "Minor changes to Finals Series format" and "2026 race formats"; Speedcafe, "Finals Series format changes 2026". 2025 Finals results: Wikipedia, 2025 Gold Coast 500; Speedcafe and Motorsport.com Gold Coast 500 results; Supercars race reports for the Gold Coast 500, Sandown 500 and Adelaide Grand Final; Motorsport.com Sandown 500 results. Laps led: Supercars, Kostecki "11 laps outside the top 10" feature. Parity: Supercars, parity investigation after Taupō. Brakes: Supercars, Tasmania brake test. October climate: long-term averages for the Gold Coast.</p>
+  <p>Model run 21 October 2026, before Gold Coast practice. We'll update it after Friday practice and after each Finals round.</p>
+</footer>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>
+const DATA = [{"k":"Payne","n":"Matt Payne","no":19,"team":"Grove Racing","make":"Ford","champ":52.8,"adl":88.8,"san":99,"avg":2,"mode":1,"gcWin":29,"gcPod":58.6,"season":81,"recent":84,"trend":8,"street":80,"endur":75,"hist":72,"wet":73,"poles":8,"dnf":6.1},{"k":"Kostecki","n":"Brodie Kostecki","no":17,"team":"Dick Johnson Racing","make":"Ford","champ":18.3,"adl":73.1,"san":96.6,"avg":3.1,"mode":2,"gcWin":15.8,"gcPod":42.6,"season":74,"recent":67,"trend":-6,"street":96,"endur":69,"hist":61,"wet":51,"poles":6,"dnf":1.7},{"k":"Feeney","n":"Broc Feeney","no":88,"team":"Triple Eight","make":"Ford","champ":13.9,"adl":72.9,"san":98.7,"avg":3.3,"mode":2,"gcWin":10.8,"gcPod":33.4,"season":74,"recent":72,"trend":-11,"street":69,"endur":52,"hist":76,"wet":45,"poles":4,"dnf":3.9},{"k":"Brown","n":"Will Brown","no":888,"team":"Triple Eight","make":"Ford","champ":6.1,"adl":54.2,"san":94.8,"avg":4.2,"mode":6,"gcWin":8.1,"gcPod":27.6,"season":62,"recent":72,"trend":17,"street":53,"endur":74,"hist":71,"wet":70,"poles":2,"dnf":1.7},{"k":"Allen","n":"Kai Allen","no":26,"team":"Grove Racing","make":"Ford","champ":3.8,"adl":39.9,"san":84.1,"avg":4.7,"mode":6,"gcWin":8.3,"gcPod":27.6,"season":65,"recent":70,"trend":11,"street":60,"endur":61,"hist":69,"wet":78,"poles":0,"dnf":1.7},{"k":"Waters","n":"Cam Waters","no":6,"team":"Tickford Racing","make":"Ford","champ":2.2,"adl":28.9,"san":76.2,"avg":5.4,"mode":6,"gcWin":6.7,"gcPod":24.3,"season":66,"recent":56,"trend":-6,"street":80,"endur":49,"hist":70,"wet":50,"poles":3,"dnf":1.7},{"k":"Mostert","n":"Chaz Mostert","no":1,"team":"Walkinshaw TWG Racing","make":"Toyota","champ":2.5,"adl":26.1,"san":62.3,"avg":6.7,"mode":8,"gcWin":10.4,"gcPod":31.3,"season":62,"recent":76,"trend":21,"street":63,"endur":81,"hist":85,"wet":81,"poles":1,"dnf":10.6},{"k":"DePasquale","n":"Anton De Pasquale","no":18,"team":"Team 18","make":"Chevrolet","champ":0.4,"adl":12.3,"san":54.3,"avg":6.9,"mode":7,"gcWin":3.8,"gcPod":16,"season":61,"recent":60,"trend":0,"street":52,"endur":61,"hist":59,"wet":61,"poles":1,"dnf":3.9},{"k":"Wood","n":"Ryan Wood","no":2,"team":"Walkinshaw TWG Racing","make":"Toyota","champ":0,"adl":3.5,"san":26.2,"avg":8.9,"mode":9,"gcWin":2.5,"gcPod":10.7,"season":57,"recent":53,"trend":-8,"street":47,"endur":53,"hist":48,"wet":71,"poles":2,"dnf":8.3},{"k":"LeBrocq","n":"Jack Le Brocq","no":4,"team":"Matt Stone Racing","make":"Chevrolet","champ":0,"adl":0.3,"san":8,"avg":10.3,"mode":10,"gcWin":0.6,"gcPod":3.6,"season":44,"recent":39,"trend":-7,"street":53,"endur":53,"hist":36,"wet":46,"poles":0,"dnf":1.7},{"k":"Randle","n":"Thomas Randle","no":55,"team":"Tickford Racing","make":"Ford","champ":0,"adl":0,"san":0,"avg":11.8,"mode":11,"gcWin":1.1,"gcPod":6,"season":45,"recent":48,"trend":6,"street":60,"endur":46,"hist":51,"wet":44,"poles":0,"dnf":4},{"k":"Heimgartner","n":"Andre Heimgartner","no":8,"team":"Brad Jones Racing","make":"Toyota","champ":0,"adl":0,"san":0,"avg":11.9,"mode":12,"gcWin":0.9,"gcPod":5,"season":45,"recent":49,"trend":3,"street":38,"endur":52,"hist":56,"wet":51,"poles":1,"dnf":6.1},{"k":"Golding","n":"James Golding","no":7,"team":"Blanchard Racing Team","make":"Ford","champ":0,"adl":0,"san":0,"avg":12.6,"mode":13,"gcWin":0.6,"gcPod":3.7,"season":46,"recent":41,"trend":-12,"street":42,"endur":51,"hist":44,"wet":46,"poles":1,"dnf":3.9},{"k":"Ojeda","n":"Jayden Ojeda","no":31,"team":"PremiAir Racing","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":13.4,"mode":14,"gcWin":0.4,"gcPod":2.6,"season":39,"recent":34,"trend":-3,"street":42,"endur":47,"hist":39,"wet":55,"poles":0,"dnf":1.7},{"k":"Reynolds","n":"David Reynolds","no":20,"team":"Team 18","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":15.5,"mode":15,"gcWin":0.1,"gcPod":1.1,"season":36,"recent":35,"trend":-4,"street":37,"endur":29,"hist":36,"wet":27,"poles":0,"dnf":3.9},{"k":"Bates","n":"Zach Bates","no":10,"team":"Matt Stone Racing","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":16.5,"mode":16,"gcWin":0.1,"gcPod":1,"season":31,"recent":30,"trend":-3,"street":28,"endur":46,"hist":31,"wet":35,"poles":1,"dnf":3.9},{"k":"Hill","n":"Cameron Hill","no":14,"team":"Brad Jones Racing","make":"Toyota","champ":0,"adl":0,"san":0,"avg":17.1,"mode":17,"gcWin":0.1,"gcPod":0.7,"season":34,"recent":28,"trend":-11,"street":31,"endur":32,"hist":34,"wet":30,"poles":0,"dnf":3.9},{"k":"Gray","n":"Rylan Gray","no":38,"team":"Dick Johnson Racing","make":"Ford","champ":0,"adl":0,"san":0,"avg":18,"mode":19,"gcWin":0.2,"gcPod":1,"season":31,"recent":36,"trend":6,"street":29,"endur":33,"hist":31,"wet":41,"poles":0,"dnf":3.9},{"k":"Murray","n":"Cooper Murray","no":36,"team":"PremiAir Racing","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":18.3,"mode":19,"gcWin":0.2,"gcPod":1.4,"season":30,"recent":34,"trend":7,"street":29,"endur":37,"hist":30,"wet":27,"poles":0,"dnf":8.3},{"k":"Cameron","n":"Aaron Cameron","no":3,"team":"Blanchard Racing Team","make":"Ford","champ":0,"adl":0,"san":0,"avg":19.6,"mode":20,"gcWin":0.1,"gcPod":0.9,"season":32,"recent":37,"trend":6,"street":21,"endur":34,"hist":34,"wet":32,"poles":0,"dnf":8.3},{"k":"Jones","n":"Macauley Jones","no":96,"team":"Brad Jones Racing (96)","make":"Toyota","champ":0,"adl":0,"san":0,"avg":21.4,"mode":21,"gcWin":0,"gcPod":0.3,"season":25,"recent":18,"trend":-9,"street":28,"endur":22,"hist":26,"wet":23,"poles":0,"dnf":3.9},{"k":"Stewart","n":"Jobe Stewart","no":9,"team":"Erebus Motorsport","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":22.2,"mode":23,"gcWin":0,"gcPod":0.3,"season":22,"recent":25,"trend":3,"street":22,"endur":26,"hist":22,"wet":27,"poles":0,"dnf":6.1},{"k":"Walls","n":"Jackson Walls","no":11,"team":"SCT Motorsport","make":"Ford","champ":0,"adl":0,"san":0,"avg":22.4,"mode":23,"gcWin":0,"gcPod":0.3,"season":23,"recent":23,"trend":0,"street":27,"endur":21,"hist":23,"wet":22,"poles":0,"dnf":3.9},{"k":"Hughes","n":"Jarrod Hughes","no":99,"team":"Erebus Motorsport","make":"Chevrolet","champ":0,"adl":0,"san":0,"avg":24,"mode":24,"gcWin":0,"gcPod":0.3,"season":18,"recent":21,"trend":0,"street":18,"endur":18,"hist":18,"wet":18,"poles":0,"dnf":8}];
+const GCB = {Payne:150,Feeney:145,Kostecki:96,Brown:103,Allen:66,Waters:57,DePasquale:48,Mostert:39,Wood:30,LeBrocq:21};
+const FIN = Object.keys(GCB);
+const by = k => DATA.find(d => d.k === k);
+const pct = v => v >= 0.1 ? (v >= 10 ? Math.round(v) : v.toFixed(1)) + "%" : "<0.1%";
+const odds = v => { if (v < 0.5) return "long shot"; const n = Math.round(100 / v); return n <= 1 ? "near certain" : "about 1 in " + n; };
+const fins = DATA.filter(d => FIN.includes(d.k));
+const tip = document.getElementById("tip");
+const bar = (v, cls, label) => `<div class="cell"><div class="bar ${cls||""}" data-tip="${label}"><i style="width:${Math.max(v,0.6)}%"></i></div><b>${pct(v)}</b></div>`;
+
+// hero
+const byChamp = [...fins].sort((a,b) => b.champ - a.champ);
+document.getElementById("top3").innerHTML = byChamp.slice(0,3).map(d =>
+  `<div><span class="pct">${pct(d.champ)}</span><span class="who">${d.n}</span><span class="sub">${d.team} · ${odds(d.champ)}</span></div>`).join("");
+
+// funnel
+document.querySelector("#funnel tbody").innerHTML = byChamp.map(d => `<tr>
+  <td class="n"><span class="no">#${d.no}</span>${d.n}</td>
+  <td class="mono">${GCB[d.k]}</td>
+  <td>${bar(d.san,"l3",`${d.n}: reaches Sandown in ${pct(d.san)} of runs`)}</td>
+  <td>${bar(d.adl,"l2",`${d.n}: reaches Adelaide in ${pct(d.adl)} of runs`)}</td>
+  <td>${bar(d.champ,"",`${d.n}: champion in ${pct(d.champ)} of runs`)}</td></tr>`).join("");
+
+// final order
+document.querySelector("#final tbody").innerHTML = [...DATA].sort((a,b)=>a.avg-b.avg).slice(0,12).map((d,i) => `<tr>
+  <td class="mono">${i+1}</td><td class="n"><span class="no">#${d.no}</span>${d.n}${FIN.includes(d.k)?"":' <span class="note">(not in Finals)</span>'}</td>
+  <td>${d.team}</td><td class="mono">${d.avg.toFixed(1)}</td></tr>`).join("");
+
+// Gold Coast
+const gc = [...DATA].sort((a,b)=>b.gcWin-a.gcWin).slice(0,12);
+const gmax = gc[0].gcWin, pmax = Math.max(...gc.map(d=>d.gcPod));
+document.querySelector("#gc tbody").innerHTML = gc.map(d => `<tr>
+  <td class="n"><span class="no">#${d.no}</span>${d.n}${FIN.includes(d.k)?"":' <span class="note">(not in Finals)</span>'}</td>
+  <td><div class="cell"><div class="bar" data-tip="${d.n}: wins ${pct(d.gcWin)} of Gold Coast races"><i style="width:${d.gcWin/gmax*100}%"></i></div><b>${pct(d.gcWin)}</b></div></td>
+  <td><div class="cell"><div class="bar l2" data-tip="${d.n}: on the podium in ${pct(d.gcPod)} of Gold Coast races"><i style="width:${d.gcPod/pmax*100}%"></i></div><b>${pct(d.gcPod)}</b></div></td></tr>`).join("");
+
+// factor grid
+const shade = v => v >= 80 ? "background:var(--red);color:#fff" : v >= 65 ? "background:var(--red2)" : v >= 50 ? "background:var(--red3)" : "background:var(--track)";
+const c = v => `<td class="v"><span style="${shade(v)}">${v}</span></td>`;
+document.querySelector("#fx tbody").innerHTML = byChamp.map(d => `<tr>
+  <td class="n"><span class="no">#${d.no}</span>${d.n.split(" ").slice(1).join(" ")}</td>
+  ${c(d.season)}${c(d.recent)}<td class="v mono">${d.trend>0?"+":""}${d.trend}</td>${c(d.street)}${c(d.endur)}${c(d.hist)}${c(d.wet)}
+  <td class="v mono">${d.poles}</td><td class="v mono">${d.dnf.toFixed(0)}%</td></tr>`).join("");
+
+// weights
+const W = [["2026 season form",25],["Form since Perth",20],["Progression through the year",15],["Street circuits (Melbourne, Townsville)",15],["2025 at Gold Coast, Sandown, Adelaide",15],["Enduro form (Bend, Bathurst)",10]];
+document.getElementById("weights").innerHTML = W.map(([l,w]) => `<div class="cell"><span class="lab">${l}</span><div class="bar"><i style="width:${w*4}%"></i></div><b>${w}%</b></div>`).join("") +
+  `<p class="note">Plus outside the rating: qualifying pace (+0.5 per pole), DNF risk, rain and a weekend form swing.</p>`;
+
+// factor cards
+const F = [
+ ["in","Progression through the season","Form since Perth carries 20% and the change since the early rounds another 15%. Mostert (+21) and Brown (+17) are the big improvers, while Feeney (−11) and Kostecki (−6) have cooled since their hot starts."],
+ ["in","Street circuit","The Gold Coast and Adelaide are street tracks, so results from the two 2026 street rounds, Albert Park and Townsville, carry 15%. Kostecki is the standout here (96), having won four of those seven races."],
+ ["in","Weather","Each race has a chance of rain from the local climate, since no forecast reaches this far out yet. A wet race shifts the order towards The Bend form, which helps Mostert, Allen and Wood. The real forecast can be swapped in once it's out."],
+ ["in","Two races per round","Every round is simulated race by race with the bonus points, so one bad Saturday can be recovered on Sunday, but a weekend where the car is off hurts both."],
+ ["in","Endurance form (Mostert last year)","The Finals races are 250 km with pit stops, closer to an enduro than a sprint. The Bend and Bathurst carry 10%, and 2025 Finals results another 15%. Mostert scores highest on both."],
+ ["in","Car changes","Triple Eight moved from Chevrolet to Ford and Walkinshaw TWG from Ford to Toyota, so their 2025 results count half. Supercars tweaked the Camaro's aero after Taupō, which the recent-form weighting picks up."],
+ ["in","Driver moves","Cooper Murray moves from Erebus to PremiAir, so his rating gets half the gap between the two cars this season (+5). Jarrod Hughes makes his solo debut in the #99 and is rated just below Jobe Stewart with bigger swings. Neither is a title contender, but both are in every race."],
+ ["in","Reliability and qualifying","Retirement risk comes from each car's 2026 record, and poles add a small pace bonus. Payne's 8 poles help him; Mostert's 4 DNFs cost him."]
+];
+document.getElementById("factors").innerHTML = F.map(([t,h,p]) => `<div class="card"><span class="tag ${t}">In the model</span><h3>${h}</h3><p>${p}</p></div>`).join("");
+
+const DD = [
+ ["part","Laps led","Only partial figures are public: after Melbourne, Feeney had led 67 laps and Kostecki and De Pasquale 45 each. There's no season total, so finishing results stand in for it."],
+ ["out","Tyre performance by car","Last year the Gold Coast and Sandown split compounds, Super Soft on Saturday and Soft on Sunday. We couldn't find the 2026 allocation or any data on which car looks after its tyres best."],
+ ["out","Older-style brake pads","We couldn't find a 2026 rule bringing back older pads for the Finals. The latest report is a pad trial at Tasmania, aimed at 2027. If a change is confirmed, we'll add it."],
+ ["part","Manufacturer parity","Supercars made a small Camaro aero change after Taupō and left the Supra and Mustang alone. It's covered by the weight on recent form rather than as a separate factor."],
+ ["out","Weekend forecast","No Gold Coast forecast for 23 to 25 October was available yet, so the model uses climate averages for now."],
+ ["out","Practice and qualifying times","They don't exist until Friday. Adding them would be the biggest single improvement for the weekend's races."]
+];
+const TL = {part:"Partly used",out:"Ruled out for now",in:"In the model"};
+document.getElementById("data").innerHTML = DD.map(([t,h,p]) => `<div class="card"><span class="tag ${t}">${TL[t]}</span><h3>${h}</h3><p>${p}</p></div>`).join("");
+
+// tooltips
+document.addEventListener("pointerover", e => { const t = e.target.closest("[data-tip]"); if (!t) { tip.style.opacity = 0; return; } tip.textContent = t.dataset.tip; tip.style.opacity = 1; });
+document.addEventListener("pointermove", e => { const x = Math.min(e.clientX + 12, innerWidth - 250); tip.style.left = x + "px"; tip.style.top = (e.clientY + 14) + "px"; });
+document.addEventListener("scroll", () => tip.style.opacity = 0, {passive:true});
+</script>
+
+</body>
+</html>
