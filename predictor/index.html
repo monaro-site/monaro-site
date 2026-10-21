@@ -99,12 +99,12 @@ footer a{color:var(--ink2)}
 <header>
   <span class="eyebrow">2026 Finals · prediction · 21 Oct</span>
   <h1>Who wins the 2026 title?</h1>
-  <p class="lede">We ran the rest of the season 60,000 times: Gold Coast, Sandown and the Adelaide Grand Final, with all 24 cars in every race. Each run uses this year's results, last year's Finals, the type of track, the chance of rain and the grid changes. Matt Payne wins about half of them.</p>
+  <p class="lede">There's been so much movement this season that I wanted to see who really has the edge. So I ran the rest of the year 60,000 times: Gold Coast, Sandown and the Adelaide Grand Final, with all 24 cars in every race. Each run weighs this year's results, last year's Finals, the type of track, the weather and the grid changes. Matt Payne wins about half of them.</p>
 </header>
 
 <section aria-labelledby="h-odds">
   <div class="top3" id="top3"></div>
-  <p class="note">Percentages are the share of simulated seasons each driver won. They are chances, not a forecast of what will happen.</p>
+  <p class="note">Percentages are the share of simulated seasons each driver won. They're chances, not a promise. This is motorsport, after all.</p>
 </section>
 
 <section aria-labelledby="h-funnel">
@@ -129,14 +129,14 @@ footer a{color:var(--ink2)}
 
 <section aria-labelledby="h-fx">
   <h2 id="h-fx">The form guide behind it</h2>
-  <p>Every factor is scored the same way: an average result where 100 is a win every time, using the endurance points scale so a 2nd is worth 92, a 10th 47 and a 20th 21. Only classified finishes count here, because retirements are handled separately as DNF risk.</p>
+  <p>This is what I fed in. Every factor is scored the same way: an average result where 100 is a win every time, using the endurance points scale so a 2nd is worth 92, a 10th 47 and a 20th 21. Only classified finishes count here, because retirements are handled separately as DNF risk.</p>
   <div class="key"><span><i style="background:var(--red)"></i>80+</span><span><i style="background:var(--red2)"></i>65 to 79</span><span><i style="background:var(--red3)"></i>50 to 64</span><span><i style="background:var(--track)"></i>under 50</span></div>
   <div class="scroll"><table class="fx" id="fx"><thead><tr><th>Driver</th><th>2026 season</th><th>Since Perth</th><th>Trend</th><th>Street tracks</th><th>Enduros</th><th>2025 at these tracks</th><th>Wet</th><th>Poles</th><th>DNF risk</th></tr></thead><tbody></tbody></table></div>
   <p class="note">Trend is form since Perth minus form in the first five rounds. Wet is The Bend 500, the year's only wet race, blended half and half with season form because one race is a small sample. Enduros are The Bend and Bathurst, which were shared with co-drivers.</p>
 </section>
 
 <section aria-labelledby="h-how">
-  <h2 id="h-how">How the model works</h2>
+  <h2 id="h-how">How I built it</h2>
   <div class="weights" id="weights"></div>
   <ol class="steps">
     <li>Each driver gets a rating from the factors above, weighted as shown. Each pole adds half a point, and drivers in a team that changed manufacturer this year (Triple Eight to Ford, Walkinshaw and Brad Jones to Toyota) have last year's results counted at half weight, because they were in a different car.</li>
@@ -148,30 +148,31 @@ footer a{color:var(--ink2)}
 </section>
 
 <section aria-labelledby="h-factors">
-  <h2 id="h-factors">Your factors, and what we did with each</h2>
+  <h2 id="h-factors">The factors I weighed</h2>
   <div class="cards" id="factors"></div>
 </section>
 
 <section aria-labelledby="h-data">
-  <h2 id="h-data">Data we looked for</h2>
-  <p>We searched for the deeper data too. Some of it exists but isn't public in a form we can use, so here is what's in the model and what's ruled out for now.</p>
+  <h2 id="h-data">Data I went looking for</h2>
+  <p>I wanted the deeper data too, like laps led, tyres and the brake pad change. Some of it exists but isn't public in a form I can use, so here's what made it in and what I've ruled out for now.</p>
   <div class="cards" id="data"></div>
 </section>
 
 <section aria-labelledby="h-limits">
   <h2 id="h-limits">What it can't see</h2>
+  <p>A model is only as good as what goes into it, and there's plenty it can't know.</p>
   <ul class="steps" style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;max-width:65ch">
     <li>Team-mates racing each other. Grove (Payne and Allen), Triple Eight (Feeney and Brown) and Walkinshaw TWG (Mostert and Wood) each have two cars in the Finals, and team tactics could help one of them.</li>
     <li>2025 results at these tracks are mostly known. The Gold Coast top ten from both races and most of race 1 are in. Kostecki, De Pasquale and Le Brocq finished outside the top ten on the Sunday, so those places are estimated at 17th, and Kostecki's Saturday at 21st. Sandown and Adelaide are still partial.</li>
     <li>Penalties, safety cars and strategy calls. They show up only as random swings.</li>
-    <li>The 2026 points scale for the Finals races hasn't been published in full. We used the 2025 scale. If 2026 differs, the odds will move a little but the order shouldn't change much.</li>
+    <li>The 2026 points scale for the Finals races hasn't been published in full. I've used the 2025 scale. If 2026 differs, the odds will move a little but the order shouldn't change much.</li>
   </ul>
 </section>
 
 <footer>
   <p><a href="/#stats">Back to season stats</a> · Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</p>
   <p>Sources: 2026 race classifications as published on monaro.co.uk (from Supercars, Speedcafe and Autosport results). Finals format and bonus points: Supercars, "Minor changes to Finals Series format" and "2026 race formats"; Speedcafe, "Finals Series format changes 2026". 2025 Finals results: Wikipedia, 2025 Gold Coast 500; Speedcafe and Motorsport.com Gold Coast 500 results; Supercars race reports for the Gold Coast 500, Sandown 500 and Adelaide Grand Final; Motorsport.com Sandown 500 results. Laps led: Supercars, Kostecki "11 laps outside the top 10" feature. Parity: Supercars, parity investigation after Taupō. Brakes: Speedcafe, "Gold Coast 500 brake pads explained" (16 Oct 2026); Supercars, Tasmania brake test. Tyres and race formats: Supercars, "2026 formats and tyres explained". Weather: Bureau of Meteorology, Surfers Paradise forecast issued 21 Oct. October climate: long-term averages for the Gold Coast.</p>
-  <p>Model run 21 October 2026, before Gold Coast practice, with the forecast issued that day. We'll update it after Friday practice and after each Finals round.</p>
+  <p>I ran the model on 21 October 2026, before Gold Coast practice, with the forecast issued that day. I'll update it after Friday practice and after each Finals round.</p>
 </footer>
 </div>
 <div id="tip" role="tooltip"></div>
