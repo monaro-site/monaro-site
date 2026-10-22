@@ -2,6 +2,125 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-22",
+   "updated": "2026-10-22T06:20:00Z",
+   "stories": [
+    {
+     "h": "Sandown 500 tipped to return in 2027",
+     "t": "A two-driver Sandown 500 could return in an expanded Enduro Cup if the 2027 calendar runs to 14 rounds, but five teams remain locked in a funding standoff with Supercars owner RACE.",
+     "pub": "2026-10-22T03:43:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/sandown-500-enduro-firming-for-2027/"
+      }
+     ]
+    },
+    {
+     "h": "Brown flying since 'restrictor gate' fix",
+     "t": "Will Brown was 245 points back in March. Since a faulty restrictor was fixed he has outscored everyone, and he plans to stay aggressive despite heavy rain forecast all weekend.",
+     "pub": "2026-10-22T04:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-gold-coast-500-restrictor-gate-form-championship-triple-eight"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-finals-series-will-brown-brodie-kostecki-rain-forecast-comments-reaction/",
+       "label": "Rain a 'spanner in the works'"
+      }
+     ]
+    },
+    {
+     "h": "Holdsworth vows to return to Bathurst",
+     "t": "Lee Holdsworth says his fuel-hit 23rd Bathurst \"keeps hitting me every day\", but he expects to be back with Team 18 for the 2027 enduros.",
+     "pub": "2026-10-22T00:51:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-bathurst-1000-team-18-lee-holdsworth-anton-de-pasquale-fuel-contract-co-drive/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-lee-holdsworth-team-18-fuel-anton-de-pasquale-bathurst-heartbreak-rustys-garage"
+      }
+     ]
+    },
+    {
+     "h": "Whincup calls Supercars' business model 'poor'",
+     "t": "Jamie Whincup says teams see no media-rights or gate money, unlike AFL and NRL clubs whose leagues cover around 60 per cent of their costs.",
+     "pub": "2026-10-21T19:51:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/whincup-blasts-supercars-business-model/"
+      }
+     ]
+    },
+    {
+     "h": "Wood ready to go for broke",
+     "t": "Ninth in points and 18 short of the cut-line, Ryan Wood will chase a race win at the Gold Coast, which would send him straight through to the next Finals round.",
+     "pub": "2026-10-21T23:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-ryan-wood-finals-gold-coast-walkinshaw-twg-racing-repairs-bathurst-1000"
+      }
+     ]
+    },
+    {
+     "h": "Blanchard team turns Cameron's Mustang pink",
+     "t": "Aaron Cameron's car carries a breast cancer tribute to a team mechanic's late mother-in-law, while Cody Golding's sister car runs new Dayco colours.",
+     "pub": "2026-10-21T21:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-blanchard-racing-team-pink-mustang-breast-cancer-awareness-month-gold-coast-500"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-aaron-cameron-ford-mustang-breast-cancer-awareness-month-livery-change-photos/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-touching-tribute-behind-cameron-mustang-addition/"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight moves into defence work",
+     "t": "Triple Eight Engineering has earned aerospace-grade certification and is stepping up work on defence land vehicles, alongside the parts it already makes for Qantas.",
+     "pub": "2026-10-21T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-triple-eight-engineering-australian-defence-force-manufacturing-jamie-whincup-certification/"
+      }
+     ]
+    },
+    {
+     "h": "Perkins keeps an open mind after Bathurst pain",
+     "t": "Jack Perkins' Bathurst ended with power steering failure on the formation lap. He would like to return in 2027 but is open-minded about what comes next.",
+     "pub": "2026-10-21T07:40:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/perkins-philosophical-about-future-after-bathurst-pain/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-21",
    "updated": "2026-10-21T05:55:01Z",
    "stories": [
