@@ -171,6 +171,7 @@ footer a{color:var(--ink2)}
 
 <footer>
   <p><a href="/#stats">Back to season stats</a> · Monaro.co.uk is an independent fan site and is not affiliated with Supercars.</p>
+  <p><strong>Disclaimer:</strong> the figures on this page are my own predictions, made just for fun and to share how I see the Finals. They're not to be relied on or used for betting or any other decision.</p>
   <p>Sources: 2026 race classifications as published on monaro.co.uk (from Supercars, Speedcafe and Autosport results). Finals format and bonus points: Supercars, "Minor changes to Finals Series format" and "2026 race formats"; Speedcafe, "Finals Series format changes 2026". 2025 Finals results: Wikipedia, 2025 Gold Coast 500; Speedcafe and Motorsport.com Gold Coast 500 results; Supercars race reports for the Gold Coast 500, Sandown 500 and Adelaide Grand Final; Motorsport.com Sandown 500 results. Laps led: Supercars, Kostecki "11 laps outside the top 10" feature. Parity: Supercars, parity investigation after Taupō. Will Brown's restrictor: Speedcafe, "Will Brown restrictor-gate explained" (15 Aug 2026). Brakes: Speedcafe, "Gold Coast 500 brake pads explained" (16 Oct 2026); Supercars, Tasmania brake test. Tyres and race formats: Supercars, "2026 formats and tyres explained". Weather: Bureau of Meteorology, Surfers Paradise forecast issued 21 Oct. October climate: long-term averages for the Gold Coast.</p>
   <p>I ran the model on 21 October 2026, before Gold Coast practice, with the forecast issued that day. I'll update it after Friday practice and after each Finals round.</p>
 </footer>
@@ -246,7 +247,7 @@ const DD = [
  ["part","Older-style brake pads","Brad Jones says the whole field goes back to a previously used pad compound at the Gold Coast after teams complained the current pads wore and lost bite, with Grove's Brenton Grove calling it \"a joke\". It applies to every car and no team is known to gain, so it isn't a separate factor. It could make braking more consistent on a street track where the walls punish mistakes."],
  ["part","Manufacturer parity","Supercars made a small Camaro aero change after Taupō and left the Supra and Mustang alone. It's covered by the weight on recent form rather than as a separate factor."],
  ["in","Weekend forecast","Bureau of Meteorology: showers and a chance of storms on Friday (80%), Saturday (high chance) and Sunday (90%, 3 to 20 mm). Built into the wet-race chances above."],
- ["out","Practice and qualifying times","They don't exist until Friday. Adding them would be the biggest single improvement for the weekend's races."]
+ ["out","Practice and qualifying times","They don't exist until Friday. Adding them would be the biggest single improvement for the weekend's races. Once practice, qualifying and the starting grids are in, I'll update the predictions and every figure above to reflect them."]
 ];
 const TL = {part:"Partly used",out:"Ruled out for now",in:"In the model"};
 document.getElementById("data").innerHTML = DD.map(([t,h,p]) => `<div class="card"><span class="tag ${t}">${TL[t]}</span><h3>${h}</h3><p>${p}</p></div>`).join("");
