@@ -1188,7 +1188,20 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 
 // Race weekend box: Supercars sessions only, latest first. Updated after each session; set WKND = null between events.
 // Times: UK first, local in brackets. Gold Coast is AEST (no daylight saving): Fri/Sat BST = AEST - 9h; Sun 25 Oct (UK clocks back) GMT = AEST - 10h.
-const WKND = null;
+const WKND = {
+  event: "Gold Coast 500",
+  tz: "AEST", // Queensland: no daylight saving
+  updated: "Fri 23 Oct, 03:50 BST (12:50 AEST)",
+  upnext: [
+    ["Practice 2", "Fri 04:50 BST (13:50 AEST)"],
+    ["Qualifying, Race 31", "Fri 07:05 BST (16:05 AEST)"],
+  ],
+  sessions: [
+    { name: "Practice 1", day: "Fri", lead: "James Golding topped a damp-to-drying opener by half a second, setting a 1:16.0169 on his last lap. Anton De Pasquale's spin at the first chicane brought a red flag, and Ryan Wood, Cam Waters and Cooper Murray all found the tyres at the final turn.",
+      top: [["James Golding","Blanchard Racing Team","1:16.0169"],["Ryan Wood","Walkinshaw TWG Racing","+0.5088"],["Aaron Cameron","Blanchard Racing Team","+0.5470"],["David Reynolds","Team 18","+0.5504"],["Chaz Mostert","Walkinshaw TWG Racing","+0.5565"],["Zach Bates","Matt Stone Racing","+0.6205"],["Broc Feeney","Triple Eight","+0.6308"],["Cameron Waters","Tickford Racing","+0.6368"],["Will Brown","Triple Eight","+0.8678"],["Cameron Hill","Brad Jones Racing","+0.9124"]],
+      src: [["Speedcafe", "https://speedcafe.com/supercars-news-2026-gold-coast-500-practice-1-james-golding-fastest-highlights-video-reaction/"], ["supercars.com", "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-practice-report-james-golding-fastest-time-results-crash-video"]] },
+  ],
+};
 function renderWknd() {
   const box = $("#wknd");
   if (!WKND) { box.hidden = true; return; }
@@ -1205,11 +1218,11 @@ function renderWknd() {
         ${latest.top.length > 5 ? `<details><summary>Show top ${latest.top.length}</summary><ol start="6">${latest.top.slice(5).map((r, i) => row(r, i + 5)).join("")}</ol></details>` : ""}
       </div>
       <div>
-        <div class="k">Earlier sessions</div>
-        <div class="earlier">${rest.map(x => `<div><b>${x.name}</b> (${x.day}): ${x.short}</div>`).join("")}</div>
-        <div class="k" style="margin-top:6px">Still to come · UK time (AEDT)</div>
+        ${rest.length ? `<div class="k">Earlier sessions</div>
+        <div class="earlier">${rest.map(x => `<div><b>${x.name}</b> (${x.day}): ${x.short}</div>`).join("")}</div>` : ""}
+        <div class="k" style="margin-top:6px">Still to come · UK time (${WKND.tz || "AEDT"})</div>
         <div class="upnext">${WKND.upnext.map(([n, t]) => `<div><span>${n}</span><span>${t}</span></div>`).join("")}</div>
-        ${latest.src ? `<p class="src">Sources: <a href="${latest.src[1]}" target="_blank" rel="noopener">${latest.src[0]}</a>, <a href="https://www.supercars.com/news/supercars-news-2026-bathurst-1000-top-10-shootout-report-zach-bates-pole-shock-fairytale-matt-stone-racing-results" target="_blank" rel="noopener">supercars.com</a></p>` : ""}
+        ${latest.src ? `<p class="src">Sources: ${(Array.isArray(latest.src[0]) ? latest.src : [latest.src]).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(", ")}</p>` : ""}
       </div>
     </div>`;
   box.hidden = false;
