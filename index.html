@@ -1191,15 +1191,16 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 const WKND = {
   event: "Gold Coast 500",
   tz: "AEST", // Queensland: no daylight saving
-  updated: "Fri 23 Oct, 03:50 BST (12:50 AEST)",
+  updated: "Fri 23 Oct, 05:50 BST (14:50 AEST)",
   upnext: [
-    ["Practice 2", "Fri 04:50 BST (13:50 AEST)"],
     ["Qualifying, Race 31", "Fri 07:05 BST (16:05 AEST)"],
+    ["Top 10 Shootout, Race 31", "Sat 03:35 BST (12:35 AEST)"],
   ],
   sessions: [
-    { name: "Practice 1", day: "Fri", lead: "James Golding topped a damp-to-drying opener by half a second, setting a 1:16.0169 on his last lap. Anton De Pasquale's spin at the first chicane brought a red flag, and Ryan Wood, Cam Waters and Cooper Murray all found the tyres at the final turn.",
-      top: [["James Golding","Blanchard Racing Team","1:16.0169"],["Ryan Wood","Walkinshaw TWG Racing","+0.5088"],["Aaron Cameron","Blanchard Racing Team","+0.5470"],["David Reynolds","Team 18","+0.5504"],["Chaz Mostert","Walkinshaw TWG Racing","+0.5565"],["Zach Bates","Matt Stone Racing","+0.6205"],["Broc Feeney","Triple Eight","+0.6308"],["Cameron Waters","Tickford Racing","+0.6368"],["Will Brown","Triple Eight","+0.8678"],["Cameron Hill","Brad Jones Racing","+0.9124"]],
-      src: [["Speedcafe", "https://speedcafe.com/supercars-news-2026-gold-coast-500-practice-1-james-golding-fastest-highlights-video-reaction/"], ["supercars.com", "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-practice-report-james-golding-fastest-time-results-crash-video"]] },
+    { name: "Practice 2", day: "Fri", lead: "Broc Feeney went fastest with a 1:09.4889, just 0.0665s clear of Cam Waters. Top seed Matt Payne lost his power steering to a belt failure, managed only six laps and ended up 14th.",
+      top: [["Broc Feeney","Triple Eight","1:09.4889"],["Cameron Waters","Tickford Racing","+0.0665"],["James Golding","Blanchard Racing Team","+0.1575"],["Kai Allen","Grove Racing","+0.1904"],["Jack Le Brocq","Matt Stone Racing","+0.1969"],["Aaron Cameron","Blanchard Racing Team","+0.2475"],["Chaz Mostert","Walkinshaw TWG Racing","+0.3437"],["Ryan Wood","Walkinshaw TWG Racing","+0.3800"],["Andre Heimgartner","Brad Jones Racing","+0.3842"],["David Reynolds","Team 18","+0.4016"]],
+      src: [["Speedcafe", "https://speedcafe.com/supercars-news-2026-gold-coast-500-practice-2-results-broc-feeney-fastest-matt-payne-issue-video-highlights-comments/"], ["V8 Sleuth", "https://www.v8sleuth.com.au/feeney-leads-ford-lockout-in-final-gold-coast-practice/"]] },
+    { name: "Practice 1", day: "Fri", short: "James Golding fastest, 1:16.0169, half a second clear on a drying track; red flag for De Pasquale's spin" },
   ],
 };
 function renderWknd() {
