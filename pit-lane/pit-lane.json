@@ -2,6 +2,158 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-23",
+   "updated": "2026-10-23T06:25:00Z",
+   "stories": [
+    {
+     "h": "Payne loses final practice to belt failure",
+     "t": "Championship leader Matt Payne managed just six laps in Gold Coast Practice 2 after a drive-belt bearing failed, while title rival Broc Feeney led a Ford top-four lockout.",
+     "pub": "2026-10-23T04:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-matt-payne-penrite-racing-mechanical-issues-garage-gold-coast-500-finals-twist"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-practice-2-results-broc-feeney-fastest-matt-payne-issue-video-highlights-comments/",
+       "label": "Practice 2 report"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/feeney-leads-ford-lockout-in-final-gold-coast-practice/"
+      }
+     ]
+    },
+    {
+     "h": "Golding fastest as wet practice catches out contenders",
+     "t": "James Golding topped a damp opening practice. Finals drivers Anton De Pasquale, Cam Waters and Ryan Wood all had scares, and Cooper Murray nosed into the tyres on his PremiAir debut.",
+     "pub": "2026-10-23T02:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-practice-report-james-golding-fastest-time-results-crash-video"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-practice-1-james-golding-fastest-highlights-video-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/scares-for-finals-contenders-in-gold-coast-practice/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-track-conditions-gold-coast-500-james-courtney-mark-winterbottom-incidents-rain",
+       "label": "Why drivers slid off"
+      }
+     ]
+    },
+    {
+     "h": "2027 calendar announcement delayed again",
+     "t": "Hopes of a Friday reveal faded after the seven teams that took a cut-price deal were thought to be unhappy at a revised offer to the five holdouts. No release is expected this weekend.",
+     "pub": "2026-10-23T01:48:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-calendar-announcement-delayed/"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight changes Brown's engine",
+     "t": "A crank angle sensor issue in Practice 1 prompted a full engine change on Will Brown's Mustang before final practice, Triple Eight's second change in as many events.",
+     "pub": "2026-10-23T03:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-triple-eight-will-brown-engine-change-gold-coast-500-ford"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-will-brown-engine-change-triple-eight-ford-mustang-details/"
+      }
+     ]
+    },
+    {
+     "h": "Commins back at the track for DJR",
+     "t": "Brodie Kostecki's engineer George Commins is back from a fractured pelvis, working from the data room while Tom Moore stays on race engineering duties.",
+     "pub": "2026-10-23T01:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-brodie-kostecki-dick-johnson-racing-george-commins-engineer/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/commins-makes-trackside-return-for-dick-johnson-racing/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-djr-george-commins-trackside-return-gold-coast-500-bathurst-1000-brodie-kostecki"
+      }
+     ]
+    },
+    {
+     "h": "Burgess: Bathurst loss felt like a death",
+     "t": "Team 18 boss Adrian Burgess compared the last-lap fuel defeat to losing Ayrton Senna, and blamed the wrong cell being picked on the team's fuel sheet.",
+     "pub": "2026-10-23T03:32:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-team-18-adrian-burgess-on-bathurst-1000-loss-explanation-loss-comments-reaction-interview/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/how-team-18-sought-galvanisation-after-bathurst-defeat/"
+      }
+     ]
+    },
+    {
+     "h": "GM plays down Finals team games",
+     "t": "With six Fords facing two Chevrolets and two Toyotas, GM's Simon McNamara says Chevrolet's only aim is getting De Pasquale and Le Brocq through. Rules bar manufacturers from giving team orders.",
+     "pub": "2026-10-22T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gm-boss-downplays-finals-games-rules-team-orders-explained-ford-toyota"
+      }
+     ]
+    },
+    {
+     "h": "Why Dane chose Murray",
+     "t": "Roland Dane says Cooper Murray is fast and hungry, and signed him to 2028 hoping PremiAir will have two drivers capable of running in the top 10 next year.",
+     "pub": "2026-10-22T20:02:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/why-dane-wanted-murray-for-premiair-seat/"
+      }
+     ]
+    },
+    {
+     "h": "Ingall pushing for another Herne Bathurst drive",
+     "t": "After finishing 19th on his Bathurst debut with Garry Rogers Motorsport, Nathan Herne says Russell Ingall is working behind the scenes to land him another start.",
+     "pub": "2026-10-22T21:25:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/ingall-leading-hernes-hunt-for-bathurst-1000-return/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-22",
    "updated": "2026-10-22T06:20:00Z",
    "stories": [
