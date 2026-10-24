@@ -2,6 +2,138 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-24",
+   "updated": "2026-10-24T06:20:00Z",
+   "stories": [
+    {
+     "h": "Feeney takes Gold Coast pole, Mostert second",
+     "t": "Broc Feeney survived a lap that nearly hit every wall to beat Chaz Mostert to pole for the Finals opener. Anton De Pasquale was third, while leader Matt Payne slipped to fifth.",
+     "pub": "2026-10-24T03:19:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-saturday-top-10-shootout-race-1-results-broc-feeney-pole-position-reaction-comments-highlights/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-saturday-top-10-shootout-broc-feeney-pole-results-times-finals-battle"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/feeney-pips-mostert-in-full-send-gold-coast-shootout/"
+      }
+     ]
+    },
+    {
+     "h": "Brown handed grid penalty for impeding",
+     "t": "Stewards dropped Will Brown two places for holding up Jack Le Brocq in qualifying. Brown said he thought the car behind was on a warm-up lap. He starts ninth.",
+     "pub": "2026-10-23T08:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-triple-eight-will-brown-qualifying-grid-penalty-verdict-stewards/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-grid-penalty-gold-coast-500-impeding-incident-jack-le-brocq"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/brown-stung-with-gold-coast-500-grid-penalty/"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki misses Shootout as De Pasquale bounces back",
+     "t": "Bathurst winner Brodie Kostecki missed the top 10 by 0.04 seconds after kerb strikes and a last-corner error. Anton De Pasquale put his Bathurst heartbreak behind him with provisional pole.",
+     "pub": "2026-10-23T06:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-friday-qualifying-report-anton-de-pasquale-fastest-finals-results-brodie-kostecki-out"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-will-brown-under-investigation-gold-coast-500-qualifying-kerb-chicane",
+       "label": "Kostecki stung"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kostecki-misses-shootout-de-pasquale-bounces-back/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/de-pasquales-reaction-to-timely-provisional-pole/",
+       "label": "De Pasquale's reaction"
+      }
+     ]
+    },
+    {
+     "h": "Three Toyotas in the top six for the first time",
+     "t": "Andre Heimgartner's fourth in qualifying could help Walkinshaw's Mostert and Wood by keeping their Finals rivals further back, though manufacturers cannot influence results.",
+     "pub": "2026-10-24T01:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-andre-heimgartner-bjr-toyota-finals-chances-walkinshaw-twg-chaz-mostert-gold-coast-500"
+      }
+     ]
+    },
+    {
+     "h": "Reynolds still waiting on a 2027 deal",
+     "t": "David Reynolds, 41, is out of contract with Team 18 his only realistic full-time option. The team is understood to want more focus from him, and he admits he must perform better.",
+     "pub": "2026-10-24T01:28:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-david-reynolds-team-18-conract-driver-market-silly-season-2027-comments-reaction/"
+      }
+     ]
+    },
+    {
+     "h": "Murray crashes in first PremiAir qualifying",
+     "t": "Cooper Murray hit the wall at the Beach Chicane and missed his final run. PremiAir's nearby workshop gives the crew time to repair the car before the race.",
+     "pub": "2026-10-23T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cooper-murray-premiair-racing-gold-coast-500-crash-repairs-reaction-incident"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight wary of rivals' Finals tactics",
+     "t": "With Feeney and Brown the second and third seeds, team manager Mark Dutton says preparing for other teams' ploys has to be front of mind after losing last year's title to Mostert.",
+     "pub": "2026-10-24T00:59:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/rivals-finals-ploys-front-of-mind-for-triple-eight/"
+      }
+     ]
+    },
+    {
+     "h": "Nicolas Hamilton rides with Waters",
+     "t": "The BTCC driver and brother of Lewis Hamilton called a passenger lap in Cam Waters' Tickford Mustang \"insane\". The extra track time raised eyebrows in other teams.",
+     "pub": "2026-10-24T05:05:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-nicolas-hamilton-lewis-brother-tickford-racing-monster-energy-cam-waters/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-23",
    "updated": "2026-10-23T06:25:00Z",
    "stories": [
