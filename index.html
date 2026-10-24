@@ -525,12 +525,12 @@ footer .wrap { display: grid; gap: 8px; }
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow" style="color:#ff8a80">2026 Repco Supercars Championship · after round 11 of 14</div>
-        <h1>Kostecki takes<br><em>the Mountain</em></h1>
-        <p id="hero-lede">Brodie Kostecki and Todd Hazelwood won the Bathurst 1000 on the last lap after Anton De Pasquale ran out of fuel. The Finals ten are set, the points reset, and Matt Payne starts the Gold Coast five points ahead of Broc Feeney.</p>
+        <div class="eyebrow" style="color:#ff8a80">2026 Repco Supercars Championship · Finals round one · Race 31</div>
+        <h1>Mostert's<br><em>perfect race</em></h1>
+        <p id="hero-lede">Chaz Mostert led from lap 4 and won Race 31 in the wet by 23.5 seconds, the biggest winning margin the Gold Coast has seen, and the win sends him straight to Sandown. Broc Feeney went from pole to ninth after contact with Matt Payne, who finished third after a penalty. Kai Allen, Ryan Wood and Jack Le Brocq go into Sunday's Race 32 in the drop zone, and <a href="/predictor/">my predictor</a> now makes Payne a 53% title favourite.</p>
       </div>
       <div class="next" aria-live="polite">
-        <div class="eyebrow">Next up · Round 12 · Finals</div>
+        <div class="eyebrow">Next up · Race 32 · Finals round one</div>
         <div class="race">Gold Coast 500</div>
         <div class="mono small" style="color:#c9cbc6">Surfers Paradise · 23–25 October · 2 races</div>
         <div class="countdown" id="countdown"></div>
@@ -920,13 +920,13 @@ ORDER[11].slice(0, 5).forEach((k, i) => {
   lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${PTS11[k].toLocaleString()} pts · ${gap}</span>`));
 });
 
-// Countdown to Race 31 at the Gold Coast: Sat 24 Oct 2026, 3:15pm AEST = 05:15 UTC (6:15am BST).
-const start = Date.UTC(2026, 9, 24, 5, 15, 0);
+// Countdown to Race 32 at the Gold Coast: Sun 25 Oct 2026, 2:45pm AEST = 04:45 UTC (4:45am GMT, UK clocks back).
+const start = Date.UTC(2026, 9, 25, 4, 45, 0);
 function tick() {
   const ms = start - Date.now(), cd = $("#countdown");
   if (ms <= 0) { cd.innerHTML = `<div><b>Race weekend</b><span>Check results below</span></div>`; return; }
   const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
-  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 31 · Sat 24 Oct · 6:15am BST (3:15pm AEST)</span></div>`;
+  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 32 · Sun 25 Oct · 4:45am GMT (2:45pm AEST)</span></div>`;
 }
 tick(); setInterval(tick, 30000);
 
