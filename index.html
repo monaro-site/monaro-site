@@ -525,14 +525,14 @@ footer .wrap { display: grid; gap: 8px; }
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow" style="color:#ff8a80">2026 Repco Supercars Championship · Finals round one · Race 31</div>
-        <h1>Mostert's<br><em>perfect race</em></h1>
-        <p id="hero-lede">Chaz Mostert led from lap 4 and won Race 31 in the wet by 23.5 seconds, the biggest winning margin the Gold Coast has seen, and the win sends him straight to Sandown. Broc Feeney went from pole to ninth after contact with Matt Payne, who finished third after a penalty. Kai Allen, Ryan Wood and Jack Le Brocq go into Sunday's Race 32 in the drop zone, and <a href="/predictor/">my predictor</a> now makes Payne a 53% title favourite.</p>
+        <div class="eyebrow" style="color:#ff8a80">2026 Repco Supercars Championship · after Finals round one · Race 32</div>
+        <h1>Feeney wins<br><em>at home</em></h1>
+        <p id="hero-lede">Broc Feeney bounced back from an ordinary Saturday to win Race 32 from pole by 6.9 seconds. It was his first win at the Gold Coast, his home town, a week after his 24th birthday. Ryan Wood, Kai Allen and Jack Le Brocq are out. Seven go to Sandown, where the points reset again and Matt Payne starts top seed, with <a href="/predictor/">my predictor</a> making him 57% favourite.</p>
       </div>
       <div class="next" aria-live="polite">
-        <div class="eyebrow">Next up · Race 32 · Finals round one</div>
-        <div class="race">Gold Coast 500</div>
-        <div class="mono small" style="color:#c9cbc6">Surfers Paradise · 23–25 October · 2 races</div>
+        <div class="eyebrow">Next up · Round 13 · Finals semi-final</div>
+        <div class="race">Sandown 500</div>
+        <div class="mono small" style="color:#c9cbc6">Sandown Raceway · 6–8 November · 2 races</div>
         <div class="countdown" id="countdown"></div>
         <a class="predict-link" href="/predictor/">Who wins the title? My Finals predictor →</a>
       </div>
@@ -598,8 +598,8 @@ footer .wrap { display: grid; gap: 8px; }
         </details>
       </div>
       <div class="panel w7">
-        <h3>Points after Bathurst</h3>
-        <p class="sub">Championship totals after Bathurst for the top 14. These ten go to the Finals, where points reset and each starts with a bonus for where they finished here.</p>
+        <h3>Finals points after the Gold Coast</h3>
+        <p class="sub">The ten finalists' points after Races 31 and 32, bonus included. The top seven go to Sandown, where the points reset again with a new bonus.</p>
         <div class="bars" id="points-bars"></div>
       </div>
       <div class="panel w5">
@@ -620,7 +620,7 @@ footer .wrap { display: grid; gap: 8px; }
       <div class="panel w12">
         <h3>Full standings</h3>
         <div class="tbl-wrap" id="standings"></div>
-        
+        <p class="sub" style="margin-top:8px">The top ten are the finalists, on the 3,000 they started the Gold Coast with plus their Finals points. The first dashed line is the cut for Sandown, the second for the Finals. † Points to the end of Bathurst; Gold Coast points for the other 14 drivers will be added once the official table is out.</p>
       </div>
     </div>
   </div>
@@ -877,11 +877,23 @@ const R = [
      "For almost the whole race there wasn't a single safety car. The only one came out six laps from the end, after Chaz Mostert clipped the inside wall at Forrest's Elbow and crashed out, the Enduro Cup leader going home with nothing. Ryan Wood hit the wall at Reid Park and limped home 24th, 16 laps down, which was still enough to keep his Finals place. Kai Allen lost time with a loose brake duct and finished 20th. Payne and Will Davison came back from a drive-through penalty for a pit-stop infringement to finish 5th. Feeney and Nick Percat were 11th. Kostecki set the fastest lap of the race, a new Gen3 lap record.",
      "Brown and Pye take the Enduro Cup and 25 bonus points into the Finals. Brown finished on 510 Enduro Cup points, with Payne second on 413 and Kostecki third on 393.",
      "In the championship, Payne leaves Bathurst 205 points clear of Feeney, with Kostecki third, just 14 behind Feeney. Brown climbs to fourth and Allen drops to fifth. Le Brocq's 4th place made sure of tenth, and the Finals ten are Payne, Feeney, Kostecki, Brown, Allen, Waters, De Pasquale, Mostert, Wood and Le Brocq. Now the points reset. Payne starts the Gold Coast with 150 bonus points, Feeney with 145 (120 plus 25 for the Sprint Cup), Brown with 103 (78 plus 25 for the Enduro Cup) and Kostecki with 96."]},
- {r:12,name:"Gold Coast 500",short:"Gold Coast",circuit:"Surfers Paradise Street Circuit",loc:"Surfers Paradise, QLD",dates:"23–25 Oct",next:true,races:[{n:31},{n:32}],c:["Finals round one. Points reset, the top ten race twice over 250 km, and the bottom three are eliminated.","The ten start with bonus points from their championship position after Bathurst: Payne 150, Feeney 145 (including 25 for the Sprint Cup), Brown 103 (including 25 for the Enduro Cup), Kostecki 96, Allen 66, Waters 57, De Pasquale 48, Mostert 39, Wood 30 and Le Brocq 21.","There is a grid change for the last three rounds. PremiAir has dropped Declan Fraser and brought in Cooper Murray early, a year before his two-year deal with the team starts, and he races the #36 Camaro, his family's old number, in place of the #777. Murray's #99 Erebus Camaro goes to Jarrod Hughes, Jobe Stewart's Bathurst co-driver, for his first solo Supercars start, close to his Brisbane home. It's a solo weekend, with no co-drivers, and the same 24 cars as the rest of the year with no wildcards."]},
- {r:13,name:"Sandown 500",short:"Sandown",circuit:"Sandown Raceway",loc:"Springvale, VIC",dates:"6–8 Nov",races:[{n:33},{n:34}],c:["Finals round two. Seven drivers, two 250 km races, three more eliminated."]},
+ {r:12,name:"Gold Coast 500",short:"Gold Coast",circuit:"Surfers Paradise Street Circuit",loc:"Surfers Paradise, QLD",dates:"23–25 Oct",done:true,
+  races:[{n:31,p:"Feeney",
+   full:["Mostert","Reynolds","Payne","DePasquale","Heimgartner","Brown","Kostecki","Waters","Feeney","Ojeda","Murray","Bates","Golding","Wood","Walls","Jones","Gray","Hill","Hughes","Cameron","Stewart","LeBrocq","Randle","Allen"],
+   note:"85 laps in the wet, started behind the safety car. Winning margin 23.46s. Payne crossed the line 2nd and was given a five-second penalty for track limits."},
+  {n:32,p:"Feeney",
+   full:["Feeney","Kostecki","Mostert","Wood","Heimgartner","Payne","Waters","Golding","Hill","Randle","Brown","Cameron","Allen","DePasquale","Gray","Hughes","Murray","Bates","Ojeda","Walls","LeBrocq","Reynolds","Jones"],dnf:["Stewart (DNF)"],
+   note:"Fastest lap: Chaz Mostert. 85 laps, dry, one safety car. Winning margin 6.91s."}],
+  c:["Broc Feeney came back from an ordinary Saturday to win on Sunday, and this one meant a lot. He was born and raised on the Gold Coast, he turned 24 only a week ago, and his home race was one of the very few he had never won. He took pole for both races, but on Saturday he dropped to ninth after contact with Matt Payne. On Sunday he led away from Will Brown on an all-Triple Eight front row and won by 6.9 seconds from Brodie Kostecki.",
+     "Saturday's Race 31 belonged to Chaz Mostert. It started behind the safety car in heavy rain, and once it went green he led from lap 4 and won by 23.5 seconds, the biggest winning margin the Gold Coast has seen. Under the Finals rules a race win guarantees a place at Sandown (rule D14.4.1.4). David Reynolds was second. Payne crossed the line second but a five-second track-limits penalty dropped him to third. Kai Allen's alternator failed and he finished last.",
+     "Sunday stayed dry, but it had its own drama. Allen, Anton De Pasquale and Jack Le Brocq tangled at Turn 1 on the opening lap. De Pasquale's damaged tyre left debris on the track, which brought out the only safety car on lap 3. Reynolds hit the wall at Turn 13 on lap 1 and lost two laps. Mostert lost time to a wheel-gun failure in the pits, then passed Brown on lap 48 and set the fastest lap of the race. Brown faded to 11th from the front row. Payne came from 12th to 6th. Cam Waters started 10th after being disqualified from the Shootout for a tyre pressure breach, and finished 7th.",
+     "The real fight was for the last Sandown place. Walkinshaw TWG let Ryan Wood past Mostert to put him into the top seven, then swapped them back on the final lap, and Wood finished 4th. That still wasn't enough. Jarrod Hughes and Cooper Murray both had to stop for fuel in the last ten laps, which lifted De Pasquale to 14th, and he held seventh by 18 points. Wood is out along with Allen and Le Brocq. Mostert's Race 32 pit stop is under investigation after the race.",
+     "After both races Payne leads the Finals on 376, four points ahead of Feeney on 372, with Kostecki on 325, Mostert 316, Brown 267, Waters 232 and De Pasquale 216. The points reset again for Sandown, and the seven start from a bonus for where they finished here: Payne 150, Feeney 120, Kostecki 96, Mostert 78, Brown 66, Waters 57 and De Pasquale 48 (rule D14.4.2.2).",
+     "There is a grid change for the last three rounds. PremiAir has dropped Declan Fraser and brought in Cooper Murray early, a year before his two-year deal with the team starts, and he races the #36 Camaro, his family's old number, in place of the #777. Murray's #99 Erebus Camaro goes to Jarrod Hughes, Jobe Stewart's Bathurst co-driver, for his first solo Supercars start, close to his Brisbane home. It's a solo weekend, with no co-drivers, and the same 24 cars as the rest of the year with no wildcards."]},
+ {r:13,name:"Sandown 500",short:"Sandown",circuit:"Sandown Raceway",loc:"Springvale, VIC",dates:"6–8 Nov",next:true,races:[{n:33},{n:34}],c:["Finals round two, the semi-final. Seven drivers, two 250 km races of 79 laps, and three more eliminated. Race 33 starts Sat 7 Nov at 4:30am GMT (3:30pm AEDT) and Race 34 at the same time on Sunday.","The seven: Payne, Feeney, Kostecki, Mostert, Brown, Waters and De Pasquale. Points reset to a bonus based on the Gold Coast order: Payne 150, Feeney 120, Kostecki 96, Mostert 78, Brown 66, Waters 57 and De Pasquale 48."]},
  {r:14,name:"Adelaide Grand Final",short:"Adelaide",circuit:"Adelaide Street Circuit",loc:"Adelaide, SA",dates:"26–29 Nov",races:[{n:35},{n:36},{n:37}],c:["The Grand Final. Four drivers, three races, and the champion is crowned on the streets of Adelaide."]},
 ];
-const SRC = {"1": [["Supercars.com: Sydney winners and losers", "https://www.supercars.com/news/supercars-news-2026-winners-and-losers-2026-dunlop-sydney-500-broc-feeney-will-brown-kostecki"], ["Pit Debrief: Sydney 500 round-up", "https://www.pitdebrief.com/post/supercars-round-1-sydney-500-feeney-leads-standings-after-two-wins/"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "2": [["Supercars.com: Melbourne finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-brodie-kostecki-soars-luckless-cameron-bates-sink"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "3": [["Supercars.com: Taupō finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-taupo-walkinshaw-twg-will-brown-surge-tickford-stumble"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "4": [["Supercars.com: Christchurch finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-christchurch-broc-feeney-chaz-mostert-kai-allen"], ["Supercars.com: Wood's Christchurch failure", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-christchurch-heartbreaking-failure-toyota-jason-richards-trophy-finale"]], "5": [["Supercars.com: Tasmania finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-tasmania-broc-feeney-andre-heimgartner-chaz-mostert"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "6": [["Supercars.com: Darwin finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-darwin-chaz-mostert-cam-waters-thomas-randle"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "7": [["Speedcafe: Race 20 report", "https://speedcafe.com/supercars-news-2026-townsville-500-race-1-results-friday-cameron-waters-win-video-highlights-comments-reaction/"], ["Supercars.com: Race 21 report", "https://www.supercars.com/news/supercars-news-2026-race-21-report-matt-payne-win-dominant-results-ryan-wood-kai-allen-clash-video-sprint-cup"], ["Supercars.com: Race 22 report", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-report-brodie-kostecki-win-comeback-results-ford-dick-johnson-racing"], ["Supercars.com: Townsville finals standings", "https://www.supercars.com/news/supercars-news-2026-townsville-finals-winners-and-losers-james-golding-andre-heimgartner-chaz-mostert"], ["Supercars.com: Race 22 qualifying (Waters pole)", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-qualifying-report-cam-waters-pole-shootout-will-brown-furious-results"]], "8": [["Supercars.com: Race 23 report", "https://www.supercars.com/news/supercars-news-2026-perth-race-23-report-matt-payne-win-results-chaos-controversy-brodie-kostecki-collision-video"], ["Supercars.com: Race 24 report", "https://www.supercars.com/news/supercars-news-2026-perth-race-24-report-broc-feeney-drought-breaking-win-overtake-matt-payne-triple-eight-results"], ["Team 18: Perth report", "https://team18.com.au/portfolio/de-pasquale-leads-perth-podium-breakthrough/"], ["Supercars.com: Perth finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-perth-chaz-mostert-brodie-kostecki"], ["Pit Debrief: Race 23 (Payne pole)", "https://www.pitdebrief.com/post/supercars-2026-perth-race-23-results-and-report/"], ["Supercars.com: Feeney's Perth finale pole", "https://www.supercars.com/news/supercars-news-2026-perth-race-25-qualifying-report-broc-feeney-pole-record-broken-top-ten-shootout-results-margins"]], "9": [["Supercars.com: Race 27 report", "https://www.supercars.com/news/supercars-news-2026-race-27-report-ipswich-will-brown-win-drought-broken-triple-eight-red-bull-results-ford"], ["Talk Motorsport: Saturday at Ipswich", "https://talkmotorsport.co.nz/v8/browns-year-long-drought-ends-at-wild-saturday-ipswich-sprint/"], ["Velocity News: Race 28 and the Sprint Cup", "https://www.velocitynews.co.nz/payne-suffers-sprint-cup-heartbreak-as-feeney-claims-title-in-ipswich-finale/"], ["Supercars.com: Ipswich finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-winners-and-losers-ipswich-broc-feeney-matt-payne-qualified"], ["Talk Motorsport: Payne's Ipswich double pole", "https://talkmotorsport.co.nz/v8/payne-pulls-off-ipswich-double-pole-in-ipswich-brown-back-in-the-mix/"]], "10": [["Supercars.com: Bend 500 report", "https://www.supercars.com/news/supercars-news-2026-bend-500-race-report-chaz-mostert-fabian-coulthard-win-toyota-fairytale-results-video"], ["Wikipedia: 2026 The Bend 500", "https://en.wikipedia.org/wiki/2026_The_Bend_500"], ["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"]], "11": [["Supercars.com: Bathurst 1000 race report", "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-race-report-brodie-kostecki-todd-hazelwood-last-lap-victory-drama-djr-ford"], ["Supercars.com: Finals field locked in", "https://www.supercars.com/news/supercars-news-2026-finals-drivers-field-bathurst-1000-qualified-set-payne-feeney-kostecki-brown"], ["Speedcafe: Bathurst 1000 report", "https://speedcafe.com/supercars-news-2026-bathurst-1000-results-report-brodie-kostecki-todd-hazelwood-win-dick-johnson-racing-comments-reaction/"], ["Auto Action: Bathurst 1000 results", "https://autoaction.com.au/2026/10/11/bathurst-1000-2026-results-kostecki-hazelwood"], ["Supercars.com: official Race 30 classification", "https://www.supercars.com/results/2026/2026-bathurst-1000/R17"], ["V8 Sleuth: Enduro Cup standings", "https://www.v8sleuth.com.au/enduro-cup-standings-brown-scoops-up-bonus-points/"]], "12": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"], ["Supercars.com: Murray in, Fraser out", "https://www.supercars.com/news/supercars-news-2026-declan-fraser-cooper-murray-jarrod-hughes-premiair-erebus-driver-market-silly-season"], ["Supercars.com: PremiAir swings car number change for Murray", "https://www.supercars.com/news/supercars-news-2026-cooper-murray-premiair-racing-number-change-explained"], ["V8 Sleuth: Hughes ready for solo debut", "https://www.v8sleuth.com.au/hughes-reacts-to-sudden-solo-supercars-shot/"]], "13": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "14": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]]};
+const SRC = {"1": [["Supercars.com: Sydney winners and losers", "https://www.supercars.com/news/supercars-news-2026-winners-and-losers-2026-dunlop-sydney-500-broc-feeney-will-brown-kostecki"], ["Pit Debrief: Sydney 500 round-up", "https://www.pitdebrief.com/post/supercars-round-1-sydney-500-feeney-leads-standings-after-two-wins/"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "2": [["Supercars.com: Melbourne finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-brodie-kostecki-soars-luckless-cameron-bates-sink"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "3": [["Supercars.com: Taupō finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-taupo-walkinshaw-twg-will-brown-surge-tickford-stumble"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "4": [["Supercars.com: Christchurch finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-christchurch-broc-feeney-chaz-mostert-kai-allen"], ["Supercars.com: Wood's Christchurch failure", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-christchurch-heartbreaking-failure-toyota-jason-richards-trophy-finale"]], "5": [["Supercars.com: Tasmania finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-tasmania-broc-feeney-andre-heimgartner-chaz-mostert"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "6": [["Supercars.com: Darwin finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-darwin-chaz-mostert-cam-waters-thomas-randle"], ["Wikipedia: 2026 Supercars Championship", "https://en.wikipedia.org/wiki/2026_Supercars_Championship"]], "7": [["Speedcafe: Race 20 report", "https://speedcafe.com/supercars-news-2026-townsville-500-race-1-results-friday-cameron-waters-win-video-highlights-comments-reaction/"], ["Supercars.com: Race 21 report", "https://www.supercars.com/news/supercars-news-2026-race-21-report-matt-payne-win-dominant-results-ryan-wood-kai-allen-clash-video-sprint-cup"], ["Supercars.com: Race 22 report", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-report-brodie-kostecki-win-comeback-results-ford-dick-johnson-racing"], ["Supercars.com: Townsville finals standings", "https://www.supercars.com/news/supercars-news-2026-townsville-finals-winners-and-losers-james-golding-andre-heimgartner-chaz-mostert"], ["Supercars.com: Race 22 qualifying (Waters pole)", "https://www.supercars.com/news/supercars-news-2026-townsville-race-22-qualifying-report-cam-waters-pole-shootout-will-brown-furious-results"]], "8": [["Supercars.com: Race 23 report", "https://www.supercars.com/news/supercars-news-2026-perth-race-23-report-matt-payne-win-results-chaos-controversy-brodie-kostecki-collision-video"], ["Supercars.com: Race 24 report", "https://www.supercars.com/news/supercars-news-2026-perth-race-24-report-broc-feeney-drought-breaking-win-overtake-matt-payne-triple-eight-results"], ["Team 18: Perth report", "https://team18.com.au/portfolio/de-pasquale-leads-perth-podium-breakthrough/"], ["Supercars.com: Perth finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-standings-winners-and-losers-perth-chaz-mostert-brodie-kostecki"], ["Pit Debrief: Race 23 (Payne pole)", "https://www.pitdebrief.com/post/supercars-2026-perth-race-23-results-and-report/"], ["Supercars.com: Feeney's Perth finale pole", "https://www.supercars.com/news/supercars-news-2026-perth-race-25-qualifying-report-broc-feeney-pole-record-broken-top-ten-shootout-results-margins"]], "9": [["Supercars.com: Race 27 report", "https://www.supercars.com/news/supercars-news-2026-race-27-report-ipswich-will-brown-win-drought-broken-triple-eight-red-bull-results-ford"], ["Talk Motorsport: Saturday at Ipswich", "https://talkmotorsport.co.nz/v8/browns-year-long-drought-ends-at-wild-saturday-ipswich-sprint/"], ["Velocity News: Race 28 and the Sprint Cup", "https://www.velocitynews.co.nz/payne-suffers-sprint-cup-heartbreak-as-feeney-claims-title-in-ipswich-finale/"], ["Supercars.com: Ipswich finals standings", "https://www.supercars.com/news/supercars-news-2026-finals-winners-and-losers-ipswich-broc-feeney-matt-payne-qualified"], ["Talk Motorsport: Payne's Ipswich double pole", "https://talkmotorsport.co.nz/v8/payne-pulls-off-ipswich-double-pole-in-ipswich-brown-back-in-the-mix/"]], "10": [["Supercars.com: Bend 500 report", "https://www.supercars.com/news/supercars-news-2026-bend-500-race-report-chaz-mostert-fabian-coulthard-win-toyota-fairytale-results-video"], ["Wikipedia: 2026 The Bend 500", "https://en.wikipedia.org/wiki/2026_The_Bend_500"], ["V8 Sleuth: Finals situation before Bathurst", "https://www.v8sleuth.com.au/the-supercars-finals-situation-heading-into-bathurst-1000/"]], "11": [["Supercars.com: Bathurst 1000 race report", "https://www.supercars.com/news/supercars-news-2026-bathurst-1000-race-report-brodie-kostecki-todd-hazelwood-last-lap-victory-drama-djr-ford"], ["Supercars.com: Finals field locked in", "https://www.supercars.com/news/supercars-news-2026-finals-drivers-field-bathurst-1000-qualified-set-payne-feeney-kostecki-brown"], ["Speedcafe: Bathurst 1000 report", "https://speedcafe.com/supercars-news-2026-bathurst-1000-results-report-brodie-kostecki-todd-hazelwood-win-dick-johnson-racing-comments-reaction/"], ["Auto Action: Bathurst 1000 results", "https://autoaction.com.au/2026/10/11/bathurst-1000-2026-results-kostecki-hazelwood"], ["Supercars.com: official Race 30 classification", "https://www.supercars.com/results/2026/2026-bathurst-1000/R17"], ["V8 Sleuth: Enduro Cup standings", "https://www.v8sleuth.com.au/enduro-cup-standings-brown-scoops-up-bonus-points/"]], "12": [["Supercars.com: Race 31 report", "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-race-31-report-chaz-mostert-win-toyota-finals-ticket-rain-incidents-results"], ["V8 Sleuth: Mostert masters Gold Coast", "https://www.v8sleuth.com.au/mostert-masters-gold-coast-to-book-semi-finals-spot/"], ["Supercars.com: Race 32 report", "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-race-32-report-broc-feeney-home-win-finals-drama-battles-red-bull-ampol-racing"], ["V8 Sleuth: Feeney wins, De Pasquale dodges bullet", "https://www.v8sleuth.com.au/feeney-wins-de-pasquale-dodges-bullet/"], ["Supercars.com: Wood eliminated despite swap", "https://www.supercars.com/news/supercars-news-2026-ryan-wood-eliminated-walkinshaw-twg-team-orders-swap-camaro-stops-fuel"], ["Speedcafe: Feeney wins Gold Coast finale", "https://speedcafe.com/supercars-news-2026-gold-coast-500-sunday-race-2-results-broc-feeney-win-video-highlights-finals-series-controversy/"], ["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"], ["Supercars.com: Murray in, Fraser out", "https://www.supercars.com/news/supercars-news-2026-declan-fraser-cooper-murray-jarrod-hughes-premiair-erebus-driver-market-silly-season"], ["Supercars.com: PremiAir swings car number change for Murray", "https://www.supercars.com/news/supercars-news-2026-cooper-murray-premiair-racing-number-change-explained"], ["V8 Sleuth: Hughes ready for solo debut", "https://www.v8sleuth.com.au/hughes-reacts-to-sudden-solo-supercars-shot/"]], "13": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]], "14": [["Supercars.com: 2026 race formats", "https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals"]]};
 // fill winners from classifications
 R.forEach(ev => ev.races.forEach(x => { const o = x.full || x.top || x.pod; if (o && !x.w) x.w = o[0]; }));
 
@@ -904,7 +916,11 @@ const PTS11 = {Payne:2490,Feeney:2285,Kostecki:2271,Brown:2146,Allen:2131,Waters
 // Teams' championship: official table after round 10 (supercars.com) plus each car's Bathurst points. Single-car entries score as their own team.
 const TEAMPTS = {"Grove Racing":4561,"Triple Eight":4431,"Tickford Racing":3480,"Walkinshaw TWG Racing":3321,"Dick Johnson Racing":3282,"Team 18":2993,"Matt Stone Racing":2586,"Brad Jones Racing":2468,"Blanchard Racing Team":2236,"PremiAir Racing":2121,"Erebus Motorsport":1667,"Brad Jones Racing (96)":767,"SCT Motorsport":711};
 const PTS9 = {Feeney:2107,Payne:2077,Kostecki:1878,Waters:1852,Allen:1793,DePasquale:1697,Brown:1636,Mostert:1413,Wood:1340,Golding:1226,LeBrocq:1171,Randle:1120,Heimgartner:1084,Ojeda:1028,Reynolds:983,Hill:865,Cameron:763,Gray:762,Bates:729,Fraser:715,Murray:701,Jones:648,Walls:596,Stewart:538};
-const POLES = {Payne:8,Kostecki:6,Feeney:4,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
+// Finals points after the Gold Coast (supercars.com shows these on top of the 3,000 every finalist started on, rule D14.4.1.2).
+const FIN12 = {Payne:376,Feeney:372,Kostecki:325,Mostert:316,Brown:267,Waters:232,DePasquale:216,Wood:198,Allen:143,LeBrocq:75};
+const FINALS = Object.keys(FIN12);
+ORDER[12] = FINALS.concat(ORDER[11].filter(k => !FIN12[k]), ["Hughes"]);
+const POLES = {Payne:8,Kostecki:6,Feeney:6,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
 
 const $ = s => document.querySelector(s);
 const el = (t, a = {}, h = "") => { const e = document.createElement(t); for (const k in a) e.setAttribute(k, a[k]); e.innerHTML = h; return e; };
@@ -915,18 +931,18 @@ R.forEach(ev => ev.races.forEach(x => { if (x.w && ev.done) WINS[x.w] = (WINS[x.
 
 // Hero leaderboard
 const lb = $("#leaderboard");
-ORDER[11].slice(0, 5).forEach((k, i) => {
-  const gap = i ? `−${PTS11[ORDER[11][0]] - PTS11[k]}` : "Leader";
-  lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${PTS11[k].toLocaleString()} pts · ${gap}</span>`));
+FINALS.slice(0, 5).forEach((k, i) => {
+  const gap = i ? `−${FIN12[FINALS[0]] - FIN12[k]}` : "Leader";
+  lb.append(el("div", {}, `<span class="p">P${i + 1} · #${D[k].no}</span><span class="n">${D[k].n}</span><span class="pts">${FIN12[k]} Finals pts · ${gap}</span>`));
 });
 
-// Countdown to Race 32 at the Gold Coast: Sun 25 Oct 2026, 2:45pm AEST = 04:45 UTC (4:45am GMT, UK clocks back).
-const start = Date.UTC(2026, 9, 25, 4, 45, 0);
+// Countdown to Race 33 at Sandown: Sat 7 Nov 2026, 3:30pm AEDT = 04:30 UTC (4:30am GMT).
+const start = Date.UTC(2026, 10, 7, 4, 30, 0);
 function tick() {
   const ms = start - Date.now(), cd = $("#countdown");
   if (ms <= 0) { cd.innerHTML = `<div><b>Race weekend</b><span>Check results below</span></div>`; return; }
   const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
-  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 32 · Sun 25 Oct · 4:45am GMT (2:45pm AEST)</span></div>`;
+  cd.innerHTML = [[d, "days"], [h, "hrs"], [m, "min"]].map(([v, l]) => `<div><b>${String(v).padStart(2, "0")}</b><span>${l}</span></div>`).join("") + `<div><b style="font-size:14px;line-height:2.4">to race day</b><span>Race 33 · Sat 7 Nov · 4:30am GMT (3:30pm AEDT)</span></div>`;
 }
 tick(); setInterval(tick, 30000);
 
@@ -1083,7 +1099,7 @@ addEventListener("hashchange", openPostFromHash);
 // Each round has its own link, e.g. monaro.co.uk/#bathurst
 const slug = ev => ev.short.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^the /, "").replace(/\s+/g, "-");
 const fromHash = () => R.find(ev => "#" + slug(ev) === location.hash.toLowerCase());
-let initial = 11;
+let initial = 12;
 const linked = fromHash();
 if (linked) initial = linked.r;
 showRound(initial);
@@ -1096,12 +1112,12 @@ const winners = Object.keys(WINS).length;
 $("#tiles").innerHTML = [
   [`${races.length}/37`, "races completed"],
   [winners, "different race winners"],
-  ["5", "points between Payne and Feeney as the Finals start"],
+  [`${FIN12.Payne - FIN12.Feeney}`, "points between Payne and Feeney after the Gold Coast"],
   [`${WINS.Kostecki}`, "wins for Kostecki, the most of anyone"],
 ].map(([b, s]) => `<div class="tile"><b class="mono" style="font-family:var(--font-display)">${b}</b><span>${s}</span></div>`).join("");
 
 // Bump chart
-const ROUNDS = [2,3,4,5,6,7,8,9,10,11];
+const ROUNDS = [2,3,4,5,6,7,8,9,10,11,12];
 const ALL = ORDER[9];
 let sel = ["Payne","Feeney","Kostecki","Allen"];
 const SLOTS = ["--s1","--s2","--s3","--s4"];
@@ -1120,9 +1136,9 @@ function drawChips() {
 }
 function drawBump() {
   const W = 900, H = 520, L = 40, Rt = 130, T = 26, B = 30;
-  const x = r => L + (r - 2) * (W - L - Rt) / 9;
+  const x = r => L + (r - 2) * (W - L - Rt) / 10;
   const y = p => T + (p - 1) * (H - T - B) / 23;
-  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Championship position after each round from round 2 to round 11">`;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Championship position after each round from round 2 to round 12">`;
   [1,5,10,15,20,24].forEach(p => s += `<line x1="${L}" x2="${W - Rt}" y1="${y(p)}" y2="${y(p)}" stroke="var(--line)" stroke-width="1"/><text x="${L - 10}" y="${y(p) + 4}" text-anchor="end">P${p}</text>`);
   s += `<line x1="${L}" x2="${W - Rt}" y1="${(y(10) + y(11)) / 2}" y2="${(y(10) + y(11)) / 2}" stroke="var(--accent)" stroke-dasharray="4 4" stroke-width="1"/><text x="${L + 4}" y="${(y(10) + y(11)) / 2 - 4}" style="fill:var(--accent)">Finals cut</text>`;
   ROUNDS.forEach(r => { const ev = R[r - 1]; s += `<text x="${x(r)}" y="${H - 8}" text-anchor="middle">R${r} ${ev.short.replace("The ", "").slice(0, 4).toUpperCase()}</text>`; });
@@ -1156,9 +1172,9 @@ drawChips(); drawBump();
 $("#bump-table").innerHTML = `<table><thead><tr><th>Driver</th>${ROUNDS.map(r => `<th class="num">R${r}</th>`).join("")}</tr></thead><tbody>${ALL.map(k => `<tr><td>${D[k].n}</td>${ROUNDS.map(r => { const p = ORDER[r].indexOf(k); return `<td class="num">${p >= 0 ? p + 1 : "—"}</td>`; }).join("")}</tr>`).join("")}</tbody></table>`;
 
 // Points bars
-const max = PTS11.Payne;
-$("#points-bars").innerHTML = ORDER[11].slice(0, 14).map((k, i) => (i === 10 ? `<div class="cutline">Finals cut · these ten go to the Finals</div>` : "") +
-  `<div class="bar-row${i >= 10 ? " cut" : ""}"><span class="lab">${i + 1}. ${ln(k)}</span><span class="track"><span class="fill" style="width:${PTS11[k] / max * 100}%"></span></span><span class="val">${PTS11[k].toLocaleString()}</span></div>`).join("");
+const max = FIN12[FINALS[0]];
+$("#points-bars").innerHTML = FINALS.map((k, i) => (i === 7 ? `<div class="cutline">Eliminated at the Gold Coast</div>` : "") +
+  `<div class="bar-row${i >= 7 ? " cut" : ""}"><span class="lab">${i + 1}. ${ln(k)}</span><span class="track"><span class="fill" style="width:${FIN12[k] / max * 100}%"></span></span><span class="val">${FIN12[k]}</span></div>`).join("");
 
 // Wins & poles
 const wp = Object.keys(D).filter(k => WINS[k] || POLES[k]).sort((a, b) => (WINS[b] || 0) - (WINS[a] || 0) || (POLES[b] || 0) - (POLES[a] || 0));
@@ -1177,36 +1193,18 @@ $("#makes").innerHTML = Object.entries(M).map(([m, w]) => `<div class="bar-row">
   `<p class="small muted">Ford Mustang, Toyota GR Supra and Chevrolet Camaro. ${M.Ford} of ${races.length} wins have gone to a Mustang.</p>`;
 
 // Standings
-const st = ORDER[11];
-$("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</th><th>Driver</th><th>Team</th><th class="num">Points</th><th class="num">Wins</th><th class="num">Poles</th><th class="num">Move R10→R11</th></tr></thead><tbody>${st.map((k, i) => {
-  const p10 = PTS11[k], p9 = ORDER[10].indexOf(k) + 1;
+const st = ORDER[12];
+$("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</th><th>Driver</th><th>Team</th><th class="num">Points</th><th class="num">Wins</th><th class="num">Poles</th><th class="num">Move R11→R12</th></tr></thead><tbody>${st.map((k, i) => {
+  const p10 = FIN12[k] ? 3000 + FIN12[k] : PTS11[k], p9 = ORDER[11].indexOf(k) + 1;
   const mv = p10 ? p9 - (i + 1) : null;
   const mvTxt = mv == null ? "—" : mv === 0 ? "–" : mv > 0 ? `<span style="color:var(--good)">▲ ${mv}</span>` : `<span style="color:var(--accent)">▼ ${-mv}</span>`;
-  return `<tr${i === 9 ? ' style="border-bottom:2px dashed var(--accent)"' : ""}><td class="num">${p10 ? i + 1 : "(" + p9 + ")"}</td><td>#${D[k].no}</td><td><span class="make ${D[k].make}"></span>${D[k].n}</td><td>${teamNow(k)}</td><td class="num">${p10 ? p10.toLocaleString() : PTS9[k].toLocaleString() + "†"}</td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${mvTxt}</td></tr>`;
+  return `<tr${i === 6 || i === 9 ? ' style="border-bottom:2px dashed var(--accent)"' : ""}><td class="num">${p10 || FIN12[k] ? i + 1 : "—"}</td><td>#${D[k].no}</td><td><span class="make ${D[k].make}"></span>${D[k].n}</td><td>${teamNow(k)}</td><td class="num">${p10 ? p10.toLocaleString() + (FIN12[k] ? "" : "†") : "—"}</td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${mvTxt}</td></tr>`;
 }).join("")}</tbody></table>`;
 
 
 // Race weekend box: Supercars sessions only, latest first. Updated after each session; set WKND = null between events.
 // Times: UK first, local in brackets. Gold Coast is AEST (no daylight saving): Fri/Sat BST = AEST - 9h; Sun 25 Oct (UK clocks back) GMT = AEST - 10h.
-const WKND = {
-  event: "Gold Coast 500",
-  tz: "AEST", // Queensland: no daylight saving
-  updated: "Sun 25 Oct, 03:20 GMT (13:20 AEST)",
-  upnext: [
-    ["Race 32: 85 laps", "Sun 04:45 GMT (14:45 AEST)"],
-  ],
-  sessions: [
-    { name: "Top 10 Shootout, Race 32", day: "Sun", lead: "Broc Feeney took pole for Race 32 with a 1:15.4474, 0.0717s clear of Will Brown for a Triple Eight front-row lockout. Aaron Cameron climbed from seventh to third. Ryan Wood, the only drop-zone driver in the Shootout, jumped from 10th to fifth. Chaz Mostert ran wide at Turn 4 and fell from fourth to ninth. Points leader Matt Payne starts 12th, Jack Le Brocq 20th and Kai Allen 22nd.",
-      top: [["Broc Feeney","Triple Eight","1:15.4474"],["Will Brown","Triple Eight","+0.0717"],["Aaron Cameron","Blanchard Racing Team","+0.3258"],["Brodie Kostecki","Dick Johnson Racing","+0.6744"],["Ryan Wood","Walkinshaw TWG Racing","+0.7450"],["Jarrod Hughes","Erebus Motorsport","+0.7623"],["Cooper Murray","PremiAir Racing","+0.8026"],["Cameron Waters","Tickford Racing","+0.9814"],["Chaz Mostert","Walkinshaw TWG Racing","+1.0049"],["Cameron Hill","Brad Jones Racing","+1.9689"]],
-      src: [["V8 Sleuth", "https://www.v8sleuth.com.au/feeney-leads-triple-eight-front-row-lockout/"], ["Speedcafe", "https://speedcafe.com/supercars-news-2026-gold-coast-500-sunday-top-10-shootout-results-broc-feeney-pole-position-video-highlights-reaction-comments/"]] },
-    { name: "Qualifying, Race 32", day: "Sun", short: "Broc Feeney fastest, 1:15.7818, from Will Brown; Payne 12th, Le Brocq 20th and Allen 22nd missed the Shootout" },
-    { name: "Race 31", day: "Sat", short: "Chaz Mostert won by 23.5 seconds in the wet, from David Reynolds and Matt Payne (5s penalty); Feeney ninth from pole" },
-    { name: "Top 10 Shootout, Race 31", day: "Sat", short: "Broc Feeney pole, 1:11.1369, from Chaz Mostert; Will Brown 9th after a two-place penalty" },
-    { name: "Qualifying, Race 31", day: "Fri", short: "Anton De Pasquale provisional pole, 1:09.0770; Kostecki 11th and Le Brocq 17th missed the Shootout" },
-    { name: "Practice 2", day: "Fri", short: "Broc Feeney fastest, 1:09.4889, from Cam Waters; Matt Payne 14th after a belt failure" },
-    { name: "Practice 1", day: "Fri", short: "James Golding fastest, 1:16.0169, half a second clear on a drying track; red flag for De Pasquale's spin" },
-  ],
-};
+const WKND = null;
 function renderWknd() {
   const box = $("#wknd");
   if (!WKND) { box.hidden = true; return; }
