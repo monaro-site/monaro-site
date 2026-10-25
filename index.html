@@ -609,7 +609,7 @@ footer .wrap { display: grid; gap: 8px; }
       </div>
       <div class="panel w6">
         <h3>Team performance</h3>
-        <p class="sub">The teams' championship after Bathurst: the official table after The Bend plus each car's Bathurst points, with race wins. Each team runs two cars. Jackson Walls and Macauley Jones are single-car entries, so they score as teams of their own.</p>
+        <p class="sub">The teams' championship after the Gold Coast: the official table after Race 31 plus each car's Race 32 points, with race wins. Team points don't reset for the Finals. Each team runs two cars. Jackson Walls and Macauley Jones are single-car entries, so they score as teams of their own.</p>
         <div class="tbl-wrap" id="teams"></div>
       </div>
       <div class="panel w6">
@@ -620,7 +620,7 @@ footer .wrap { display: grid; gap: 8px; }
       <div class="panel w12">
         <h3>Full standings</h3>
         <div class="tbl-wrap" id="standings"></div>
-        <p class="sub" style="margin-top:8px">The top ten are the finalists, on the 3,000 they started the Gold Coast with plus their Finals points. The first dashed line is the cut for Sandown, the second for the Finals. † Points to the end of Bathurst; Gold Coast points for the other 14 drivers will be added once the official table is out.</p>
+        <p class="sub" style="margin-top:8px">The top ten are the finalists, on the 3,000 they started the Gold Coast with plus their Finals points. The first dashed line is the cut for Sandown, the second for the Finals. The other 14 carry on with their regular points, including both Gold Coast races.</p>
       </div>
     </div>
   </div>
@@ -913,13 +913,15 @@ const ORDER = {
 const PTS10 = {Payne:2275,Feeney:2155,Allen:2069,Kostecki:1971,Waters:1962,DePasquale:1879,Brown:1870,Mostert:1713,Wood:1594,LeBrocq:1313,Heimgartner:1251,Randle:1250,Ojeda:1243,Golding:1226,Reynolds:1035,Hill:944,Gray:941,Bates:815,Cameron:807,Murray:774,Fraser:715,Jones:710,Walls:663,Stewart:639};
 const PTS11 = {Payne:2490,Feeney:2285,Kostecki:2271,Brown:2146,Allen:2131,Waters:2055,DePasquale:1879,Mostert:1713,Wood:1638,LeBrocq:1547,Heimgartner:1423,Randle:1404,Golding:1393,Ojeda:1363,Reynolds:1114,Bates:1069,Hill:1045,Gray:993,Murray:972,Cameron:917,Fraser:788,Jones:767,Stewart:725,Walls:711};
 // Race 30 points from the official classification (supercars.com).
-// Teams' championship: official table after round 10 (supercars.com) plus each car's Bathurst points. Single-car entries score as their own team.
-const TEAMPTS = {"Grove Racing":4561,"Triple Eight":4431,"Tickford Racing":3480,"Walkinshaw TWG Racing":3321,"Dick Johnson Racing":3282,"Team 18":2993,"Matt Stone Racing":2586,"Brad Jones Racing":2468,"Blanchard Racing Team":2236,"PremiAir Racing":2121,"Erebus Motorsport":1667,"Brad Jones Racing (96)":767,"SCT Motorsport":711};
+// Teams' championship: official table after Race 31 (supercars.com) plus each car's Race 32 points (Schedule D1; no bonus points for teams, rule D14.5.1.2). Single-car entries score as their own team.
+const TEAMPTS = {"Grove Racing":4864,"Triple Eight":4762,"Walkinshaw TWG Racing":3766,"Tickford Racing":3750,"Dick Johnson Racing":3598,"Team 18":3325,"Brad Jones Racing":2795,"Matt Stone Racing":2676,"Blanchard Racing Team":2466,"PremiAir Racing":2330,"Erebus Motorsport":1771,"Brad Jones Racing (96)":834,"SCT Motorsport":789};
 const PTS9 = {Feeney:2107,Payne:2077,Kostecki:1878,Waters:1852,Allen:1793,DePasquale:1697,Brown:1636,Mostert:1413,Wood:1340,Golding:1226,LeBrocq:1171,Randle:1120,Heimgartner:1084,Ojeda:1028,Reynolds:983,Hill:865,Cameron:763,Gray:762,Bates:729,Fraser:715,Murray:701,Jones:648,Walls:596,Stewart:538};
 // Finals points after the Gold Coast (supercars.com shows these on top of the 3,000 every finalist started on, rule D14.4.1.2).
 const FIN12 = {Payne:376,Feeney:372,Kostecki:325,Mostert:316,Brown:267,Waters:232,DePasquale:216,Wood:198,Allen:143,LeBrocq:75};
 const FINALS = Object.keys(FIN12);
-ORDER[12] = FINALS.concat(ORDER[11].filter(k => !FIN12[k]), ["Hughes"]);
+// The other 14 keep their regular points: total after Bathurst plus Races 31 and 32 (Schedule D1).
+const PTS12 = {Heimgartner:1637,Golding:1532,Randle:1499,Ojeda:1467,Reynolds:1278,Bates:1165,Hill:1158,Gray:1080,Murray:1077,Cameron:1008,Jones:834,Walls:789,Fraser:788,Stewart:753,Hughes:76};
+ORDER[12] = FINALS.concat(Object.keys(PTS12));
 const POLES = {Payne:8,Kostecki:6,Feeney:6,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
 
 const $ = s => document.querySelector(s);
@@ -1195,10 +1197,10 @@ $("#makes").innerHTML = Object.entries(M).map(([m, w]) => `<div class="bar-row">
 // Standings
 const st = ORDER[12];
 $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</th><th>Driver</th><th>Team</th><th class="num">Points</th><th class="num">Wins</th><th class="num">Poles</th><th class="num">Move R11→R12</th></tr></thead><tbody>${st.map((k, i) => {
-  const p10 = FIN12[k] ? 3000 + FIN12[k] : PTS11[k], p9 = ORDER[11].indexOf(k) + 1;
-  const mv = p10 ? p9 - (i + 1) : null;
+  const p10 = FIN12[k] ? 3000 + FIN12[k] : PTS12[k], p9 = ORDER[11].indexOf(k) + 1;
+  const mv = p9 ? p9 - (i + 1) : null;
   const mvTxt = mv == null ? "—" : mv === 0 ? "–" : mv > 0 ? `<span style="color:var(--good)">▲ ${mv}</span>` : `<span style="color:var(--accent)">▼ ${-mv}</span>`;
-  return `<tr${i === 6 || i === 9 ? ' style="border-bottom:2px dashed var(--accent)"' : ""}><td class="num">${p10 || FIN12[k] ? i + 1 : "—"}</td><td>#${D[k].no}</td><td><span class="make ${D[k].make}"></span>${D[k].n}</td><td>${teamNow(k)}</td><td class="num">${p10 ? p10.toLocaleString() + (FIN12[k] ? "" : "†") : "—"}</td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${mvTxt}</td></tr>`;
+  return `<tr${i === 6 || i === 9 ? ' style="border-bottom:2px dashed var(--accent)"' : ""}><td class="num">${i + 1}</td><td>#${D[k].no}</td><td><span class="make ${D[k].make}"></span>${D[k].n}</td><td>${teamNow(k)}</td><td class="num">${p10.toLocaleString()}</td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${mvTxt}</td></tr>`;
 }).join("")}</tbody></table>`;
 
 
