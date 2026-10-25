@@ -2,6 +2,154 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-25",
+   "updated": "2026-10-25T07:20:00Z",
+   "stories": [
+    {
+     "h": "Feeney wins at home as De Pasquale scrapes into Sandown",
+     "t": "Broc Feeney cruised to his first Gold Coast win. Anton De Pasquale took the last Semi Final spot by 18 points, with Ryan Wood, Kai Allen and Jack Le Brocq eliminated. Matt Payne still leads.",
+     "pub": "2026-10-25T06:35:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-race-32-report-broc-feeney-home-win-finals-drama-battles-red-bull-ampol-racing"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-sunday-race-2-results-broc-feeney-win-video-highlights-finals-series-controversy/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/feeney-wins-de-pasquale-dodges-bullet/"
+      }
+     ]
+    },
+    {
+     "h": "Toyota swap not enough to save Wood",
+     "t": "Walkinshaw told Chaz Mostert to drop back behind Ryan Wood, but late fuel stops for Chevrolet drivers Jarrod Hughes and Cooper Murray lifted De Pasquale past him. Erebus blamed a fuel calculation mistake.",
+     "pub": "2026-10-25T06:40:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-ryan-wood-eliminated-walkinshaw-twg-team-orders-swap-camaro-stops-fuel"
+      }
+     ]
+    },
+    {
+     "h": "Mostert pit stop under investigation",
+     "t": "Mostert's Toyota appeared to drop to the ground before the fuel hose came off in Race 32, which the rules forbid. Shane van Gisbergen lost the 2018 Newcastle win for the same breach.",
+     "pub": "2026-10-25T05:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-pit-stop-under-investigation-gold-coast-500-refuelling-wheel"
+      }
+     ]
+    },
+    {
+     "h": "Mostert masters the wet to book first Sandown spot",
+     "t": "Chaz Mostert won a soaking Race 31, his third straight Gold Coast race win, to become the first driver into the Semi Final. Pole-sitter Feeney fell to ninth after a clash with Payne.",
+     "pub": "2026-10-24T07:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-race-31-report-chaz-mostert-win-toyota-finals-ticket-rain-incidents-results"
+      },
+      {
+       "src": "Autosport",
+       "url": "https://www.autosport.com/supercars/news/supercars-gold-coast-chaz-mostert-dominates-wet-race-for-walkinshaw-toyota/10867759/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/mostert-masters-gold-coast-to-book-semi-finals-spot/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-matt-payne-broc-feeney-clash-gold-coast-500-race-will-brown-slump-early-laps",
+       "label": "Payne and Feeney clash"
+      }
+     ]
+    },
+    {
+     "h": "Reynolds ends podium drought as Team 18 weighs orders",
+     "t": "An early stop carried David Reynolds to second in Race 31. Team 18 had discussed asking him to let De Pasquale through, until a Payne penalty put second place within reach.",
+     "pub": "2026-10-24T08:38:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-david-reynolds-podium-result-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/team-18-lifts-lid-on-team-orders-conversation/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-david-reynolds-gold-coast-500-podium-team-18-future-driver-market-reaction"
+      }
+     ]
+    },
+    {
+     "h": "Waters disqualified from Sunday Shootout",
+     "t": "Cam Waters dropped from eighth to tenth on the grid after his right rear tyre fell below the minimum pressure. Stewards accepted it was not deliberate but said the rule is mandatory.",
+     "pub": "2026-10-25T04:17:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-top-10-shootout-cameron-waters-disqualification-tyre-infringement/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/waters-disqualified-from-gold-coast-shootout/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cam-waters-disqualified-gold-coast-500-shootout-minimum-tyre-pressure-rules"
+      }
+     ]
+    },
+    {
+     "h": "Feeney sweeps poles as De Pasquale qualifies 21st",
+     "t": "Broc Feeney led a Triple Eight front row on Sunday while Payne qualified only 12th. Kostecki was cleared of impeding Reynolds because the Camaro's headlights were off.",
+     "pub": "2026-10-25T02:40:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-gold-coast-500-sunday-qualifying-report-broc-feeney-pole-sweep-results-finals-drivers"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-sunday-qualifying-results-anton-de-pasquale-kai-allen-video-highlights-reaction-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kostecki-cleared-after-gold-coast-qualifying-investigation/",
+       "label": "Kostecki cleared"
+      }
+     ]
+    },
+    {
+     "h": "Supercars books brake test before Sandown",
+     "t": "The category plans a brake test at Queensland Raceway on Tuesday in Triple Eight's spare car, weather permitting, after pad problems that hurt teams at Bathurst.",
+     "pub": "2026-10-25T00:42:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-schedules-vital-brake-test/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-24",
    "updated": "2026-10-24T06:20:00Z",
    "stories": [
