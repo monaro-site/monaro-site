@@ -2,6 +2,142 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-26",
+   "updated": "2026-10-26T07:20:00Z",
+   "stories": [
+    {
+     "h": "Walkinshaw and Blanchard docked points for refuelling breaches",
+     "t": "Mostert keeps third, but Walkinshaw lost 30 teams' points for dropping his car with the fuel hose attached and 20 more for late fuel reports. Blanchard lost 30 for the same breach on Golding's car.",
+     "pub": "2026-10-25T23:21:00Z",
+     "move": "Up 2",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-chaz-mostert-walkinshaw-twg-racing-penalty-podium-stewards-verdict/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/walkinshaw-twg-blanchard-racing-team-docked-points/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-keeps-podium-gold-coast-500-investigation-breach-penalty-walkinshaw-twg",
+       "label": "Mostert keeps podium"
+      }
+     ]
+    },
+    {
+     "h": "Fuel checks clear Chevrolet of Gold Coast plot",
+     "t": "Supercars pumped out both late-stopping Camaros and found they could not have finished without fuel. Roland Dane called PremiAir's error a \"total, utter\" mess that cost Cooper Murray a top-10 finish.",
+     "pub": "2026-10-25T23:01:00Z",
+     "move": "Same",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/scrutineering-squashes-chevrolet-conspiracy-theory/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-roland-dane-chevrolet-cooper-murray-anton-de-pasquale-fuel-issue-comments/",
+       "label": "Dane speaks out"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-roland-dane-premiair-racing-fuel-blunder-gold-coast-500-cooper-murray-strategy"
+      }
+     ]
+    },
+    {
+     "h": "Walkinshaw and Wood question the finish",
+     "t": "Ryan Walkinshaw called the late Camaro stops \"extremely interesting\" but backed the Finals format, and said Toyota's request for Brad Jones Racing to help was refused. Wood hinted at games being played.",
+     "pub": "2026-10-26T06:29:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/walkinshaws-reaction-to-controversial-finals-elimination/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-ryan-wood-finals-elimination-chevrolet-games-gold-coast-500-tactics-orders"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-anton-de-pasquale-vs-ryan-wood-finals-series-points-reaction/"
+      }
+     ]
+    },
+    {
+     "h": "Brown below the cut-line after Sunday slump",
+     "t": "From the front row, Will Brown faded to 11th and suspects something broke on his car. He drops to fifth and starts Sandown 12 points behind Mostert, as the first driver below the cut-line.",
+     "pub": "2026-10-25T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-triple-eight-gold-coast-500-slump-result-finals-reaction-broc-feeney"
+      }
+     ]
+    },
+    {
+     "h": "Fully instrumented car for Supercars brake study",
+     "t": "Triple Eight's spare Mustang will carry extra infrared and pressure sensors at Queensland Raceway on Tuesday. Tim Edwards says neither teams nor Supercars fully understand the Gen3 brakes yet.",
+     "pub": "2026-10-26T05:30:00Z",
+     "move": "Up 3",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-undertake-brake-system-analysis-testing-gen3-technical-update-triple-eight-ford"
+      }
+     ]
+    },
+    {
+     "h": "Gold Coast crowd down six per cent",
+     "t": "Supercars reported 185,463 fans across the three wet days, six per cent fewer than last year despite pre-event sales tracking ahead.",
+     "pub": "2026-10-25T20:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-boost-mobile-gold-coast-500-crowd-figure-attendance-media-release"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/gold-coast-500-crowd-figure-announced/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-crowd-attendance-figure-corporate-weather-rain-barclay-nettlefold-comments/"
+      }
+     ]
+    },
+    {
+     "h": "Murphy calls for Gold Coast circuit changes",
+     "t": "Greg Murphy says the tyre bundles brought back at the chicanes are wrecking too many cars, and wants slower corner entries instead.",
+     "pub": "2026-10-26T01:14:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-track-changes-damage-kerbs-track-limits-tyre-bundles-greg-murphy-comments/"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight co-founder eyes a comeback",
+     "t": "Peter Butterly, one of the team's four founders in 2003, visited the Gold Coast and says a return to the pit lane is possible once he hands his European car business to his son.",
+     "pub": "2026-10-26T03:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/triple-eight-co-founder-sounding-out-supercars-return/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-25",
    "updated": "2026-10-25T07:20:00Z",
    "stories": [
