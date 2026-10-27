@@ -2,6 +2,109 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-27",
+   "updated": "2026-10-27T07:15:00Z",
+   "stories": [
+    {
+     "h": "14-round 2027 calendar expected this week",
+     "t": "Barclay Nettlefold says all team owners now agree on changes to the Teams Racing Charter. The five holdout teams get a higher annual payment, the other seven a bonus when RACE sells.",
+     "pub": "2026-10-26T23:35:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-14-rounds-teams-racing-charter-payment-negotiations-barclay-nettlefold-update/"
+      }
+     ]
+    },
+    {
+     "h": "Lowndes warns Ford of a 'big problem' at Sandown",
+     "t": "With five Fords against one Chevrolet and one Toyota left, Craig Lowndes expects GM and Toyota teams to back their lone finalists, leaving Ford to work out who helps whom.",
+     "pub": "2026-10-27T06:35:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-craig-lowndes-ford-general-motors-toyota-finals-series-sandown-points-tactics/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-craig-lowndes-column-gold-coast-500-team-orders-triple-eight-opinion-reaction",
+       "label": "Craig's Corner"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/lowndes-weighs-in-on-supercars-team-orders/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert plays down team orders flare-up",
+     "t": "Mostert was heard swearing on the radio when told to drop back for Ryan Wood, but says his anger was really about his own Shootout mistake. Wood now becomes his wingman at Sandown.",
+     "pub": "2026-10-27T03:03:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-chaz-mostert-radio-blow-up-frustration-team-orders-ryan-wood/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-downplays-potential-team-order-tensions-walkinshaw-twg-finals-ryan-wood"
+      }
+     ]
+    },
+    {
+     "h": "Puddle cost Waters his Shootout time",
+     "t": "Tickford says Cam Waters' right rear left the pits above the limit but cooled to 15.741psi after hitting standing water, under the 16psi minimum. He still made Sandown comfortably.",
+     "pub": "2026-10-27T03:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/how-tickford-was-caught-out-in-waters-dsq"
+      }
+     ]
+    },
+    {
+     "h": "Grove insists Penrite has not lost speed",
+     "t": "Matt Payne still leads the title race despite Kai Allen's elimination, but Penrite's teams' championship lead over Red Bull Ampol has shrunk from 259 to 102 points in two rounds.",
+     "pub": "2026-10-26T23:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-matt-payne-kai-allen-gold-coast-500-finals-elimination-points-triple-eight-speed"
+      }
+     ]
+    },
+    {
+     "h": "Dane says Murray justified the switch",
+     "t": "Roland Dane says Cooper Murray \"lifted the garage\" by out-qualifying teammate Jayden Ojeda for both Gold Coast races, and expects the pair to push each other.",
+     "pub": "2026-10-27T04:56:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-cooper-murray-jarrod-hughes-premiair-erebus-roland-dane/"
+      }
+     ]
+    },
+    {
+     "h": "Hughes skips Trans Am finale to focus on Supercars",
+     "t": "Erebus offered Jarrod Hughes the chance to race Trans Am and Supercars at Sandown, but the rookie will stop after this weekend's round to concentrate on his new full-time seat.",
+     "pub": "2026-10-27T03:34:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-jarrod-hughes-erebus-motorsport-rookie-trans-am-cup-series-exit-sandown-details-comments/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-26",
    "updated": "2026-10-26T07:20:00Z",
    "stories": [
