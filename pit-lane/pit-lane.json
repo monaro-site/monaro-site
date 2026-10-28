@@ -2,6 +2,93 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-28",
+   "updated": "2026-10-28T07:15:00Z",
+   "stories": [
+    {
+     "h": "Brake test done, but fixes will take time",
+     "t": "Feeney and Brown tried several pad options in a heavily instrumented Mustang at Queensland Raceway. Supercars called it the first step in a long process, with Sandown's heavy braking zones next.",
+     "pub": "2026-10-27T23:33:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-brake-problems-issues-test-alanysis-queensland-raceway-success-details/"
+      }
+     ]
+    },
+    {
+     "h": "Sinclair blames 'data engineer slop' for costly errors",
+     "t": "Analyst Scott Sinclair says calculation mistakes have hit results at three straight events, including the Gold Coast fuel blunders, and suggests shortcuts in AI-built team software may be to blame.",
+     "pub": "2026-10-27T22:48:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-plague-that-has-crept-into-supercars/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-expert-analysis-gold-coast-500-team-orders-engineer-fuel-camaro-finals-explained",
+       "label": "Sinclair's column"
+      }
+     ]
+    },
+    {
+     "h": "De Pasquale could be a Sandown threat",
+     "t": "Team 18 was strong at Sandown last year, and Triple Eight's Mark Dutton admits he would rather have seen Wood go through, fearing the Camaro's straight-line speed there.",
+     "pub": "2026-10-28T06:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-anton-de-pasquale-gold-coast-500-sandown-camaro-engine-finals-championship"
+      }
+     ]
+    },
+    {
+     "h": "Allen ready to be Payne's test car",
+     "t": "Eliminated Kai Allen says he will try set-ups on his car to help Matt Payne win the title, while Penrite also fights to protect its shrinking teams' championship lead.",
+     "pub": "2026-10-27T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-kai-allen-shock-elimination-finals-penrite-racing-championship-battles-matt-payne-ford"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-kai-allen-grove-racing-matt-payne-finals-series-points-elimination/"
+      }
+     ]
+    },
+    {
+     "h": "Prime Minister answers Mount Panorama plea",
+     "t": "Asked in parliament to back upgrades to the ageing track, Anthony Albanese pointed Bathurst council to a regional programme offering up to A$15 million for capital works.",
+     "pub": "2026-10-27T22:27:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/bathurst-1000-news-2026-prime-minister-anthony-albanese-mount-panorama-funding-plea-track-upgrade-october-update/"
+      }
+     ]
+    },
+    {
+     "h": "Blanchard rues 'own goal' that cost a Finals spot",
+     "t": "Tim Blanchard says James Golding would have made the Finals but for the double disqualification at The Bend. Speed at the Gold Coast again went unrewarded.",
+     "pub": "2026-10-28T06:21:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-blanchard-racing-team-finals-series-disqualification-james-golding-tim-blanchard/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-27",
    "updated": "2026-10-27T07:15:00Z",
    "stories": [
