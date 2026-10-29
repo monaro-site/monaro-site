@@ -2,6 +2,102 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-29",
+   "updated": "2026-10-29T07:15:00Z",
+   "stories": [
+    {
+     "h": "MSR sponsor's parent company enters administration",
+     "t": "The Australian owner of Bendix, Matt Stone Racing's naming rights sponsor since 2024, has appointed administrators. Bendix says it is business as usual and new owners will be named soon.",
+     "pub": "2026-10-29T04:27:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/msr-sponsor-downplays-entering-administration/"
+      }
+     ]
+    },
+    {
+     "h": "Fraser returns in Mustang Cup at Sandown",
+     "t": "Weeks after losing his PremiAir seat, Declan Fraser will race in the Mustang Cup finale at Sandown this weekend. Lee Holdsworth also makes his debut in the series.",
+     "pub": "2026-10-29T03:33:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-declan-fraser-enters-mustang-cup-australia-lee-holdsworth-debut-sandown-details-comments-entry-list-how-to-watch/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/fraser-getting-back-on-the-horse-at-sandown/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/holdsworth-goes-full-circle-with-mcleod/",
+       "label": "Holdsworth's debut"
+      }
+     ]
+    },
+    {
+     "h": "McLaughlin dreams of Bathurst wildcard with van Gisbergen",
+     "t": "The IndyCar star says his ultimate wish is to race a Bathurst 1000 wildcard alongside his old rival Shane van Gisbergen, though NASCAR rules that out for now.",
+     "pub": "2026-10-28T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-scott-mclaughlin-shane-van-gisbergen-bathurst-1000-wildcard-revealed-dream"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-scott-mclaughlin-on-future-bathurst-1000-start-return-shane-van-gisbergen-wildcard/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert casts himself as the underdog",
+     "t": "Despite winning on the Gold Coast, the reigning champion says Sandown's long straights make it a tough ask for his Toyota. His team boss expects the Supra to be strong.",
+     "pub": "2026-10-29T06:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-chaz-mostert-walkinshaw-twg-racing-toyota-supra-finals-series/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/mosterts-cheeky-return-of-serve-to-kostecki/",
+       "label": "Mostert's dig at Kostecki"
+      }
+     ]
+    },
+    {
+     "h": "DJR calm as Kostecki heads to Sandown",
+     "t": "Team manager Tom Moore says DJR can recover even when off the pace. Kostecki leads the season for wins with eight but has never won in 12 starts at Sandown.",
+     "pub": "2026-10-29T03:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-djr-finals-qualification-sandown-500-qualifying-results-tom-moore"
+      }
+     ]
+    },
+    {
+     "h": "Who plays wingman at Sandown?",
+     "t": "Eliminated Ryan Wood and Kai Allen can now help their teammates, while Mark Skaife says Triple Eight will eventually have to choose between Feeney and Brown.",
+     "pub": "2026-10-28T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-wingman-finals-championship-teammate-tactics-sandown-adelaide-team-orders"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-28",
    "updated": "2026-10-28T07:15:00Z",
    "stories": [
