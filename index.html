@@ -59,7 +59,7 @@
   --tarmac: #1d2024;
   --tarmac-ink: #f2f2ee;
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
-  --ford: #2a78d6; --chev: #e8a400; --toyota: #e34948;
+  --ford: #2a78d6; --chev: #e8a400; --toyota: #e34948; --fl: #8a3ffc;
   --good: #006300;
   --font-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -71,7 +71,7 @@
     --line: #2b2e32; --axis: #3b3f44; --accent: #e5483d; --accent-ink: #ffffff;
     --tarmac: #090a0b; --tarmac-ink: #f2f2ee;
     --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
-    --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c;
+    --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c; --fl: #a56eff;
     color-scheme: dark;
   }
 }
@@ -80,7 +80,7 @@
   --line: #2b2e32; --axis: #3b3f44; --accent: #e5483d; --accent-ink: #ffffff;
   --tarmac: #090a0b; --tarmac-ink: #f2f2ee;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
-  --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c;
+  --ford: #3987e5; --chev: #c98500; --toyota: #e66767; --good: #0ca30c; --fl: #a56eff;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -369,6 +369,14 @@ td.num, th.num { text-align: right; }
 .dots { display: flex; gap: 3px; flex-wrap: wrap; }
 .dots i { width: 12px; height: 12px; border-radius: 2px; background: var(--s1); }
 .dots i.pole { background: transparent; border: 2px solid var(--s1); }
+.dots i.fl { background: var(--fl); border-radius: 50%; }
+.makes-list details summary { list-style: none; cursor: pointer; }
+.makes-list details summary::-webkit-details-marker { display: none; }
+.makes-list .caret { display: inline-block; margin-left: 4px; color: var(--ink-2); transition: transform .15s; }
+.makes-list details[open] .caret { transform: rotate(90deg); }
+.makes-list .who-won { display: grid; gap: 6px; margin: 8px 0 4px; }
+.makes-list .who-won .bar-row { color: var(--ink-2); }
+.makes-list .who-won .lab { padding-left: 14px; }
 
 /* Tracks */
 .tracks { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
@@ -597,14 +605,14 @@ footer .wrap { display: grid; gap: 8px; }
           <div class="tbl-wrap" id="bump-table"></div>
         </details>
       </div>
-      <div class="panel w7">
+      <div class="panel w6">
         <h3>Finals points after the Gold Coast</h3>
         <p class="sub">The ten finalists' points after Races 31 and 32, bonus included. The top seven go to Sandown, where the points reset again with a new bonus.</p>
         <div class="bars" id="points-bars"></div>
       </div>
-      <div class="panel w5">
-        <h3>Wins and poles</h3>
-        <p class="sub">Filled squares are race wins, outlined squares are pole positions, across all 30 races so far.</p>
+      <div class="panel w6">
+        <h3>Wins, poles and fastest laps</h3>
+        <p class="sub" id="wins-sub">Filled squares are race wins, outlined squares are pole positions and purple dots are fastest laps.</p>
         <div id="wins"></div>
       </div>
       <div class="panel w6">
@@ -614,8 +622,8 @@ footer .wrap { display: grid; gap: 8px; }
       </div>
       <div class="panel w6">
         <h3>Manufacturers</h3>
-        <p class="sub">Ford wrapped up the 2026 manufacturers' title at Perth. Wins by make:</p>
-        <div class="bars" id="makes"></div>
+        <p class="sub">Ford wrapped up the 2026 manufacturers' title at Perth. Wins by make, tap one to see who won them:</p>
+        <div class="bars makes-list" id="makes"></div>
       </div>
       <div class="panel w12">
         <h3>Full standings</h3>
@@ -851,7 +859,7 @@ const R = [
   c:["Waters won his fourth Townsville race on Friday on tyre life alone, holding Kostecki off by two tenths. Payne then won Saturday by 15 seconds, his first win since Christchurch, and turned an 8-point deficit into a 61-point lead.",
      "Kostecki was the class of Sunday, winning by almost ten seconds for his sixth win of the year. Payne's second place stretched the gap to Feeney to 92 points. James Golding fell out of the top ten, and Heimgartner's weekend ended with a broken engine."]},
  {r:8,name:"Perth Super 440",short:"Perth",circuit:"Wanneroo Raceway",loc:"Neerabup, WA",dates:"31 Jul–2 Aug",done:true,
-  races:[{n:23,p:"Payne",full:["Payne","Wood","DePasquale","Waters","Mostert","Allen","Feeney","Heimgartner","Randle","Gray","LeBrocq","Brown","Murray","Hill","Golding","Cameron","Walls","Stewart","Reynolds","Ojeda","Fraser","Bates","Jones","Kostecki"],note:"De Pasquale charged from 9th to 3rd and set the fastest lap."},{n:24,p:"Payne",full:["Feeney","Payne","Allen","Mostert","Brown","Kostecki","Heimgartner","Wood","Waters","Randle","DePasquale","Fraser","LeBrocq","Golding","Reynolds","Stewart","Gray","Ojeda","Murray","Hill","Cameron","Bates","Jones","Walls"],note:"Feeney passed Payne after a pit-stop adjustment left the Grove car with understeer."},{n:25,p:"Feeney",full:["Payne","Feeney","DePasquale","Waters","Allen","Mostert","Cameron","Ojeda","Reynolds","Randle","Heimgartner","Kostecki","Murray","Golding","LeBrocq","Fraser","Brown","Stewart","Hill","Walls","Jones","Bates","Gray"],dnf:["Wood (NC)"],note:"Payne won despite a damaged rear wheel from contact with Feeney."}],
+  races:[{n:23,p:"Payne",full:["Payne","Wood","DePasquale","Waters","Mostert","Allen","Feeney","Heimgartner","Randle","Gray","LeBrocq","Brown","Murray","Hill","Golding","Cameron","Walls","Stewart","Reynolds","Ojeda","Fraser","Bates","Jones","Kostecki"],note:"De Pasquale charged from 9th to 3rd."},{n:24,p:"Payne",full:["Feeney","Payne","Allen","Mostert","Brown","Kostecki","Heimgartner","Wood","Waters","Randle","DePasquale","Fraser","LeBrocq","Golding","Reynolds","Stewart","Gray","Ojeda","Murray","Hill","Cameron","Bates","Jones","Walls"],note:"Feeney passed Payne after a pit-stop adjustment left the Grove car with understeer."},{n:25,p:"Feeney",full:["Payne","Feeney","DePasquale","Waters","Allen","Mostert","Cameron","Ojeda","Reynolds","Randle","Heimgartner","Kostecki","Murray","Golding","LeBrocq","Fraser","Brown","Stewart","Hill","Walls","Jones","Bates","Gray"],dnf:["Wood (NC)"],note:"Payne won despite a damaged rear wheel from contact with Feeney."}],
   c:["A Payne versus Feeney weekend. Payne won twice, Feeney once, and they touched in the finale with Payne nursing a vibrating wheel to the flag.",
      "Ford won all three races and that clinched the manufacturers' title with five rounds to spare. Waters moved up to third in the standings and Mostert back into the top eight."]},
  {r:9,name:"Ipswich Super 440",short:"Ipswich",circuit:"Queensland Raceway",loc:"Ipswich, QLD",dates:"21–23 Aug",done:true,
@@ -865,14 +873,14 @@ const R = [
   races:[{n:29,p:"Kostecki",
    full:["Mostert","Allen","Wood","Brown","Ojeda","Payne","DePasquale","Heimgartner","Gray","LeBrocq","Randle","Bates","Hall/Lowndes","Waters","Stewart","Kostecki","Hill","Murray","Walls","Jones","Gomersall/Logan","Reynolds","Feeney"],dnf:["Fraser (NC)","Golding (DSQ)","Cameron (DSQ)"],
    co:{Mostert:"Coulthard",Allen:"Slade",Wood:"Evans",Brown:"Pye",Ojeda:"Russell",Payne:"Davison",DePasquale:"Holdsworth",Heimgartner:"Fullwood",Gray:"D'Alberto",LeBrocq:"Jones"},
-   note:"Fastest lap: Will Brown. 141 laps, 500 km, in heavy rain."}],
+   note:"141 laps, 500 km, in heavy rain."}],
   c:["The first enduro of the year was a wet, wild one on the West Circuit. Chaz Mostert and Fabian Coulthard came from 11th on the grid to win by 18 seconds, with Ryan Wood and Jaxon Evans 3rd. A 1–3 for Walkinshaw TWG in Toyota's first Supercars enduro.",
      "Kostecki started from pole but finished 16th, a lap down. Feeney came home 23rd. Payne was 6th even after a five-second penalty for contact with Jayden Ojeda, which put him back in front of the championship by 120 points. Blanchard had both cars disqualified, a big blow to Golding's Finals hopes."]},
  {r:11,name:"Bathurst 1000",short:"Bathurst",circuit:"Mount Panorama",loc:"Bathurst, NSW",dates:"8–11 Oct",done:true,
   races:[{n:30,p:"Bates",
    full:["Kostecki","Brown","Bates","LeBrocq","Payne","Murray","Heimgartner","Golding","Randle","Lowndes/Hall","Feeney","Ojeda","Cameron","Hill","Waters","Stewart","Reynolds","Fraser","Moffat/Herne","Allen","Jones","Gray","Walls","Wood"],dnf:["DePasquale (NC, out of fuel)","Mostert (NC, crashed)"],
    co:{Kostecki:"Hazelwood",Brown:"Pye",Bates:"Seton",LeBrocq:"H. Jones",Payne:"Davison",Murray:"Dalton",Heimgartner:"Fullwood",Golding:"Stanaway",Randle:"Goodall",Feeney:"Percat",Ojeda:"Russell",Cameron:"Best",Hill:"Vaughan",Waters:"Winterbottom",Stewart:"Hughes",Reynolds:"Courtney",Fraser:"Morris",Allen:"Slade",Jones:"Boys",Gray:"D'Alberto",Walls:"Perkins",Wood:"Evans"},
-   note:"Fastest lap: Brodie Kostecki, a Gen3 lap record. 161 laps, one safety car. Winning margin 1.18s."}],
+   note:"Kostecki's fastest lap was a Gen3 lap record. 161 laps, one safety car. Winning margin 1.18s."}],
   c:["Brodie Kostecki and Todd Hazelwood won the Bathurst 1000 on the very last lap, and they needed the car in front to run dry to do it. Anton De Pasquale and Lee Holdsworth led the closing stages on a fuel gamble, with Team 18 calling for maximum fuel saving six laps from home. It wasn't enough. De Pasquale ran out on Mountain Straight on the final lap, and Kostecki, who had passed polesitter Zach Bates at Murray's Corner three laps earlier, swept by to win. Will Brown and Scott Pye were second, 1.18 seconds back, with Bates and Aaron Seton third. De Pasquale wasn't classified and scored nothing.",
      "For almost the whole race there wasn't a single safety car. The only one came out six laps from the end, after Chaz Mostert clipped the inside wall at Forrest's Elbow and crashed out, the Enduro Cup leader going home with nothing. Ryan Wood hit the wall at Reid Park and limped home 24th, 16 laps down, which was still enough to keep his Finals place. Kai Allen lost time with a loose brake duct and finished 20th. Payne and Will Davison came back from a drive-through penalty for a pit-stop infringement to finish 5th. Feeney and Nick Percat were 11th. Kostecki set the fastest lap of the race, a new Gen3 lap record.",
      "Brown and Pye take the Enduro Cup and 25 bonus points into the Finals. Brown finished on 510 Enduro Cup points, with Payne second on 413 and Kostecki third on 393.",
@@ -883,7 +891,7 @@ const R = [
    note:"85 laps in the wet, started behind the safety car. Winning margin 23.46s. Payne crossed the line 2nd and was given a five-second penalty for track limits."},
   {n:32,p:"Feeney",
    full:["Feeney","Kostecki","Mostert","Wood","Heimgartner","Payne","Waters","Golding","Hill","Randle","Brown","Cameron","Allen","DePasquale","Gray","Hughes","Murray","Bates","Ojeda","Walls","LeBrocq","Reynolds","Jones"],dnf:["Stewart (DNF)"],
-   note:"Fastest lap: Chaz Mostert. 85 laps, dry, one safety car. Winning margin 6.91s."}],
+   note:"85 laps, dry, one safety car. Winning margin 6.91s."}],
   c:["Broc Feeney came back from an ordinary Saturday to win on Sunday, and this one meant a lot. He was born and raised on the Gold Coast, he turned 24 only a week ago, and his home race was one of the very few he had never won. He took pole for both races, but on Saturday he dropped to ninth after contact with Matt Payne. On Sunday he led away from Will Brown on an all-Triple Eight front row and won by 6.9 seconds from Brodie Kostecki.",
      "Saturday's Race 31 belonged to Chaz Mostert. It started behind the safety car in heavy rain, and once it went green he led from lap 4 and won by 23.5 seconds, the biggest winning margin the Gold Coast has seen. Under the Finals rules a race win guarantees a place at Sandown (rule D14.4.1.4). David Reynolds was second. Payne crossed the line second but a five-second track-limits penalty dropped him to third. Kai Allen's alternator failed and he finished last.",
      "Sunday stayed dry, but it had its own drama. Allen, Anton De Pasquale and Jack Le Brocq tangled at Turn 1 on the opening lap. De Pasquale's damaged tyre left debris on the track, which brought out the only safety car on lap 3. Reynolds hit the wall at Turn 13 on lap 1 and lost two laps. Mostert lost time to a wheel-gun failure in the pits, then passed Brown on lap 48 and set the fastest lap of the race. Brown faded to 11th from the front row. Payne came from 12th to 6th. Cam Waters started 10th after being disqualified from the Shootout for a tyre pressure breach, and finished 7th.",
@@ -922,6 +930,10 @@ const FINALS = Object.keys(FIN12);
 // The other 14 keep their regular points: total after Bathurst plus Races 31 and 32 (Schedule D1).
 const PTS12 = {Heimgartner:1637,Golding:1532,Randle:1499,Ojeda:1467,Reynolds:1278,Bates:1165,Hill:1158,Gray:1080,Murray:1077,Cameron:1008,Jones:834,Walls:789,Fraser:788,Stewart:753,Hughes:76};
 ORDER[12] = FINALS.concat(Object.keys(PTS12));
+// Fastest lap in each race, from the official classifications on supercars.com (driver with the lowest best lap)
+const FASTEST = {1:"Ojeda",2:"Golding",3:"Murray",4:"Kostecki",5:"Allen",6:"Allen",7:"Payne",8:"Wood",9:"Feeney",10:"Wood",11:"Payne",12:"Payne",13:"Payne",14:"Feeney",15:"Ojeda",16:"Feeney",17:"Golding",18:"Mostert",19:"DePasquale",20:"Kostecki",21:"LeBrocq",22:"Murray",23:"Feeney",24:"Feeney",25:"Allen",26:"Feeney",27:"Brown",28:"Kostecki",29:"Brown",30:"Kostecki",31:"Heimgartner",32:"Mostert"};
+const FL = {};
+Object.values(FASTEST).forEach(k => FL[k] = (FL[k] || 0) + 1);
 const POLES = {Payne:8,Kostecki:6,Feeney:6,Waters:3,Brown:2,Wood:2,DePasquale:1,Mostert:1,Heimgartner:1,Golding:1,Bates:1};
 
 const $ = s => document.querySelector(s);
@@ -1025,6 +1037,7 @@ function raceCard(x, ev) {
   else if (x.w) body += `<div class="podium"><div><div class="pos">Winner</div><div class="who">${ln(x.w)}</div><div class="team">${car(x.w).team}</div></div><div></div><div></div></div>`;
   const extras = [];
   if (x.p) extras.push(`Pole: ${who(x.p)}`);
+  if (FASTEST[x.n]) extras.push(`Fastest lap: ${who(FASTEST[x.n])}`);
   if (x.note) extras.push(x.note);
   if (extras.length) body += `<div class="extra">${extras.join("<br>")}</div>`;
   if (x.full || x.top) {
@@ -1179,8 +1192,9 @@ $("#points-bars").innerHTML = FINALS.map((k, i) => (i === 7 ? `<div class="cutli
   `<div class="bar-row${i >= 7 ? " cut" : ""}"><span class="lab">${i + 1}. ${ln(k)}</span><span class="track"><span class="fill" style="width:${FIN12[k] / max * 100}%"></span></span><span class="val">${FIN12[k]}</span></div>`).join("");
 
 // Wins & poles
-const wp = Object.keys(D).filter(k => WINS[k] || POLES[k]).sort((a, b) => (WINS[b] || 0) - (WINS[a] || 0) || (POLES[b] || 0) - (POLES[a] || 0));
-$("#wins").innerHTML = `<table><thead><tr><th>Driver</th><th>Wins</th><th class="num">W</th><th class="num">P</th></tr></thead><tbody>${wp.map(k => `<tr><td>${ln(k)}</td><td><div class="dots">${"<i></i>".repeat(WINS[k] || 0)}${'<i class="pole"></i>'.repeat(POLES[k] || 0)}</div></td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td></tr>`).join("")}</tbody></table>`;
+const wp = Object.keys(D).filter(k => WINS[k] || POLES[k] || FL[k]).sort((a, b) => (WINS[b] || 0) - (WINS[a] || 0) || (POLES[b] || 0) - (POLES[a] || 0) || (FL[b] || 0) - (FL[a] || 0));
+$("#wins").innerHTML = `<table><thead><tr><th>Driver</th><th>Wins</th><th class="num">W</th><th class="num">P</th><th class="num">F</th></tr></thead><tbody>${wp.map(k => `<tr><td>${ln(k)}</td><td><div class="dots">${"<i></i>".repeat(WINS[k] || 0)}${'<i class="pole"></i>'.repeat(POLES[k] || 0)}${'<i class="fl"></i>'.repeat(FL[k] || 0)}</div></td><td class="num">${WINS[k] || 0}</td><td class="num">${POLES[k] || 0}</td><td class="num">${FL[k] || 0}</td></tr>`).join("")}</tbody></table>`;
+$("#wins-sub").textContent = `Filled squares are race wins, outlined squares are pole positions and purple dots are fastest laps, across all ${races.length} races so far.`;
 
 // Teams
 const T = {};
@@ -1189,9 +1203,10 @@ const tlist = Object.entries(T).sort((a, b) => b[1].pts - a[1].pts);
 $("#teams").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Team</th><th class="num">Wins</th><th class="num">Points</th></tr></thead><tbody>${tlist.map(([n, t], i) => `<tr><td class="num">${i + 1}</td><td><span class="make ${t.make}"></span>${n}<br><span class="muted small">${t.drivers.join(", ")}</span></td><td class="num">${t.wins}</td><td class="num">${t.pts.toLocaleString()}</td></tr>`).join("")}</tbody></table>`;
 
 // Makes
-const M = {Ford: 0, Toyota: 0, Chevrolet: 0};
-Object.entries(WINS).forEach(([k, w]) => M[D[k].make] += w);
-$("#makes").innerHTML = Object.entries(M).map(([m, w]) => `<div class="bar-row"><span class="lab"><span class="make ${m}"></span>${m}</span><span class="track"><span class="fill" style="width:${w / races.length * 100}%;background:var(--${m === "Chevrolet" ? "chev" : m.toLowerCase()})"></span></span><span class="val">${w}</span></div>`).join("") +
+const M = {Ford: 0, Toyota: 0, Chevrolet: 0}, MW = {Ford: {}, Toyota: {}, Chevrolet: {}};
+R.forEach(ev => ev.done && ev.races.forEach(x => { if (!x.w) return; const m = carAt(x.w, ev.r).make || D[x.w].make; M[m]++; MW[m][x.w] = (MW[m][x.w] || 0) + 1; }));
+const makeCol = m => `var(--${m === "Chevrolet" ? "chev" : m.toLowerCase()})`;
+$("#makes").innerHTML = Object.entries(M).map(([m, w]) => `<details><summary class="bar-row"><span class="lab"><span class="make ${m}"></span>${m}<span class="caret">▸</span></span><span class="track"><span class="fill" style="width:${w / races.length * 100}%;background:${makeCol(m)}"></span></span><span class="val">${w}</span></summary><div class="who-won">${Object.entries(MW[m]).sort((a, b) => b[1] - a[1]).map(([k, n]) => `<div class="bar-row"><span class="lab">${ln(k)}</span><span class="dots">${`<i style="background:${makeCol(m)}"></i>`.repeat(n)}</span><span class="val">${n}</span></div>`).join("")}</div></details>`).join("") +
   `<p class="small muted">Ford Mustang, Toyota GR Supra and Chevrolet Camaro. ${M.Ford} of ${races.length} wins have gone to a Mustang.</p>`;
 
 // Standings
