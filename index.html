@@ -1155,7 +1155,9 @@ function drawBump() {
   const y = p => T + (p - 1) * (H - T - B) / 23;
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Championship position after each round from round 2 to round 12">`;
   [1,5,10,15,20,24].forEach(p => s += `<line x1="${L}" x2="${W - Rt}" y1="${y(p)}" y2="${y(p)}" stroke="var(--line)" stroke-width="1"/><text x="${L - 10}" y="${y(p) + 4}" text-anchor="end">P${p}</text>`);
-  s += `<line x1="${L}" x2="${W - Rt}" y1="${(y(10) + y(11)) / 2}" y2="${(y(10) + y(11)) / 2}" stroke="var(--accent)" stroke-dasharray="4 4" stroke-width="1"/><text x="${L + 4}" y="${(y(10) + y(11)) / 2 - 4}" style="fill:var(--accent)">Finals cut</text>`;
+  // Cut lines: top 10 make the Finals, top 7 survive the Gold Coast. Add [4, "Sandown cut"] once Sandown has run.
+  [[10, "Finals cut"], [7, "Gold Coast cut"]].forEach(([n, label]) => { const cy = (y(n) + y(n + 1)) / 2;
+    s += `<line x1="${L}" x2="${W - Rt}" y1="${cy}" y2="${cy}" stroke="var(--accent)" stroke-dasharray="4 4" stroke-width="1"/><text x="${L + 4}" y="${cy - 4}" style="fill:var(--accent)">${label}</text>`; });
   ROUNDS.forEach(r => { const ev = R[r - 1]; s += `<text x="${x(r)}" y="${H - 8}" text-anchor="middle">R${r} ${ev.short.replace("The ", "").slice(0, 4).toUpperCase()}</text>`; });
   const seriesFor = k => ROUNDS.map(r => { const p = ORDER[r].indexOf(k); return p >= 0 ? [r, p + 1] : null; }).filter(Boolean);
   const order = ALL.filter(k => !sel.includes(k)).concat(sel);
