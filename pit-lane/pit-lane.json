@@ -2,6 +2,85 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-30",
+   "updated": "2026-10-30T07:15:00Z",
+   "stories": [
+    {
+     "h": "How the 2027 calendar is shaping up",
+     "t": "Speedcafe expects Sydney to open in late February, Queensland Raceway to drop off, Sandown to move to late August and Phillip Island to host a Finals round. Bathurst is set for 10 October.",
+     "pub": "2026-10-30T04:49:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-events-schedule-sprint-enduro-finals-dates-confirmed/"
+      }
+     ]
+    },
+    {
+     "h": "Late Super2 parity change angers Tickford",
+     "t": "Supercars has tweaked the Holden Commodore's boot lid gurney before Sandown, the first change to the Gen2 cars since 2022. Tickford says it was told, not consulted, and called the decision bizarre.",
+     "pub": "2026-10-30T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-parity-change-super2-series-holden-ford-tickford-matt-roberts/",
+       "label": "Tickford's reaction"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-super2-series-parity-update-holden-commodore-aerodynamics-sandown-technical-explained"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-grants-holden-commodore-parity-change/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-parity-change-super2-series-holden-ford-tim-edwards/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney wants no part in Ford team games",
+     "t": "Asked whether he would help another Ford team through, Broc Feeney said he is only focused on winning races, after Kostecki's teammate Rylan Gray briefly held him up on the Gold Coast.",
+     "pub": "2026-10-29T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-broc-feeney-rival-ford-teams-finals-championship-tactics-gamesmanship-triple-eight"
+      }
+     ]
+    },
+    {
+     "h": "Perkins: Camaro teams copied each other's fuel maths",
+     "t": "Jack Perkins says pit stop times back the denials of any GM plot, and believes PremiAir short-fuelled Murray after following Erebus' mistaken stop for Hughes a lap earlier.",
+     "pub": "2026-10-29T08:31:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/perkins-theory-on-general-motors-gold-coast-fuel-stops/"
+      }
+     ]
+    },
+    {
+     "h": "Bendix says new owners are lined up",
+     "t": "Matt Stone Racing's sponsor says the ownership change will separate its parent company from the First Brands Group, with supply and its Ballarat factory unaffected.",
+     "pub": "2026-10-30T04:54:00Z",
+     "move": "Down 4",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/bendix-makes-statement-as-ownership-change-looms/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-29",
    "updated": "2026-10-29T07:15:00Z",
    "stories": [
