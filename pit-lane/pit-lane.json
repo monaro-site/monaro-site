@@ -3,8 +3,20 @@
  "days": [
   {
    "date": "2026-10-31",
-   "updated": "2026-10-31T07:05:00Z",
+   "updated": "2026-10-31T14:35:00Z",
    "stories": [
+    {
+     "h": "Erebus explains its Gold Coast fuel error",
+     "t": "Barry Ryan says a young data engineer marked the fuel tower at 70 litres instead of 80, forcing Jarrod Hughes' late stop. He rejected cheating claims and called it an honest mistake.",
+     "pub": "2026-10-31T07:06:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-gold-coast-500-erebus-motorsport-chevrolet-barry-ryan-comments/"
+      }
+     ]
+    },
     {
      "h": "GM plans a two-way street with NASCAR",
      "t": "GM's Simon McNamara says it wants to be Supercars' strongest manufacturer by sending young drivers and engineers to the US and bringing international GM talent to Australia. Anton De Pasquale was evaluated earlier this year.",
