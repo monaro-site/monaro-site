@@ -2,6 +2,24 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-10-31",
+   "updated": "2026-10-31T07:05:00Z",
+   "stories": [
+    {
+     "h": "GM plans a two-way street with NASCAR",
+     "t": "GM's Simon McNamara says it wants to be Supercars' strongest manufacturer by sending young drivers and engineers to the US and bringing international GM talent to Australia. Anton De Pasquale was evaluated earlier this year.",
+     "pub": "2026-10-30T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chevrolet-general-motors-nascar-drive-cameo-connor-zilisch-shane-van-gisbergen"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-30",
    "updated": "2026-10-30T07:15:00Z",
    "stories": [
