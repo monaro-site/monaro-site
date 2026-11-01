@@ -2,6 +2,36 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-01",
+   "updated": "2026-11-01T07:20:00Z",
+   "stories": [
+    {
+     "h": "Tickford still hunting for speed before Sandown",
+     "t": "Cam Waters goes to Sandown as sixth seed but has no top-six finish in his last seven races. Rod Nash admits the team has not found the speed it has been missing all season.",
+     "pub": "2026-11-01T01:27:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/tickford-still-searching-as-crunch-time-comes/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney sees no clear title favourite",
+     "t": "Second seed Broc Feeney, 30 points behind Matt Payne, says any of the seven semi-finalists could be champion, and that Sandown will be tough to get through.",
+     "pub": "2026-10-31T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-broc-feeney-no-clear-favourites-finals-2026-title-championship-triple-eight"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-31",
    "updated": "2026-10-31T14:35:00Z",
    "stories": [
