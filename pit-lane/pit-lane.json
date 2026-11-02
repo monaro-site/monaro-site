@@ -2,6 +2,72 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-02",
+   "updated": "2026-11-02T07:10:00Z",
+   "stories": [
+    {
+     "h": "D'Alberto retires from Supercars co-driving",
+     "t": "Tony D'Alberto says this year's Bathurst, his 22nd start and 11th with DJR, was his last. He stays on as a team ambassador, and DJR says it has a shortlist for his replacement.",
+     "pub": "2026-11-02T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-dick-johnson-racing-co-driver-enduro-cup-bathurst-1000-tony-dalberto-ryan-story-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/dick-johnson-racing-stalwart-retires-from-supercars/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-tony-dalberto-retires-co-driving-enduro-cup-dick-johnson-racing-announcement-driver-market"
+      }
+     ]
+    },
+    {
+     "h": "Lia Block heads to the Adelaide Grand Final",
+     "t": "Ken Block's daughter, a recent F1 Academy race winner, will drive a Skoda Fabia in the rally festival alongside the Supercars decider on 26 to 29 November.",
+     "pub": "2026-11-01T23:31:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/ken-blocks-daughter-to-compete-at-adelaide-grand-final/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/motorsport-news-2026-australian-rally-championship-adelaide-grand-final-festival-lia-block-confirmed-details-comments/"
+      }
+     ]
+    },
+    {
+     "h": "Mustang Cup champion wins Triple Eight test",
+     "t": "Josh Anderson took the first Mustang Cup title by 62 points at Sandown, earning a run in a Red Bull Ampol Supercar at a date still to be confirmed.",
+     "pub": "2026-11-02T00:31:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/anderson-books-triple-eight-supercar-test/"
+      }
+     ]
+    },
+    {
+     "h": "Is technical parity on the brink?",
+     "t": "V8 Sleuth argues last week's Super2 Commodore change, made to cars unchanged since 2020, suggests Supercars is moving from technical parity towards balancing performance by results.",
+     "pub": "2026-11-02T02:46:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-call-thats-put-supercars-technical-parity-on-the-brink/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-01",
    "updated": "2026-11-01T07:20:00Z",
    "stories": [
