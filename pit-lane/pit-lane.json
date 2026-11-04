@@ -2,6 +2,76 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-04",
+   "updated": "2026-11-04T07:10:00Z",
+   "stories": [
+    {
+     "h": "Enduro Cup expansion dropped from 2027 calendar",
+     "t": "The 14-round calendar, due on Thursday, keeps nine Sprint Cup rounds, two enduros and three Finals rounds. Teams pushed back on co-driver costs, so a late-August Sandown will decide the Sprint Cup instead.",
+     "pub": "2026-11-04T00:36:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-sandown-calendar-14-rounds-enduro-cup-schedule-events/"
+      }
+     ]
+    },
+    {
+     "h": "Quinn hits out as Queensland Raceway is axed",
+     "t": "Owner Tony Quinn says fans are the main victims of Ipswich missing the 2027 calendar despite strong crowds. He says he was told only a day before the announcement and questions whether RACE are the right owners.",
+     "pub": "2026-11-04T05:02:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-reaction-tony-quinn-response-queensland-raceway-ipswich-dumped/"
+      }
+     ]
+    },
+    {
+     "h": "Fraser lands shock Super2 drive at Sandown",
+     "t": "Declan Fraser will race a Matt Stone Racing Commodore in Super2 this weekend after Tommy Smith switched to a Ford. It adds to his Mustang Cup outing last weekend.",
+     "pub": "2026-11-04T04:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-declan-fraser-premiair-racing-exit-super2-drive-matt-stone-racing-sandown-tommy-smith"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-super2-series-declan-fraser-joins-matt-stone-racing-tommy-smith-move-detail-confirmed/"
+      }
+     ]
+    },
+    {
+     "h": "First look at the Perth Park street circuit",
+     "t": "A simulation shows the 3km, 12-turn layout between Optus Stadium and Crown Casino that is expected to open the 2028 season, with a 240km/h top speed and three clear overtaking spots.",
+     "pub": "2026-11-03T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-perth-park-street-circuit-first-look-on-board-footage-simulation-exclusive-burswood-optus-stadium-crown-casino/"
+      }
+     ]
+    },
+    {
+     "h": "NASCAR's Jesse Love returns for Adelaide Super2",
+     "t": "Last year's Xfinity champion will race Image Racing's Super2 entry at the Grand Final before moving to Ford's Wood Brothers Racing in the NASCAR Cup Series in 2027.",
+     "pub": "2026-11-04T05:29:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/nascar-news-2026-jesse-love-adelaide-grand-final-super2-series-entry-image-racing-confirmed-details/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-03",
    "updated": "2026-11-03T07:10:00Z",
    "stories": [
