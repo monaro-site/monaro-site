@@ -1023,6 +1023,21 @@ const PITBOARDS = {
   ],
   src: 'Sources: <a href="https://www.supercars.com/news/supercars-news-2026-race-formats-announced-season-sprint-cup-enduro-finals" target="_blank" rel="noopener">supercars.com (2026 Finals format and race formats)</a>. Starting points from this site\'s round 11 report; the gaps are my own sums.',
  },
+ 13: {
+  id: "sandown-2026-semi-final",
+  until: "2026-11-07T04:30:00Z", // Race 33 start: Sat 7 Nov, 4:30am GMT (3:30pm AEDT)
+  sign: [["Pit board", "sm"], ["Sandown", "y"], ["7 in · 3 out", ""]],
+  label: "Pit board · Finals semi-final",
+  line: "Seven drivers, two 79-lap races, and only four go to Adelaide. Brown, Waters and De Pasquale start the weekend in the drop zone.",
+  note: [
+    "<b>The reset.</b> Gold Coast points are wiped. All seven restart on the same total, plus a bonus for where they finished at the Gold Coast (rules D14.4.2.1 and D14.4.2.2): Payne 150, Feeney 120, Kostecki 96, Mostert 78, Brown 66, Waters 57, De Pasquale 48.",
+    "<b>The drop zone.</b> Only the top four go to the Grand Final. Brown starts 12 points behind Mostert in fourth, Waters 21 behind and De Pasquale 30. A race win pays 150 and second 138, so one good result wipes those gaps out.",
+    "<b>The cushion.</b> Payne starts 84 points clear of fifth, Feeney 54 and Kostecki 30. Two bad races could still undo any of them.",
+    "<b>Win and you're in.</b> A finalist who wins Race 33 or Race 34 goes to Adelaide whatever the points say, and the bottom three are then worked out from everyone else (rule D14.4.2.3). If two drivers finish level on points, the one who placed higher in Race 34 goes ahead (rule D14.1.5.1).",
+    "<b>Form guide.</b> Mostert and Feeney won a race each at Sandown in 2025. <a href=\"/predictor/sandown/\">What each driver needs →</a>",
+  ],
+  src: 'Sources: Supercars 2026 Operations Manual, Division D (Sporting Rules) D14.4.2, D14.1.5.1 and Schedule D1 points. Gaps are my own sums.',
+ },
 };
 const PITBOARD = Object.values(PITBOARDS).find(pb => Date.now() < Date.parse(pb.until)) || null;
 const pitboardInner = pb => `
