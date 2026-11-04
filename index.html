@@ -115,7 +115,27 @@ p { margin: 0; max-width: 68ch; text-wrap: pretty; }
 /* Nav: tighter spacing so every item fits; wraps to two rows on tablets, swipes sideways on phones. */
 .nav li a, .nav .nav-shop { padding: 8px 7px; letter-spacing: .05em; }
 @media (max-width: 1180px) { .nav li a, .nav .nav-shop { padding: 8px 5px; letter-spacing: .03em; font-size: 12px; } .nav .wrap { gap: 12px; } }
-@media (min-width: 701px) and (max-width: 1100px) { .nav ul { flex-wrap: wrap; overflow: visible; row-gap: 4px; } .nav .wrap { padding-top: 6px; padding-bottom: 6px; } }
+@media (min-width: 701px) { .nav ul { flex-wrap: wrap; overflow: visible; row-gap: 4px; } .nav .wrap { padding-top: 6px; padding-bottom: 6px; } }
+
+/* The Teardown (long reads) */
+.td-home { background: var(--tarmac); color: var(--tarmac-ink); }
+.td-home .section-head p { color: #c9cbc6; }
+.td-home .eyebrow { color: #ff8a80; }
+.td-banner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px; align-items: center; margin-bottom: 24px; }
+.td-banner .section-head { margin-bottom: 0; }
+.td-xray { width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: 50% 62%; -webkit-mask: linear-gradient(90deg, transparent 0, #000 18%, #000 88%, transparent); mask: linear-gradient(90deg, transparent 0, #000 18%, #000 88%, transparent); }
+@media (max-width: 700px) { .td-banner { grid-template-columns: 1fr; gap: 4px; } .td-xray { -webkit-mask: linear-gradient(180deg, #000 75%, transparent); mask: linear-gradient(180deg, #000 75%, transparent); } }
+.td-feature { display: grid; gap: 12px; text-decoration: none; color: inherit; border: 1px solid rgba(255,255,255,.16); border-left: 4px solid var(--accent); border-radius: 4px; padding: 22px; max-width: 820px; }
+.td-feature:hover { border-color: rgba(255,255,255,.35); border-left-color: var(--accent); }
+.td-feature .td-img { width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: 50% 62%; border-radius: 3px; }
+.td-feature .no { font: 600 12px/1 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: #ff8a80; }
+.td-feature h3 { font-size: clamp(28px, 4vw, 40px); line-height: 1; }
+.td-feature p { color: #c9cbc6; }
+.td-feature .m { font: 500 12px/1.5 var(--font-data); letter-spacing: .06em; text-transform: uppercase; color: #9a9d98; }
+.td-feature .go { justify-self: start; font: 600 13px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; background: #B3261E; color: #fff; padding: 12px 14px; border-radius: 3px; }
+.td-all { display: inline-block; margin-top: 14px; font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: #f2f2ee; }
+.track-card .td-link { display: inline-block; margin-top: 10px; font: 600 12px/1.3 var(--font-data); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); text-decoration: none; }
+.track-card .td-link:hover { text-decoration: underline; }
 
 /* Chequer strip */
 .chequer { height: 12px; background:
@@ -526,11 +546,11 @@ footer .wrap { display: grid; gap: 8px; }
     <a class="brand" href="#top">Monaro<span>.</span>co.uk</a>
     <ul>
       <li><a class="pl-link" href="#pitlane">Pit Lane</a></li>
-      <li><a href="#radio">Team Radio</a></li>
       <li><a href="#calendar">Calendar</a></li>
       <li><a href="#results">Results</a></li>
       <li><a href="#stats">Season stats</a></li>
       <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#teardown">Teardown</a></li>
       <li><a href="#garage">My Monaro</a></li>
       <li><a class="updates-link" href="#updates">Get updates</a></li>
       <li><a class="follow-link" href="#follow">Follow</a></li>
@@ -654,6 +674,28 @@ footer .wrap { display: grid; gap: 8px; }
     </div>
     <div class="tracks" id="track-list"></div>
     <p class="sources" style="margin-top:16px">Lap lengths and turn counts are for the layout Supercars uses, from each circuit's Wikipedia page, linked on its card. 2025 winners from <a href="https://www.supercars.com/results/2025/supercars" target="_blank" rel="noopener">supercars.com</a>. Phillip Island's return and Adelaide's 2027 layout from supercars.com (<a href="https://www.supercars.com/news/supercars-news-2026-phillip-island-deal-confirmed-finals-round-contract-length-victorian-government" target="_blank" rel="noopener">Phillip Island deal</a>, <a href="https://www.supercars.com/news/supercars-news-2026-adelaide-street-circuit-revealed-motogp-track-design-layout-renders-images" target="_blank" rel="noopener">Adelaide circuit plans</a>). Track maps traced from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>, north at the top; the red bar marks start/finish and the arrow shows the direction of travel.</p>
+  </div>
+</section>
+
+<section id="teardown" class="td-home">
+  <div class="wrap">
+    <div class="td-banner">
+      <div class="section-head">
+        <div class="eyebrow">Long reads</div>
+        <h2>The Teardown</h2>
+        <p>After every round the teams strip the car down, check every part and get it ready for the next one. The Teardown does the same to one topic at a time.</p>
+      </div>
+      <img class="td-xray" src="/teardown/marilyn-xray.jpg" width="1200" height="800" alt="X-ray view of Marilyn, my 2005 Monaro VXR" loading="lazy">
+    </div>
+    <a class="td-feature" href="/teardown/queensland-raceway/">
+      <img class="td-img" src="/teardown/queensland-raceway/hero.png" width="1200" height="800" alt="Outline of Queensland Raceway, the Paperclip" loading="lazy">
+      <span class="no">Teardown 01</span>
+      <h3>Queensland Raceway, and the tracks that come and go</h3>
+      <p>Ipswich has been dropped from the 2027 calendar, two years after it came back. Where the Paperclip came from, who won there, and what it would take to return.</p>
+      <span class="m">8 min read · by Matt</span>
+      <span class="go">Read the Teardown →</span>
+    </a>
+    <a class="td-all" href="/teardown/">All Teardowns →</a>
   </div>
 </section>
 
@@ -1503,6 +1545,7 @@ function renderPitboard() {
 })();
 
 // Tracks
+const TDLINK = { "Queensland Raceway": "/teardown/queensland-raceway/" };
 const TR = [
  ["Sydney Motorsport Park","Eastern Creek, NSW","3.91 km (Gardner GP)","Opened 1990","Built as Eastern Creek Raceway, it hosted the Australian motorcycle Grand Prix in the early 1990s. Its long front straight and fast turn 1 make it one of the quickest tracks on the calendar, and it opened the 2026 season.",11,"Cam Waters won all three races"],
  ["Albert Park","Melbourne, VIC","5.278 km","Supercars support since 1996","A temporary park circuit around Albert Park Lake, home of the Formula 1 Australian Grand Prix. Supercars run four short sprint races as the main support category, with little room for error between the walls.",14,"Feeney, Hill and Brown; the fourth race was abandoned"],
@@ -1528,7 +1571,7 @@ const TRMAP = ["<path class=\"trk\" d=\"M96.9 14.3 90.1 15.3 79.0 20.2 72.0 26.3
 renderWknd();
 renderPitboard();
 renderPitLane();
-$("#track-list").innerHTML = TR.map(([n, l, len, hist, p, turns, w25, wl], i) => `<article class="track-card"><svg class="track-map" viewBox="0 0 320 150" role="img" aria-label="Map of ${n}">${TRMAP[i]}</svg><h3>${n}</h3><div class="facts"><span>${l}</span><span>Lap <b>${len}</b></span><span><b>${turns}</b> turns</span><span><b>${hist}</b></span><a href="https://en.wikipedia.org/wiki/${TRWIKI[i]}" target="_blank" rel="noopener">Wikipedia</a></div><p>${p}</p><div class="w25"><span>${wl || "2025 winners"}</span>${w25}</div></article>`).join("");
+$("#track-list").innerHTML = TR.map(([n, l, len, hist, p, turns, w25, wl], i) => `<article class="track-card"><svg class="track-map" viewBox="0 0 320 150" role="img" aria-label="Map of ${n}">${TRMAP[i]}</svg><h3>${n}</h3><div class="facts"><span>${l}</span><span>Lap <b>${len}</b></span><span><b>${turns}</b> turns</span><span><b>${hist}</b></span><a href="https://en.wikipedia.org/wiki/${TRWIKI[i]}" target="_blank" rel="noopener">Wikipedia</a></div><p>${p}</p><div class="w25"><span>${wl || "2025 winners"}</span>${w25}</div>${TDLINK[n] ? `<a class="td-link" href="${TDLINK[n]}">Read the Teardown →</a>` : ""}</article>`).join("");
 </script>
 
 
