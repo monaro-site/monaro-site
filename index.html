@@ -415,6 +415,7 @@ td.num, th.num { text-align: right; }
 .post-full[open] summary { margin-bottom: 10px; }
 .post-full p { margin: 0 0 10px; }
 .post-full figure { margin: 0 0 12px; }
+.post-full figure video { display: block; width: 100%; max-width: 560px; margin: 0 auto; border-radius: 3px; }
 .post-full figure img { display: block; max-width: 100%; max-height: 560px; width: auto; height: auto; margin: 0 auto; border-radius: 3px; }
 .post-full .steps { margin: 0 0 14px; padding-left: 22px; display: grid; gap: 6px; }
 .post-full .steps b { color: var(--ink); }
@@ -1107,13 +1108,12 @@ const POSTS = [
       <li><b>Fitted.</b> Once they've cooled, the new tyres go on.</li>
     </ol>`},
     {img: "/blog/new-shoes/stripped.jpg", alt: "A wheel stripped and blasted back to bare alloy on a stand", cap: "Back to bare metal"},
-    {img: "/blog/new-shoes/coated-rack.jpg", alt: "Four freshly powder-coated dark grey wheels hanging on a rack in the workshop", cap: "All four, fresh out of the oven"},
     {img: "/blog/new-shoes/coated-close.jpg", alt: "Close-up of a glossy dark grey powder-coated ten-spoke wheel", cap: "Orbit Grey up close"},
     {img: "/blog/new-shoes/in-the-workshop.jpg", alt: "Silver Monaro on axle stands in the workshop with her wheels off", cap: "Marilyn waiting for her new shoes"},
     {img: "/blog/new-shoes/new-tyres.jpg", alt: "Four new Bridgestone Potenza Sport 245/35 ZR19 tyres on a rack", cap: "Four new Bridgestone Potenza Sports, 245/35 R19"},
     "The new colour is Orbit Grey, a shade darker than before. I'd seen another Monaro on darker wheels and it looked spot on, and I think it suits her better than the light grey ever did. It'll work whichever colour she ends up in after the respray.",
     "She's on four new Bridgestone Potenza Sports now, with a lot more grip than the old set, which matters on cold, wet British roads. RCR also sanded and polished the headlights, so the yellowing has gone and she can actually see at night.",
-    {img: "/blog/new-shoes/after.jpg", alt: "Marilyn's refurbished dark grey wheel on a new Bridgestone tyre, red AP Racing caliper behind", cap: "After: same angle, new look"},
+    {html: `<figure><video src="/blog/new-shoes/before-after.mp4" poster="/blog/new-shoes/after.jpg" autoplay muted loop playsinline aria-label="The same wheel before and after, fading from light grey to Orbit Grey"></video><figcaption>Before and after: same wheel, same spot on the driveway</figcaption></figure>`},
     {img: "/blog/new-shoes/after-angle.jpg", alt: "Front wheel of the Monaro in dark grey with new Bridgestone Potenza Sport tyre", cap: "Back home on the driveway"},
     "A big thank you to Ryan and Steve at <a href=\"https://rcrwheels.com/\" target=\"_blank\" rel=\"noopener\">RCR Wheels</a> in Grantham. They were brilliant from start to finish, and Marilyn looks like a different car. If your wheels need some love, give them a call.",
     "Next up: paint quotes."
