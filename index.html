@@ -415,6 +415,9 @@ td.num, th.num { text-align: right; }
 .post-full[open] summary { margin-bottom: 10px; }
 .post-full p { margin: 0 0 10px; }
 .post-full figure { margin: 0 0 12px; }
+.post-full figure img { display: block; max-width: 100%; max-height: 560px; width: auto; height: auto; margin: 0 auto; border-radius: 3px; }
+.post-full .steps { margin: 0 0 14px; padding-left: 22px; display: grid; gap: 6px; }
+.post-full .steps b { color: var(--ink); }
 .post-full figcaption { font: 400 12px/1.5 var(--font-data); color: var(--muted); margin-top: 4px; }
 .post-link { font: 400 12px/1 var(--font-data); }
 .sources { font: 400 12px/1.6 var(--font-data); color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
@@ -1088,13 +1091,40 @@ const POSTS = [
   {slug: "how-we-got-here", n: 2, era: "Present", title: "How we got here", date: "14 Oct 2026",
    intro: "£15,706 and around 9,000 miles: every job done on Marilyn since I bought her in April 2024, from a new clutch and gearbox to sorting the air con.",
    body: ["When I bought Marilyn she needed a lot more than a polish. This is every job she's had since April 2024, taken straight from the invoices: £15,705.53 in all, including VAT. They don't include what I paid for her, or the parts I bought myself (the AP Racing brake kit and a second-hand air con compressor).", {"html": "<ol class=\"timeline\"><li class=\"yr\">2024</li><li class=\"job\"><span class=\"when\">Apr 2024</span><span class=\"what\">Fresh tyres and an oil change</span><p class=\"detail\">Four new Goodyear Eagle F1s (245/35 R19), oil and filter, oil and fuel treatment.</p></li><li class=\"job\"><span class=\"when\">Apr 2024</span><span class=\"what\">Front brakes</span><p class=\"detail\">Fitting new front discs and pads.</p></li><li class=\"job\"><span class=\"when\">Jun 2024 · 110,781 miles</span><span class=\"what\">111,000-mile service and a full check-over</span><p class=\"detail\">Oil, air filter, eight spark plugs, A/C belt with new tensioner and pulleys, radiator cap, brake fluid, and chrome wheel nut covers.</p></li><li class=\"job\"><span class=\"when\">Dec 2024 · 111,295 miles</span><span class=\"what\">The big one</span><p class=\"detail\"><b>Drivetrain:</b> LS7 clutch kit, rebuilt Tremec six-speed gearbox, gearbox mount, propshaft bearing and flex joint, rear main and tail shaft seals. <b>Engine and cooling:</b> new engine mounts, aluminium radiator, silicone hose kit, starter motor. <b>Exhaust:</b> 200-cell sports cats, post-cat O2 sensors, manifold gaskets, broken studs replaced. <b>Suspension:</b> front control arms, strut bar bushes, uprated rear shocks, front top mounts and bearings, rear drop link bushes, geometry reset. <b>Odds and ends:</b> fog lights repaired, gear lever boot, glovebox hinges, wipers.</p></li><li class=\"yr\">2025</li><li class=\"job\"><span class=\"when\">Apr 2025 · 114,890 miles</span><span class=\"what\">Air con regas</span><p class=\"detail\">With UV dye added to trace any leaks.</p></li><li class=\"job\"><span class=\"when\">Jun 2025</span><span class=\"what\">HT leads and spark plugs</span><p class=\"detail\">A fresh set of leads and eight plugs.</p></li><li class=\"job\"><span class=\"when\">Jul 2025 · 117,033 miles</span><span class=\"what\">The diva strikes</span><p class=\"detail\">Poor running traced to the A/C compressor blowing a fuse. Second-hand compressor fitted, leaking condenser o-ring replaced, system regassed. Front bumper off to remove old mesh and adhesive.</p></li><li class=\"job\"><span class=\"when\">Oct 2025 · 119,749 miles</span><span class=\"what\">Annual service</span><p class=\"detail\">Oil and filters, gearbox oil, diff oil, auxiliary belt, A/C check and regas, engine light codes checked.</p></li><li class=\"job\"><span class=\"when\">Dec 2025 · 120,286 miles</span><span class=\"what\">Clutch master cylinder</span><p class=\"detail\">New clutch master cylinder and fresh brake fluid.</p></li></ol><div class=\"spend-total\"><b>£15,705.53</b><span>Total since April 2024, including VAT</span></div>"}, "2024 was the heavy year. She covered only about 500 miles while the work was done, but most of the big jobs are now behind her. In 2025 she did around 9,000 miles.", "That's the present. Next comes the future: the plan to get her show ready."]},
+  {slug: "new-shoes", label: "Build diary", era: "Present", title: "New shoes and new eyes", date: "4 Nov 2026",
+   intro: "The first job on the road to the Stamford Car Show is done. Marilyn's wheels are stripped back and powder coated a darker grey, she's on four new Bridgestones, and the yellow is gone from her headlights.",
+   body: [
+    {img: "/blog/new-shoes/before.jpg", alt: "Marilyn's original silver 19-inch wheel on worn Goodyear tyres, with red AP Racing caliper behind", cap: "Before: the light grey spray from a previous owner, and tyres due before the MOT"},
+    "Marilyn's wheels had been given a poor spray job by a previous owner, the tyres needed replacing before her MOT, and her headlights had gone yellow. One trip to RCR Wheels in Grantham sorted all three.",
+    "I'd always assumed a wheel refurb was a quick sand and a coat of paint. It's a lot more involved than that.",
+    {html: `<ol class="steps">
+      <li><b>Stripped.</b> The tyres come off and the wheels go in an acid bath to strip the old finish.</li>
+      <li><b>Blasted.</b> Each wheel is blasted back to bare metal with fine alloy particles, which are collected and recycled for the next job.</li>
+      <li><b>Pre-heated.</b> The wheels go in the oven to warm the metal through.</li>
+      <li><b>Powder coated.</b> While the wheel is still warm, the powder goes on. As it hits the hot metal it melts and flows into place, so the coat levels itself out.</li>
+      <li><b>Cured.</b> Back in the oven to harden the coat.</li>
+      <li><b>Lacquered.</b> A clear lacquer goes on, followed by a final bake.</li>
+      <li><b>Fitted.</b> Once they've cooled, the new tyres go on.</li>
+    </ol>`},
+    {img: "/blog/new-shoes/stripped.jpg", alt: "A wheel stripped and blasted back to bare alloy on a stand", cap: "Back to bare metal"},
+    {img: "/blog/new-shoes/coated-rack.jpg", alt: "Four freshly powder-coated dark grey wheels hanging on a rack in the workshop", cap: "All four, fresh out of the oven"},
+    {img: "/blog/new-shoes/coated-close.jpg", alt: "Close-up of a glossy dark grey powder-coated ten-spoke wheel", cap: "The new grey up close"},
+    {img: "/blog/new-shoes/in-the-workshop.jpg", alt: "Silver Monaro on axle stands in the workshop with her wheels off", cap: "Marilyn waiting for her new shoes"},
+    {img: "/blog/new-shoes/new-tyres.jpg", alt: "Four new Bridgestone Potenza Sport 245/35 ZR19 tyres on a rack", cap: "Four new Bridgestone Potenza Sports, 245/35 R19"},
+    "The new colour is a slightly darker grey than before. I'd seen another Monaro on darker wheels and it looked spot on, and I think it suits her better than the light grey ever did. It'll work whichever colour she ends up in after the respray.",
+    "She's on four new Bridgestone Potenza Sports now, with a lot more grip than the old set, which matters on cold, wet British roads. RCR also sanded and polished the headlights, so the yellowing has gone and she can actually see at night.",
+    {img: "/blog/new-shoes/after.jpg", alt: "Marilyn's refurbished dark grey wheel on a new Bridgestone tyre, red AP Racing caliper behind", cap: "After: same angle, new look"},
+    {img: "/blog/new-shoes/after-angle.jpg", alt: "Front wheel of the Monaro in dark grey with new Bridgestone Potenza Sport tyre", cap: "Back home on the driveway"},
+    "A big thank you to Ryan and the team at <a href=\"https://rcrwheels.com/\" target=\"_blank\" rel=\"noopener\">RCR Wheels</a> in Grantham. They were brilliant from start to finish, and Marilyn looks like a different car. If your wheels need some love, give them a call.",
+    "Next up: paint quotes."
+    ]},
   {slug: "the-plan", n: 3, era: "Future", title: "The plan to car-show ready", date: null,
    intro: "The job list, the budget, and which show I'm aiming for.",
    body: null},
 ];
 function renderPosts() {
   $("#posts").innerHTML = POSTS.map(p => `<article class="post" id="${p.slug}">
-    <div class="date">Part ${p.n}${p.era ? ` · <span class="era">${p.era}</span>` : ""}${p.date ? " · " + p.date : ""}</div>
+    <div class="date">${p.n ? "Part " + p.n : p.label}${p.era ? ` · <span class="era">${p.era}</span>` : ""}${p.date ? " · " + p.date : ""}</div>
     <h3>${p.title}</h3>
     <p>${p.intro}</p>
     ${p.body ? `<details class="post-full"><summary>Read the full post</summary>${p.body.map(x => typeof x === "string" ? `<p>${x}</p>` : x.html ? x.html : `<figure><img src="${x.img}" alt="${x.alt || ""}" loading="lazy">${x.cap ? `<figcaption>${x.cap}</figcaption>` : ""}</figure>`).join("")}<p class="post-link"><a href="#${p.slug}">Link to this post</a></p></details>` : `<p class="draft-note">Coming soon</p>`}
