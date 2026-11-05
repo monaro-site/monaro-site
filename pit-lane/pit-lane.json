@@ -2,6 +2,157 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-05",
+   "updated": "2026-11-05T07:20:00Z",
+   "stories": [
+    {
+     "h": "2027 calendar confirmed: 14 rounds, no Ipswich",
+     "t": "Sydney opens in late February and Sandown closes the Sprint Cup on 27 to 29 August. Darwin holds its first night race, and Phillip Island takes the Semi Final before Adelaide's Grand Final.",
+     "pub": "2026-11-04T19:00:00Z",
+     "move": "Same",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-revealed-dates-schedule-circuits-barclay-nettlefold-comments-details-confirmed/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2027-dates-championship-calendar-schedule-rounds-events"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-releases-reworked-14-round-2027-calendar/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-2027-calendar-key-takeaways-races-circuits-phillip-island-double-header-mallala",
+       "label": "10 key takeaways"
+      }
+     ]
+    },
+    {
+     "h": "Alan Jones dies aged 80",
+     "t": "Australia's last Formula 1 world champion, who won the 1980 title with Williams, has died. He also started the Bathurst 1000 19 times, finishing second in 1995 and third in 1988.",
+     "pub": "2026-11-05T01:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/vale-alan-jones-1980-f1-world-champion/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-vale-alan-jones-statement-announcement-f1"
+      }
+     ]
+    },
+    {
+     "h": "Bates signs multi-year deal with Matt Stone Racing",
+     "t": "Bathurst pole-sitter Zach Bates and sponsor Bendix are both committed to MSR until at least 2028, ending speculation over the rookie's future.",
+     "pub": "2026-11-05T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-zach-bates-signs-matt-stone-racing-contract-extension-bendix-deal-details-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/bates-secures-supercars-future-with-multi-year-deal/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-zach-bates-contract-extension-matt-stone-racing-multi-year-deal-driver-market"
+      }
+     ]
+    },
+    {
+     "h": "Feeney and Brown to share a Mustang at the 12 Hour",
+     "t": "Triple Eight will run a Ford Mustang GT3 at February's Bathurst 12 Hour with its two Supercars drivers, plus a third driver likely from Ford's factory pool.",
+     "pub": "2026-11-04T09:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/bathurst-12-hour-news-2026-triple-eight-race-engineering-entry-2027-broc-feeney-will-brown-drivers-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/triple-eight-commits-to-bathurst-12-hour-tilt-with-ford/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-triple-eight-bathurst-12-hour-entry-2027-announcement-ford-support-mustang-feeney-brown"
+      }
+     ]
+    },
+    {
+     "h": "Super2 expands to seven rounds with Mallala return",
+     "t": "A standalone round at Mallala in April, the series' first standalone event since 2008, means five Super2 rounds come before Bathurst next year.",
+     "pub": "2026-11-04T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-super2-series-calendar-revealed-schedule-dates-details/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2027-super2-calendar-expansion-mallala-return-standalone-dates-schedule"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/mallala-anzac-fixture-headlines-expanded-super2-schedule/"
+      }
+     ]
+    },
+    {
+     "h": "New calendar opens NASCAR door for Feeney",
+     "t": "San Diego and COTA no longer clash with Supercars rounds in 2027. Broc Feeney says San Diego is the race he most wants, though funding remains the hurdle.",
+     "pub": "2026-11-05T06:02:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/nascar-news-2026-supercars-vs-cup-series-calendar-clashes-2027-dates-broc-feeney-options-details-comments-reaction/"
+      }
+     ]
+    },
+    {
+     "h": "Reynolds accepts rear-gunner role at Sandown",
+     "t": "Despite his Gold Coast podium, David Reynolds says his job this weekend is to help Anton De Pasquale, who must win a race or close a 30-point gap to reach Adelaide.",
+     "pub": "2026-11-04T07:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-david-reynolds-team-18-finals-strategy-gamesmanship-tactics-finals-sandown-championship"
+      }
+     ]
+    },
+    {
+     "h": "Randle's FPR throwback livery revealed",
+     "t": "Thomas Randle's Mustang will carry the 2007 Ford Performance Racing Bathurst colours at Sandown, unveiled with original drivers Mark Winterbottom and Steven Richards.",
+     "pub": "2026-11-05T03:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-thomas-randle-castrol-throwback-livery-reveal-ford-performance-racing-images-bathurst-2007"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-tickford-racing-thomas-randle-livery-reveal-bathurst-1000-winterbottom-richards/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/retro-randle-castrol-mustang-livery-breaks-cover/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-04",
    "updated": "2026-11-04T07:10:00Z",
    "stories": [
