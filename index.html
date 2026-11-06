@@ -1342,17 +1342,17 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 const WKND = {
   event: "Sandown 500",
   tz: "AEDT", // Victoria: daylight saving, GMT = AEDT - 11h
-  updated: "Fri 6 Nov, 05:00 GMT (16:00 AEDT)",
+  updated: "Fri 6 Nov, 05:25 GMT (16:25 AEDT)",
   upnext: [
-    ["Practice 2", "Fri 04:25 GMT (15:25 AEDT)"],
     ["Qualifying, Race 33", "Sat 00:20 GMT (11:20 AEDT)"],
     ["Top 10 Shootout, Race 33", "Sat 01:05 GMT (12:05 AEDT)"],
     ["Race 33: 79 laps", "Sat 04:30 GMT (15:30 AEDT)"],
   ],
   sessions: [
-    { name: "Practice 1", day: "Fri", lead: "Jayden Ojeda was fastest with a late 1:08.7984, 0.1643s clear of Brodie Kostecki. Of the other finalists, Matt Payne was 4th, Will Brown 8th, Chaz Mostert 10th, Cam Waters 11th, Broc Feeney 13th after a trip over the Turn 1 kerbs, and Anton De Pasquale 18th. Jack Le Brocq missed the session because the wrong drop gear was fitted. The first report gave only the top two times; the full order follows.",
-      top: [["Jayden Ojeda","PremiAir Racing","1:08.7984"],["Brodie Kostecki","Dick Johnson Racing","+0.1643"]],
-      src: [["Supercars", "https://www.supercars.com/news/supercars-news-2026-sandown-500-practice-1-report-jayden-ojeda-fastest-premiair-racing-results-finals"]] },
+    { name: "Practice 2", day: "Fri", lead: "Top seed Matt Payne topped the final practice with a 1:08.5014, just 0.0735s ahead of Broc Feeney, so the top two in the Finals were also the top two on track. Anton De Pasquale was last until his final lap and jumped to 7th. Will Brown was 9th and Brodie Kostecki 10th. Chaz Mostert was 20th, about half a second off, with a shift-cut problem the team planned to fix before qualifying.",
+      top: [["Matt Payne","Grove Racing","1:08.5014"],["Broc Feeney","Triple Eight","+0.0735"],["Cooper Murray","PremiAir Racing","+0.0825"],["Andre Heimgartner","Brad Jones Racing","+0.1374"],["James Golding","Blanchard Racing Team","+0.2189"],["Ryan Wood","Walkinshaw TWG Racing","+0.2212"],["Anton De Pasquale","Team 18","+0.2248"],["Jayden Ojeda","PremiAir Racing","+0.2254"],["Will Brown","Triple Eight","+0.3351"],["Brodie Kostecki","Dick Johnson Racing","+0.3557"]],
+      src: [["V8 Sleuth", "https://www.v8sleuth.com.au/payne-paces-practice-at-sandown-supercars-semi-finals/"], ["Speedcafe", "https://speedcafe.com/supercars-news-2026-sandown-500-practice-results-matt-payne-fastest-chaz-mostert-issues-explained/"]] },
+    { name: "Practice 1", day: "Fri", short: "Jayden Ojeda fastest, 1:08.7984, from Brodie Kostecki and Thomas Randle; Payne 4th, Feeney 13th, De Pasquale 18th" },
   ],
 };
 function renderWknd() {
