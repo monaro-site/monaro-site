@@ -1339,7 +1339,22 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 
 // Race weekend box: Supercars sessions only, latest first. Updated after each session; set WKND = null between events.
 // Times: UK first, local in brackets. Gold Coast is AEST (no daylight saving): Fri/Sat BST = AEST - 9h; Sun 25 Oct (UK clocks back) GMT = AEST - 10h.
-const WKND = null;
+const WKND = {
+  event: "Sandown 500",
+  tz: "AEDT", // Victoria: daylight saving, GMT = AEDT - 11h
+  updated: "Fri 6 Nov, 05:00 GMT (16:00 AEDT)",
+  upnext: [
+    ["Practice 2", "Fri 04:25 GMT (15:25 AEDT)"],
+    ["Qualifying, Race 33", "Sat 00:20 GMT (11:20 AEDT)"],
+    ["Top 10 Shootout, Race 33", "Sat 01:05 GMT (12:05 AEDT)"],
+    ["Race 33: 79 laps", "Sat 04:30 GMT (15:30 AEDT)"],
+  ],
+  sessions: [
+    { name: "Practice 1", day: "Fri", lead: "Jayden Ojeda was fastest with a late 1:08.7984, 0.1643s clear of Brodie Kostecki. Of the other finalists, Matt Payne was 4th, Will Brown 8th, Chaz Mostert 10th, Cam Waters 11th, Broc Feeney 13th after a trip over the Turn 1 kerbs, and Anton De Pasquale 18th. Jack Le Brocq missed the session because the wrong drop gear was fitted. The first report gave only the top two times; the full order follows.",
+      top: [["Jayden Ojeda","PremiAir Racing","1:08.7984"],["Brodie Kostecki","Dick Johnson Racing","+0.1643"]],
+      src: [["Supercars", "https://www.supercars.com/news/supercars-news-2026-sandown-500-practice-1-report-jayden-ojeda-fastest-premiair-racing-results-finals"]] },
+  ],
+};
 function renderWknd() {
   const box = $("#wknd");
   if (!WKND) { box.hidden = true; return; }
