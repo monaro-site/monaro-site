@@ -2,6 +2,97 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-06",
+   "updated": "2026-11-06T07:15:00Z",
+   "stories": [
+    {
+     "h": "Payne fastest at Sandown as Mostert struggles",
+     "t": "Championship leader Matt Payne pipped Broc Feeney by 0.07 seconds in Practice 2. Chaz Mostert was only 20th after a shift-cut problem that his team expects to fix before qualifying.",
+     "pub": "2026-11-06T05:13:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-practice-results-matt-payne-fastest-chaz-mostert-issues-explained/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-practice-2-report-matt-payne-fastest-penrite-racing-finals-rivals-results-ford"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/payne-paces-practice-at-sandown-supercars-semi-finals/"
+      }
+     ]
+    },
+    {
+     "h": "Ojeda surprises in opening practice",
+     "t": "PremiAir rookie Jayden Ojeda topped Practice 1, helped by an extra set of tyres. Jack Le Brocq missed the session after Matt Stone Racing found the wrong gear ratio fitted.",
+     "pub": "2026-11-06T04:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-practice-1-report-jayden-ojeda-fastest-premiair-racing-results-finals"
+      }
+     ]
+    },
+    {
+     "h": "Chevrolet teams rule out helping De Pasquale",
+     "t": "PremiAir and Erebus say they will race only for themselves at Sandown, after Supercars warned all teams about race manipulation in Thursday's briefing.",
+     "pub": "2026-11-06T01:53:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-chevrolet-general-motors-collusion-reaction-erebus-premiair-anton-de-pasquale/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-premiair-racing-erebus-motorsport-roland-dane-barry-ryan-chevrolet-team-orders-finals"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/erebus-premiair-pledges-after-gold-coast-scrutiny/"
+      }
+     ]
+    },
+    {
+     "h": "Hughes set for full-time Erebus seat",
+     "t": "Barry Ryan says Erebus will definitely sign Jarrod Hughes for 2027 after his strong Gold Coast debut. Erebus's other seat remains one of the last open questions.",
+     "pub": "2026-11-06T01:43:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-jarrod-hughes-full-time-erebus-motorsport-deal-barry-ryan-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/hughes-to-get-nod-for-2027-supercars-seat/"
+      }
+     ]
+    },
+    {
+     "h": "Team bosses criticise calendar gaps",
+     "t": "Roland Dane and Barry Ryan welcome 14 rounds but say the long break around New Zealand hurts sponsors. Mostert admits he expected a third enduro.",
+     "pub": "2026-11-06T02:53:00Z",
+     "move": "Down 5",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-calendar-14-events-team-bosses-react-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/mostert-surprised-by-sandown-enduro-snub/",
+       "label": "Mostert surprised"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-05",
    "updated": "2026-11-05T07:20:00Z",
    "stories": [
