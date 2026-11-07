@@ -1379,14 +1379,17 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 const WKND = {
   event: "Sandown 500",
   tz: "AEDT", // Victoria: daylight saving, GMT = AEDT - 11h
-  updated: "Sat 7 Nov, 02:20 GMT (13:20 AEDT)",
+  updated: "Sat 7 Nov, 07:20 GMT (18:20 AEDT)",
   upnext: [
-    ["Race 33: 79 laps", "Sat 04:30 GMT (15:30 AEDT)"],
+    ["Qualifying, Race 34", "Sun 00:20 GMT (11:20 AEDT)"],
+    ["Top 10 Shootout, Race 34", "Sun 01:05 GMT (12:05 AEDT)"],
+    ["Race 34: 79 laps", "Sun 04:30 GMT (15:30 AEDT)"],
   ],
   sessions: [
-    { name: "Top 10 Shootout, Race 33", day: "Sat", lead: "Matt Payne took pole for Race 33 with a 1:09.0254 on a wet track, 0.0796s clear of Cam Waters, with Brodie Kostecki 3rd, Will Brown 4th and Broc Feeney 5th. Anton De Pasquale went off at the chicane before Dandenong Road but still lines up 8th. Chaz Mostert, 3rd in qualifying, missed the apex at Turn 6, locked up at Turn 9 and went into the gravel, so he starts 10th.",
-      top: [["Matt Payne","Grove Racing","1:09.0254"],["Cam Waters","Tickford Racing","+0.0796"],["Brodie Kostecki","Dick Johnson Racing","+0.1121"],["Will Brown","Triple Eight","+0.2144"],["Broc Feeney","Triple Eight","+0.2424"],["Cooper Murray","PremiAir Racing","+0.3665"],["Thomas Randle","Tickford Racing","+0.5128"],["Anton De Pasquale","Team 18","+0.6201"],["Andre Heimgartner","Brad Jones Racing","+0.8749"],["Chaz Mostert","Walkinshaw TWG Racing","+14.2153"]],
-      src: [["V8 Sleuth", "https://www.v8sleuth.com.au/starting-grid-for-sandown-supercars-saturday-race/"], ["Speedcafe", "https://speedcafe.com/supercars-news-2026-sandown-500-saturday-top-10-shootout-results-payne-fastest-mostert-mistake-reaction-comments/"]] },
+    { name: "Race 33", day: "Sat", lead: "Brodie Kostecki passed Will Brown and later Cam Waters on track to win Race 33 by 5.3s from Matt Payne, with Waters 3rd for an all-Ford podium. The win puts Kostecki into the Adelaide Grand Final (rule D14.4.2.3). It was a bad day for Triple Eight: Broc Feeney faded to 11th with worn rear tyres, and Brown spun at Turn 4 and was classified 20th after a 15-second penalty for turning Cameron Hill around. Feeney sits 4th, one point ahead of Waters, with three Grand Final places decided on Sunday.",
+      top: [["Brodie Kostecki","Dick Johnson Racing","79 laps"],["Matt Payne","Grove Racing","+5.3626"],["Cam Waters","Tickford Racing","+19.3260"],["Chaz Mostert","Walkinshaw TWG Racing","+19.9124"],["James Golding","Blanchard Racing Team","+20.4391"],["Anton De Pasquale","Team 18","+21.8538"],["Cooper Murray","PremiAir Racing","+23.3757"],["Andre Heimgartner","Brad Jones Racing","+23.9144"],["Macauley Jones","Brad Jones Racing","+26.1985"],["Zach Bates","Matt Stone Racing","+30.8842"]],
+      src: [["V8 Sleuth", "https://www.v8sleuth.com.au/kostecki-wins-his-way-into-adelaide-triple-eight-sinks/"], ["Supercars", "https://www.supercars.com/news/supercars-news-2026-sandown-500-race-report-brodie-kostecki-will-brown-broc-feeney-penalty-incident"]] },
+    { name: "Top 10 Shootout, Race 33", day: "Sat", short: "Matt Payne pole, 1:09.0254 in the wet, from Waters and Kostecki; Mostert into the gravel, 10th" },
     { name: "Qualifying, Race 33", day: "Sat", short: "Matt Payne fastest, 1:08.4079, from Kostecki and Mostert; all seven finalists made the Shootout" },
     { name: "Practice 2", day: "Fri", short: "Matt Payne fastest, 1:08.5014, from Broc Feeney; Mostert 20th with a shift-cut problem" },
     { name: "Practice 1", day: "Fri", short: "Jayden Ojeda fastest, 1:08.7984, from Brodie Kostecki and Thomas Randle; Payne 4th, Feeney 13th, De Pasquale 18th" },
