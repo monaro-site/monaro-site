@@ -2,6 +2,145 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-07",
+   "updated": "2026-11-07T07:15:00Z",
+   "stories": [
+    {
+     "h": "Kostecki wins his way into the Grand Final",
+     "t": "Brodie Kostecki's ninth win of the season makes him the first driver through to Adelaide. Matt Payne finished second and is 104 points clear of the cut-line, while Broc Feeney holds fourth by one point from Cam Waters.",
+     "pub": "2026-11-07T06:20:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-race-report-brodie-kostecki-will-brown-broc-feeney-penalty-incident"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-race-1-results-brodie-kostecki-win-video-highlights-reaction-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kostecki-wins-his-way-into-adelaide-triple-eight-sinks/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-finals-series-points-standings-kostecki-victory/",
+       "label": "Standings"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight's day unravels",
+     "t": "Will Brown led after the stops but spun fighting Kostecki, then took a 15-second penalty for spinning Cameron Hill. Classified 20th, he is 88 points from the cut-line. Feeney finished 11th after double-stacking.",
+     "pub": "2026-11-07T06:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-incident-video-penalty-sandown-500-triple-eight-points-standings-broc-feeney"
+      }
+     ]
+    },
+    {
+     "h": "Cameron escapes Mustang fire",
+     "t": "Aaron Cameron was unhurt after his Blanchard Ford caught fire, bringing a lap-13 Safety Car. His engineer suspects a power distribution module failure or fuel reaching the exhaust.",
+     "pub": "2026-11-07T05:05:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-aaron-cameron-ford-mustang-fire-video-comments-reaction/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-aaron-cameron-reaction-sandown-500-terrifying-fire-incident-video"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/brt-ford-inferno-interrupts-sandown-race/"
+      }
+     ]
+    },
+    {
+     "h": "Payne on pole as Mostert goes off",
+     "t": "Payne beat Cam Waters to pole in drying conditions. Reigning champion Chaz Mostert qualified third but had a big off in the Top Ten Shootout and started tenth.",
+     "pub": "2026-11-07T01:40:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-saturday-qualifying-report-matt-payne-fastest-pole-position-results-times-drama"
+      }
+     ]
+    },
+    {
+     "h": "Allen and Le Brocq disqualified from practice",
+     "t": "Kai Allen lost his Practice 2 times for a rear tyre below minimum pressure. Jack Le Brocq was excluded from Practice 1 after the wrong drop gear ratio was found on his Camaro.",
+     "pub": "2026-11-06T08:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-kai-allen-jack-le-brocq-disqualified-breaches-sandown-500-practice-results"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/allen-disqualified-from-sandown-final-practice/"
+      }
+     ]
+    },
+    {
+     "h": "Gray stays at Dick Johnson Racing",
+     "t": "DJR has confirmed 19-year-old Rylan Gray alongside Kostecki for 2027. He will need a new co-driver after Tony D'Alberto's retirement.",
+     "pub": "2026-11-07T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-rylan-gray-shell-vpower-racing-team-djr-contract-extension-deal-announcement"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/dick-johnson-racing-puts-2027-line-up-beyond-doubt/"
+      }
+     ]
+    },
+    {
+     "h": "Super2 title race opens up",
+     "t": "Series leader Lochie Dalton retired on the opening lap after contact with Nash Morris, his first DNF of the season. Campbell Logan won from pole.",
+     "pub": "2026-11-07T03:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-super2-series-logan-sandown-race-1-report-campbell-logan-wins-lochie-dalton-dnf-video"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-super2-saturday-race-campbell-logan-win-lochie-dalton-crash-reaction-comments-video-highlights/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/logan-wins-as-super2-title-race-tipped-on-its-head/"
+      }
+     ]
+    },
+    {
+     "h": "Supercars says wet tyre variation can't be fixed",
+     "t": "Teams blamed inconsistent wet tyres for swings at the Gold Coast. Tim Edwards said there is no solution, because wets are built over long periods and can sit unused for years.",
+     "pub": "2026-11-07T00:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-weaather-forecast-tyres-complaints-tim-edwards-comment-reaction/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-06",
    "updated": "2026-11-06T07:15:00Z",
    "stories": [
