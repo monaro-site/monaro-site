@@ -2,6 +2,146 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-08",
+   "updated": "2026-11-08T07:15:00Z",
+   "stories": [
+    {
+     "h": "Payne wins as Grand Final four are set",
+     "t": "Matt Payne won from pole by seven tenths from Anton De Pasquale, who needed victory to go through. Payne, Kostecki, Feeney and Mostert will contest Adelaide, with Payne starting 30 points ahead of Kostecki.",
+     "pub": "2026-11-08T06:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-sunday-race-report-matt-payne-wins-tense-finish-thriller-finals-top-four-set"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-race-2-results-matt-payne-wins-anton-de-pasquale-second-comments-reaction-video-highlights/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-finals-de-pasquale-waters-brown-eliminated/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-finals-sandown-500-points-standings-drivers-adelaide-grand-final",
+       "label": "Grand Final field"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-points-after-sandown-500-standings-seeding-adelaide-grand-final-payne-kostecki-mostert-feeney/",
+       "label": "Standings"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki penalised for switching engine off",
+     "t": "Already through to Adelaide, Brodie Kostecki took a drive-through after stewards found his engine was off as he rolled into his grid box, breaching start procedure rules.",
+     "pub": "2026-11-08T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-penalty-sandown-500-rules-regulations-start-procedure-breach"
+      }
+     ]
+    },
+    {
+     "h": "Brown and Waters knocked out of the title race",
+     "t": "Will Brown qualified 19th after a stuck downshift into Turn 1, and Cam Waters 18th. Both were eliminated along with De Pasquale.",
+     "pub": "2026-11-08T00:35:00Z",
+     "move": "Down 1",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-qualifying-sandown-500-gear-change-technical-triple-eight-ford-finals"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-sunday-qualifying-results-payne-fastest-brown-waters-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/waters-brown-in-strife-after-sandown-qualifying-knockout/"
+      }
+     ]
+    },
+    {
+     "h": "Le Brocq stays at Matt Stone Racing",
+     "t": "MSR has kept Jack Le Brocq for 2027, completing its line-up alongside Zach Bates, who signed a multi-year extension on Thursday.",
+     "pub": "2026-11-07T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-jack-le-brocq-matt-stone-racing-contract-extension-announcement-driver-market-2027-signing"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-driver-market-matt-stone-racing-jack-le-brocq-zach-bates-contracts/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/matt-stone-racing-confirms-le-brocq-2027-retention/"
+      }
+     ]
+    },
+    {
+     "h": "Exhaust damage blamed for Cameron fire",
+     "t": "Blanchard Racing says contact with Le Brocq folded the exhaust tips onto the side skirt, which caught fire. The crew rebuilt the Mustang overnight at the track.",
+     "pub": "2026-11-07T22:18:00Z",
+     "move": "Down 2",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-aaron-cameron-cause-fire-sandown-500-explained-video-incident-blanchard-racing-team"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-fire-damage-repair-cause-aaron-cameron-blanchard-racing-team/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/heroic-all-nighter-resurrects-cameron-mustang/"
+      }
+     ]
+    },
+    {
+     "h": "Logan takes Super2 lead into Adelaide",
+     "t": "Campbell Logan completed a perfect 300-point weekend and leads Brad Vaughan by nine points. Lochie Dalton, the leader before Sandown, finished fifth and drops to third.",
+     "pub": "2026-11-08T03:50:00Z",
+     "move": "Up 1",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-super2-series-sandown-race-2-report-campbell-logan-wins-points-lead-championship-battle"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-super2-sunday-race-results-campbell-logan-win-points-change-lochie-dalton/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/logan-sweeps-sandown-to-seize-super2-points-lead/"
+      }
+     ]
+    },
+    {
+     "h": "Questions over GM's performance role",
+     "t": "Rivals have asked whether Grant McPherson, who runs General Motors' data-sharing alliance, could be giving Chevrolet teams performance advice, given Supercars' strict limits on performance personnel.",
+     "pub": "2026-11-08T04:28:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/rivals-raise-alarm-over-general-motors-performance-role/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-07",
    "updated": "2026-11-07T07:15:00Z",
    "stories": [
