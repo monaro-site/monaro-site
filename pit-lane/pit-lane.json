@@ -2,6 +2,125 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-09",
+   "updated": "2026-11-09T07:15:00Z",
+   "stories": [
+    {
+     "h": "Stanaway to stay with Blanchard for 2027 enduros",
+     "t": "Richie Stanaway has agreed a renewal to co-drive with James Golding again next year, although it is yet to be announced. Zak Best's status as BRT's other co-driver is unconfirmed.",
+     "pub": "2026-11-08T19:12:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/stanaway-seals-supercars-enduro-seat-for-2027/"
+      }
+     ]
+    },
+    {
+     "h": "DJR says Kostecki's grid breach was not premeditated",
+     "t": "Team manager Tom Moore said Kostecki switched off to save a tiny amount of fuel, as many drivers do, but for longer. He accepted the breach but called the drive-through hefty.",
+     "pub": "2026-11-08T09:16:00Z",
+     "move": "Same",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-brodie-kostecki-grid-penalty-explained-details-reaction-dick-johnson-racing/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-dick-johnson-racing-sandown-penalty-reaction-finals-explained"
+      }
+     ]
+    },
+    {
+     "h": "Supercars keeps testing brake fixes",
+     "t": "Several cars trialled different pad compounds at Monday's Sandown ride day, following a fully instrumented test at Queensland Raceway. Brake problems were a talking point at Ipswich, The Bend and Bathurst.",
+     "pub": "2026-11-09T02:41:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-extends-testing-for-brake-solution/"
+      }
+     ]
+    },
+    {
+     "h": "Murray's first podium lifts PremiAir",
+     "t": "Cooper Murray finished third on Sunday in only his second round with PremiAir. The result moves the team past Blanchard in the pit lane order for Adelaide.",
+     "pub": "2026-11-08T23:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cooper-murray-first-career-podium-reaction-shock-premiair-racing-sandown-500"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-premiair-racing-cooper-murray-roland-dane-podium-comment-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-pitlane-order-changes-for-adelaide-decider/",
+       "label": "Pit lane order"
+      }
+     ]
+    },
+    {
+     "h": "Sandown crowd up on 2025",
+     "t": "Supercars reports 70,677 fans across three days, up 3.17 per cent, taking the season's total attendance past 1.42 million.",
+     "pub": "2026-11-09T01:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-500-crowd-figure-announcement-release-increase-fans"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-spectator-attendance-announcement-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-reports-sandown-500-crowd-figure/"
+      }
+     ]
+    },
+    {
+     "h": "Hughes heads to Taupō for early laps",
+     "t": "Erebus rookie Jarrod Hughes will race in New Zealand TA2 at Taupō on 13-15 November, learning a circuit that joins the Supercars calendar in 2027.",
+     "pub": "2026-11-09T01:11:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/erebus-rookie-to-get-vital-taupo-sighter/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-jarrod-hughes-ta2-nz-new-zealand-debut-taupo-details/"
+      }
+     ]
+    },
+    {
+     "h": "Heimgartner keeps his main backer",
+     "t": "R&J Batteries will stay as primary sponsor of Andre Heimgartner's Brad Jones Racing Supra in 2027, extending a partnership that began in 2020.",
+     "pub": "2026-11-08T22:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-andre-heimgartner-backer-re-signs-rjbatteries-toyota-supra-new-deal-details-brad-jones-racing/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/heimgartner-supra-sponsor-renews-support/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-08",
    "updated": "2026-11-08T07:15:00Z",
    "stories": [
