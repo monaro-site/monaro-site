@@ -2,6 +2,97 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-10",
+   "updated": "2026-11-10T07:15:00Z",
+   "stories": [
+    {
+     "h": "Feeney seeded third after tie-break mix-up",
+     "t": "Feeney and Mostert finished Sandown level on points. Official results first had Mostert ahead, but the Sandown tie-break rule favours Feeney for finishing Sunday's race in front, worth 96 seeding points to Mostert's 78.",
+     "pub": "2026-11-10T01:34:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-points-standings-broc-feeney-chaz-mostert-updated/"
+      }
+     ]
+    },
+    {
+     "h": "Tickford suspects tyre batch behind Waters slump",
+     "t": "Waters went from fifth in Q1 to 18th on the grid on a fresh set with no car changes. Team manager Matt Roberts says the evidence points to a bad batch of slicks.",
+     "pub": "2026-11-09T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-cam-waters-sandown-500-semi-final-reaction-tickford-racing-theory-tyres-details/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-cam-waters-heartfelt-response-sandown-500-elimination-latest-heartbreak-tickford"
+      }
+     ]
+    },
+    {
+     "h": "Randle stands firm over De Pasquale clash",
+     "t": "Thomas Randle kept De Pasquale behind on cold tyres after his stop, costing time in the chase for Payne. Randle says there are no blue flags in that phase and he was racing his own battle.",
+     "pub": "2026-11-10T00:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-anton-de-pasquale-thomas-randle-response-incident-sandown-500-rules-radio"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-sandown-500-anton-de-pasquale-vs-thomas-randle-clash-reaction-comments-explained/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-anton-de-pasquale-incident-thomas-randle-moment-block-radio-video-reaction",
+       "label": "De Pasquale's view"
+      }
+     ]
+    },
+    {
+     "h": "Teams' title still open for Adelaide",
+     "t": "Grove's Penrite Racing stretched its lead over Triple Eight from 102 to 148 points, but 576 are available to teams in Adelaide. Brenton Grove says Payne's drivers' title bid comes first.",
+     "pub": "2026-11-10T06:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-penrite-racing-sandown-500-triple-eight-teams-championship-standings-incidents"
+      }
+     ]
+    },
+    {
+     "h": "Van Gisbergen gets new NASCAR crew chief",
+     "t": "Blake Harris, formerly with Alex Bowman at Hendrick, will lead Shane van Gisbergen's Trackhouse car in 2027. Stephen Doran returns to Spire Motorsports.",
+     "pub": "2026-11-10T01:35:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/key-change-for-van-gisbergens-2027-nascar-program/"
+      }
+     ]
+    },
+    {
+     "h": "Ojeda drops GT3 role to focus on Adelaide",
+     "t": "Scott Andrews will replace Jayden Ojeda in Tigani Motorsport's Mercedes at the Grand Final. Ojeda is now guaranteed to finish as the top rookie in the championship.",
+     "pub": "2026-11-10T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/ojeda-adelaide-gt3-substitute-named/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-09",
    "updated": "2026-11-09T07:15:00Z",
    "stories": [
