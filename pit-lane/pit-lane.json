@@ -2,6 +2,80 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-11",
+   "updated": "2026-11-11T07:15:00Z",
+   "stories": [
+    {
+     "h": "Mostert and Feeney question bigger seeding gaps",
+     "t": "This year's seeding leaves Feeney 54 points and Mostert 72 behind Payne, so neither can lead after Friday's sprint even with a win. Mostert would prefer last year's tighter spread.",
+     "pub": "2026-11-10T06:56:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-2026-grand-final-change-that-has-tongues-wagging/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-chaz-mostert-walkinshaw-twg-toyota-comments-reaction/"
+      }
+     ]
+    },
+    {
+     "h": "Triple Eight blames tyre life for Sandown slump",
+     "t": "Mark Dutton says the car's balance wore the tyres too quickly, leaving Brown pushing too hard. The team missed a Sandown podium for the first time since 2017, and Brown can now support Feeney.",
+     "pub": "2026-11-11T03:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-mark-dutton-explains-triple-eight-sandown-tyre-struggles-broc-feeney-will-brown"
+      }
+     ]
+    },
+    {
+     "h": "Allen's slump keeps the teams' race alive",
+     "t": "Kai Allen was third in the standings after September but has not finished higher than 13th in five races since. Grove still leads Triple Eight by 148 points.",
+     "pub": "2026-11-11T01:38:00Z",
+     "move": "Up 1",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/grove-allen-digging-deep-to-reverse-wretched-run/"
+      }
+     ]
+    },
+    {
+     "h": "Tickford's Nash relaxed despite another miss",
+     "t": "Co-owner Rod Nash called reaching the semi-finals a good effort, even though Tickford has now gone 11 seasons without a championship or Bathurst win.",
+     "pub": "2026-11-11T00:20:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/tickford-co-owners-surprising-stance-on-grand-final-miss/"
+      }
+     ]
+    },
+    {
+     "h": "Tru-Blu Falcon returns for Adelaide demo",
+     "t": "Paul Morris will drive the restored DJR Falcon from the 2012 Bathurst 1000 in heritage demonstration runs at the last event on Adelaide's current layout.",
+     "pub": "2026-11-11T05:07:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-dick-johnson-racing-tru-blu-falcon-paul-morris-restoration/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/morris-revives-tru-blu-ahead-of-sale-search/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-10",
    "updated": "2026-11-10T07:15:00Z",
    "stories": [
