@@ -2,6 +2,64 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-14",
+   "updated": "2026-11-14T07:15:00Z",
+   "stories": [
+    {
+     "h": "2027 grid set to be almost unchanged",
+     "t": "With MSR, DJR and Erebus settled, only Team 18 and BJR seats remain unconfirmed, and both are expected to stay the same. Nine teams would keep identical line-ups, with Hughes and Murray the only changes.",
+     "pub": "2026-11-13T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-grid-drivers-teams-2027-update-contracts-matt-stone-racing-erebus-motorsport-djr"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki and Brown regret losing the super soft",
+     "t": "Sandown's Saturday race was the super soft's last in the championship. Kostecki says it brought the field together, and Brown says the remaining soft compound still overheats.",
+     "pub": "2026-11-14T02:04:00Z",
+     "move": "Down 1",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-super-soft-tyre-axing-reaction-brodie-kostecki-will-brown-comments/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney wants Brown's help in Adelaide",
+     "t": "Feeney says he must win all three races and hopes an eliminated Brown can support him on track. Triple Eight came close to having no car in the Grand Final for the first time.",
+     "pub": "2026-11-13T07:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-finals-teammate-tactics-suprise-championship-battle-decider-broc-feeney-reaction"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/unheard-of-triple-eights-great-escape/"
+      }
+     ]
+    },
+    {
+     "h": "Garry Rogers Motorsport returns to Super2",
+     "t": "Lachlan Evennett will drive a GRM Commodore in Adelaide, the team's first Super2 start in seven years, and hints at a full season in 2027.",
+     "pub": "2026-11-13T19:24:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/evennett-hints-at-full-grm-super2-season-in-2027/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-13",
    "updated": "2026-11-13T07:15:00Z",
    "stories": [
