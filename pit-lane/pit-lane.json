@@ -2,6 +2,36 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-15",
+   "updated": "2026-11-15T07:15:00Z",
+   "stories": [
+    {
+     "h": "GM sees Camaro momentum building",
+     "t": "GM's Simon McNamara points to De Pasquale and Cooper Murray sharing the Sunday podium at Sandown, the brand's first double podium of 2026, as proof its young driver line-up is paying off.",
+     "pub": "2026-11-14T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-general-motors-chevrolet-drivers-a-grade-simon-mcnamara-cooper-murray-podium"
+      }
+     ]
+    },
+    {
+     "h": "Skaife's 'Golden Child' Commodore to run in Adelaide",
+     "t": "The Holden that won Mark Skaife back-to-back titles and Bathurst 1000s has been refreshed for the Touring Car Legends demonstrations. Owner Peter Xiberras will drive it on the Sunday.",
+     "pub": "2026-11-15T00:19:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-mark-skaife-holden-commodore-golden-child-bathurst-1000-winner/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-14",
    "updated": "2026-11-14T07:15:00Z",
    "stories": [
