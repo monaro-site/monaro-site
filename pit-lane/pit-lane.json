@@ -2,6 +2,76 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-16",
+   "updated": "2026-11-16T07:15:00Z",
+   "stories": [
+    {
+     "h": "Supercars to tighten team orders rules",
+     "t": "A draft 2027 rule sent to teams defines team orders and ties them to Motorsport Australia's competition manipulation policy. It follows suspicion over GM teams' extra pit stops on the Gold Coast, which Supercars cleared.",
+     "pub": "2026-11-15T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-team-orders-rules-regulations-review-corruption-sporting-integrity-australia/"
+      }
+     ]
+    },
+    {
+     "h": "Payne and Grove new to a title decider",
+     "t": "Grove Racing has never had a driver finish in the top three, while each rival camp has won a championship. Payne admits it is a first for him, his engineer and the team owners.",
+     "pub": "2026-11-16T01:44:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-one-thing-going-against-payne-in-title-showdown/"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki may go it alone in Adelaide",
+     "t": "Unlike his rivals, whose teammates are all race winners, Kostecki has rookie Rylan Gray, 19th in the standings. Kostecki says help would be handy but Gray is still learning.",
+     "pub": "2026-11-16T03:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-comfortable-despite-potential-grand-final-teammate-rylan-gray"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-brodie-kostecki-matt-payne-broc-feeney-chaz-mostert/"
+      }
+     ]
+    },
+    {
+     "h": "De Pasquale may never get over Bathurst",
+     "t": "The Team 18 driver, who ran out of fuel while leading on the last lap because of a fault in the team's fuel strategy software, says the loss will stay with him but won't affect his racing.",
+     "pub": "2026-11-15T22:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-anton-de-pasquale-bathurst-1000-heartbreak-explained-recounts-out-of-fuel"
+      }
+     ]
+    },
+    {
+     "h": "Fraser wins again after PremiAir exit",
+     "t": "Declan Fraser, replaced by Cooper Murray after Bathurst, took victory from pole in TA2 New Zealand after mechanical problems spoiled his Sandown outings.",
+     "pub": "2026-11-16T06:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-declan-fraser-premiair-racing-exit-super2-mustang-cup-ta2-nz-reaction"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-15",
    "updated": "2026-11-15T07:15:00Z",
    "stories": [
