@@ -2,6 +2,116 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-17",
+   "updated": "2026-11-17T07:15:00Z",
+   "stories": [
+    {
+     "h": "Tyre pressure rules move after Allen appeal saga",
+     "t": "Draft 2027 rules shift minimum pressures into the technical regulations, after stewards declined to disqualify Kai Allen in Perth. Bathurst and Phillip Island will have higher front than rear minimums.",
+     "pub": "2026-11-17T00:22:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-rule-book-kai-allen-grove-racing-appeal-tyre-pressure-regulations/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-to-make-pivotal-tyre-pressure-rule-change/"
+      }
+     ]
+    },
+    {
+     "h": "Standing starts after Safety Car starts",
+     "t": "Races that begin behind the Safety Car could switch to a standing start once conditions allow, under draft 2027 rules. Laps run under the Safety Car will still count.",
+     "pub": "2026-11-17T01:37:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-safety-car-standing-start-regulations-update-procedure/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-toying-with-safety-car-standing-start-option/"
+      }
+     ]
+    },
+    {
+     "h": "Rookie rule change set to help Hughes",
+     "t": "Drivers will be allowed three non-enduro starts before losing rookie status, up from two. That keeps Jarrod Hughes eligible for rookie test days and extra tyres in 2027.",
+     "pub": "2026-11-17T02:39:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-regulations-rookie-classification-erebus-motorsport-jarrod-hughes/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/change-coming-to-supercars-rookie-driver-eligibility/"
+      }
+     ]
+    },
+    {
+     "h": "Kelly brothers return in their Nissans",
+     "t": "Rick and Todd Kelly will race their old Altima Supercars in the Touring Car Classic at Sandown on 4-6 December, alongside Todd's son Mason.",
+     "pub": "2026-11-17T05:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-rick-todd-kelly-nissan-altima-retirement-atcc-sandown-cars-racing"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-kelly-racing-return-nissan-altima-australian-touring-car-classic-atcc-entry-sandown/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kelly-brothers-to-race-supercars-in-surprise-return/"
+      }
+     ]
+    },
+    {
+     "h": "Gray says Kostecki doesn't need a wingman",
+     "t": "The DJR rookie will help where he can in Adelaide but believes Kostecki can win the title on his own.",
+     "pub": "2026-11-17T03:00:00Z",
+     "move": "Down 2",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-rylan-gray-responds-finals-wingman-criticism-brodie-kostecki-teammate-games-strategy"
+      }
+     ]
+    },
+    {
+     "h": "Brown shrugs off Kostecki rivalry",
+     "t": "Kostecki has come out on top in their battles at Bathurst, the Gold Coast and Sandown. Brown says it comes down to who has the faster car.",
+     "pub": "2026-11-16T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-will-brown-unbothered-brown-kostecki-rivalry-mark-skaife-remarks-battle-sandown-incident"
+      }
+     ]
+    },
+    {
+     "h": "Feeney and Whincup buy Triple Eight Mustangs",
+     "t": "Both have ordered Ford's 250-car Triple Eight-tuned Dark Horse, for which Whincup developed the suspension. Feeney takes build number 88 and Whincup number 1.",
+     "pub": "2026-11-16T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-triple-eight-spec-dark-horse-ford-mustang-jamie-whincup-broc-feeney-details-specs-price/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-16",
    "updated": "2026-11-16T07:15:00Z",
    "stories": [
