@@ -2,6 +2,81 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-18",
+   "updated": "2026-11-18T07:15:00Z",
+   "stories": [
+    {
+     "h": "Reynolds' Team 18 future in doubt",
+     "t": "David Reynolds is still waiting to hear about 2027, with Porsche champion Harri Jones reportedly backed by the car's main sponsor. If Reynolds misses out, a co-drive with Mostert at Walkinshaw TWG is possible.",
+     "pub": "2026-11-17T07:20:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-david-reynolds-team-18-future-harri-jones-contract/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-biggest-players-in-supercars-co-driver-silly-season/",
+       "label": "Co-driver market"
+      }
+     ]
+    },
+    {
+     "h": "Finals to grow to eight races in 2027",
+     "t": "Draft rules give Phillip Island a race on all three days, making a 38-race season that would equal the 2014 record.",
+     "pub": "2026-11-18T01:11:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/extra-race-planned-for-2027-supercars-finals-series/"
+      }
+     ]
+    },
+    {
+     "h": "Parc fermé to be scrapped at Super440 events",
+     "t": "The ban on working on cars between qualifying and the first race is missing from the 2027 draft, as qualifying moves to Fridays and the super soft tyre goes.",
+     "pub": "2026-11-18T02:34:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-super440-race-format-regulations-rules-parc-ferme/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney skips GT3 finale to focus on title",
+     "t": "Ford factory driver Frederic Vervisch will partner Brad Schumacher in Adelaide, where the pair lead the GT World Challenge Australia Pro-Am standings by 14 points.",
+     "pub": "2026-11-17T21:28:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/belgian-to-cover-for-feeney-in-adelaide-gt3-finale/"
+      }
+     ]
+    },
+    {
+     "h": "Fourteen legends line up for Adelaide",
+     "t": "Six decades of touring cars will run hot laps at the Grand Final, including the last Holden Dealer Team car built for Peter Brock and the 1991 Bathurst-winning GT-R.",
+     "pub": "2026-11-18T00:59:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-touring-car-legends-skaife-lowndes-brock-johnson-whincup-richards/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-touring-car-legends-cars-list-commodore-falcon-holden-ford-nissan"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-17",
    "updated": "2026-11-17T07:15:00Z",
    "stories": [
