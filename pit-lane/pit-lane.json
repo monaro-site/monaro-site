@@ -2,6 +2,113 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-19",
+   "updated": "2026-11-19T07:15:00Z",
+   "stories": [
+    {
+     "h": "Supercars insists it isn't abandoning Ipswich",
+     "t": "Barclay Nettlefold says the door remains open to Queensland Raceway after it was dropped for 2027. Owner Tony Quinn revealed Supercars rejected his idea of one-day 'State of Origin' events at QR and Sandown.",
+     "pub": "2026-11-19T03:11:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-queensland-raceway-ipswich-barclay-nettlefold-tony-quinn-comment/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-calendar-state-of-origin-sandown-ipswich-queensland-raceway/",
+       "label": "State of Origin plan"
+      }
+     ]
+    },
+    {
+     "h": "Skaife points Reynolds towards wildcard role",
+     "t": "Mark Skaife, who has met Reynolds about his future, suggests the Supercheap Auto wildcard as his best option if Team 18 does not renew him. James Courtney says he feels sorry for his co-driver.",
+     "pub": "2026-11-18T19:37:00Z",
+     "move": "Down 1",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/skaifes-wildcard-answer-for-reynolds-future/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-driver-market-mark-skaife-on-david-reynolds-future-contract-team-18-james-courtney/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-james-courtney-david-reynolds-contract-unknowns-team-18-future-reports-harri-jones"
+      }
+     ]
+    },
+    {
+     "h": "BLAHST takes naming rights on Golding's Mustang",
+     "t": "The car care brand moves from Aaron Cameron's car to become naming rights partner of James Golding's #7 Blanchard Ford for 2027 and 2028.",
+     "pub": "2026-11-18T20:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-blanchard-racing-team-naming-rights-announcement-blahst-multi-year-james-golding"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-james-golding-new-backer-2027-season-blanchard-racing-team-blahst-car-care-penrite-oil/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/sponsor-to-switch-sides-within-blanchard-racing-team/"
+      }
+     ]
+    },
+    {
+     "h": "Jesse Love back for Super2 decider",
+     "t": "The NASCAR driver returns with Image Racing for the Super2 finale in Adelaide. Team owner Terry Wyhoon says other American drivers are keen to follow.",
+     "pub": "2026-11-19T00:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-nascar-stars-adelaide-cameos-jesse-love-austin-dillon-ty-gibbs-super2-terry-wyhoon"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-super2-series-entry-list-jesse-love-nascar/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/two-big-changes-to-super2-field-for-adelaide-decider/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert wary of old scores in Adelaide",
+     "t": "The defending champion expects drivers outside the top four to race to settle grudges, after tensions such as Will Brown's brake-checking claims against Cameron Hill at Sandown.",
+     "pub": "2026-11-19T03:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-adelaide-grand-final-rivalry-will-brown-cameron-hill-claims-penalty-finals"
+      }
+     ]
+    },
+    {
+     "h": "Tomsett stays with Anderson Motorsport",
+     "t": "Ryan Tomsett, 19, turned down other offers to stay with AMS for a third Super2 season after podiums at Sydney Motorsport Park and Bathurst.",
+     "pub": "2026-11-19T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/bathurst-team-wins-race-to-secure-in-demand-teen/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-18",
    "updated": "2026-11-18T07:15:00Z",
    "stories": [
