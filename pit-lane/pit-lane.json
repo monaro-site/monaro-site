@@ -2,6 +2,80 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-20",
+   "updated": "2026-11-20T07:15:00Z",
+   "stories": [
+    {
+     "h": "New rules target manufacturer performance staff",
+     "t": "Draft 2027 regulations let Supercars class anyone, not just team members, as performance personnel and bar authorised staff from passing on data or advice. It follows rivals' concerns over GM's Grant McPherson.",
+     "pub": "2026-11-20T00:57:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-new-rule-performance-personnel-changes-reaction-general-motors-chevrolet-ford-toyota/"
+      }
+     ]
+    },
+    {
+     "h": "Nettlefold tips fourth manufacturer within two years",
+     "t": "The interim CEO says several brands have made enquiries after Toyota's strong debut season. Supercars is also considering making Gen3 cars easier for visiting international drivers.",
+     "pub": "2026-11-20T00:17:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/nettlefolds-bold-timeline-on-new-supercars-manufacturer/"
+      }
+     ]
+    },
+    {
+     "h": "Ty Gibbs to try a Supercar at Sandown",
+     "t": "The NASCAR Cup race winner will drive an ex-Triple Eight Commodore run by Eggleston Motorsport at the Touring Car Classic in December, a deal arranged by Jack Perkins.",
+     "pub": "2026-11-19T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-ty-gibbs-nascar-star-surprise-announcement-holden-commodore-atcc-jack-perkins-eggleston"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/nascar-news-ty-gibbs-v8-supercars-holden-commodore-jack-perkins-eggleston-motorsport/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/nascar-driver-to-race-triple-eight-built-supercar/"
+      }
+     ]
+    },
+    {
+     "h": "Same free-to-air rounds in 2027",
+     "t": "Seven will again show Sydney, Townsville, Bathurst, the Gold Coast and Adelaide live, with Albert Park on Ten. The other eight rounds, including Phillip Island, stay on Kayo only.",
+     "pub": "2026-11-20T04:03:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-free-to-air-tv-rounds-for-2027-revealed/"
+      }
+     ]
+    },
+    {
+     "h": "GRM hints at more wildcards",
+     "t": "Barry Rogers says owning the Camaro used at Bathurst opens the door to further wildcard entries in 2027, alongside a likely full Super2 season.",
+     "pub": "2026-11-20T01:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-garry-rogers-motorsport-supercars-future-wildcards-super2-bathurst-lachlan-evennett-plans"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-19",
    "updated": "2026-11-19T07:15:00Z",
    "stories": [
