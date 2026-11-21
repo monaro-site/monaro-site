@@ -2,6 +2,48 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-21",
+   "updated": "2026-11-21T07:15:00Z",
+   "stories": [
+    {
+     "h": "Harri Jones hungry for a full-time seat",
+     "t": "The three-time Carrera Cup champion, linked to David Reynolds' Team 18 drive, would not discuss the speculation but says a full-time Supercars seat is his goal. Reynolds still awaits word on 2027.",
+     "pub": "2026-11-20T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-harri-jones-speculations-driver-market-future-team-18-david-reynolds-porsche-champion"
+      }
+     ]
+    },
+    {
+     "h": "De Pasquale not looking beyond 2027 yet",
+     "t": "Contracted to Team 18 until the end of next year, De Pasquale says he has given little thought to what comes after, and overseas options are not a priority.",
+     "pub": "2026-11-20T19:39:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/where-de-pasquale-stands-on-supercars-future/"
+      }
+     ]
+    },
+    {
+     "h": "PremiAir surprised by Murray's quick impact",
+     "t": "Owner Peter Xiberras says Cooper Murray was the team's top pick under Roland Dane's guidance, but he did not expect a podium so soon. Murray's best result at Erebus this year was ninth.",
+     "pub": "2026-11-20T21:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-cooper-murray-premiair-racing-peter-xiberras-roland-dane-podium-reaction-interview/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-20",
    "updated": "2026-11-20T07:15:00Z",
    "stories": [
