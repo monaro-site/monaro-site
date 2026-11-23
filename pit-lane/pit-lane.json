@@ -2,6 +2,100 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-23",
+   "updated": "2026-11-23T07:15:00Z",
+   "stories": [
+    {
+     "h": "Erebus confirms Hughes for 2027",
+     "t": "Jarrod Hughes will keep the #99 Camaro full-time next year after impressing since replacing Cooper Murray. TotalEnergies stays as naming rights partner and expands onto the sister car.",
+     "pub": "2026-11-23T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-jarrod-hughes-erebus-motorsport-contract-announcement-2027-confirmed-driver-market"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-jarrod-hughes-confirmation-erebus-deal-2027-season-barry-ryan-comments-major-sponsor/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/erebus-sponsor-ups-the-ante-for-2027/"
+      }
+     ]
+    },
+    {
+     "h": "Grove could seal teams' title on Saturday",
+     "t": "Penrite Racing leads Triple Eight by 148 points and clinches its first teams' championship if it is 241 clear after Saturday's race. Triple Eight has won 13 of the last 18.",
+     "pub": "2026-11-23T03:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-penrite-racing-clinch-teams-championship-adelaide-grand-final-triple-eight"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-champion-teams-grove-is-on-the-cusp-of-joining/"
+      }
+     ]
+    },
+    {
+     "h": "Payne promises to attack in Adelaide",
+     "t": "The top seed, 30 points clear of Kostecki, says he will stick with the go-for-pole approach that won at Sandown rather than defend his lead.",
+     "pub": "2026-11-22T22:47:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-matt-payne-grove-racing-points-leader-mindset-comments-preview/"
+      }
+     ]
+    },
+    {
+     "h": "Hot and mostly dry forecast for Grand Final",
+     "t": "Adelaide is expected to be hot and mostly sunny, with only a slight chance of showers. Races start Friday 4:20pm, Saturday 3:20pm and Sunday 3:15pm local time.",
+     "pub": "2026-11-22T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-bp-adelaide-grand-final-weather-forecast-race-start-time"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/weather-forecast-2026-supercars-adelaide-grand-final/"
+      }
+     ]
+    },
+    {
+     "h": "Ford Racing gets new global director",
+     "t": "Pascal Zurlinden, formerly of Audi Sport and Porsche, takes over from Mark Rushbrook on 1 January. Rushbrook will lead Ford's global racing programmes and report to Zurlinden.",
+     "pub": "2026-11-22T23:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/ford-racing-swings-leadership-change/"
+      }
+     ]
+    },
+    {
+     "h": "Kostecki voted most popular driver",
+     "t": "Kostecki took 29 per cent of more than 6,000 votes in Speedcafe's poll, ahead of Mostert on 18 and Feeney on eight.",
+     "pub": "2026-11-23T06:29:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-most-popular-driver-brodie-kostecki-dick-johnson-racing-fan-vote-reaction-comments/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-22",
    "updated": "2026-11-22T07:15:00Z",
    "stories": [
