@@ -2,6 +2,71 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-24",
+   "updated": "2026-11-24T07:15:00Z",
+   "stories": [
+    {
+     "h": "Reynolds dropped as Harri Jones joins Team 18",
+     "t": "The 2017 Bathurst winner loses his full-time seat, with Porsche champion Harri Jones taking it on a one-year deal that keeps Team 18's door open for Matt Payne in 2028. Reynolds will reveal his plans after Adelaide.",
+     "pub": "2026-11-23T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-david-reynolds-future-team-18-announcement-full-time-drive-2027-wildcard-exit"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-david-reynolds-loses-full-time-team-18-seat-confirmed-decision-reaction-harri-jones/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-harri-jones-driver-market-deal-team-18-line-up-contract-matt-payne-david-reynolds-chevrolet",
+       "label": "Jones announced"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-harri-jones-on-team-18-contract-deal-length-matt-payne-rumour-links-future-exclusive-comments/",
+       "label": "One-year deal"
+      }
+     ]
+    },
+    {
+     "h": "Pye criticises timing of Reynolds' exit",
+     "t": "Former Team 18 driver Scott Pye says telling Reynolds days before the final round showed no respect. Reynolds is understood to have been told last Friday.",
+     "pub": "2026-11-24T04:53:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-david-reynolds-team-18-contract-axed-retirement/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-mark-winterbottom-david-reynolds-reaction-team-18-driver-market-chaz-mostert-will-brown",
+       "label": "Rivals react"
+      }
+     ]
+    },
+    {
+     "h": "Local backer for Macauley Jones in Adelaide",
+     "t": "South Australian freight firm TRG Transport Solutions takes naming rights on the #96 BJR Supra for the Grand Final weekend.",
+     "pub": "2026-11-24T03:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-macauley-jones-adelaide-livery-reveal-trg-transport-solutions-images-toyota-brad-jones-racing"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-brad-jones-racing-livery-trg-transport-photos-details/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-23",
    "updated": "2026-11-23T07:15:00Z",
    "stories": [
