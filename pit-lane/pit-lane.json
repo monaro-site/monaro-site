@@ -2,6 +2,89 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-25",
+   "updated": "2026-11-25T07:15:00Z",
+   "stories": [
+    {
+     "h": "Reynolds to race Adelaide as if it's his last",
+     "t": "Reynolds says he will treat the finale as possibly his final full-time race, without ruling out a return. He told Speedcafe he was very surprised, having been reassured he would be kept.",
+     "pub": "2026-11-24T19:00:00Z",
+     "move": "Same",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-david-reynolds-retirement-latest-update-adelaide-grand-final-final-event-team-18"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-david-reynolds-team-18-adrian-burgess-snowy-river-exclusive-interview/"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-david-reynolds-team-18-contract-axed-sacked-comments-reaction/",
+       "label": "Adelaide vow"
+      }
+     ]
+    },
+    {
+     "h": "Mostert chasing a championship first",
+     "t": "No driver has won back-to-back titles with different manufacturers. A Mostert win would also be the first title for a make other than Ford or GM since 1992, though he starts 72 points behind.",
+     "pub": "2026-11-24T20:39:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-all-time-supercars-first-within-mosterts-reach/"
+      }
+     ]
+    },
+    {
+     "h": "Last race weekend on Adelaide's current layout",
+     "t": "The street circuit will be heavily redeveloped for MotoGP next year, losing or changing sections such as the Senna Chicane. Four-time Adelaide winner Jamie Whincup expects the new track to be as good or better.",
+     "pub": "2026-11-24T18:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-jamie-whincup-end-of-adelaide-500-era-reaction-grand-final-motogp-track-changes-details/"
+      }
+     ]
+    },
+    {
+     "h": "Feeney plays down redemption talk",
+     "t": "Twelve months after losing the title on the final day, Feeney calls Adelaide simply another shot and admits he faces a climb to get past Payne and Kostecki.",
+     "pub": "2026-11-25T06:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-broc-feeney-plays-down-championship-redemption-arc-adelaide-grand-final-triple-eight"
+      }
+     ]
+    },
+    {
+     "h": "New Adelaide colours for Erebus and Blanchard",
+     "t": "Jobe Stewart's Erebus Camaro turns green with Greenworks branding, and REDARC returns on a Blanchard Ford, joining BJR's one-off livery.",
+     "pub": "2026-11-25T04:30:00Z",
+     "move": "Down 2",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-livery-adelaide-grand-final-blanchard-erebus-images-jobe-stewart-james-golding"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-erebus-motorsport-blanchard-racing-team-new-livery-photos/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/erebus-camaro-turns-green-for-adelaide/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-24",
    "updated": "2026-11-24T07:15:00Z",
    "stories": [
