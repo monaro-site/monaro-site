@@ -2,6 +2,120 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-26",
+   "updated": "2026-11-26T07:15:00Z",
+   "stories": [
+    {
+     "h": "Kostecki tops first Adelaide practice",
+     "t": "Kostecki led a session that ended early when rookie Jackson Walls crashed heavily at Turn 3. Mostert was third, Feeney 13th and championship leader Payne only 16th.",
+     "pub": "2026-11-26T05:10:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-thursday-practice-results-report-crash-video-brodie-kostecki"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-thursday-practice-results-jackson-walls-crash-brodie-kostecki-fastest/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kostecki-fires-first-shot-in-adelaide-grand-final/"
+      }
+     ]
+    },
+    {
+     "h": "Fine threat doubled to deter Grand Final foul play",
+     "t": "The chief steward warned drivers that a 500,000 euro fine is available for race manipulation, twice last year's figure, after the Wood and Feeney clash in the 2025 decider.",
+     "pub": "2026-11-26T00:54:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-preview-mark-dutton-comments-warning-teammates-controversy/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/punishment-doubled-for-supercars-grand-final-foul-play/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-teams-cautioned-rules-manipulation-adelaide-grand-final-motorsport-australia-rules"
+      }
+     ]
+    },
+    {
+     "h": "Walkinshaw needles Triple Eight",
+     "t": "Ryan Walkinshaw told the team bosses' press conference that Ford's factory team is being beaten by two of its customers. Triple Eight's Mark Dutton called it a fair representation.",
+     "pub": "2026-11-26T01:45:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-ryan-walkinshaw-rivalry-mark-dutton-triple-eight-broc-feeney-ryan-wood-chaz-mostert"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/walkinshaw-turns-up-heat-on-triple-eight/"
+      }
+     ]
+    },
+    {
+     "h": "Walkinshaw TWG cool on Reynolds co-drive",
+     "t": "Ryan Walkinshaw says every team will talk to Reynolds but his squad is happy with Jaxon Evans and Fabian Coulthard. Anton De Pasquale says his teammate deserves a full-time seat.",
+     "pub": "2026-11-26T00:28:00Z",
+     "move": "Down 3",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-ryan-walkinshaw-on-david-reynolds-co-drive-rumour-comments/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/de-pasquale-reynolds-deserves-full-time-gig/"
+      }
+     ]
+    },
+    {
+     "h": "Vaughan quickest as Super2 decider begins",
+     "t": "Brad Vaughan was 0.2 seconds clear in final Super2 practice, with points leader Campbell Logan seventh. NASCAR's Jesse Love lost time with a gear selection problem.",
+     "pub": "2026-11-26T04:35:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-super2-series-adelaide-practice-report-brad-vaughan-fastest-results"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-super2-practice-results-jesse-love-issues/"
+      }
+     ]
+    },
+    {
+     "h": "Tickford's Matt Roberts wins Campbell Little Award",
+     "t": "The team manager, with the squad since 2003, received the award for pit lane's best team member, named after the late engineer he worked alongside.",
+     "pub": "2026-11-26T06:06:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-tickford-team-manager-matt-roberts-prestigious-gala-award-campbell-little"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-matt-roberts-wins-campbell-little-award-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/tickford-stalwart-scores-major-supercars-award/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-25",
    "updated": "2026-11-25T07:15:00Z",
    "stories": [
