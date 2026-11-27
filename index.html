@@ -1400,16 +1400,16 @@ $("#standings").innerHTML = `<table><thead><tr><th class="num">Pos</th><th>Car</
 const WKND = {
   event: "Adelaide Grand Final",
   tz: "ACDT", // South Australia: daylight saving, GMT = ACDT - 10.5h
-  updated: "Thu 26 Nov, 05:45 GMT (16:15 ACDT)",
+  updated: "Fri 27 Nov, 00:30 GMT (11:00 ACDT)",
   upnext: [
-    ["Practice 2", "Thu 23:30 GMT (Fri 10:00 ACDT)"],
     ["Qualifying, Race 35", "Fri 02:40 GMT (13:10 ACDT)"],
     ["Race 35: 100 km", "Fri 05:50 GMT (16:20 ACDT)"],
   ],
   sessions: [
-    { name: "Practice 1", day: "Thu", lead: "Brodie Kostecki topped the first Grand Final practice with a 1:19.8877, 0.074s clear of Cam Waters, with Chaz Mostert 3rd. Broc Feeney was 13th and championship leader Matt Payne 16th. The session ended about 40 seconds early when Jackson Walls hit the wall out of Turn 3 and spun into the barrier before Turn 4. The four finalists start the weekend on Payne 5,150, Kostecki 5,120, Feeney 5,096 and Mostert 5,078.",
-      top: [["Brodie Kostecki","Dick Johnson Racing","1:19.8877"],["Cam Waters","Tickford Racing","+0.0740"],["Chaz Mostert","Walkinshaw TWG Racing","+0.1739"],["Anton De Pasquale","Team 18","+0.1921"],["Jayden Ojeda","PremiAir Racing","+0.2767"],["David Reynolds","Team 18","+0.3111"],["Jobe Stewart","Erebus Motorsport","+0.3403"],["Jarrod Hughes","Erebus Motorsport","+0.3642"],["Ryan Wood","Walkinshaw TWG Racing","+0.4874"],["Zach Bates","Matt Stone Racing","+0.5023"]],
-      src: [["Speedcafe", "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-thursday-practice-results-jackson-walls-crash-brodie-kostecki-fastest/"], ["Supercars", "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-thursday-practice-results-report-crash-video-brodie-kostecki"]] },
+    { name: "Practice 2", day: "Fri", lead: "Grove Racing went one-two in the final practice. Kai Allen was fastest with a 1:18.8397, just 0.0243s ahead of Matt Payne, who recovered from a lock-up into Turn 4 on his first flying lap. Brodie Kostecki was 3rd despite a tailshaft vibration, Chaz Mostert 7th with a loose rear end, and Broc Feeney 13th. Turn 4 caught out several drivers, but the session ran without a major incident.",
+      top: [["Kai Allen","Grove Racing","1:18.8397"],["Matt Payne","Grove Racing","+0.0243"],["Brodie Kostecki","Dick Johnson Racing","+0.0990"],["Cam Waters","Tickford Racing","+0.1098"],["Will Brown","Triple Eight","+0.1131"],["Thomas Randle","Tickford Racing","+0.1508"],["Chaz Mostert","Walkinshaw TWG Racing","+0.1863"],["Andre Heimgartner","Brad Jones Racing","+0.2075"],["Jack Le Brocq","Matt Stone Racing","+0.2250"],["Zach Bates","Matt Stone Racing","+0.2335"]],
+      src: [["Speedcafe", "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-practice-2-results-kai-allen-fastest-finals-series-contenders/"], ["Supercars", "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-friday-practice-report-penrite-racing-form-kai-allen-fastest-matt-payne"]] },
+    { name: "Practice 1", day: "Thu", short: "Brodie Kostecki fastest, 1:19.8877, from Waters and Mostert; Feeney 13th, Payne 16th; ended early after Walls crashed" },
   ],
 };
 function renderWknd() {
