@@ -2,6 +2,174 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-27",
+   "updated": "2026-11-27T07:10:00Z",
+   "stories": [
+    {
+     "h": "Kostecki snatches chaotic Adelaide opener",
+     "t": "Brodie Kostecki won Race 35 after a Payne/Mostert clash and slick Dick Johnson Racing pit work. Ryan Wood was second and Broc Feeney third, while Payne recovered to fourth.",
+     "pub": "2026-11-27T06:50:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-friday-race-report-brodie-kostecki-wins-chaos-matt-payne-chaz-mostert-controversy"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-friday-race-results-brodie-kostecki-wins-video-highlights-comments-reaction/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/kostecki-wins-another-50000-in-crazy-adelaide-opener/"
+      }
+     ]
+    },
+    {
+     "h": "Mostert penalised, then out with damage",
+     "t": "Mostert got a 15-second penalty for his late block on Payne, then retired with left-front damage. Payne now leads Kostecki by 19 points and Feeney by 51, with 250 left.",
+     "pub": "2026-11-27T06:45:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-finals-points-standings-friday-chaz-mostert-dnf-matt-payne-brodie-kostecki-win-incident"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-friday-race-chaz-mostert-crash-dnf-reaction-comments/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-matt-payne-clash-adelaide-grand-final-title-fight-incident-video",
+       "label": "The clash"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/the-updated-supercars-grand-final-points-standings/",
+       "label": "Standings"
+      }
+     ]
+    },
+    {
+     "h": "Murray thrown out of Friday qualifying",
+     "t": "Stewards disqualified Cooper Murray's PremiAir Camaro after a front roll bar adjustment between the two parts of qualifying, which the rules forbid.",
+     "pub": "2026-11-27T04:30:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-cooper-murray-disqualified-qualifying-breach-reason-explain/"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/murray-disqualified-but-retains-adelaide-grid-slot/"
+      }
+     ]
+    },
+    {
+     "h": "Late engine swaps for Feeney and Mostert",
+     "t": "Triple Eight and Walkinshaw TWG changed engines before the race after sensor concerns in qualifying, with Mostert reporting a flutter in his Toyota.",
+     "pub": "2026-11-27T03:57:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-broc-feeney-engine-change-ford-mustang-details-comments/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-triple-eight-walkinshaw-twg-engine-changes-broc-feeney-chaz-mostert-adelaide-grand-final"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/engine-changes-for-triple-eight-walkinshaw-twg-stars/"
+      }
+     ]
+    },
+    {
+     "h": "Wood ends pole drought in Adelaide",
+     "t": "Ryan Wood took Friday pole by 0.0467s from Kai Allen, with teammate Mostert third, upstaging most of the title contenders.",
+     "pub": "2026-11-27T03:32:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-friday-qualifying-results-ryan-wood-pole-position-comments-reaction-starting-grid/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-friday-qualifying-report-ryan-wood-snaps-pole-drought-finals-teammates"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/wood-allen-upstage-teammates-in-adelaide-qualifying/"
+      }
+     ]
+    },
+    {
+     "h": "Sandown 500 becomes a one-driver enduro",
+     "t": "Sandown joins The Bend and Bathurst in a three-round 2027 Enduro Cup, with a 500 km race for a single driver on 29 August.",
+     "pub": "2026-11-26T19:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-sandown-2027-enduro-cup-single-driver-race-format-confirmed-calendar-update"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/supercars-reinstates-old-school-sandown-enduro/"
+      }
+     ]
+    },
+    {
+     "h": "Sponsor pledges $1m to keep Reynolds racing",
+     "t": "TRADIE has pledged $1 million to keep David Reynolds on the grid after Team 18 replaced him with Harri Jones. Reynolds called it incredible.",
+     "pub": "2026-11-27T02:15:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-david-reynolds-tradie-million-pledge-sponsor-driver-market-reaction-team-18"
+      },
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/sponsor-pledges-1-million-towards-a-reynolds-lifeline/"
+      }
+     ]
+    },
+    {
+     "h": "Le Brocq's engineer leaves Matt Stone Racing",
+     "t": "Oli Boone has left MSR and is tipped to join Dick Johnson Racing, with head of engineering Jack Bellotti running Le Brocq in Adelaide.",
+     "pub": "2026-11-27T00:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "V8 Sleuth",
+       "url": "https://www.v8sleuth.com.au/finals-engineer-departs-matt-stone-racing/"
+      }
+     ]
+    },
+    {
+     "h": "Team Kiwi Racing commits to full Super2 season",
+     "t": "After a Bathurst one-off, Team Kiwi Racing will run a full 2027 Super2 programme, with its driver still to be chosen.",
+     "pub": "2026-11-27T04:50:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2027-team-kiwi-racing-dunlop-super2-series-entry-holden-commodore/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-super2-series-team-kiwi-racing-2027-plans-return-holden-david-john"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-26",
    "updated": "2026-11-26T07:15:00Z",
    "stories": [
