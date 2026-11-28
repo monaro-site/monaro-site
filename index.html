@@ -1151,6 +1151,24 @@ const PITBOARDS = {
   ],
   src: 'Sources: Supercars 2026 Operations Manual, Division D (Sporting Rules) D14.4.2, D14.1.5.1 and Schedule D1 points. Gaps are my own sums.',
  },
+ 14: {
+  id: "adelaide-2026-grand-final",
+  until: "2026-11-27T05:50:00Z", // Race 35 start: Fri 27 Nov, 5:50am GMT (4:20pm ACDT)
+  sign: [["Pit board", "sm"], ["Adelaide", "y"], ["4 in · 1 champ", ""]],
+  label: "Pit board · the Grand Final",
+  line: "Four drivers, three races, one champion. Matt Payne starts 30 points clear, and finishing second in every race would be enough.",
+  note: [
+    "<b>The reset.</b> Sandown points are wiped. All four restart on 5,000 plus a bonus for where they finished at Sandown (rules D14.4.3.1 and D14.4.3.2): Payne 5,150, Kostecki 5,120, Feeney 5,096 and Mostert 5,078. Whoever has the most after Race 37 is champion (rule D14.4.3.3).",
+    "<b>Three races, 300 points.</b> Friday's Race 35 is 100 km and pays 50 for a win, with 4 points between first and second. Saturday's Race 36 and Sunday's Race 37 are 250 km and pay 125 for a win, then 115, 106 and 97 (Schedule D1). The two long races decide most of it.",
+    "<b>Payne.</b> Second in all three races is enough to win the title, even if the same rival wins all three: that only closes the gap by 24. Finishing ahead of the other three in each race seals it.",
+    "<b>Kostecki, 30 behind.</b> He needs to finish about two places ahead of Payne in each race at the front. Win all three with Payne third and he's champion by 16. Beating Payne by one place every time leaves him 6 short.",
+    "<b>Feeney, 54 behind.</b> He needs about three places a race on Payne, and to stay ahead of Kostecki. If Friday's race is a draw between them, winning both long races with Payne fourth puts him 2 ahead; with Payne third, he's 16 short.",
+    "<b>Mostert, 72 behind.</b> The long shot. Even winning all three races isn't enough if Payne is fourth every time; with Payne fifth it is, by 12.",
+    "<b>If it's a tie.</b> The champion is the driver with the most race wins across the whole season, Adelaide included, then the most seconds, and so on (rule D14.4.3.4). Going in, Kostecki has 9 wins, Feeney 7, Payne 6 and Mostert 3, so a tie with Kostecki goes his way.",
+    "<b>Form guide.</b> Kostecki, Feeney and Payne won a race each in Adelaide in 2025. Mostert didn't. <a href=\"/predictor/\">The predictor's odds →</a>",
+  ],
+  src: 'Sources: Supercars 2026 Operations Manual, Division D (Sporting Rules) D14.4.3 and Schedule D1 points; 2026 Adelaide Supplementary Regulations (timetable). Win counts from this site\'s results. Gaps and scenarios are my own sums.',
+ },
 };
 const PITBOARD = Object.values(PITBOARDS).find(pb => Date.now() < Date.parse(pb.until)) || null;
 const pitboardInner = pb => `
