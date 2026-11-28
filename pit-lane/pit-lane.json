@@ -2,6 +2,140 @@
  "about": "Pit Lane: the day's top 10 Supercars stories. Headlines and summaries are written for Monaro.co.uk; links go to the original stories. Newest day first. A link with \"archived\" points to a saved copy; \"gone\": true means the source removed the story.",
  "days": [
   {
+   "date": "2026-11-28",
+   "updated": "2026-11-28T07:05:00Z",
+   "stories": [
+    {
+     "h": "Mostert and Cameron wiped out on lap one",
+     "t": "Contact with Jobe Stewart broke Mostert's right-front, sending him into Aaron Cameron and both into the wall. Mostert's title hopes are all but gone; Cameron went for precautionary hospital checks.",
+     "pub": "2026-11-28T05:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-crash-aaron-cameron-video-replay-incident-adelaide-grand-final"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-saturday-race-crash-chaz-mostert-vs-aaron-cameron-video-comments-reaction/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-reacts-crash-incident-adelaide-grand-final-aaron-cameron-reaction",
+       "label": "Mostert reacts"
+      }
+     ]
+    },
+    {
+     "h": "Feeney pips Payne to Saturday pole",
+     "t": "Feeney beat Payne by 0.0245s in the Shootout, a turnaround from Friday. Payne's second place sealed the season pole award, 9-7 ahead of Kostecki.",
+     "pub": "2026-11-28T03:03:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-saturday-top-10-shootout-results-broc-feeney-pole-position-comments-reaction/"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-saturday-qualifying-report-broc-feeney-pole-position-top-ten-shootout-grand-final"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-saturday-qualifying-results-chaz-mostert-misses-shootout-comments-reaction/",
+       "label": "Qualifying"
+      }
+     ]
+    },
+    {
+     "h": "Golding's Mustang misses Race 36",
+     "t": "A Turn 8 crash in qualifying damaged all four corners of the Blanchard Racing Team car, cutting the field to 23. The team aims to rebuild it for Sunday.",
+     "pub": "2026-11-28T03:55:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-james-golding-mustang-sidelined-crash-video-saturday-race-adelaide-grand-final"
+      },
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-james-golding-blanchard-racing-team-crash-damage-qualifying-out/"
+      }
+     ]
+    },
+    {
+     "h": "Ford teams tangled in Friday pit lane chaos",
+     "t": "Will Brown slowed under the Safety Car to ease a double stack behind Feeney, and Kai Allen was blocked from his box by Cam Waters, costing him more places.",
+     "pub": "2026-11-28T01:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-pit-lane-cluster-ford-teams-tickford-penrite-racing-reaction-comments"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-stephen-grove-mark-dutton-triple-eight-react-adelaide-pit-lane-penalty-contact-safety-car",
+       "label": "Team reaction"
+      }
+     ]
+    },
+    {
+     "h": "Mostert shocked by Payne clash penalty",
+     "t": "Mostert said he was surprised to be penalised, while Payne claimed his rival moved under brakes. Kostecki said Payne had to try a move or risk being passed himself.",
+     "pub": "2026-11-27T07:30:00Z",
+     "move": "Down 3",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-chaz-mostert-penalty-matt-payne-adelaide-grand-final-incident-video-stewards"
+      },
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-shocked-chaz-mostert-matt-payne-clash-video-incident-adelaide-grand-final",
+       "label": "Kostecki's view"
+      }
+     ]
+    },
+    {
+     "h": "DJR changes Kostecki's engine after win",
+     "t": "Dick Johnson Racing swapped the motor in Kostecki's Ford overnight to chase a vibration he fought through Friday qualifying and the race.",
+     "pub": "2026-11-27T11:00:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Supercars",
+       "url": "https://www.supercars.com/news/supercars-news-2026-brodie-kostecki-djr-engine-change-adelaide-grand-final-ford-reaction"
+      }
+     ]
+    },
+    {
+     "h": "Teams push for new Camaro wind tunnel test",
+     "t": "Homologation teams agree the Camaro needs another US wind tunnel test for 2027 parity after this year's changes, but may have to share a $500,000 bill.",
+     "pub": "2026-11-27T23:18:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-parity-chevrolet-camaro-ford-mustang-toyota-supra-testing-wind-tunnel/"
+      }
+     ]
+    },
+    {
+     "h": "Castrol extends Tickford deal into year 25",
+     "t": "Tickford Racing has signed a multi-year extension with Castrol, a partnership dating back to 2003 that has delivered 92 race wins.",
+     "pub": "2026-11-28T00:47:00Z",
+     "move": "New",
+     "links": [
+      {
+       "src": "Speedcafe",
+       "url": "https://speedcafe.com/supercars-news-2026-adelaide-grand-final-tickford-racing-castrol-sponsorship-multi-year-agreement-extension/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-27",
    "updated": "2026-11-27T07:10:00Z",
    "stories": [
